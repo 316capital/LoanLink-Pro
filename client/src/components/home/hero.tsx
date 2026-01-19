@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed">
-            We combine a massive network of elite lenders with proprietary technology to close complex real estate deals in record time.
+            We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
           </p>
           <p className="text-gold-500 font-bold tracking-wider text-sm uppercase mb-10 italic">
             Your smartest source of funding
