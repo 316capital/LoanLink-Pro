@@ -9,8 +9,21 @@ export function Hero() {
       {/* Background Image */}
       <motion.div 
         initial={ { scale: 1.1, opacity: 0 } }
-        animate={ { scale: 1, opacity: 1 } }
-        transition={ { duration: 1.5, ease: "easeOut" } }
+        animate={ { 
+          scale: [1.1, 1.15, 1.1],
+          opacity: 1 
+        } }
+        transition={ { 
+          scale: {
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear"
+          },
+          opacity: {
+            duration: 1.5,
+            ease: "easeOut"
+          }
+        } }
         className="absolute inset-0 z-0"
       >
         <img 
