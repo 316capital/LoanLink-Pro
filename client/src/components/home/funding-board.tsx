@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const fundedDeals = [
   {
@@ -41,42 +41,22 @@ const fundedDeals = [
 ];
 
 export function FundingBoard() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
-  const { scrollXProgress } = useScroll({ container: scrollRef });
-  const scaleX = useSpring(scrollXProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer || isHovered) return;
-
-    const scrollSpeed = 0.5; // Pixels per frame
-    let animationFrameId: number;
-
-    const scroll = () => {
-      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-        scrollContainer.scrollLeft = 0;
-      } else {
-        scrollContainer.scrollLeft += scrollSpeed;
-      }
-      animationFrameId = requestAnimationFrame(scroll);
-    };
-
-    animationFrameId = requestAnimationFrame(scroll);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [isHovered]);
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % fundedDeals.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section id="portfolio" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
-          initial={ { opacity: 0, y: 20 } }
-          whileInView={ { opacity: 1, y: 0 } }
-          viewport={ { once: true } }
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           className="flex flex-col md:flex-row justify-between items-center mb-16"
         >
           <div>
@@ -91,49 +71,54 @@ export function FundingBoard() {
           </div>
         </motion.div>
 
-        <div className="relative group">
-          <div 
-            ref={scrollRef}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="flex overflow-x-auto pb-12 gap-6 no-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
-          >
-            {/* Double the list for infinite-feeling scroll */}
-            {[...fundedDeals, ...fundedDeals].map((deal, index) => (
-              <motion.div 
-                key={index} 
-                initial={ { opacity: 0, scale: 0.95 } }
-                whileInView={ { opacity: 1, scale: 1 } }
-                viewport={ { once: true } }
-                transition={ { delay: (index % fundedDeals.length) * 0.05 } }
-                className="group flex-shrink-0 w-[280px] md:w-[320px] flex flex-col bg-bone-50 border border-gray-100 hover:shadow-xl transition-all duration-500 snap-center"
-              >
-                <div className="h-[380px] overflow-hidden">
-                  <img 
-                    src={deal.image} 
-                    alt={deal.property} 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
+        <div className="relative h-[500px] md:h-[600px] w-full max-w-4xl mx-auto group">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute inset-0 flex flex-col md:flex-row bg-bone-50 border border-gray-100 shadow-2xl"
+            >
+              <div className="w-full md:w-1/2 h-2/3 md:h-full overflow-hidden">
+                <motion.img 
+                  src={fundedDeals[currentIndex].image} 
+                  alt={fundedDeals[currentIndex].property} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full md:w-1/2 p-10 flex flex-col justify-center">
+                <div className="mb-6">
+                  <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-3 py-1 font-bold text-xs uppercase tracking-widest mb-4">
+                    {fundedDeals[currentIndex].type}
+                  </Badge>
+                  <h3 className="text-3xl md:text-4xl font-bold text-navy-950 mb-2 leading-tight uppercase tracking-tighter">
+                    {fundedDeals[currentIndex].property}
+                  </h3>
+                  <p className="text-sm text-muted-foreground uppercase tracking-widest font-medium">
+                    {fundedDeals[currentIndex].location}
+                  </p>
                 </div>
-                <div className="p-5 flex flex-col">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="font-bold text-xl text-navy-950 tracking-tighter">{deal.amount}</span>
-                    <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-2 py-0.5 font-bold text-[8px] uppercase tracking-widest">
-                      {deal.type}
-                    </Badge>
-                  </div>
-                  <h3 className="text-xs font-bold text-navy-950 truncate uppercase tracking-tight">{deal.property}</h3>
-                  <p className="text-[10px] text-muted-foreground uppercase tracking-widest mt-1">{deal.location}</p>
+                <div className="pt-8 border-t border-gray-200">
+                  <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Total Deployment</span>
+                  <span className="text-5xl font-bold text-navy-950 tracking-tighter">
+                    {fundedDeals[currentIndex].amount}
+                  </span>
                 </div>
-              </motion.div>
-            ))}
-          </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
 
-          <div className="absolute -bottom-2 left-0 w-full h-[2px] bg-gray-100 rounded-full overflow-hidden">
-            <motion.div 
-              style={ { scaleX } }
-              className="absolute top-0 left-0 w-full h-full bg-gold-500 origin-left"
-            />
+          {/* Dots Indicator */}
+          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex space-x-2">
+            {fundedDeals.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentIndex(i)}
+                className={`h-1.5 transition-all duration-300 ${currentIndex === i ? 'w-8 bg-gold-500' : 'w-2 bg-gray-200'}`}
+              />
+            ))}
           </div>
         </div>
       </div>
