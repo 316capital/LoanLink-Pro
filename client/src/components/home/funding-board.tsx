@@ -1,9 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import img1 from "@assets/generated_images/modern_luxury_apartment_exterior.png";
-import img2 from "@assets/generated_images/steel_frame_construction.png";
-import img3 from "@assets/generated_images/modern_urban_townhomes.png";
 import { motion, useScroll, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 const fundedDeals = [
   {
@@ -45,12 +42,33 @@ const fundedDeals = [
 
 export function FundingBoard() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
   const { scrollXProgress } = useScroll({ container: scrollRef });
   const scaleX = useSpring(scrollXProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001
   });
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer || isHovered) return;
+
+    const scrollSpeed = 0.5; // Pixels per frame
+    let animationFrameId: number;
+
+    const scroll = () => {
+      if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollContainer.scrollLeft = 0;
+      } else {
+        scrollContainer.scrollLeft += scrollSpeed;
+      }
+      animationFrameId = requestAnimationFrame(scroll);
+    };
+
+    animationFrameId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [isHovered]);
 
   return (
     <section id="portfolio" className="py-24 bg-white overflow-hidden">
@@ -76,15 +94,18 @@ export function FundingBoard() {
         <div className="relative group">
           <div 
             ref={scrollRef}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             className="flex overflow-x-auto pb-12 gap-6 no-scrollbar snap-x snap-mandatory cursor-grab active:cursor-grabbing"
           >
-            {fundedDeals.map((deal, index) => (
+            {/* Double the list for infinite-feeling scroll */}
+            {[...fundedDeals, ...fundedDeals].map((deal, index) => (
               <motion.div 
                 key={index} 
                 initial={ { opacity: 0, scale: 0.95 } }
                 whileInView={ { opacity: 1, scale: 1 } }
                 viewport={ { once: true } }
-                transition={ { delay: index * 0.05 } }
+                transition={ { delay: (index % fundedDeals.length) * 0.05 } }
                 className="group flex-shrink-0 w-[280px] md:w-[320px] flex flex-col bg-bone-50 border border-gray-100 hover:shadow-xl transition-all duration-500 snap-center"
               >
                 <div className="h-[380px] overflow-hidden">
