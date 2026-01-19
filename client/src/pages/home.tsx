@@ -8,6 +8,8 @@ import { DrawCallout } from "@/components/home/draw-callout";
 import { ExperienceSection } from "@/components/home/experience-section";
 import { ContactSection } from "@/components/home/contact-section";
 import { LendingMap } from "@/components/home/lending-map";
+import { Testimonials } from "@/components/home/testimonials";
+import { FAQSection } from "@/components/home/faq-section";
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
         <ProductsGrid />
         <DrawCallout />
         <LendingMap />
+        <Testimonials />
         <FundingBoard />
         <ProductParams />
+        <FAQSection />
         <ContactSection />
       </main>
       <Footer />
