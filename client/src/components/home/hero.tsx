@@ -10,12 +10,12 @@ export function Hero() {
       <motion.div 
         initial={ { scale: 1.1, opacity: 0 } }
         animate={ { 
-          scale: [1.1, 1.2, 1.1],
+          scale: [1.1, 1.25, 1.1],
           opacity: 1 
         } }
         transition={ { 
           scale: {
-            duration: 12,
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut"
           },
