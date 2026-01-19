@@ -5,6 +5,8 @@ import { ProductsGrid } from "@/components/home/products-grid";
 import { FundingBoard } from "@/components/home/funding-board";
 import { ProductParams } from "@/components/home/product-params";
 import { DrawCallout } from "@/components/home/draw-callout";
+import { ExperienceSection } from "@/components/home/experience-section";
+import { ContactSection } from "@/components/home/contact-section";
 
 export default function Home() {
   return (
@@ -12,10 +14,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <ExperienceSection />
         <ProductsGrid />
         <DrawCallout />
         <FundingBoard />
         <ProductParams />
+        <ContactSection />
       </main>
       <Footer />
     </div>
