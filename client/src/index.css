@@ -9,16 +9,18 @@
   --radius-lg: 6px;
   --radius-xl: 8px;
 
-  --color-navy-950: hsl(222 47% 11%);
-  --color-navy-900: hsl(220 45% 15%);
-  --color-navy-800: hsl(218 40% 20%);
+  --color-navy-950: hsl(222 47% 6%);
+  --color-navy-900: hsl(220 45% 10%);
+  --color-navy-800: hsl(218 40% 15%);
   
-  --color-gold-500: hsl(45 80% 50%);
-  --color-gold-400: hsl(45 80% 60%);
-  --color-gold-600: hsl(45 90% 40%);
+  --color-gold-500: hsl(45 100% 50%);
+  --color-gold-400: hsl(45 100% 60%);
+  --color-gold-600: hsl(45 100% 40%);
 
-  --color-bone-50: hsl(40 20% 98%);
-  --color-bone-100: hsl(40 20% 96%);
+  --color-cyber-blue: hsl(190 100% 50%);
+
+  --color-bone-50: hsl(222 47% 4%);
+  --color-bone-100: hsl(222 47% 8%);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -46,55 +48,28 @@
 }
 
 :root {
-  /* Deep Midnight Navy Base */
-  --background: hsl(40 20% 98%); /* Soft Bone */
-  --foreground: hsl(222 47% 11%); /* Navy 950 */
+  --background: hsl(222 47% 4%);
+  --foreground: hsl(0 0% 100%);
 
-  /* Navy Elements */
-  --primary: hsl(222 47% 11%);
-  --primary-foreground: hsl(0 0% 100%);
+  --primary: hsl(45 100% 50%);
+  --primary-foreground: hsl(222 47% 4%);
 
-  /* Gold Accents */
-  --secondary: hsl(45 80% 50%);
-  --secondary-foreground: hsl(222 47% 11%);
+  --secondary: hsl(222 47% 8%);
+  --secondary-foreground: hsl(0 0% 100%);
 
-  /* Muted / Subtleties */
-  --muted: hsl(220 20% 92%);
-  --muted-foreground: hsl(220 20% 40%);
+  --muted: hsl(222 47% 10%);
+  --muted-foreground: hsl(222 20% 70%);
 
-  --accent: hsl(40 30% 94%);
-  --accent-foreground: hsl(222 47% 11%);
+  --accent: hsl(190 100% 50%);
+  --accent-foreground: hsl(222 47% 4%);
 
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(222 47% 11%);
+  --card: hsl(222 47% 6%);
+  --card-foreground: hsl(0 0% 100%);
 
-  --border: hsl(220 15% 88%);
-  --input: hsl(220 15% 88%);
+  --border: hsl(222 47% 12%);
+  --input: hsl(222 47% 12%);
 
-  --radius: 0.25rem;
-}
-
-.dark {
-  --background: hsl(222 47% 11%);
-  --foreground: hsl(40 20% 98%);
-
-  --primary: hsl(45 80% 50%);
-  --primary-foreground: hsl(222 47% 11%);
-
-  --secondary: hsl(220 40% 20%);
-  --secondary-foreground: hsl(40 20% 98%);
-
-  --muted: hsl(220 40% 16%);
-  --muted-foreground: hsl(220 20% 65%);
-
-  --accent: hsl(220 40% 16%);
-  --accent-foreground: hsl(40 20% 98%);
-
-  --card: hsl(220 45% 13%);
-  --card-foreground: hsl(40 20% 98%);
-
-  --border: hsl(220 40% 20%);
-  --input: hsl(220 40% 20%);
+  --radius: 0.125rem;
 }
 
 @layer base {
@@ -110,27 +85,17 @@
 }
 
 @layer utilities {
-  .text-gold {
-    color: hsl(45 80% 50%);
+  .text-glow {
+    text-shadow: 0 0 10px rgba(234, 179, 8, 0.5);
   }
-  .bg-gold {
-    background-color: hsl(45 80% 50%);
+  .bg-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
-  .border-gold {
-    border-color: hsl(45 80% 50%);
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  
-  .text-gold-gradient {
-    background: linear-gradient(135deg, hsl(45 80% 60%) 0%, hsl(45 80% 45%) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .bg-gold-gradient {
-    background: linear-gradient(135deg, hsl(45 80% 55%) 0%, hsl(45 80% 45%) 100%);
-  }
-
-  .bg-navy-gradient {
-     background: linear-gradient(180deg, hsl(222 47% 11%) 0%, hsl(220 45% 8%) 100%);
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; }
   }
 }

@@ -6,77 +6,68 @@ import img3 from "@assets/generated_images/modern_urban_townhomes.png";
 const fundedDeals = [
   {
     image: img1,
-    type: "DSCR",
-    amount: "$2,450,000",
-    location: "Austin, TX",
-    property: "12-Unit Multifamily",
-    purpose: "Refinance"
+    type: "DSCR Protocol",
+    amount: "2.45M",
+    location: "TX NODE",
+    property: "12-UNIT ASSET",
   },
   {
     image: img2,
-    type: "Ground-Up",
-    amount: "$4,100,000",
-    location: "Nashville, TN",
-    property: "Mid-Rise Mixed Use",
-    purpose: "Construction"
+    type: "Construction v1",
+    amount: "4.10M",
+    location: "TN NODE",
+    property: "MIXED-USE",
   },
   {
     image: img3,
-    type: "Fix & Flip",
-    amount: "$850,000",
-    location: "Charlotte, NC",
-    property: "Luxury Townhomes",
-    purpose: "Acquisition + Rehab"
+    type: "Bridge Sync",
+    amount: "0.85M",
+    location: "NC NODE",
+    property: "LUXURY INFRA",
   }
 ];
 
 export function FundingBoard() {
   return (
-    <section id="portfolio" className="py-24 bg-white">
+    <section id="portfolio" className="py-24 bg-navy-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-2">Just Funded</h2>
-            <p className="text-muted-foreground">Live capital deployment board.</p>
+            <div className="h-1 w-12 bg-gold-500 mb-6" />
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter">NETWORK DEPLOYMENTS</h2>
           </div>
-          <div className="hidden md:block">
-             <span className="text-sm font-mono text-gold-600">ACTIVE VOLUME: $42M Q1 2025</span>
-          </div>
+          <p className="text-gray-500 max-w-sm text-sm font-light mt-4 md:mt-0 font-mono">
+            LIVE FEED: 42M FLOW Q1 2025
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-gray-200 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
           {fundedDeals.map((deal, index) => (
-            <div key={index} className="group relative overflow-hidden bg-gray-50 h-[400px]">
+            <div key={index} className="group relative overflow-hidden bg-white/5 h-[450px] border border-white/5">
               <img 
                 src={deal.image} 
                 alt={deal.property} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-[0.85] group-hover:brightness-100"
+                className="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-1000"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/40 to-transparent opacity-90" />
+              <div className="absolute inset-0 bg-navy-950/80 group-hover:bg-navy-950/40 transition-all duration-700" />
               
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="flex justify-between items-start mb-4">
-                  <Badge className="bg-gold-500 text-navy-950 hover:bg-gold-400 font-bold rounded-sm border-none">
-                    {deal.type}
-                  </Badge>
-                  <span className="font-mono text-gold-400 font-bold text-lg">{deal.amount}</span>
+              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
+                <div className="flex justify-between items-end mb-8">
+                  <div className="space-y-1">
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold-500 block mb-2">{deal.type}</span>
+                    <h3 className="text-2xl font-black tracking-tighter italic">{deal.property}</h3>
+                  </div>
+                  <span className="font-mono text-3xl font-bold tracking-tighter">${deal.amount}</span>
                 </div>
                 
-                <h3 className="text-xl font-bold mb-1">{deal.property}</h3>
-                <div className="flex items-center text-sm text-gray-300 space-x-2">
+                <div className="flex items-center text-[10px] font-black tracking-[0.3em] text-gray-500 space-x-4 border-t border-white/10 pt-4">
                   <span>{deal.location}</span>
-                  <span>•</span>
-                  <span>{deal.purpose}</span>
+                  <span className="h-1 w-1 bg-gold-500 rounded-full" />
+                  <span>SYNC COMPLETE</span>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-8 text-center">
-            <p className="text-sm text-muted-foreground">
-                Recent closings across 42 states. <a href="#" className="text-navy-950 font-bold underline decoration-gold-500 decoration-2 underline-offset-4">View full portfolio</a>
-            </p>
         </div>
       </div>
     </section>

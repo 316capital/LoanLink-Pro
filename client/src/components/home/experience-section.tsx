@@ -1,97 +1,77 @@
-import { Shield, Zap, TrendingUp, Users, HardHat, FileCheck } from "lucide-react";
+import { Shield, Zap, TrendingUp, Cpu, Network, Database } from "lucide-react";
 
 const stats = [
-  { label: "Capital Deployed", value: "$4.2B+" },
-  { label: "Years Experience", value: "15+" },
-  { label: "Repeat Borrowers", value: "82%" },
-  { label: "Active Markets", value: "42" },
-];
-
-const values = [
-  {
-    icon: Shield,
-    title: "Capitalized Strength",
-    description: "Deep discretionary capital pools ensuring your project is funded from foundation to finish."
-  },
-  {
-    icon: Zap,
-    title: "Velocity of Capital",
-    description: "Institutional speed that meets the pace of modern construction. Closings in as little as 7 days."
-  },
-  {
-    icon: FileCheck,
-    title: "Covenant Integrity",
-    description: "We lead with transparency. No hidden fees, no bait-and-switch, just predictable capital."
-  }
+  { label: "Total Flow", value: "$4.2B+" },
+  { label: "Active Nodes", value: "850+" },
+  { label: "Sync Speed", value: "7 Days" },
+  { label: "Protocol Markets", value: "44" },
 ];
 
 export function ExperienceSection() {
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-24 bg-navy-950 relative overflow-hidden border-y border-white/5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div>
-            <h2 className="text-sm font-bold tracking-widest text-gold-600 uppercase mb-4">The 316 Advantage</h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-navy-950 mb-6 leading-tight">
-              Built by Developers, <br/> Funded by Experts.
+            <div className="flex items-center space-x-2 mb-8">
+               <div className="h-2 w-2 bg-gold-500 rounded-full animate-pulse" />
+               <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gold-500">The Capital OS</span>
+            </div>
+            <h3 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tighter leading-none">
+              LIQUIDITY <br/>
+              <span className="text-gray-600">DISTRIBUTED.</span>
             </h3>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We aren't just lenders; we are capital partners. Our team brings decades of experience in urban infill, multifamily development, and structured finance to every deal we underwrite.
+            <p className="text-xl text-gray-400 mb-12 font-light leading-relaxed">
+              316 Capital is a decentralized liquidity protocol connecting elite developers with a hyper-threaded network of institutional capital nodes. 
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
-              {values.map((v, i) => (
-                <div key={i} className="flex flex-col space-y-3">
-                  <div className="h-10 w-10 rounded bg-navy-50 flex items-center justify-center">
-                    <v.icon className="h-5 w-5 text-navy-950" />
-                  </div>
-                  <h4 className="font-bold text-navy-950">{v.title}</h4>
-                  <p className="text-sm text-muted-foreground leading-snug">{v.description}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
+              {[
+                { icon: Cpu, title: "Algorithmic Speed", text: "Automated underwriting systems that bypass traditional banking latency." },
+                { icon: Database, title: "Deep Liquidity", text: "Access to multi-billion dollar capital pools through a single interface." },
+                { icon: Network, title: "Network Effect", text: "Institutional scale with the precision and speed of a tech partner." },
+                { icon: Shield, title: "Risk Protocol", text: "Rigorous standards ensuring capital stability through all market cycles." }
+              ].map((item, i) => (
+                <div key={i} className="space-y-3">
+                  <div className="h-px w-8 bg-gold-500/30 mb-4" />
+                  <h4 className="text-xs font-black uppercase tracking-widest text-white">{item.title}</h4>
+                  <p className="text-[11px] text-gray-500 leading-relaxed uppercase tracking-wider">{item.text}</p>
                 </div>
               ))}
-            </div>
-            
-            <div className="flex items-center space-x-4 border-t border-gray-100 pt-8">
-              <div className="flex -space-x-3">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="h-12 w-12 rounded-full border-2 border-white bg-gray-200 overflow-hidden">
-                    <img src={`https://i.pravatar.cc/100?u=${i}`} alt="Executive" />
-                  </div>
-                ))}
-              </div>
-              <div>
-                <p className="text-sm font-bold text-navy-950">Management Team</p>
-                <p className="text-xs text-muted-foreground">Ex-Goldman Sachs, Blackstone, & DR Horton</p>
-              </div>
             </div>
           </div>
           
           <div className="relative">
-            <div className="bg-navy-950 aspect-[4/5] rounded-none overflow-hidden shadow-2xl relative group">
-                <img 
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
-                    alt="Corporate HQ" 
-                    className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent" />
-                
-                <div className="absolute bottom-0 left-0 right-0 p-8 grid grid-cols-2 gap-8">
+            <div className="bg-white/5 border border-white/10 aspect-square p-12 flex flex-col justify-between group">
+               <div className="flex justify-between items-start">
+                  <div className="h-12 w-12 border border-gold-500/20 flex items-center justify-center">
+                     <Network className="h-6 w-6 text-gold-500" />
+                  </div>
+                  <div className="text-right">
+                     <span className="block text-[8px] font-mono text-gray-500 uppercase">System Status</span>
+                     <span className="text-[10px] font-mono text-green-500 uppercase">Operational</span>
+                  </div>
+               </div>
+               
+               <div className="grid grid-cols-2 gap-12">
                   {stats.map((stat, i) => (
-                    <div key={i} className="border-l-2 border-gold-500 pl-4">
-                      <p className="text-3xl font-bold font-mono text-white mb-1">{stat.value}</p>
-                      <p className="text-xs font-bold uppercase tracking-widest text-gold-500/80">{stat.label}</p>
+                    <div key={i} className="space-y-1">
+                      <p className="text-4xl font-mono text-white tracking-tighter">{stat.value}</p>
+                      <p className="text-[8px] font-black uppercase tracking-widest text-gold-500">{stat.label}</p>
                     </div>
                   ))}
-                </div>
-            </div>
-            
-            {/* Floating Card */}
-            <div className="absolute -top-6 -left-6 bg-gold-500 p-8 shadow-xl hidden xl:block animate-in fade-in slide-in-from-left-4 duration-1000">
-               <TrendingUp className="h-8 w-8 text-navy-950 mb-4" />
-               <p className="text-navy-950 font-bold text-lg leading-tight">
-                 Reliable Capital <br/> In Any Market <br/> Cycle.
+               </div>
+               
+               <div className="h-px w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+               
+               <p className="text-[10px] font-mono text-gray-500 uppercase leading-loose italic">
+                 "Eliminating the friction between vision and capital deployment through a hyper-connected network architecture."
                </p>
             </div>
+            
+            {/* HUD Elements */}
+            <div className="absolute -top-4 -right-4 h-24 w-24 border border-white/5 pointer-events-none" />
+            <div className="absolute -bottom-4 -left-4 h-24 w-24 border border-white/5 pointer-events-none" />
           </div>
         </div>
       </div>
