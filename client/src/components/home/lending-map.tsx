@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import coverageMap from "@assets/generated_images/modern_gold_and_navy_us_coverage_map_for_real_estate_lending..png";
 
 export function LendingMap() {
   return (
@@ -23,18 +24,17 @@ export function LendingMap() {
               </p>
             </div>
             
-            <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-10 py-7 rounded-none shadow-lg">
+            <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-10 py-7 rounded-none shadow-lg transition-transform hover:scale-105">
               Check Eligibility
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
           
-          <div className="relative p-4 bg-white shadow-2xl">
+          <div className="relative p-4 bg-white shadow-2xl group overflow-hidden">
               <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/3/32/Blank_US_Map_with_borders.svg" 
+                src={coverageMap} 
                 alt="US Coverage Map" 
-                className="w-full h-auto opacity-80 grayscale"
-                style={{ filter: 'sepia(1) hue-rotate(5deg) saturate(1.5) brightness(0.95)' }}
+                className="w-full h-auto transform transition-transform duration-700 group-hover:scale-105"
               />
               
               {/* Map Legend */}
@@ -44,7 +44,7 @@ export function LendingMap() {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-navy-950">Active Lending</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="h-3 w-3 bg-gray-200"></div>
+                  <div className="h-3 w-3 bg-[#1e293b]"></div>
                   <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">Exceptions</span>
                 </div>
               </div>
