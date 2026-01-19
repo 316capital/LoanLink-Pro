@@ -106,4 +106,12 @@
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(234,179,8,0.3)] hover:border-gold-500/50;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
