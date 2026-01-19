@@ -35,13 +35,9 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-lg px-10 py-7 rounded-none transition-all hover:scale-105">
+            <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-6 py-4 rounded-none transition-all hover:scale-105">
               Get My Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover:text-gold-500 font-medium text-lg px-10 py-7 rounded-none transition-all">
-              Broker Portal
+              <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
         </div>
