@@ -7,6 +7,7 @@ import { ProductParams } from "@/components/home/product-params";
 import { DrawCallout } from "@/components/home/draw-callout";
 import { ExperienceSection } from "@/components/home/experience-section";
 import { ContactSection } from "@/components/home/contact-section";
+import { LendingMap } from "@/components/home/lending-map";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <ExperienceSection />
         <ProductsGrid />
         <DrawCallout />
+        <LendingMap />
         <FundingBoard />
         <ProductParams />
         <ContactSection />
