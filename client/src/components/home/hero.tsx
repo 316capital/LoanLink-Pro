@@ -4,7 +4,7 @@ import heroBg from "@assets/generated_images/cinematic_construction_site_aerial.
 
 export function Hero() {
   return (
-    <div className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-32">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -15,7 +15,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-navy-950/70" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="max-w-4xl">
           <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/30 px-4 py-1.5 mb-8 rounded-full">
             <Zap className="h-3 w-3 text-gold-500 fill-current" />
@@ -34,8 +34,8 @@ export function Hero() {
             Your smartest source of funding
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-6 py-4 rounded-none transition-all hover:scale-105">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105">
               Get My Quote
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -44,7 +44,7 @@ export function Hero() {
       </div>
       
       {/* Stats overlay */}
-      <div className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-8">
+      <div className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
            <div className="text-center md:text-left">
               <p className="text-2xl font-bold text-white">$4.2B+</p>
