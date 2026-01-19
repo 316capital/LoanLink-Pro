@@ -19,16 +19,19 @@ export function Hero() {
         <div className="max-w-4xl">
           <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/30 px-4 py-1.5 mb-8 rounded-full">
             <Zap className="h-3 w-3 text-gold-500 fill-current" />
-            <span className="text-[10px] font-bold uppercase tracking-widest text-white">Smart Capital Architecture</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-white">Nationwide Private Lender</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8 animate-in slide-in-from-bottom-5 duration-700">
             Institutional Capital. <br />
             <span className="text-gold-500">Tech-Enabled</span> Speed.
           </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl font-light leading-relaxed">
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed">
             We combine a massive network of elite lenders with proprietary technology to close complex real estate deals in record time.
+          </p>
+          <p className="text-gold-500 font-bold tracking-wider text-sm uppercase mb-10 italic">
+            Your smartest source of funding
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
