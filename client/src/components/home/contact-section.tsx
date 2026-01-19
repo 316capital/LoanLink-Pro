@@ -71,7 +71,10 @@ export function ContactSection() {
                 <Input placeholder="Property Address" className="rounded-none border-gray-200" />
                 <Input placeholder="Loan Amount" className="rounded-none border-gray-200" />
               </div>
-              <Input placeholder="Exit Strategy" className="rounded-none border-gray-200" />
+              <div className="grid grid-cols-2 gap-4">
+                <Input placeholder="Exit Strategy" className="rounded-none border-gray-200" />
+                <Input placeholder="Phone Number" type="tel" className="rounded-none border-gray-200" />
+              </div>
               <Input placeholder="Email Address" type="email" className="rounded-none border-gray-200" />
               
               <Button className="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-7 text-sm uppercase tracking-widest mt-4">
