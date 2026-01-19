@@ -1,0 +1,252 @@
+316 Capital — Institutional Private Lending Website
+Master UX/UI + Brand Prompt
+Your Role
+
+You are a Senior UX/UI Designer and Brand Architect for an institutional real estate private credit firm. You specialize in capital markets, private lending, and data-forward financial products.
+
+You are not designing a startup website.
+You are designing the digital front door of a serious capital allocator.
+
+Primary Objective
+
+Design a world-class, institutional-grade private lending website for 316 Capital.
+
+The site must visually and psychologically compete with:
+
+Kiavi
+
+Builders Capital
+
+CV Lending
+
+The end result should feel:
+
+Established
+
+Capitalized
+
+Operationally elite
+
+Trusted by brokers, builders, and repeat investors
+
+This is a fund-style lender, not a retail brand.
+
+Brand Positioning
+
+316 Capital = Speed + Scale + Covenant-Based Integrity
+
+Tone:
+
+Confident, calm, disciplined
+
+No hype language
+
+No “startup optimism”
+
+No consumer marketing tropes
+
+Visual Identity
+
+Color Palette
+
+Deep Midnight Navy (primary)
+
+Metallic Gold (accents, CTAs, highlights)
+
+Soft Bone / Cream (backgrounds for whitespace and legibility)
+
+Typography
+
+Headlines: Authoritative sans-serif (Montserrat / Gotham / similar)
+
+Body text: Clean, well-spaced, highly legible
+
+Numbers should feel financial, not decorative
+
+Design Language
+
+High whitespace
+
+Strong grid systems
+
+Data-forward components
+
+Subtle motion, no gimmicks
+
+Feels like a capital markets dashboard, not a landing page
+
+Site Architecture & Page Content
+1. Hero Section
+
+Headline (Primary):
+
+Capital with Covenant. Institutional Speed, Kingdom Integrity.
+
+Subheadline / Value Proposition:
+Close in 7 days · 48-hour draw times · Loans from $75K to $20M
+
+Primary CTA:
+🟡 Get My Quote (Metallic Gold button)
+
+Secondary CTA (optional):
+Outline or ghost button — “Broker Portal”
+
+Hero Visuals
+
+Cinematic drone shots of:
+
+Active construction sites
+
+Modern multifamily assets
+
+Urban infill development
+
+NO:
+
+Handshakes
+
+Smiling couples
+
+Clip-art homes
+
+2. Core Products Grid
+
+Present offerings in a clean, institutional card grid with icons + data points.
+
+Products:
+
+Bridge Loans
+Short-term liquidity · Rates from 7.90% – 12%
+
+Fix & Flip
+Purchase + Rehab · 48-hour draw times
+
+Ground-Up Construction (GUC)
+New builds · Rates from 9%
+
+DSCR (30-Year Rental)
+Long-term holds · Rates from 5.75%
+
+Multi-Family Lending
+Specialists in 1–4 units and 6–20 units
+
+Each card should feel like a financial instrument, not a marketing tile.
+
+3. “Just Funded” Proof-of-Capital Section
+
+This section establishes credibility through volume.
+
+Design a data-rich funding grid showing:
+
+Property image (architectural photography only)
+
+Loan type tag: Bridge · DSCR · GUC
+
+City / State
+
+Loan amount
+
+Property type
+
+Purpose:
+To signal:
+
+Active deployment
+
+Geographic reach
+
+Operational momentum
+
+This should feel like a live capital deployment board.
+
+4. Product Parameters / Capital Box
+
+Create a clean, bold section highlighting range and specialization.
+
+Capital Range:
+$75,000 – $20,000,000
+
+Asset Classes:
+
+1–4 Unit Residential
+
+6–20 Unit Multi-Family
+
+Build-to-Rent (BTR)
+
+Use minimal copy, strong typography, and visual hierarchy.
+
+5. Golden Callout: 48-Hour Draw Times
+
+This is a differentiator, not a footnote.
+
+Create a Metallic Gold Callout Box positioned adjacent to:
+Ground-Up Construction
+
+Message example:
+
+48-Hour Draw Times
+Keep crews working. Eliminate capital delays.
+Built for professional builders who can’t afford downtime.
+
+This section should signal:
+
+Liquidity strength
+
+Operational excellence
+
+Builder-first execution
+
+6. Navigation & Conversion
+
+Top-right navigation must include high-contrast action buttons:
+
+Broker Portal
+
+Borrower Apply
+
+These should be visually distinct and always accessible.
+
+Design Rules (Non-Negotiable)
+
+No generic stock photography
+
+No “AI-looking” filler copy
+
+No buzzwords without numbers
+
+Every claim must feel operationally believable
+
+Rates, unit counts, and timelines must be visible
+
+Why This Prompt Prevents “AI-Generated” Results
+
+Specific rates force structured data components
+
+Exact unit counts (6–20) signal commercial sophistication
+
+Timed benchmarks (48-hour draws) imply operational depth
+
+Capital ranges frame the firm as a fund, not a lender
+
+Final Instruction
+
+Design this site so that:
+
+Brokers trust it immediately
+
+Builders believe you can fund them
+
+Capital partners assume you already manage nine figures
+
+316 Capital should look inevitable — not aspirational.
+
+If you want, next I can:
+
+Convert this into a Figma-ready page-by-page wireframe brief
+
+Write institutional-grade website copy for each section
+
+Design a Broker Portal UX flow
+
+Adapt this prompt for Webflow / Framer / React build handoff
