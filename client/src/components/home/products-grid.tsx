@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const products = [
   {
-    title: "Bridge Loans",
-    description: "Short-term liquidity for acquisitions and stabilization.",
-    rate: "Rates from 7.90%",
+    title: "BRRRR",
+    description: "Buy, Rehab, Rent, Refinance, Repeat capital for portfolio scaling.",
+    rate: "High Leverage",
     icon: TrendingUp,
   },
   {
