@@ -2,31 +2,21 @@ import { Clock } from "lucide-react";
 
 export function DrawCallout() {
   return (
-    <section className="bg-bone-50 py-16">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-r from-gold-500 to-gold-400 p-1">
-          <div className="bg-white p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="flex items-start gap-6">
-              <div className="hidden md:flex h-16 w-16 bg-navy-950 items-center justify-center shrink-0">
-                <Clock className="h-8 w-8 text-gold-500" />
-              </div>
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-navy-950 mb-2">
-                  48-Hour Draw Times
-                </h3>
-                <p className="text-muted-foreground text-lg max-w-xl">
-                  Keep crews working. Eliminate capital delays. <br className="hidden md:block"/>
-                  Built for professional builders who can’t afford downtime.
-                </p>
-              </div>
+    <section className="bg-bone-50 py-10 border-y border-gray-100">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white border border-gray-200 p-6 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+          <div className="flex items-center gap-5">
+            <div className="h-12 w-12 bg-navy-950 flex items-center justify-center shrink-0">
+              <Clock className="h-6 w-6 text-gold-500" />
             </div>
-            
-            <div className="shrink-0">
-               <div className="text-center md:text-right">
-                  <span className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-1">Average Turnaround</span>
-                  <span className="text-4xl font-bold font-mono text-navy-950">1.8 Days</span>
-               </div>
+            <div>
+              <h3 className="text-xl font-bold text-navy-950">48-Hour Draw Times</h3>
+              <p className="text-muted-foreground text-sm">Liquidity at the speed of your project.</p>
             </div>
+          </div>
+          <div className="shrink-0 text-center md:text-right border-t md:border-t-0 md:border-l border-gray-100 pt-4 md:pt-0 md:pl-6">
+            <span className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">Turnaround</span>
+            <span className="text-2xl font-bold font-mono text-navy-950">1.8 Days</span>
           </div>
         </div>
       </div>

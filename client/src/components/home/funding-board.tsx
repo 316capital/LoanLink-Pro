@@ -7,74 +7,39 @@ import { useRef } from "react";
 
 const fundedDeals = [
   {
-    image: img1,
-    type: "DSCR Rental",
-    amount: "$2.45M",
-    location: "Austin, TX",
-    property: "12-Unit Multifamily",
-  },
-  {
-    image: img2,
-    type: "Ground-Up",
-    amount: "$4.10M",
-    location: "Nashville, TN",
-    property: "Mid-Rise Mixed Use",
-  },
-  {
-    image: img3,
-    type: "BRRRR Portfolio",
-    amount: "$850K",
-    location: "Charlotte, NC",
-    property: "Luxury Infill",
-  },
-  {
     image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=600",
     type: "Fix & Flip",
-    amount: "$1.2M",
-    location: "Phoenix, AZ",
-    property: "Historic District Rehab",
+    amount: "$4.2M",
+    location: "Cambridge, MA",
+    property: "Single Family Rehab",
   },
   {
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600",
-    type: "Multifamily Bridge",
-    amount: "$8.5M",
-    location: "Orlando, FL",
-    property: "Garden-Style Complex",
+    type: "Ground Up",
+    amount: "$3.6M",
+    location: "East Boston, MA",
+    property: "7-Unit Build",
   },
   {
     image: "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&q=80&w=600",
-    type: "New Construction",
-    amount: "$3.2M",
-    location: "Denver, CO",
-    property: "Modern Triplex Build",
+    type: "Condo Conversion",
+    amount: "$2.8M",
+    location: "Roslindale, MA",
+    property: "Luxury Conversion",
   },
   {
     image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600",
-    type: "DSCR Rental",
-    amount: "$540K",
-    location: "Savannah, GA",
-    property: "Short-Term Rental Portfolio",
+    type: "Ground Up",
+    amount: "$5.4M",
+    location: "Newton, MA",
+    property: "Estate Development",
   },
   {
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600",
-    type: "Ground-Up",
-    amount: "$12.4M",
-    location: "Seattle, WA",
-    property: "Urban Mixed-Use Hub",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?auto=format&fit=crop&q=80&w=600",
-    type: "Bridge Loan",
-    amount: "$2.1M",
-    location: "San Antonio, TX",
-    property: "Industrial Adaptive Reuse",
-  },
-  {
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600",
-    type: "Fix & Flip",
-    amount: "$980K",
-    location: "Columbus, OH",
-    property: "Suburban Dual-Rehab",
+    type: "DSCR Rental",
+    amount: "$1.2M",
+    location: "Taunton, MA",
+    property: "Portfolio Acquisition",
   }
 ];
 
@@ -120,30 +85,29 @@ export function FundingBoard() {
                 whileInView={ { opacity: 1, scale: 1 } }
                 viewport={ { once: true } }
                 transition={ { delay: index * 0.05 } }
-                className="group flex-shrink-0 w-[300px] md:w-[380px] flex flex-row bg-bone-50 border border-gray-100 hover:shadow-xl transition-all duration-500 snap-center"
+                className="group flex-shrink-0 w-[280px] md:w-[320px] flex flex-col bg-bone-50 border border-gray-100 hover:shadow-xl transition-all duration-500 snap-center"
               >
-                <div className="w-1/3 h-full overflow-hidden">
+                <div className="h-[380px] overflow-hidden">
                   <img 
                     src={deal.image} 
                     alt={deal.property} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                 </div>
-                <div className="w-2/3 p-5 flex flex-col justify-center">
-                  <div className="flex flex-col mb-3">
-                    <span className="font-bold text-lg text-navy-950 tracking-tighter mb-1">{deal.amount}</span>
-                    <Badge variant="outline" className="w-fit border-gold-500/50 text-gold-600 rounded-none px-2 py-0.5 font-bold text-[8px] uppercase tracking-widest">
+                <div className="p-5 flex flex-col">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-bold text-xl text-navy-950 tracking-tighter">{deal.amount}</span>
+                    <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-2 py-0.5 font-bold text-[8px] uppercase tracking-widest">
                       {deal.type}
                     </Badge>
                   </div>
-                  <h3 className="text-xs font-bold text-navy-950 truncate">{deal.property}</h3>
-                  <p className="text-[10px] text-muted-foreground uppercase tracking-wider mt-1">{deal.location}</p>
+                  <h3 className="text-xs font-bold text-navy-950 truncate uppercase tracking-tight">{deal.property}</h3>
+                  <p className="text-[10px] text-muted-foreground uppercase tracking-widest mt-1">{deal.location}</p>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Progress Bar Container */}
           <div className="absolute -bottom-2 left-0 w-full h-[2px] bg-gray-100 rounded-full overflow-hidden">
             <motion.div 
               style={ { scaleX } }
