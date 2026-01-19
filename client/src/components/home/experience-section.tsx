@@ -13,7 +13,7 @@ export function ExperienceSection() {
             viewport={ { once: true } }
             transition={ { duration: 0.6 } }
           >
-            <h2 className="text-sm font-bold tracking-widest text-gold-600 uppercase mb-4">The 3:16 Network</h2>
+            <h2 className="text-sm font-bold tracking-widest text-gold-600 uppercase mb-4">The 316 Network</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-navy-950 mb-8 leading-tight">
               One Interface. <br/>
               Infinite Capital.

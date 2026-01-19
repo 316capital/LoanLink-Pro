@@ -9,7 +9,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
               <a className="text-2xl font-bold font-heading tracking-widest block mb-6">
-                3:16 <span className="text-gold-500">CAPITAL</span>
+                316 <span className="text-gold-500">CAPITAL</span>
               </a>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -45,7 +45,7 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
             <ul className="space-y-3 text-gray-400 text-sm mb-6">
-              <li>originators@3:16capital.com</li>
+              <li>originators@316capital.com</li>
               <li>(888) 555-0123</li>
             </ul>
             <Button variant="outline" className="w-full border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-xs font-bold transition-all">
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>&copy; 2026 3:16 Capital Management, LLC. All rights reserved.</p>
+          <p>&copy; 2026 316 Capital Management, LLC. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

@@ -14,7 +14,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
               <a className="text-2xl font-bold font-heading tracking-widest text-white">
-                3:16 <span className="text-gold-500">CAPITAL</span>
+                316 <span className="text-gold-500">CAPITAL</span>
               </a>
             </Link>
           </div>
