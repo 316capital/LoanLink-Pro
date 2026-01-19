@@ -46,11 +46,6 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li>originators@316capital.com</li>
               <li>(888) 555-0123</li>
-              <li className="pt-4">
-                <button className="bg-white/10 hover:bg-white/20 text-white px-4 py-2 text-sm w-full transition-colors border border-white/20">
-                  Broker Portal Login
-                </button>
-              </li>
             </ul>
           </div>
         </div>

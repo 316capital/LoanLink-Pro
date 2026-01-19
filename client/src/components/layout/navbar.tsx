@@ -26,9 +26,6 @@ export function Navbar() {
             <a href="#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">About</a>
             
             <div className="flex items-center space-x-4 ml-4">
-              <Button variant="ghost" className="text-white hover:text-gold-500 hover:bg-white/5 font-medium border border-white/20">
-                Broker Portal
-              </Button>
               <Button className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold border-none rounded-none px-6">
                 Borrower Apply
               </Button>
@@ -55,9 +52,6 @@ export function Navbar() {
             <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
             <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
             <div className="mt-4 space-y-2 px-3">
-              <Button variant="outline" className="w-full justify-center border-white/20 text-white hover:bg-white/5 hover:text-gold-500">
-                Broker Portal
-              </Button>
               <Button className="w-full justify-center bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold">
                 Borrower Apply
               </Button>
