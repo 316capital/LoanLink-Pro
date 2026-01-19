@@ -8,8 +8,8 @@ const faqs = [
     a: "Our record is 4 business days. On average, most complex deals with complete documentation close in 7-10 days."
   },
   {
-    q: "What is your maximum leverage for Ground-Up Construction?",
-    a: "We offer up to 85% LTC (Loan to Cost) for experienced developers with a proven track record in Tier 1 and Tier 2 markets."
+    q: "What is your maximum leverage?",
+    a: "We offer up to 90% LTV (Loan to Value) and 90% LTC (Loan to Cost) for experienced developers with a proven track record in Tier 1 and Tier 2 markets."
   },
   {
     q: "Do you lend to first-time developers?",

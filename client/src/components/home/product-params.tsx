@@ -76,7 +76,7 @@ export function ProductParams() {
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-gray-400">LTV / LTC</span>
-                    <span className="font-mono font-bold">Up to 85% LTC</span>
+                    <span className="font-mono font-bold">Up to 90% LTC</span>
                 </div>
                  <div className="flex justify-between items-center">
                     <span className="text-gray-400">Recourse</span>
