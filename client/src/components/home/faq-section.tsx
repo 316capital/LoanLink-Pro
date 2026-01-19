@@ -34,7 +34,7 @@ export function FAQSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4">Common Inquiries</h2>
-          <p className="text-muted-foreground">Everything you need to know about the 316 protocol.</p>
+          <p className="text-muted-foreground">Everything you need to know about the 3:16 protocol.</p>
         </motion.div>
 
         <div className="space-y-4">

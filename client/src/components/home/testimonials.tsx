@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Michael Chen",
     role: "Managing Director, Urban Infill LLC",
-    content: "316 Capital's 48-hour draw times are game-changing. I've scaled from 3 to 15 active projects this year because their capital never lags.",
+    content: "3:16 Capital's 48-hour draw times are game-changing. I've scaled from 3 to 15 active projects this year because their capital never lags.",
     avatar: "https://i.pravatar.cc/150?u=michael"
   },
   {
