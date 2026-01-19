@@ -68,7 +68,7 @@ export function ProductParams() {
              <div className="flex flex-col space-y-6">
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-gray-400">Origination Fee</span>
-                    <span className="font-mono font-bold">1.5% - 3.0%</span>
+                    <span className="font-mono font-bold">1% - 3%</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-gray-400">Processing Speed</span>
