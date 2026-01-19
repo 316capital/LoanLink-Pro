@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Hammer, Home, Landmark, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 const products = [
   {
@@ -65,6 +66,11 @@ export function ProductsGrid() {
                     {product.rate}
                   </span>
                 </CardContent>
+                <div className="px-6 pb-6">
+                  <Button variant="outline" className="w-full border-navy-950/10 text-navy-950 hover:bg-navy-950 hover:text-white rounded-none text-[10px] font-bold uppercase tracking-widest transition-all">
+                    Get Your Rate
+                  </Button>
+                </div>
               </Card>
             </motion.div>
           ))}

@@ -1,5 +1,6 @@
 import { Shield, Zap, TrendingUp, Cpu, Network } from "lucide-react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 export function ExperienceSection() {
   return (
@@ -36,6 +37,16 @@ export function ExperienceSection() {
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
                 </div>
               ))}
+            </div>
+            
+            <div className="mt-12 p-6 bg-navy-50 border-l-4 border-gold-500 flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div>
+                <p className="text-navy-950 font-bold text-lg mb-1">Need a custom structure?</p>
+                <p className="text-muted-foreground text-sm">Speak with a dedicated Relationship Manager today.</p>
+              </div>
+              <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-6 shrink-0 transition-all hover:scale-105">
+                Talk to an Expert
+              </Button>
             </div>
           </motion.div>
           

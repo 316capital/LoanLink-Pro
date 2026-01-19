@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
@@ -43,10 +44,13 @@ export function Footer() {
           
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li>originators@316capital.com</li>
+            <ul className="space-y-3 text-gray-400 text-sm mb-6">
+              <li>originators@3:16capital.com</li>
               <li>(888) 555-0123</li>
             </ul>
+            <Button variant="outline" className="w-full border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-xs font-bold transition-all">
+              Talk to a Relationship Manager
+            </Button>
           </div>
         </div>
         

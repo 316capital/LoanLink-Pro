@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export function ProductParams() {
   return (
     <section className="py-24 bg-navy-950 text-white relative overflow-hidden">
@@ -78,10 +80,14 @@ export function ProductParams() {
                     <span className="text-gray-400">LTV / LTC</span>
                     <span className="font-mono font-bold">Up to 90% LTC</span>
                 </div>
-                 <div className="flex justify-between items-center">
+                 <div className="flex justify-between items-center mb-8">
                     <span className="text-gray-400">Recourse</span>
                     <span className="font-mono font-bold">Full & Partial Available</span>
                 </div>
+                
+                <Button className="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-6 transition-all hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mt-4">
+                  Check Your Specific Rate
+                </Button>
              </div>
           </div>
           
