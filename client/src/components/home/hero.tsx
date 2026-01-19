@@ -1,69 +1,70 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Cpu, Network, Zap } from "lucide-react";
-import networkImg from "@assets/generated_images/abstract_neural_network_glowing_lines.png";
+import { ArrowRight, Zap } from "lucide-react";
+import heroBg from "@assets/generated_images/cinematic_construction_site_aerial.png";
 
 export function Hero() {
   return (
-    <div className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden bg-navy-950">
-      {/* Neural Network Background */}
+    <div className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={networkImg} 
-          alt="Neural network background" 
-          className="w-full h-full object-cover opacity-40 mix-blend-screen"
+          src={heroBg} 
+          alt="Active construction site" 
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-navy-950/50 to-navy-950" />
+        <div className="absolute inset-0 bg-navy-950/70" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
-        <div className="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/20 px-4 py-2 mb-8 animate-in fade-in slide-in-from-top-4 duration-1000">
-          <Cpu className="h-4 w-4 text-gold-500" />
-          <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold-500">Capital Operating System v2.0</span>
-        </div>
-        
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[0.9] mb-8 animate-in slide-in-from-bottom-8 duration-1000">
-          THE LIQUIDITY <br />
-          <span className="text-gold-500 italic">PROTOCOL</span>
-        </h1>
-        
-        <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed animate-in slide-in-from-bottom-8 duration-1000 delay-200">
-          Hyper-threaded capital deployment. $20M+ single-ticket capacity. <br/>
-          Proprietary algorithmic underwriting for elite developers.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in slide-in-from-bottom-8 duration-1000 delay-400">
-          <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-black text-xs uppercase tracking-widest px-12 py-8 rounded-none shadow-[0_0_30px_rgba(234,179,8,0.3)] transition-all hover:scale-105">
-            Initialize Application
-            <Zap className="ml-2 h-4 w-4 fill-current" />
-          </Button>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div className="max-w-4xl">
+          <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/30 px-4 py-1.5 mb-8 rounded-full">
+            <Zap className="h-3 w-3 text-gold-500 fill-current" />
+            <span className="text-[10px] font-bold uppercase tracking-widest text-white">Smart Capital Architecture</span>
+          </div>
           
-          <Button variant="outline" size="lg" className="border-white/10 bg-white/5 backdrop-blur-sm text-white hover:bg-white/10 font-bold text-xs uppercase tracking-widest px-12 py-8 rounded-none transition-all">
-            Access Network
-          </Button>
-        </div>
-
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto opacity-50">
-           <div className="flex flex-col items-center">
-              <span className="text-2xl font-mono text-white">48H</span>
-              <span className="text-[9px] uppercase tracking-widest text-gray-500">Latency</span>
-           </div>
-           <div className="flex flex-col items-center">
-              <span className="text-2xl font-mono text-white">42+</span>
-              <span className="text-[9px] uppercase tracking-widest text-gray-500">Nodes</span>
-           </div>
-           <div className="flex flex-col items-center">
-              <span className="text-2xl font-mono text-white">$4.2B</span>
-              <span className="text-[9px] uppercase tracking-widest text-gray-500">Flow</span>
-           </div>
-           <div className="flex flex-col items-center">
-              <span className="text-2xl font-mono text-white">100%</span>
-              <span className="text-[9px] uppercase tracking-widest text-gray-500">Uptime</span>
-           </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8 animate-in slide-in-from-bottom-5 duration-700">
+            Institutional Capital. <br />
+            <span className="text-gold-500">Tech-Enabled</span> Speed.
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl font-light leading-relaxed">
+            We combine a massive network of elite lenders with proprietary technology to close complex real estate deals in record time.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-lg px-10 py-7 rounded-none transition-all hover:scale-105">
+              Get My Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 hover:text-gold-500 font-medium text-lg px-10 py-7 rounded-none transition-all">
+              Broker Portal
+            </Button>
+          </div>
         </div>
       </div>
       
-      {/* Decorative Grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      {/* Stats overlay */}
+      <div className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+           <div className="text-center md:text-left">
+              <p className="text-2xl font-bold text-white">$4.2B+</p>
+              <p className="text-[10px] uppercase tracking-widest text-gray-400">Deployed</p>
+           </div>
+           <div className="text-center md:text-left">
+              <p className="text-2xl font-bold text-white">48H</p>
+              <p className="text-[10px] uppercase tracking-widest text-gray-400">Draw Turnaround</p>
+           </div>
+           <div className="text-center md:text-left">
+              <p className="text-2xl font-bold text-white">44</p>
+              <p className="text-[10px] uppercase tracking-widest text-gray-400">States Covered</p>
+           </div>
+           <div className="text-center md:text-left">
+              <p className="text-2xl font-bold text-white">7 Days</p>
+              <p className="text-[10px] uppercase tracking-widest text-gray-400">Avg. Closing</p>
+           </div>
+        </div>
+      </div>
     </div>
   );
 }

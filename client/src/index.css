@@ -9,18 +9,16 @@
   --radius-lg: 6px;
   --radius-xl: 8px;
 
-  --color-navy-950: hsl(222 47% 6%);
-  --color-navy-900: hsl(220 45% 10%);
-  --color-navy-800: hsl(218 40% 15%);
+  --color-navy-950: hsl(222 47% 11%);
+  --color-navy-900: hsl(220 45% 15%);
+  --color-navy-800: hsl(218 40% 20%);
   
-  --color-gold-500: hsl(45 100% 50%);
-  --color-gold-400: hsl(45 100% 60%);
-  --color-gold-600: hsl(45 100% 40%);
+  --color-gold-500: hsl(45 80% 50%);
+  --color-gold-400: hsl(45 80% 60%);
+  --color-gold-600: hsl(45 90% 40%);
 
-  --color-cyber-blue: hsl(190 100% 50%);
-
-  --color-bone-50: hsl(222 47% 4%);
-  --color-bone-100: hsl(222 47% 8%);
+  --color-bone-50: hsl(40 20% 98%);
+  --color-bone-100: hsl(40 20% 96%);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -48,28 +46,28 @@
 }
 
 :root {
-  --background: hsl(222 47% 4%);
-  --foreground: hsl(0 0% 100%);
+  --background: hsl(40 20% 98%);
+  --foreground: hsl(222 47% 11%);
 
-  --primary: hsl(45 100% 50%);
-  --primary-foreground: hsl(222 47% 4%);
+  --primary: hsl(222 47% 11%);
+  --primary-foreground: hsl(0 0% 100%);
 
-  --secondary: hsl(222 47% 8%);
-  --secondary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(45 80% 50%);
+  --secondary-foreground: hsl(222 47% 11%);
 
-  --muted: hsl(222 47% 10%);
-  --muted-foreground: hsl(222 20% 70%);
+  --muted: hsl(220 20% 92%);
+  --muted-foreground: hsl(220 20% 40%);
 
-  --accent: hsl(190 100% 50%);
-  --accent-foreground: hsl(222 47% 4%);
+  --accent: hsl(40 30% 94%);
+  --accent-foreground: hsl(222 47% 11%);
 
-  --card: hsl(222 47% 6%);
-  --card-foreground: hsl(0 0% 100%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222 47% 11%);
 
-  --border: hsl(222 47% 12%);
-  --input: hsl(222 47% 12%);
+  --border: hsl(220 15% 88%);
+  --input: hsl(220 15% 88%);
 
-  --radius: 0.125rem;
+  --radius: 0.25rem;
 }
 
 @layer base {
@@ -81,21 +79,5 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight;
-  }
-}
-
-@layer utilities {
-  .text-glow {
-    text-shadow: 0 0 10px rgba(234, 179, 8, 0.5);
-  }
-  .bg-glass {
-    @apply bg-white/5 backdrop-blur-xl border border-white/10;
-  }
-  .animate-pulse-slow {
-    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: .5; }
   }
 }
