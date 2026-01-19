@@ -8,14 +8,14 @@ export function Hero() {
     <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-32">
       {/* Background Image */}
       <motion.div 
-        initial={ { scale: 1.1, opacity: 0 } }
+        initial={ { scale: 1, opacity: 0 } }
         animate={ { 
-          scale: [1.1, 1.25, 1.1],
+          scale: [1, 1.15, 1],
           opacity: 1 
         } }
         transition={ { 
           scale: {
-            duration: 8,
+            duration: 10,
             repeat: Infinity,
             ease: "easeInOut"
           },
@@ -29,9 +29,9 @@ export function Hero() {
         <img 
           src={heroBg} 
           alt="Active construction site" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-navy-950/70" />
+        <div className="absolute inset-0 bg-navy-950/60" />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
