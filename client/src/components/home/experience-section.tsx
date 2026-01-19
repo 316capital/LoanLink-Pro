@@ -1,11 +1,17 @@
 import { Shield, Zap, TrendingUp, Cpu, Network } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function ExperienceSection() {
   return (
     <section id="about" className="py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div>
+          <motion.div
+            initial={ { opacity: 0, x: -30 } }
+            whileInView={ { opacity: 1, x: 0 } }
+            viewport={ { once: true } }
+            transition={ { duration: 0.6 } }
+          >
             <h2 className="text-sm font-bold tracking-widest text-gold-600 uppercase mb-4">The 316 Network</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-navy-950 mb-8 leading-tight">
               One Interface. <br/>
@@ -31,14 +37,22 @@ export function ExperienceSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
           
-          <div className="relative">
-            <div className="bg-navy-950 aspect-square p-12 flex flex-col justify-between group overflow-hidden">
-               <img 
+          <motion.div 
+            initial={ { opacity: 0, x: 30 } }
+            whileInView={ { opacity: 1, x: 0 } }
+            viewport={ { once: true } }
+            transition={ { duration: 0.6 } }
+            className="relative"
+          >
+            <div className="bg-navy-950 aspect-square p-12 flex flex-col justify-between group overflow-hidden shadow-2xl">
+               <motion.img 
+                 whileHover={ { scale: 1.1 } }
+                 transition={ { duration: 0.8 } }
                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
                  alt="Modern architectural lines" 
-                 className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-1000"
+                 className="absolute inset-0 w-full h-full object-cover opacity-20"
                />
                <div className="relative z-10 h-full flex flex-col justify-between">
                   <div className="flex justify-between items-start">
@@ -58,7 +72,7 @@ export function ExperienceSection() {
                   </div>
                </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
