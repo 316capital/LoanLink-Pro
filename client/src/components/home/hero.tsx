@@ -40,10 +40,10 @@ export function Hero() {
             initial={ { opacity: 0, x: -20 } }
             animate={ { opacity: 1, x: 0 } }
             transition={ { delay: 0.5 } }
-            className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 mb-8 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)]"
+            className="inline-flex items-center space-x-2 bg-navy-950/80 border border-gold-500/50 px-4 py-2 mb-8 rounded-none backdrop-blur-md shadow-[4px_4px_0px_0px_rgba(234,179,8,1)]"
           >
             <Zap className="h-3 w-3 text-gold-500 fill-current" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
+            <span className="text-[10px] font-black uppercase tracking-[0.25em] text-white">Nationwide Private Lender</span>
           </motion.div>
           
           <motion.h1 
