@@ -27,7 +27,7 @@ export function Navbar() {
             
             <div className="flex items-center space-x-4 ml-4">
               <Button className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold border-none rounded-none px-6">
-                Borrower Apply
+                Get My Rate
               </Button>
             </div>
           </div>

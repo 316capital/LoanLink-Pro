@@ -1,0 +1,69 @@
+The "Conversion Catalyst" Master Prompt
+
+Role: You are a Conversion Rate Optimization (CRO) Expert and Master Direct-Response Marketer specializing in Private Credit and High-Ticket Financial Services.
+
+Task: Audit and optimize the website for 316 Capital to maximize lead generation (LOI requests) The goal is to move the user from "curious visitor" to "active applicant" in under 60 seconds.
+
+1. The "F-Pattern" Layout Optimization:
+
+
+
+Header: Ensure the 'Get My Rate' CTA is in the top right corner in a high-contrast Gold.
+
+Hero Section: Implement a "Three-Step Success Path" visual directly below the headline: 1. Submit Deal -> 2. 48-Hour Approval -> 3. 7-Day Funding. This reduces the perceived "complexity" of borrowing.
+
+2. High-Converting Product "Data-Cards":
+
+
+
+Do not use paragraphs for loan products. Use Comparison Tables or Bulletized Cards.
+
+Every product must list: Floor Rate, Max LTV/LTC, and Closing Timeline.
+
+Psychological Trigger: Add a "Most Popular" tag to the Fix & Flip or Bridge product to use Social Proof (Bandwagon Effect).
+
+3. The "Certainty" Components:
+
+
+
+Draw Processing: Highlight the 48-Hour Draw as a bold "Trust Badge" near the Ground-Up Construction section.
+
+Proof of Funds: Add a "Proof of Capital" counter or a "Total Capital Deployed" ticker to signal liquidity and scale.
+
+4. Frictionless Lead Capture (The Funnel):
+
+
+
+The "Short-Form" Strategy: Replace a full application with a 4-field "Quick Quote" form (Address, Loan Amount, Exit Strategy, Email).
+
+Conditional Logic: If the user selects "Broker," show a different CTA: "Join Our Approved Broker Network."
+
+5. Mobile-First Optimization:
+
+
+
+Ensure the "Call Now" and "Apply" buttons are "sticky" at the bottom of the mobile screen. Builders are often on-site and need one-thumb navigation.
+
+6. Copywriting Tone Shift:
+
+
+
+Change "We offer bridge loans" to "Secure your next acquisition with 7.90% floor rates."
+
+Change "Contact us" to "Check Eligibility in 2 Minutes."
+
+7. Social Proof & Authority:
+
+
+
+Implement a "Recent Closings" ticker. Show data points (e.g., "$1.2M Bridge - Dallas, TX - Closed in 6 Days").
+
+Final Instruction: Every design choice must prioritize Speed and Certainty. Eliminate all fluff, stock photos, and vague promises. Make 316 Capital look like the most efficient capital source in the market.
+
+3 Specific "Master Marketer" Changes to Make Today:
+
+The "Anchoring" Effect: Put your lowest rate (5.75% for DSCR) near the top of the page. Even if they want a Bridge loan, that low number "anchors" their perception that your capital is affordable.
+
+The "Risk Reversal" Guarantee: While you can't guarantee a loan, you can guarantee a response time. Add: "Transparent Underwriting: Get a formal term sheet within 24 hours of submission or we’ll tell you why."
+
+The "Broker-First" Portal: Brokers are your best "Flywheel." Make sure there is a dedicated "Broker" button that promises: "White-label terms sheets and protected commissions."

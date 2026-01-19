@@ -39,14 +39,36 @@ export function ExperienceSection() {
               ))}
             </div>
             
-            <div className="mt-12 p-6 bg-navy-50 border-l-4 border-gold-500 flex flex-col sm:flex-row items-center justify-between gap-6">
-              <div>
-                <p className="text-navy-950 font-bold text-lg mb-1">Need a custom structure?</p>
-                <p className="text-muted-foreground text-sm">Speak with a dedicated Relationship Manager today.</p>
+            <div className="mt-12 p-8 bg-navy-950 border border-gold-500/20 shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 opacity-10">
+                <Shield className="h-24 w-24 text-gold-500" />
               </div>
-              <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-6 shrink-0 transition-all hover:scale-105">
-                Talk to an Expert
-              </Button>
+              <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                  <h4 className="text-gold-500 font-bold uppercase tracking-widest text-xs mb-2">Transparent Underwriting</h4>
+                  <p className="text-white font-bold text-lg mb-1">24-Hour Term Sheet Guarantee</p>
+                  <p className="text-gray-400 text-sm">Get a formal term sheet within 24 hours of submission or we’ll tell you why.</p>
+                </div>
+                <div className="shrink-0 flex flex-col items-center">
+                  <div className="text-3xl font-bold text-white mb-1 font-mono tracking-tighter">48-HOUR</div>
+                  <div className="text-[10px] font-bold text-gold-500 uppercase tracking-widest">Draw Trust Badge</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 flex items-center justify-center space-x-12 py-6 border-y border-gray-100">
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-navy-950">$4.2B+</span>
+                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Capital Deployed</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-navy-950">90%</span>
+                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Max LTC Leverage</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-navy-950">24H</span>
+                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Underwriting</span>
+              </div>
             </div>
           </motion.div>
           

@@ -78,12 +78,36 @@ export function Hero() {
             initial={ { opacity: 0, scale: 0.95 } }
             animate={ { opacity: 1, scale: 1 } }
             transition={ { delay: 1.3 } }
-            className="flex flex-col sm:flex-row gap-4 mb-12"
+            className="flex flex-col sm:flex-row gap-4 mb-16"
           >
             <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)]">
-              Get Prequalified
+              Check Eligibility in 2 Minutes
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+          </motion.div>
+
+          {/* Three-Step Success Path */}
+          <motion.div 
+            initial={ { opacity: 0, y: 20 } }
+            animate={ { opacity: 1, y: 0 } }
+            transition={ { delay: 1.5 } }
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl border-t border-white/10 pt-10"
+          >
+            {[
+              { step: "1", title: "Submit Deal", desc: "Digital intake in 2m" },
+              { step: "2", title: "48H Approval", desc: "Formal term sheet" },
+              { step: "3", title: "7-Day Funding", desc: "Institutional wire" }
+            ].map((s, i) => (
+              <div key={i} className="flex items-center space-x-4 group">
+                <div className="h-10 w-10 shrink-0 border border-gold-500/30 flex items-center justify-center text-gold-500 font-bold text-sm group-hover:bg-gold-500 group-hover:text-navy-950 transition-all">
+                  {s.step}
+                </div>
+                <div>
+                  <h4 className="text-white font-bold text-sm uppercase tracking-wider">{s.title}</h4>
+                  <p className="text-gray-400 text-xs">{s.desc}</p>
+                </div>
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>
