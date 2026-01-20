@@ -4,39 +4,39 @@ import { useEffect, useState } from "react";
 
 const fundedDeals = [
   {
-    image: "https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1512108002777-19740f96e2a1?auto=format&fit=crop&q=80&w=1200",
     type: "Fix & Flip",
     amount: "$4.2M",
-    location: "Cambridge, MA",
-    property: "Single Family Rehab",
+    location: "Back Bay, Boston",
+    property: "Historic Brownstone Rehab",
   },
   {
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&q=80&w=1200",
     type: "Ground Up",
     amount: "$3.6M",
     location: "East Boston, MA",
     property: "7-Unit Build",
   },
   {
-    image: "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&q=80&w=1200",
     type: "Condo Conversion",
     amount: "$2.8M",
-    location: "Roslindale, MA",
+    location: "South End, Boston",
     property: "Luxury Conversion",
   },
   {
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1200",
     type: "Ground Up",
     amount: "$5.4M",
-    location: "Newton, MA",
-    property: "Estate Development",
+    location: "Seaport, Boston",
+    property: "Mixed-Use Development",
   },
   {
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=600",
+    image: "https://images.unsplash.com/photo-1513584684374-8bdb74838a0f?auto=format&fit=crop&q=80&w=1200",
     type: "DSCR Rental",
     amount: "$1.2M",
-    location: "Taunton, MA",
-    property: "Portfolio Acquisition",
+    location: "Beacon Hill, Boston",
+    property: "Multi-Family Acquisition",
   }
 ];
 
@@ -60,8 +60,8 @@ export function FundingBoard() {
           className="flex flex-col md:flex-row justify-between items-center mb-16"
         >
           <div>
-            <h2 className="text-4xl font-bold text-navy-950 tracking-tight">Just Funded</h2>
-            <p className="text-muted-foreground mt-2">Institutional deployments across the 3:16 network.</p>
+            <h2 className="text-4xl font-bold text-navy-950 tracking-tight">Recently Funded</h2>
+            <p className="text-muted-foreground mt-2">Institutional deployments across the 316 network.</p>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <div className="h-1 w-12 bg-gold-500" />
