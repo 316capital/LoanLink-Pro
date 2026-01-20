@@ -11,11 +11,7 @@ export function ContactSection() {
     <section id="contact" className="py-24 bg-navy-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-          <motion.div
-            initial={ { opacity: 0, x: -30 } }
-            whileInView={ { opacity: 1, x: 0 } }
-            viewport={ { once: true } }
-          >
+          <div>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               Check Eligibility <br/>
               <span className="text-gold-500">in 2 Minutes.</span>
@@ -41,14 +37,9 @@ export function ContactSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={ { opacity: 0, x: 30 } }
-            whileInView={ { opacity: 1, x: 0 } }
-            viewport={ { once: true } }
-            className="bg-white p-8 md:p-10 shadow-2xl"
-          >
+          <div className="bg-white p-8 md:p-10 shadow-2xl">
             <div className="flex bg-gray-100 p-1 mb-8">
               <button 
                 type="button"
@@ -85,7 +76,7 @@ export function ContactSection() {
                 Institutional Private Credit · Secure Intake
               </p>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
