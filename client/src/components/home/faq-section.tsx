@@ -27,26 +27,14 @@ export function FAQSection() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          initial={ { opacity: 0, y: 20 } }
-          whileInView={ { opacity: 1, y: 0 } }
-          viewport={ { once: true } }
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4">Common Inquiries</h2>
           <p className="text-muted-foreground">Everything you need to know about the 316 protocol.</p>
-        </motion.div>
+        </div>
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <motion.div
-              key={i}
-              initial={ { opacity: 0, y: 10 } }
-              whileInView={ { opacity: 1, y: 0 } }
-              viewport={ { once: true } }
-              transition={ { delay: i * 0.1 } }
-              className="border border-gray-100"
-            >
+            <div key={i} className="border border-gray-100">
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-bone-50 transition-colors"
@@ -55,11 +43,11 @@ export function FAQSection() {
                 <ChevronDown className={`h-5 w-5 text-gold-500 transition-transform ${openIndex === i ? 'rotate-180' : ''}`} />
               </button>
               {openIndex === i && (
-                <div className="p-6 pt-0 text-muted-foreground text-sm leading-relaxed animate-in fade-in slide-in-from-top-2">
+                <div className="p-6 pt-0 text-muted-foreground text-sm leading-relaxed">
                   {faq.a}
                 </div>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
