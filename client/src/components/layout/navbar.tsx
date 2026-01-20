@@ -53,7 +53,7 @@ export function Navbar() {
             <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
             <div className="mt-4 space-y-2 px-3">
               <Button className="w-full justify-center bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold">
-                Borrower Apply
+                Submit Application
               </Button>
             </div>
           </div>
