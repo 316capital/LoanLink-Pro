@@ -47,8 +47,8 @@ export function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm mb-6">
               <li>867 Boylston Street, 5th Floor</li>
               <li>Boston, MA 02116</li>
-              <li className="pt-2">originators@316capital.com</li>
-              <li>(888) 555-0123</li>
+              <li className="pt-2">info@316cap.com</li>
+              <li>617-412-5021</li>
             </ul>
             <Button variant="outline" className="w-full border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-xs font-bold transition-all">
               Talk to a Relationship Manager
