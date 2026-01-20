@@ -6,43 +6,93 @@ import { motion } from "framer-motion";
 export function Hero() {
   return (
     <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-32">
-      <div className="absolute inset-0 z-0">
+      {/* Background Image */}
+      <motion.div 
+        initial={ { scale: 1, opacity: 0 } }
+        animate={ { 
+          scale: [1, 1.15, 1],
+          opacity: 1 
+        } }
+        transition={ { 
+          scale: {
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut"
+          },
+          opacity: {
+            duration: 1.5,
+            ease: "easeOut"
+          }
+        } }
+        className="absolute inset-0 z-0"
+      >
         <img 
           src={heroBg} 
           alt="Active construction site" 
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-navy-950/60" />
-      </div>
+      </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 mb-8 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)]">
+          <motion.div 
+            initial={ { opacity: 0, x: -20 } }
+            animate={ { opacity: 1, x: 0 } }
+            transition={ { delay: 0.5 } }
+            className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 mb-8 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)]"
+          >
             <Zap className="h-3 w-3 text-gold-500 fill-current" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
-          </div>
+          </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8">
+          <motion.h1 
+            initial={ { opacity: 0, y: 20 } }
+            animate={ { opacity: 1, y: 0 } }
+            transition={ { delay: 0.7 } }
+            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
+          >
             Institutional Capital. <br />
             <span className="text-gold-500">Tech-Enabled</span> Speed.
-          </h1>
+          </motion.h1>
 
-          <p className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed">
+          <motion.p 
+            initial={ { opacity: 0, y: 20 } }
+            animate={ { opacity: 1, y: 0 } }
+            transition={ { delay: 0.9 } }
+            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
+          >
             We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
-          </p>
+          </motion.p>
           
-          <p className="text-gold-500 font-bold tracking-wider text-sm uppercase mb-10 italic">
+          <motion.p 
+            initial={ { opacity: 0 } }
+            animate={ { opacity: 1 } }
+            transition={ { delay: 1.1 } }
+            className="text-gold-500 font-bold tracking-wider text-sm uppercase mb-10 italic"
+          >
             Your smartest source of funding
-          </p>
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <motion.div 
+            initial={ { opacity: 0, scale: 0.95 } }
+            animate={ { opacity: 1, scale: 1 } }
+            transition={ { delay: 1.3 } }
+            className="flex flex-col sm:flex-row gap-4 mb-16"
+          >
             <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)]">
               Check Eligibility in 2 Minutes
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl border-t border-white/10 pt-10">
+          {/* Three-Step Success Path */}
+          <motion.div 
+            initial={ { opacity: 0, y: 20 } }
+            animate={ { opacity: 1, y: 0 } }
+            transition={ { delay: 1.5 } }
+            className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl border-t border-white/10 pt-10"
+          >
             {[
               { step: "1", title: "Submit Deal", desc: "Digital intake in 2m" },
               { step: "2", title: "48H Approval", desc: "Formal term sheet" },
@@ -58,11 +108,17 @@ export function Hero() {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-6">
+      {/* Stats overlay */}
+      <motion.div 
+        initial={ { opacity: 0, y: 50 } }
+        animate={ { opacity: 1, y: 0 } }
+        transition={ { delay: 1.5, duration: 0.8 } }
+        className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-6"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
            {[
              { label: "Deployed", value: "$4.2B+" },
@@ -76,7 +132,7 @@ export function Hero() {
              </div>
            ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
