@@ -53,10 +53,15 @@ export function FundingBoard() {
   return (
     <section id="portfolio" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row justify-between items-center mb-16"
+        >
           <div>
             <h2 className="text-4xl font-bold text-navy-950 tracking-tight">Just Funded</h2>
-            <p className="text-muted-foreground mt-2">Institutional deployments across the 316 network.</p>
+            <p className="text-muted-foreground mt-2">Institutional deployments across the 3:16 network.</p>
           </div>
           <div className="hidden md:flex items-center space-x-4">
             <div className="h-1 w-12 bg-gold-500" />
@@ -64,38 +69,48 @@ export function FundingBoard() {
               $42M CLOSED Q1 2025
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <div className="relative h-[500px] md:h-[600px] w-full max-w-4xl mx-auto group">
-          <div className="absolute inset-0 flex flex-col md:flex-row bg-bone-50 border border-gray-100 shadow-2xl">
-            <div className="w-full md:w-1/2 h-2/3 md:h-full overflow-hidden">
-              <img 
-                src={fundedDeals[currentIndex].image} 
-                alt={fundedDeals[currentIndex].property} 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-full md:w-1/2 p-10 flex flex-col justify-center">
-              <div className="mb-6">
-                <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-3 py-1 font-bold text-xs uppercase tracking-widest mb-4">
-                  {fundedDeals[currentIndex].type}
-                </Badge>
-                <h3 className="text-3xl md:text-4xl font-bold text-navy-950 mb-2 leading-tight uppercase tracking-tighter">
-                  {fundedDeals[currentIndex].property}
-                </h3>
-                <p className="text-sm text-muted-foreground uppercase tracking-widest font-medium">
-                  {fundedDeals[currentIndex].location}
-                </p>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute inset-0 flex flex-col md:flex-row bg-bone-50 border border-gray-100 shadow-2xl"
+            >
+              <div className="w-full md:w-1/2 h-2/3 md:h-full overflow-hidden">
+                <motion.img 
+                  src={fundedDeals[currentIndex].image} 
+                  alt={fundedDeals[currentIndex].property} 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="pt-8 border-t border-gray-200">
-                <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Total Deployment</span>
-                <span className="text-5xl font-bold text-navy-950 tracking-tighter">
-                  {fundedDeals[currentIndex].amount}
-                </span>
+              <div className="w-full md:w-1/2 p-10 flex flex-col justify-center">
+                <div className="mb-6">
+                  <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-3 py-1 font-bold text-xs uppercase tracking-widest mb-4">
+                    {fundedDeals[currentIndex].type}
+                  </Badge>
+                  <h3 className="text-3xl md:text-4xl font-bold text-navy-950 mb-2 leading-tight uppercase tracking-tighter">
+                    {fundedDeals[currentIndex].property}
+                  </h3>
+                  <p className="text-sm text-muted-foreground uppercase tracking-widest font-medium">
+                    {fundedDeals[currentIndex].location}
+                  </p>
+                </div>
+                <div className="pt-8 border-t border-gray-200">
+                  <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Total Deployment</span>
+                  <span className="text-5xl font-bold text-navy-950 tracking-tighter">
+                    {fundedDeals[currentIndex].amount}
+                  </span>
+                </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </AnimatePresence>
 
+          {/* Dots Indicator */}
           <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex space-x-2">
             {fundedDeals.map((_, i) => (
               <button
