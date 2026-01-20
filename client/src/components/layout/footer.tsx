@@ -48,7 +48,7 @@ export function Footer() {
               <li>867 Boylston Street, 5th Floor</li>
               <li>Boston, MA 02116</li>
               <li className="pt-2">info@316cap.com</li>
-              <li>617-412-5021</li>
+              <li>617-249-4235</li>
             </ul>
             <Button variant="outline" className="w-full border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-xs font-bold transition-all">
               Talk to a Relationship Manager
