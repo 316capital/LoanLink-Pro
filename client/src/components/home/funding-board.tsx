@@ -4,35 +4,35 @@ import { useEffect, useState } from "react";
 
 const fundedDeals = [
   {
-    image: "https://images.unsplash.com/photo-1512108002777-19740f96e2a1?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&q=80&w=1200",
     type: "Fix & Flip",
     amount: "$4.2M",
     location: "Back Bay, Boston",
     property: "Historic Brownstone Rehab",
   },
   {
-    image: "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
     type: "Ground Up",
     amount: "$3.6M",
     location: "East Boston, MA",
     property: "7-Unit Build",
   },
   {
-    image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=1200",
     type: "Condo Conversion",
     amount: "$2.8M",
     location: "South End, Boston",
     property: "Luxury Conversion",
   },
   {
-    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&q=80&w=1200",
     type: "Ground Up",
     amount: "$5.4M",
     location: "Seaport, Boston",
     property: "Mixed-Use Development",
   },
   {
-    image: "https://images.unsplash.com/photo-1513584684374-8bdb74838a0f?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1200",
     type: "DSCR Rental",
     amount: "$1.2M",
     location: "Beacon Hill, Boston",
