@@ -58,10 +58,15 @@ export function Hero() {
             initial={ { opacity: 0, x: -20 } }
             animate={ { opacity: 1, x: 0 } }
             transition={ { delay: 0.5 } }
-            className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 mb-8 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)]"
+            className="flex items-center space-x-4 mb-8"
           >
-            <Zap className="h-3 w-3 text-gold-500 fill-current" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
+            <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)]">
+              <Zap className="h-3 w-3 text-gold-500 fill-current" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
+            </div>
+            <div className="inline-flex items-center space-x-2 bg-navy-950/40 border border-white/10 px-4 py-1.5 rounded-full">
+              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
+            </div>
           </motion.div>
           
           <motion.h1 

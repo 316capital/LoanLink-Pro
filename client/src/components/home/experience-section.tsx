@@ -84,7 +84,7 @@ export function ExperienceSection() {
 
             <div className="mt-8 flex items-center justify-center space-x-12 py-6 border-y border-gray-100">
               <div className="text-center">
-                <span className="block text-2xl font-bold text-navy-950">$4.2B+</span>
+                <span className="block text-2xl font-bold text-navy-950">$100M+</span>
                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Capital Deployed</span>
               </div>
               <div className="text-center">
@@ -92,8 +92,8 @@ export function ExperienceSection() {
                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Max LTC Leverage</span>
               </div>
               <div className="text-center">
-                <span className="block text-2xl font-bold text-navy-950">24H</span>
-                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Underwriting</span>
+                <span className="block text-2xl font-bold text-navy-950">True Asset</span>
+                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Based Lending</span>
               </div>
             </div>
           </motion.div>
@@ -123,10 +123,10 @@ export function ExperienceSection() {
                   </div>
                   
                   <div className="space-y-6">
-                    <p className="text-4xl font-bold text-white tracking-tighter">$4.2B+ Deployed</p>
+                    <p className="text-4xl font-bold text-white tracking-tighter">$100M+ Funded</p>
                     <div className="h-1 w-20 bg-gold-500" />
                     <p className="text-sm text-gray-400 font-medium leading-relaxed italic">
-                      "Bridging the gap between ambitious developers and reliable institutional capital."
+                      "True Asset-Based Lending: Bridging the gap between ambitious developers and reliable institutional capital."
                     </p>
                   </div>
                </div>
