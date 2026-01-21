@@ -68,7 +68,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-6xl md:text-8xl font-bold text-white tracking-tight leading-[1] mb-10"
+            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
             Institutional Capital. <br />
             <span className="text-gold-500">Tech-Enabled</span> Speed.
@@ -146,10 +146,10 @@ export function Hero() {
              { label: "Avg. Closing", value: 7, suffix: " Days" }
            ].map((stat, i) => (
              <div key={i} className="text-center md:text-left">
-                <p className="text-3xl font-bold text-white leading-tight">
+                <p className="text-2xl font-bold text-white">
                   <Counter value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
                 </p>
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-gray-400 mt-1">{stat.label}</p>
+                <p className="text-[10px] uppercase tracking-widest text-gray-400">{stat.label}</p>
              </div>
            ))}
         </div>
