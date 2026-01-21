@@ -109,9 +109,9 @@ export function ExperienceSection() {
                <motion.img 
                  whileHover={ { scale: 1.1 } }
                  transition={ { duration: 0.8 } }
-                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
-                 alt="Modern architectural lines" 
-                 className="absolute inset-0 w-full h-full object-cover opacity-20"
+                 src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1000" 
+                 alt="Professional construction site meeting" 
+                 className="absolute inset-0 w-full h-full object-cover opacity-40"
                />
                <div className="relative z-10 h-full flex flex-col justify-between">
                   <div className="flex justify-between items-start">
