@@ -105,32 +105,47 @@ export function ExperienceSection() {
             transition={ { duration: 0.6 } }
             className="relative"
           >
-            <div className="bg-navy-950 aspect-square p-12 flex flex-col justify-between group overflow-hidden shadow-2xl">
+            <div className="bg-navy-950 aspect-[4/5] p-12 flex flex-col justify-between group overflow-hidden shadow-2xl">
                <motion.img 
                  whileHover={ { scale: 1.1 } }
                  transition={ { duration: 0.8 } }
-                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000" 
-                 alt="Modern architectural lines" 
-                 className="absolute inset-0 w-full h-full object-cover opacity-20"
+                 src="https://images.unsplash.com/photo-1600880212319-467f920f78cc?auto=format&fit=crop&q=80&w=1000" 
+                 alt="Professional finance team collaborating" 
+                 className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity"
                />
                <div className="relative z-10 h-full flex flex-col justify-between">
                   <div className="flex justify-between items-start">
                      <TrendingUp className="h-10 w-10 text-gold-500" />
                      <div className="text-right">
-                        <span className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest">Market Advantage</span>
+                        <span className="block text-[10px] font-bold text-gray-300 uppercase tracking-widest">Market Advantage</span>
                         <span className="text-xs font-bold text-white uppercase">Institutional Scale</span>
                      </div>
                   </div>
                   
                   <div className="space-y-6">
-                    <p className="text-4xl font-bold text-white tracking-tighter">$4.2B+ Deployed</p>
+                    <p className="text-4xl font-bold text-white tracking-tighter">$100M+ Deployed</p>
                     <div className="h-1 w-20 bg-gold-500" />
-                    <p className="text-sm text-gray-400 font-medium leading-relaxed italic">
+                    <p className="text-lg text-gray-200 font-medium leading-relaxed italic">
                       "Bridging the gap between ambitious developers and reliable institutional capital."
                     </p>
                   </div>
                </div>
             </div>
+            
+            {/* Added personal touch secondary image */}
+            <motion.div 
+              initial={ { opacity: 0, scale: 0.8 } }
+              whileInView={ { opacity: 1, scale: 1 } }
+              viewport={ { once: true } }
+              transition={ { delay: 0.3 } }
+              className="absolute -bottom-10 -left-10 w-48 h-48 border-8 border-white shadow-xl hidden md:block z-20 overflow-hidden"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400" 
+                alt="Executive leadership" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
           </motion.div>
         </div>
       </div>
