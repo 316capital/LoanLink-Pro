@@ -13,10 +13,12 @@ export function Footer() {
               </a>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Institutional-grade private credit for professional real estate investors and developers.
+              Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
-            <div className="text-sm text-gray-500">
-              <p>New York · Austin · Charlotte</p>
+            <div className="text-xs text-gray-500 space-y-2">
+              <p>Massachusetts Private Money Lender</p>
+              <p>Hard Money for Rehabs · DSCR Loans</p>
+              <p>Real Estate Investment Financing Nationwide</p>
             </div>
           </div>
           

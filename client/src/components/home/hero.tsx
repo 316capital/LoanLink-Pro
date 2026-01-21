@@ -94,17 +94,17 @@ export function Hero() {
             className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl border-t border-white/10 pt-10"
           >
             {[
-              { step: "1", title: "Submit Deal", desc: "Digital intake in 2m" },
-              { step: "2", title: "48H Approval", desc: "Formal term sheet" },
-              { step: "3", title: "7-Day Funding", desc: "Institutional wire" }
+              { step: "1", title: "Quick App", desc: "Digital intake in 2m" },
+              { step: "2", title: "Underwriting", desc: "Formal term sheet" },
+              { step: "3", title: "Funding", desc: "Institutional wire" }
             ].map((s, i) => (
               <div key={i} className="flex items-center space-x-4 group">
                 <div className="h-10 w-10 shrink-0 border border-gold-500/30 flex items-center justify-center text-gold-500 font-bold text-sm group-hover:bg-gold-500 group-hover:text-navy-950 transition-all">
                   {s.step}
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm uppercase tracking-wider">{s.title}</h4>
-                  <p className="text-gray-400 text-xs">{s.desc}</p>
+                  <h3 className="text-white font-bold text-sm uppercase tracking-wider">{s.title}</h3>
+                  <p className="text-gray-400 text-xs leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
@@ -119,9 +119,10 @@ export function Hero() {
         transition={ { delay: 1.5, duration: 0.8 } }
         className="absolute bottom-0 left-0 right-0 bg-navy-950/80 backdrop-blur-md border-t border-white/10 py-6"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8">
            {[
-             { label: "Deployed", value: "$4.2B+" },
+             { label: "Deployed", value: "$100M+" },
+             { label: "Combined Experience", value: "30 Years" },
              { label: "Draw Turnaround", value: "48H" },
              { label: "States Covered", value: "44" },
              { label: "Avg. Closing", value: "7 Days" }

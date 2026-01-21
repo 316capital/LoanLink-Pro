@@ -18,6 +18,15 @@ export function ExperienceSection() {
               One Interface. <br/>
               Infinite Capital.
             </h3>
+            
+            <div className="mb-10 p-6 bg-gold-500/5 border-l-4 border-gold-500">
+              <h4 className="font-bold text-navy-950 uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
+              <p className="text-navy-950 font-bold text-lg mb-2">Our "Can’t-Be-Beat" Policy</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                We are committed to providing the most competitive terms in the market. If you have a legitimate term sheet from another lender, bring it to us—we will beat the rate or the leverage, period.
+              </p>
+            </div>
+
             <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
               316 Capital streamlines the lending process by connecting elite developers with a vetted network of high-liquidity institutional funds. We eliminate the friction of traditional financing through smart underwriting and direct-to-desk execution.
             </p>
@@ -45,9 +54,26 @@ export function ExperienceSection() {
               </div>
               <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
                 <div>
-                  <h4 className="text-gold-500 font-bold uppercase tracking-widest text-xs mb-2">Transparent Underwriting</h4>
-                  <p className="text-white font-bold text-lg mb-1">24-Hour Term Sheet Guarantee</p>
-                  <p className="text-gray-400 text-sm">Get a formal term sheet within 24 hours of submission or we’ll tell you why.</p>
+                  <h4 className="text-gold-500 font-bold uppercase tracking-widest text-xs mb-2">Borrower Requirements</h4>
+                  <p className="text-white font-bold text-lg mb-1">Qualify in Seconds</p>
+                  <div className="grid grid-cols-2 gap-x-8 gap-y-2 mt-4">
+                    <div className="flex items-center space-x-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                      <span className="text-xs text-gray-300">Min. 620 FICO</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                      <span className="text-xs text-gray-300">LLC Borrowers Only</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                      <span className="text-xs text-gray-300">Non-Owner Occupied</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                      <span className="text-xs text-gray-300">US-Based Assets</span>
+                    </div>
+                  </div>
                 </div>
                 <div className="shrink-0 flex flex-col items-center">
                   <div className="text-3xl font-bold text-white mb-1 font-mono tracking-tighter">48-HOUR</div>
