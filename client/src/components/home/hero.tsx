@@ -1,7 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
 import heroBg from "@assets/generated_images/cinematic_construction_site_aerial.png";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect, useState } from "react";
+
+function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: string; suffix?: string }) {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
+  const [displayValue, setDisplayValue] = useState(0);
+
+  useEffect(() => {
+    const animation = animate(count, value, { duration: 2, ease: "easeOut", delay: 1.5 });
+    const unsubscribe = rounded.on("change", (v) => setDisplayValue(v));
+    return () => {
+      animation.stop();
+      unsubscribe();
+    };
+  }, [value, count, rounded]);
+
+  return <span>{prefix}{displayValue}{suffix}</span>;
+}
 
 export function Hero() {
   return (
@@ -121,14 +139,16 @@ export function Hero() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8">
            {[
-             { label: "Deployed", value: "$100M+" },
-             { label: "Combined Experience", value: "30 Years" },
-             { label: "Draw Turnaround", value: "48H" },
-             { label: "States Covered", value: "44" },
-             { label: "Avg. Closing", value: "7 Days" }
+             { label: "Deployed", value: 100, prefix: "$", suffix: "M+" },
+             { label: "Combined Experience", value: 30, suffix: " Years" },
+             { label: "Draw Turnaround", value: 48, suffix: "H" },
+             { label: "States Covered", value: 44 },
+             { label: "Avg. Closing", value: 7, suffix: " Days" }
            ].map((stat, i) => (
              <div key={i} className="text-center md:text-left">
-                <p className="text-2xl font-bold text-white">{stat.value}</p>
+                <p className="text-2xl font-bold text-white">
+                  <Counter value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+                </p>
                 <p className="text-[10px] uppercase tracking-widest text-gray-400">{stat.label}</p>
              </div>
            ))}
