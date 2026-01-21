@@ -146,7 +146,7 @@ export function Hero() {
              { label: "Avg. Closing", value: 7, suffix: " Days" }
            ].map((stat, i) => (
              <div key={i} className="text-center md:text-left">
-                <p className="text-2xl font-bold text-white">
+                <p className="text-3xl font-bold text-white leading-none mb-1">
                   <Counter value={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
                 </p>
                 <p className="text-[10px] uppercase tracking-widest text-gray-400">{stat.label}</p>
