@@ -9,6 +9,7 @@ import { ExperienceSection } from "@/components/home/experience-section";
 import { ContactSection } from "@/components/home/contact-section";
 import { Testimonials } from "@/components/home/testimonials";
 import { FAQSection } from "@/components/home/faq-section";
+import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <ExperienceSection />
+        <IntelligenceEngine />
         <ProductsGrid />
         <DrawCallout />
         <Testimonials />
