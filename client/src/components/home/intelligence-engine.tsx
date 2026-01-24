@@ -160,9 +160,31 @@ export function IntelligenceEngine() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.8 }}
-            className="mt-20"
+            className="mt-20 flex flex-col md:flex-row items-center justify-center gap-12"
           >
-            <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all">
+            <div className="text-left bg-navy-50/50 p-8 border border-navy-100 max-w-md w-full">
+              <h4 className="text-navy-950 font-bold uppercase tracking-widest text-xs mb-6 pb-2 border-b border-navy-200">Borrower Requirements</h4>
+              <div className="grid grid-cols-1 gap-y-4">
+                <div className="flex items-center space-x-3">
+                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                  <span className="text-xs font-bold text-navy-900 uppercase tracking-tight">Min. 620 FICO Score</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                  <span className="text-xs font-bold text-navy-900 uppercase tracking-tight">LLC Borrowers Only</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                  <span className="text-xs font-bold text-navy-900 uppercase tracking-tight">Non-Owner Occupied Only</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                  <span className="text-xs font-bold text-navy-900 uppercase tracking-tight">US-Based Assets Only</span>
+                </div>
+              </div>
+            </div>
+
+            <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all h-fit">
               Initiate Neural Match
             </Button>
           </motion.div>
