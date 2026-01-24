@@ -36,7 +36,7 @@ export function ExperienceSection() {
                 { icon: Cpu, title: "Smart Underwriting", text: "Proprietary systems that analyze complex deals faster than traditional banks." },
                 { icon: Network, title: "Lending Network", text: "Access to the most aggressive capital providers in the market through one partner." },
                 { icon: Zap, title: "High Velocity", text: "Built for developers who need capital at the speed of construction." },
-                { icon: Shield, title: "Proven Stability", text: "Over $100M+ in historical volume ensures your project is funded to completion." }
+                { icon: Shield, title: "Proven Stability", text: "Institutional-grade certainty for professional real estate investors." }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col space-y-3">
                   <div className="h-10 w-10 rounded bg-navy-50 flex items-center justify-center">
