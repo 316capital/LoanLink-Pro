@@ -30,7 +30,10 @@ export function Navbar() {
                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Speak with an Expert</span>
                 <a href="tel:+16175464817" className="text-sm font-bold text-white hover:text-gold-500 transition-colors">+1 (617) 546-4817</a>
               </div>
-              <Button className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold border-none rounded-none px-6">
+              <Button 
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold border-none rounded-none px-6 shadow-[0_4px_14px_0_rgba(234,179,8,0.39)]"
+              >
                 Get My Rate
               </Button>
             </div>
