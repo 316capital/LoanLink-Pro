@@ -34,13 +34,13 @@ export function IntelligenceEngine() {
   ];
 
   return (
-    <section className="py-24 bg-[#0a0f1a] relative overflow-hidden">
-      {/* Tech background elements */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#3b82f6_0%,transparent_50%)]" />
+    <section id="intelligence" className="py-24 bg-white relative overflow-hidden">
+      {/* Subtle tech background elements */}
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#eab308_0%,transparent_50%)]" />
         <div className="grid grid-cols-12 h-full w-full">
           {Array.from({ length: 48 }).map((_, i) => (
-            <div key={i} className="border-[0.5px] border-blue-500/20" />
+            <div key={i} className="border-[0.5px] border-navy-950/20" />
           ))}
         </div>
       </div>
@@ -51,10 +51,10 @@ export function IntelligenceEngine() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/30 px-4 py-1.5 rounded-full mb-6"
+            className="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/30 px-4 py-1.5 rounded-full mb-6"
           >
-            <Activity className="h-4 w-4 text-blue-400 animate-pulse" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-400">The 316 Intelligence™ Engine</span>
+            <Activity className="h-4 w-4 text-gold-600 animate-pulse" />
+            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold-600">The 316 Intelligence™ Engine</span>
           </motion.div>
           
           <motion.h2
@@ -62,9 +62,9 @@ export function IntelligenceEngine() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight"
+            className="text-4xl md:text-6xl font-bold text-navy-950 mb-6 tracking-tight"
           >
-            Precision <span className="text-blue-500">Capital Routing</span>
+            Precision <span className="text-gold-500">Capital Routing</span>
           </motion.h2>
           
           <motion.p
@@ -72,7 +72,7 @@ export function IntelligenceEngine() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed"
+            className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed"
           >
             We don’t just lend; we optimize. Our proprietary engine analyzes your deal against thousands of institutional data points to route your project to the most aggressive capital source in real-time.
           </motion.p>
@@ -87,16 +87,16 @@ export function IntelligenceEngine() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * i }}
-              className="relative p-8 bg-navy-950/50 border border-white/5 group hover:border-blue-500/30 transition-all duration-500"
+              className="relative p-8 bg-white border border-gray-100 shadow-sm group hover:border-gold-500/30 transition-all duration-500"
             >
-              <div className="absolute top-0 left-0 w-1 h-0 bg-blue-500 group-hover:h-full transition-all duration-500" />
-              <div className="mb-6 inline-flex items-center justify-center w-12 h-12 bg-blue-500/10 text-blue-400">
+              <div className="absolute top-0 left-0 w-1 h-0 bg-gold-500 group-hover:h-full transition-all duration-500" />
+              <div className="mb-6 inline-flex items-center justify-center w-12 h-12 bg-gold-500/10 text-gold-600">
                 <step.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wide group-hover:text-blue-400 transition-colors">
+              <h3 className="text-navy-950 font-bold text-lg mb-4 uppercase tracking-wide group-hover:text-gold-600 transition-colors">
                 {step.title}
               </h3>
-              <p className="text-gray-500 text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {step.desc}
               </p>
             </motion.div>
@@ -109,7 +109,7 @@ export function IntelligenceEngine() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 mb-12"
+            className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-12"
           >
             The 316 Network
           </motion.h3>
@@ -118,14 +118,14 @@ export function IntelligenceEngine() {
             {/* Pulsing lines background */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                <motion.div 
-                 animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
+                 animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
                  transition={{ duration: 4, repeat: Infinity }}
-                 className="w-[600px] h-[600px] rounded-full border border-blue-500/20"
+                 className="w-[600px] h-[600px] rounded-full border border-gold-500/20"
                />
                <motion.div 
-                 animate={{ scale: [1, 1.5, 1], opacity: [0.05, 0.1, 0.05] }}
+                 animate={{ scale: [1, 1.5, 1], opacity: [0.02, 0.05, 0.02] }}
                  transition={{ duration: 6, repeat: Infinity, delay: 1 }}
-                 className="w-[800px] h-[800px] rounded-full border border-blue-500/10"
+                 className="w-[800px] h-[800px] rounded-full border border-gold-500/10"
                />
             </div>
 
@@ -139,15 +139,15 @@ export function IntelligenceEngine() {
                   transition={{ delay: 0.4 + (i * 0.1) }}
                   className="flex flex-col items-center group"
                 >
-                  <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-4 group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-500 relative">
+                  <div className="w-16 h-16 rounded-full bg-navy-50/50 border border-navy-100 flex items-center justify-center mb-4 group-hover:border-gold-500/50 group-hover:bg-gold-500/10 transition-all duration-500 relative">
                     <motion.div 
                       animate={{ scale: [1, 1.2, 1] }}
                       transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-                      className="absolute inset-0 rounded-full border border-blue-500/0 group-hover:border-blue-500/20"
+                      className="absolute inset-0 rounded-full border border-gold-500/0 group-hover:border-gold-500/20"
                     />
-                    <Cpu className="h-6 w-6 text-gray-500 group-hover:text-blue-400" />
+                    <Cpu className="h-6 w-6 text-navy-400 group-hover:text-gold-600" />
                   </div>
-                  <span className="text-xs font-bold text-gray-500 group-hover:text-white transition-colors uppercase tracking-widest text-center px-4">
+                  <span className="text-xs font-bold text-gray-400 group-hover:text-navy-950 transition-colors uppercase tracking-widest text-center px-4">
                     {partner}
                   </span>
                 </motion.div>
@@ -162,7 +162,7 @@ export function IntelligenceEngine() {
             transition={{ delay: 0.8 }}
             className="mt-20"
           >
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-[0_0_30px_rgba(37,99,235,0.3)] hover:shadow-[0_0_40px_rgba(37,99,235,0.5)] transition-all">
+            <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all">
               Initiate Neural Match
             </Button>
           </motion.div>

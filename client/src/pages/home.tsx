@@ -21,8 +21,8 @@ export default function Home() {
         <IntelligenceEngine />
         <ProductsGrid />
         <DrawCallout />
-        <Testimonials />
         <FundingBoard />
+        <Testimonials />
         <ProductParams />
         <FAQSection />
         <ContactSection />
