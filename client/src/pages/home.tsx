@@ -26,8 +26,8 @@ export default function Home() {
         <ProductsGrid />
         <DrawCallout />
         <FundingBoard />
-        <ProductParams />
         <Testimonials />
+        <ProductParams />
         <Contact />
       </main>
       <Footer />
