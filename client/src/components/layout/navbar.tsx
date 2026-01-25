@@ -35,38 +35,49 @@ export function Navbar() {
                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Speak with an Expert</span>
                 <a href="tel:+16175464817" className="text-sm font-bold text-white hover:text-[#F2C100] transition-colors">+1 (617) 546-4817</a>
               </div>
-              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6">
-                Request Terms
-              </Button>
-            </div>
-          </div>
-
-            <div className="md:hidden flex items-center">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-300 hover:text-white focus:outline-none"
-              >
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-[#001A54] border-b border-white/10">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#products" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Products</a>
-              <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
-              <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
-              <div className="mt-4 space-y-2 px-3">
-                <Button className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold">
+              <div className="flex items-center space-x-2">
+                <Button variant="ghost" className="text-white hover:text-[#F2C100] hover:bg-white/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
+                  Login
+                </Button>
+                <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10">
                   Request Terms
                 </Button>
               </div>
             </div>
           </div>
-        )}
-      </nav>
+
+          <div className="md:hidden flex items-center space-x-4">
+            <Button variant="ghost" className="text-white text-xs font-bold uppercase tracking-widest px-2 h-10">
+              Login
+            </Button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-300 hover:text-white focus:outline-none"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-[#001A54] border-b border-white/10">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#products" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Products</a>
+            <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
+            <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
+            <div className="mt-4 space-y-2 px-3">
+              <Button variant="ghost" className="w-full justify-center text-white hover:text-[#F2C100] font-bold border border-white/10 rounded-none mb-2">
+                Login
+              </Button>
+              <Button className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none">
+                Request Terms
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 }
