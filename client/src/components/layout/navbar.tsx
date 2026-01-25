@@ -27,7 +27,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
               <a className="flex items-center">
-                <img src={logo} alt="316 Capital Logo" className="h-10 w-auto" />
+                <img src={logo} alt="316 Capital Logo" className="h-16 md:h-20 w-auto" />
               </a>
             </Link>
           </div>
