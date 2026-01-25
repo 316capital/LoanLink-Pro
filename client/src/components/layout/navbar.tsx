@@ -40,17 +40,17 @@ export function Navbar() {
             <a href="#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
             
             <div className="flex items-center space-x-2 ml-4">
-              <Button variant="ghost" className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
+              <Button variant="ghost" className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 font-heading font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
                 {authText}
               </Button>
-              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10">
+              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs">
                 Request Terms
               </Button>
             </div>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
-            <Button variant="ghost" className="text-[#001A54] text-xs font-bold uppercase tracking-widest px-2 h-10">
+            <Button variant="ghost" className="text-[#001A54] text-xs font-heading font-bold uppercase tracking-widest px-2 h-10">
               {authText}
             </Button>
             <button
