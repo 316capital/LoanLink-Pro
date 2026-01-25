@@ -90,20 +90,20 @@ export function ProductsGrid() {
                   
                   <div className="pt-4 space-y-2 border-t border-white/10">
                     <div className="flex justify-between text-[11px]">
-                      <span className="text-gray-500 uppercase">Floor Rate</span>
+                      <span className="text-white/70 uppercase">Floor Rate</span>
                       <span className="font-bold text-white">{product.floorRate}</span>
                     </div>
                     <div className="flex justify-between text-[11px]">
-                      <span className="text-gray-500 uppercase">Max LTV/LTC</span>
+                      <span className="text-white/70 uppercase">Max LTV/LTC</span>
                       <span className="font-bold text-white">{product.maxLTV}</span>
                     </div>
                     <div className="flex justify-between text-[11px]">
-                      <span className="text-gray-500 uppercase">Timeline</span>
+                      <span className="text-white/70 uppercase">Timeline</span>
                       <span className="font-bold text-white">{product.timeline}</span>
                     </div>
                     {product.amortization && (
                       <div className="flex justify-between text-[11px]">
-                        <span className="text-gray-500 uppercase">Terms</span>
+                        <span className="text-white/70 uppercase">Terms</span>
                         <span className="font-bold text-white">{product.amortization}</span>
                       </div>
                     )}
