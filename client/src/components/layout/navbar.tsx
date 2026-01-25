@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,8 +26,8 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <a className="text-xl md:text-2xl font-bold font-heading tracking-widest text-white">
-                316 <span className="text-[#F2C100]">CAPITAL</span>
+              <a className="flex items-center">
+                <img src={logo} alt="316 Capital Logo" className="h-10 w-auto" />
               </a>
             </Link>
           </div>

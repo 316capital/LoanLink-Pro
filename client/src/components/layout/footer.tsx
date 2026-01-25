@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -8,8 +9,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
-              <a className="text-2xl font-bold font-heading tracking-widest block mb-6">
-                316 <span className="text-gold-500">CAPITAL</span>
+              <a className="block mb-6">
+                <img src={logo} alt="316 Capital Logo" className="h-12 w-auto" />
               </a>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
