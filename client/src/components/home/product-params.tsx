@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
 
 export function ProductParams() {
   return (
@@ -7,7 +8,15 @@ export function ProductParams() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 transform origin-top-right"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="absolute top-0 right-0 mt-0 mr-4 lg:mr-8 hidden sm:flex items-center space-x-4 bg-white/5 p-4 border border-white/10 backdrop-blur-md">
+          <div className="text-right">
+            <div className="text-2xl lg:text-3xl font-bold text-white leading-none font-mono tracking-tighter">48-HOUR</div>
+            <div className="text-[8px] font-black text-[#F2C100] uppercase tracking-[0.2em]">Draw Trust Badge</div>
+          </div>
+          <Shield className="h-8 w-8 text-[#F2C100] opacity-80" />
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-12 lg:pt-0">
           
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading">
