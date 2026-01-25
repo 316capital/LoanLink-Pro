@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function ExperienceSection() {
   return (
-    <section id="about" className="py-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-24 bg-cream-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
@@ -19,7 +19,7 @@ export function ExperienceSection() {
               Infinite Capital.
             </h3>
             
-            <div className="mb-10 p-6 bg-gold-500/5 border-l-4 border-gold-500">
+            <div className="mb-10 p-6 bg-white border-l-4 border-gold-500 shadow-sm">
               <h4 className="font-bold text-navy-950 uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
               <p className="text-navy-950 font-bold text-lg mb-2">Our "Can’t-Be-Beat" Policy</p>
               <p className="text-sm text-muted-foreground leading-relaxed">
@@ -39,7 +39,7 @@ export function ExperienceSection() {
                 { icon: Shield, title: "Proven Stability", text: "Institutional-grade certainty for professional real estate investors." }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col space-y-3">
-                  <div className="h-10 w-10 rounded bg-navy-50 flex items-center justify-center">
+                  <div className="h-10 w-10 rounded bg-white shadow-sm flex items-center justify-center">
                     <item.icon className="h-5 w-5 text-navy-950" />
                   </div>
                   <h4 className="font-bold text-navy-950">{item.title}</h4>
@@ -48,7 +48,7 @@ export function ExperienceSection() {
               ))}
             </div>
 
-            <div className="mt-8 flex items-center justify-center space-x-12 py-6 border-y border-gray-100">
+            <div className="mt-8 flex items-center justify-center space-x-12 py-6 border-y border-navy-950/10">
               <div className="text-center">
                 <span className="block text-2xl font-bold text-navy-950">$100M+</span>
                 <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Capital Deployed</span>
