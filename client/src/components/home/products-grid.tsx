@@ -50,10 +50,29 @@ export function ProductsGrid() {
           initial={ { opacity: 0, x: -20 } }
           whileInView={ { opacity: 1, x: 0 } }
           viewport={ { once: true } }
-          className="mb-16"
+          className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-8"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4">Core Products</h2>
-          <div className="h-1 w-20 bg-gold-500" />
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4">Core Products</h2>
+            <div className="h-1 w-20 bg-gold-500" />
+          </div>
+          <div className="bg-navy-950 p-6 md:p-8 border border-white/10 relative overflow-hidden flex-1 max-w-2xl">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 blur-3xl rounded-full -mr-16 -mt-16" />
+            <h3 className="text-[#F2C100] text-[10px] font-bold uppercase tracking-[0.2em] mb-4">Borrower Requirements</h3>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
+              {[
+                "Min. 620 FICO Score",
+                "LLC Borrowers Only",
+                "Non-Owner Occupied Only",
+                "US-Based Assets Only"
+              ].map((req, i) => (
+                <div key={i} className="flex items-center space-x-2">
+                  <div className="h-1 w-1 bg-[#F2C100]" />
+                  <span className="text-[10px] font-bold text-white uppercase tracking-tight whitespace-nowrap">{req}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
