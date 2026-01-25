@@ -101,32 +101,12 @@ export function Hero() {
             initial={ { opacity: 0, scale: 0.95 } }
             animate={ { opacity: 1, scale: 1 } }
             transition={ { delay: 1.3 } }
-            className="flex flex-col gap-6 mb-16"
+            className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                size="sm" 
-                className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-10 py-7 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)]"
-              >
-                Check Eligibility in 2 Minutes
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-            
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-              {[
-                "72H Term Sheets",
-                "No Hard Credit Pull",
-                "90% LTC Available",
-                "Interest-Only Options"
-              ].map((text, i) => (
-                <div key={i} className="flex items-center space-x-2">
-                  <div className="h-1 w-1 rounded-full bg-gold-500/50" />
-                  <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{text}</span>
-                </div>
-              ))}
-            </div>
+            <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)]">
+              Check Eligibility in 2 Minutes
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </motion.div>
 
           {/* Three-Step Success Path */}
