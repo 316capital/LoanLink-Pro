@@ -145,7 +145,7 @@ export function Hero() {
         initial={ { opacity: 0, y: 50 } }
         animate={ { opacity: 1, y: 0 } }
         transition={ { delay: 1.5, duration: 0.8 } }
-        className="absolute bottom-0 left-0 right-0 bg-[#001A54]/95 backdrop-blur-md border-t border-white/10 py-3 md:py-4 z-20"
+        className="absolute bottom-0 left-0 right-0 bg-[#001A54]/95 backdrop-blur-md border-t border-white/10 py-6 md:py-10 z-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-4 md:gap-8">
            {[
