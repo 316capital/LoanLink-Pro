@@ -49,10 +49,10 @@ export function Hero() {
           alt="Active construction site" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-white/40" />
+        <div className="absolute inset-0 bg-navy-950/60" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-48 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
@@ -60,12 +60,12 @@ export function Hero() {
             transition={ { delay: 0.5 } }
             className="flex flex-col space-y-3 mb-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-[#001A54]/10 border border-[#001A54]/20 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(0,26,84,0.05)] w-fit">
-              <Zap className="h-3 w-3 text-[#001A54] fill-current" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#001A54]">Nationwide Private Lender</span>
+            <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
+              <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
             </div>
-            <div className="inline-flex items-center space-x-2 bg-white/60 border border-[#001A54]/10 px-4 py-1.5 rounded-full w-fit backdrop-blur-sm">
-              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-[#001A54]/70">True Asset-Based Lending</span>
+            <div className="inline-flex items-center space-x-2 bg-[#001A54]/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
+              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
             </div>
           </motion.div>
           
@@ -73,17 +73,17 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-5xl md:text-7xl font-bold text-[#001A54] tracking-tight leading-[1.1] mb-8"
+            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
             Institutional Capital. <br />
-            <span className="text-[#F2C100] drop-shadow-sm">AI-Enabled</span> Speed.
+            <span className="text-[#F2C100]">AI-Enabled</span> Speed.
           </motion.h1>
 
           <motion.p 
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.9 } }
-            className="text-xl md:text-2xl text-[#001A54]/80 mb-4 max-w-2xl font-medium leading-relaxed"
+            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
           >
             We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
           </motion.p>
@@ -92,7 +92,7 @@ export function Hero() {
             initial={ { opacity: 0 } }
             animate={ { opacity: 1 } }
             transition={ { delay: 1.1 } }
-            className="text-[#F2C100] font-black tracking-wider text-sm uppercase mb-10 italic drop-shadow-sm"
+            className="text-[#F2C100] font-bold tracking-wider text-sm uppercase mb-10 italic"
           >
             Your smartest source of funding
           </motion.p>
