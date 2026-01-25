@@ -24,10 +24,10 @@ export default function Home() {
         <ExperienceSection />
         <IntelligenceEngine />
         <ProductsGrid />
-        <ProductParams />
         <DrawCallout />
         <FundingBoard />
         <Testimonials />
+        <ProductParams />
         <Contact />
       </main>
       <Footer />
