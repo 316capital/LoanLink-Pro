@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
-              <a className="block mb-6">
+              <a className="block mb-6 cursor-pointer">
                 <img src={logo} alt="316 Capital Logo" className="h-40 md:h-64 w-auto" />
               </a>
             </Link>
