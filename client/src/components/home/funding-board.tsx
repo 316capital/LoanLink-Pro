@@ -64,9 +64,9 @@ export function FundingBoard() {
             <p className="text-muted-foreground mt-2">Institutional deployments across the 316 network.</p>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center space-x-2 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full">
-              <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-              <span className="text-[10px] font-bold text-green-600 uppercase tracking-widest">Active Deployments</span>
+            <div className="flex items-center space-x-2 px-3 py-1 bg-[#001A54]/10 border border-[#001A54]/20 rounded-full">
+              <div className="h-2 w-2 rounded-full bg-[#001A54] animate-pulse" />
+              <span className="text-[10px] font-bold text-[#001A54] uppercase tracking-widest">Active Deployments</span>
             </div>
             <div className="h-1 w-12 bg-gold-500" />
             <p className="text-gold-600 font-bold text-sm tracking-widest">
