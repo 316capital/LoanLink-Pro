@@ -10,6 +10,7 @@ const products = [
     floorRate: "5.75%",
     maxLTV: "80%",
     timeline: "14 Days",
+    amortization: "30 Years",
     icon: Home,
     popular: false,
   },
@@ -96,6 +97,12 @@ export function ProductsGrid() {
                       <span className="text-gray-500 uppercase">Timeline</span>
                       <span className="font-bold text-navy-950">{product.timeline}</span>
                     </div>
+                    {product.amortization && (
+                      <div className="flex justify-between text-[11px]">
+                        <span className="text-gray-500 uppercase">Amortization</span>
+                        <span className="font-bold text-navy-950">{product.amortization}</span>
+                      </div>
+                    )}
                   </div>
                 </CardContent>
                 <div className="px-6 pb-6">
