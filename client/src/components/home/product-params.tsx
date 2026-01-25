@@ -8,12 +8,15 @@ export function ProductParams() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 transform origin-top-right"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="absolute top-0 right-0 mt-0 mr-4 lg:mr-8 hidden sm:flex items-center space-x-4 bg-white/5 p-4 border border-white/10 backdrop-blur-md">
+          <div className="absolute top-0 right-0 mt-4 mr-4 lg:mr-8 hidden sm:flex items-center space-x-4 bg-[#F2C100]/5 p-5 border border-[#F2C100]/20 backdrop-blur-xl shadow-[0_0_30px_rgba(242,193,0,0.1)] group">
           <div className="text-right">
-            <div className="text-2xl lg:text-3xl font-bold text-white leading-none font-mono tracking-tighter">48-HOUR</div>
-            <div className="text-[8px] font-black text-[#F2C100] uppercase tracking-[0.2em]">Draw Trust Badge</div>
+            <div className="text-3xl lg:text-4xl font-bold text-white leading-none font-mono tracking-tighter group-hover:text-[#F2C100] transition-colors">48-HOUR</div>
+            <div className="text-[9px] font-black text-[#F2C100] uppercase tracking-[0.3em] mt-1">Draw Trust Badge</div>
           </div>
-          <Shield className="h-8 w-8 text-[#F2C100] opacity-80" />
+          <div className="relative">
+            <Shield className="h-10 w-10 text-[#F2C100] relative z-10" />
+            <div className="absolute inset-0 bg-[#F2C100] blur-lg opacity-20 group-hover:opacity-40 transition-opacity" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-12 lg:pt-0">
