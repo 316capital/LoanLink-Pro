@@ -34,22 +34,6 @@ export function Footer() {
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
             
-            {/* Social Media Links */}
-            <div className="flex items-center space-x-4 mb-8">
-              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
-                <Instagram className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
-                <TikTokIcon className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
-                <Linkedin className="h-4 w-4" />
-              </a>
-            </div>
-
             <div className="text-xs text-gray-500 space-y-2">
               <p>Massachusetts Private Money Lender</p>
               <p>Hard Money for Rehabs · DSCR Loans</p>
@@ -87,6 +71,23 @@ export function Footer() {
               <li className="pt-2">info@316cap.com</li>
               <li>+1 (617) 546-4817</li>
             </ul>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-3 mb-8">
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <TikTokIcon className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </div>
+
             <Button variant="outline" className="w-full border-[#F2C100]/50 text-[#F2C100] hover:bg-[#F2C100] hover:text-[#001A54] rounded-none text-xs font-bold transition-all">
               Request Terms
             </Button>
