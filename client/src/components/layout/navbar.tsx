@@ -42,19 +42,13 @@ export function Navbar() {
             <a href="#portfolio" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Portfolio</a>
             <a href="#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">About</a>
             
-            <div className="flex items-center space-x-6 ml-4">
-              <div className="hidden lg:flex flex-col text-right">
-                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Speak with an Expert</span>
-                <a href="tel:+16175464817" className="text-sm font-bold text-white hover:text-[#F2C100] transition-colors">+1 (617) 546-4817</a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Button variant="ghost" className="text-white hover:text-[#F2C100] hover:bg-white/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
-                  {authText}
-                </Button>
-                <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10">
-                  Request Terms
-                </Button>
-              </div>
+            <div className="flex items-center space-x-2 ml-4">
+              <Button variant="ghost" className="text-white hover:text-[#F2C100] hover:bg-white/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
+                {authText}
+              </Button>
+              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10">
+                Request Terms
+              </Button>
             </div>
           </div>
 
