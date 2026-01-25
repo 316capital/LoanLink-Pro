@@ -17,9 +17,6 @@ export function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
-            <div className="flex items-center space-x-4 mb-6">
-              <img src={equalHousing} alt="Equal Housing Lender" className="h-12 w-auto brightness-0 invert opacity-80" />
-            </div>
             <div className="text-xs text-gray-500 space-y-2">
               <p>Massachusetts Private Money Lender</p>
               <p>Hard Money for Rehabs · DSCR Loans</p>
@@ -70,7 +67,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+            <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
+            <img src={equalHousing} alt="Equal Housing Lender" className="h-8 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity" />
+          </div>
           <div className="flex space-x-6 mt-6 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
