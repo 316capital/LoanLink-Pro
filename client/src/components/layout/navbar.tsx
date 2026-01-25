@@ -25,12 +25,12 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/">
-              <a className="text-2xl font-bold font-heading tracking-widest text-white">
+              <a className="text-xl md:text-2xl font-bold font-heading tracking-widest text-white">
                 316 <span className="text-[#F2C100]">CAPITAL</span>
               </a>
             </Link>
-            <div className="ml-8 hidden xl:block">
-              <a href="#" className="text-[9px] font-bold text-gray-400 hover:text-white uppercase tracking-[0.2em] transition-colors border border-white/5 px-3 py-1 bg-white/5">
+            <div className="ml-8 hidden lg:block">
+              <a href="#" className="text-[8px] xl:text-[9px] font-bold text-gray-400 hover:text-white uppercase tracking-[0.2em] transition-colors border border-white/5 px-3 py-1 bg-white/5">
                 Download the 316 Mobile App — Monitor Allocations & Track Terms
               </a>
             </div>
