@@ -58,14 +58,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center space-x-4">
-            <Button 
-              variant="ghost" 
-              className="text-[#001A54] text-xs font-heading font-bold uppercase tracking-widest px-2 h-10"
-              onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
-            >
-              {authText}
-            </Button>
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-[#001A54] hover:text-[#F2C100] focus:outline-none"
