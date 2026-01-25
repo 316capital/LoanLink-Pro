@@ -49,7 +49,8 @@ export function Hero() {
           alt="Active construction site" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-navy-950/60" />
+        <div className="absolute inset-0 bg-navy-950/40 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-cream-50/10" />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
