@@ -17,6 +17,11 @@ export function Navbar() {
                 316 <span className="text-[#F2C100]">CAPITAL</span>
               </a>
             </Link>
+            <div className="ml-8 hidden xl:block">
+              <a href="#" className="text-[9px] font-bold text-gray-400 hover:text-white uppercase tracking-[0.2em] transition-colors border border-white/5 px-3 py-1 bg-white/5">
+                Download the 316 Mobile App — Monitor Allocations & Track Terms
+              </a>
+            </div>
           </div>
 
           {/* Desktop Nav */}
