@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logoWhite from "@/assets/logo-white.png";
+import equalHousing from "@/assets/equal-housing.webp";
 
 export function Footer() {
   return (
@@ -16,6 +17,9 @@ export function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
+            <div className="flex items-center space-x-4 mb-6">
+              <img src={equalHousing} alt="Equal Housing Lender" className="h-12 w-auto brightness-0 invert opacity-80" />
+            </div>
             <div className="text-xs text-gray-500 space-y-2">
               <p>Massachusetts Private Money Lender</p>
               <p>Hard Money for Rehabs · DSCR Loans</p>
