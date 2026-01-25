@@ -107,8 +107,8 @@ export function ProductParams() {
                     <span className="font-mono font-bold">Full & Partial Available</span>
                 </div>
                 
-                <Button className="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-6 transition-all hover:shadow-[0_0_20px_rgba(234,179,8,0.4)] mt-4">
-                  Check Your Specific Rate
+                <Button className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none py-6 transition-all hover:shadow-[0_0_20px_rgba(242,193,0,0.4)] mt-4">
+                  Request Terms
                 </Button>
              </div>
           </div>

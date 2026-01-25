@@ -60,11 +60,11 @@ export function Hero() {
             transition={ { delay: 0.5 } }
             className="flex flex-col space-y-3 mb-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(234,179,8,0.1)] w-fit">
-              <Zap className="h-3 w-3 text-gold-500 fill-current" />
+            <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
+              <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
             </div>
-            <div className="inline-flex items-center space-x-2 bg-navy-950/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
+            <div className="inline-flex items-center space-x-2 bg-[#001A54]/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
             </div>
           </motion.div>
@@ -75,8 +75,8 @@ export function Hero() {
             transition={ { delay: 0.7 } }
             className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
-            Institutional Capital. <br />
-            <span className="text-gold-500">Tech-Enabled</span> Speed.
+            Direct Capital. <br />
+            <span className="text-[#F2C100]">AI-Powered</span> Speed.
           </motion.h1>
 
           <motion.p 
@@ -85,14 +85,14 @@ export function Hero() {
             transition={ { delay: 0.9 } }
             className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
           >
-            We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
+            Leveraging the 316 Network and proprietary underwriting models to deploy high-velocity capital for complex real estate assets.
           </motion.p>
           
           <motion.p 
             initial={ { opacity: 0 } }
             animate={ { opacity: 1 } }
             transition={ { delay: 1.1 } }
-            className="text-gold-500 font-bold tracking-wider text-sm uppercase mb-10 italic"
+            className="text-[#F2C100] font-bold tracking-wider text-sm uppercase mb-10 italic"
           >
             Your smartest source of funding
           </motion.p>
@@ -103,8 +103,8 @@ export function Hero() {
             transition={ { delay: 1.3 } }
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <Button size="sm" className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(234,179,8,0.4)]">
-              Check Eligibility in 2 Minutes
+            <Button size="sm" className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]">
+              Initialize AI Underwrite
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>

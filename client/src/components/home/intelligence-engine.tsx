@@ -162,8 +162,8 @@ export function IntelligenceEngine() {
             transition={{ delay: 0.8 }}
             className="mt-20"
           >
-            <Button className="bg-navy-950 hover:bg-navy-900 text-white font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all">
-              Initiate Neural Match
+            <Button className="bg-[#001A54] hover:bg-[#001A54]/90 text-[#F2C100] font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all">
+              Initialize AI Underwrite
             </Button>
           </motion.div>
         </div>

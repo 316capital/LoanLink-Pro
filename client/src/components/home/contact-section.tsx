@@ -77,8 +77,8 @@ export function ContactSection() {
               </div>
               <Input placeholder="Email Address" type="email" className="rounded-none border-gray-200" />
               
-              <Button className="w-full bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-7 text-sm uppercase tracking-widest mt-4">
-                {role === "Borrower" ? "Submit Quick Quote" : "Join Approved Broker Network"}
+              <Button className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none py-7 text-sm uppercase tracking-widest mt-4">
+                Initialize AI Underwrite
               </Button>
               
               <p className="text-[10px] text-center text-gray-400 uppercase tracking-widest mt-6">

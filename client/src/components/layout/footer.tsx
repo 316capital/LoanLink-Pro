@@ -52,10 +52,16 @@ export function Footer() {
               <li className="pt-2">info@316cap.com</li>
               <li>+1 (617) 546-4817</li>
             </ul>
-            <Button variant="outline" className="w-full border-gold-500/50 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-xs font-bold transition-all">
-              Talk to a Relationship Manager
+            <Button variant="outline" className="w-full border-[#F2C100]/50 text-[#F2C100] hover:bg-[#F2C100] hover:text-[#001A54] rounded-none text-xs font-bold transition-all">
+              Request Terms
             </Button>
           </div>
+        </div>
+        
+        <div className="mt-12 mb-8 text-center">
+          <a href="#" className="text-[10px] font-bold text-gray-500 hover:text-white uppercase tracking-[0.3em] transition-colors">
+            Download the 316 Mobile App — Monitor Allocations & Track Terms
+          </a>
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">

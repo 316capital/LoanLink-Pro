@@ -10,13 +10,15 @@ import { ContactSection } from "@/components/home/contact-section";
 import { Testimonials } from "@/components/home/testimonials";
 import { FAQSection } from "@/components/home/faq-section";
 import { IntelligenceEngine } from "@/components/home/intelligence-engine";
+import { Infrastructure } from "@/components/home/infrastructure";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <Navbar />
-      <main>
+      <main className="pt-8 md:pt-10">
         <Hero />
+        <Infrastructure />
         <ExperienceSection />
         <IntelligenceEngine />
         <ProductsGrid />
