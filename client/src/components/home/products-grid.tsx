@@ -106,6 +106,36 @@ export function ProductsGrid() {
               </Card>
             </motion.div>
           ))}
+        <div className="mt-16 pt-12 border-t border-gray-100">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
+          >
+            <div>
+              <h3 className="text-[10px] font-black uppercase tracking-[0.3em] text-gold-600 mb-4">Borrower Requirements</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  "Min. 620 FICO Score",
+                  "LLC Borrowers Only",
+                  "Non-Owner Occupied Only",
+                  "US-Based Assets Only"
+                ].map((req, i) => (
+                  <div key={i} className="flex items-center space-x-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                    <span className="text-[11px] font-bold text-navy-950 uppercase tracking-tight">{req}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="shrink-0">
+              <div className="px-6 py-4 bg-navy-950 border border-gold-500/20 shadow-xl text-center">
+                <div className="text-2xl font-bold text-white mb-0.5 font-mono tracking-tighter">48-HOUR</div>
+                <div className="text-[9px] font-bold text-gold-500 uppercase tracking-widest">Draw Trust Badge</div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
