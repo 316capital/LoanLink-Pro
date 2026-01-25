@@ -1,10 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasVisited, setHasVisited] = useState(false);
+
+  useEffect(() => {
+    const visited = localStorage.getItem("hasVisited316");
+    if (visited) {
+      setHasVisited(true);
+    } else {
+      localStorage.setItem("hasVisited316", "true");
+    }
+  }, []);
+
+  const authText = hasVisited ? "Login" : "Sign Up";
 
   return (
     <nav className="fixed w-full z-50 bg-[#001A54]/95 backdrop-blur-md border-b border-white/10">
@@ -37,7 +49,7 @@ export function Navbar() {
               </div>
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" className="text-white hover:text-[#F2C100] hover:bg-white/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
-                  Login
+                  {authText}
                 </Button>
                 <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10">
                   Request Terms
@@ -46,38 +58,38 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center space-x-4">
-            <Button variant="ghost" className="text-white text-xs font-bold uppercase tracking-widest px-2 h-10">
-              Login
-            </Button>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-white focus:outline-none"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-[#001A54] border-b border-white/10">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#products" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Products</a>
-            <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
-            <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
-            <div className="mt-4 space-y-2 px-3">
-              <Button variant="ghost" className="w-full justify-center text-white hover:text-[#F2C100] font-bold border border-white/10 rounded-none mb-2">
-                Login
+            <div className="md:hidden flex items-center space-x-4">
+              <Button variant="ghost" className="text-white text-xs font-bold uppercase tracking-widest px-2 h-10">
+                {authText}
               </Button>
-              <Button className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none">
-                Request Terms
-              </Button>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-300 hover:text-white focus:outline-none"
+              >
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
             </div>
           </div>
         </div>
-      )}
-    </nav>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-[#001A54] border-b border-white/10">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="#products" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Products</a>
+              <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
+              <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
+              <div className="mt-4 space-y-2 px-3">
+                <Button variant="ghost" className="w-full justify-center text-white hover:text-[#F2C100] font-bold border border-white/10 rounded-none mb-2">
+                  {authText}
+                </Button>
+                <Button className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none">
+                  Request Terms
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
   );
 }
