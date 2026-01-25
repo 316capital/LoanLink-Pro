@@ -81,7 +81,15 @@ export function ProductParams() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                    <span className="text-xs font-bold text-white uppercase tracking-tight">Foreign Nationals Welcome</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
                     <span className="text-xs font-bold text-white uppercase tracking-tight">US-Based Assets Only</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
+                    <span className="text-xs font-bold text-white uppercase tracking-tight">No Experience Required</span>
                   </div>
                 </div>
               </div>
