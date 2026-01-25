@@ -1,7 +1,23 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import logoWhite from "@/assets/logo-white.png";
 import equalHousing from "@/assets/equal-housing.webp";
+
+// Custom TikTok icon since Lucide doesn't have it
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export function Footer() {
   return (
@@ -17,6 +33,23 @@ export function Footer() {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-4 mb-8">
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Instagram className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <TikTokIcon className="h-4 w-4" />
+              </a>
+              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+                <Linkedin className="h-4 w-4" />
+              </a>
+            </div>
+
             <div className="text-xs text-gray-500 space-y-2">
               <p>Massachusetts Private Money Lender</p>
               <p>Hard Money for Rehabs · DSCR Loans</p>
