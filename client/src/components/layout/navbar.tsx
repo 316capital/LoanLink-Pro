@@ -7,45 +7,34 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <div className="fixed top-0 w-full z-[60] bg-[#001A54] py-2 px-4 overflow-hidden">
-        <div className="max-w-7xl mx-auto flex items-center justify-center space-x-2 text-[10px] md:text-xs">
-          <span className="text-white font-medium uppercase tracking-widest whitespace-nowrap">
-            ⚡ 316 Intelligence: AI-Driven Capital Allocations. Custom terms issued within 24 hours.
-          </span>
-          <button className="text-gold-500 font-black uppercase tracking-widest hover:text-white transition-colors">
-            [Secure Access]
-          </button>
-        </div>
-      </div>
-      <nav className="fixed w-full z-50 bg-[#001A54]/95 backdrop-blur-md border-b border-white/10 mt-8 md:mt-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
-            {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
-                <a className="text-2xl font-bold font-heading tracking-widest text-white">
-                  316 <span className="text-[#F2C100]">CAPITAL</span>
-                </a>
-              </Link>
-            </div>
+    <nav className="fixed w-full z-50 bg-[#001A54]/95 backdrop-blur-md border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-20 items-center">
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/">
+              <a className="text-2xl font-bold font-heading tracking-widest text-white">
+                316 <span className="text-[#F2C100]">CAPITAL</span>
+              </a>
+            </Link>
+          </div>
 
-            {/* Desktop Nav */}
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#products" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Products</a>
-              <a href="#portfolio" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Portfolio</a>
-              <a href="#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">About</a>
-              
-              <div className="flex items-center space-x-6 ml-4">
-                <div className="hidden lg:flex flex-col text-right">
-                  <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Speak with an Expert</span>
-                  <a href="tel:+16175464817" className="text-sm font-bold text-white hover:text-[#F2C100] transition-colors">+1 (617) 546-4817</a>
-                </div>
-                <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6">
-                  Request Terms
-                </Button>
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center space-x-8">
+            <a href="#products" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Products</a>
+            <a href="#portfolio" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Portfolio</a>
+            <a href="#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">About</a>
+            
+            <div className="flex items-center space-x-6 ml-4">
+              <div className="hidden lg:flex flex-col text-right">
+                <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Speak with an Expert</span>
+                <a href="tel:+16175464817" className="text-sm font-bold text-white hover:text-[#F2C100] transition-colors">+1 (617) 546-4817</a>
               </div>
+              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6">
+                Request Terms
+              </Button>
             </div>
+          </div>
 
             <div className="md:hidden flex items-center">
               <button
@@ -74,6 +63,5 @@ export function Navbar() {
           </div>
         )}
       </nav>
-    </>
   );
 }
