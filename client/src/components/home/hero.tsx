@@ -75,8 +75,8 @@ export function Hero() {
             transition={ { delay: 0.7 } }
             className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
-            Direct Capital. <br />
-            <span className="text-[#F2C100]">AI-Powered</span> Speed.
+            Institutional Capital. <br />
+            <span className="text-[#F2C100]">AI-Enabled</span> Speed.
           </motion.h1>
 
           <motion.p 
@@ -85,7 +85,7 @@ export function Hero() {
             transition={ { delay: 0.9 } }
             className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
           >
-            Leveraging the 316 Network and proprietary underwriting models to deploy high-velocity capital for complex real estate assets.
+            We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
           </motion.p>
           
           <motion.p 
@@ -104,7 +104,7 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
             <Button size="sm" className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]">
-              Initialize AI Underwrite
+              Initalize AI Underwriting
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>
