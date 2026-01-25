@@ -1,8 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
-import equalHousing from "@/assets/badges/equal-housing.webp";
-import bbbSeal from "@/assets/badges/bbb-seal.png";
 
 export function Footer() {
   return (
@@ -68,13 +66,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
-            <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
-            <div className="flex items-center space-x-6 opacity-90 hover:opacity-100 transition-all duration-300">
-              <img src={equalHousing} alt="Equal Housing Lender" className="h-12 md:h-16 w-auto brightness-0 invert" />
-              <img src={bbbSeal} alt="BBB Accredited Business" className="h-10 md:h-12 w-auto brightness-0 invert" />
-            </div>
-          </div>
+          <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
           <div className="flex space-x-6 mt-6 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
