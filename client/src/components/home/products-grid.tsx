@@ -48,16 +48,17 @@ const products = [
 
 export function ProductsGrid() {
   return (
-    <section id="products" className="py-24 bg-white border-y border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="products" className="py-24 bg-[#001A54] border-y border-white/5 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_-20%,rgba(242,193,0,0.05),transparent)] pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 
           initial={ { opacity: 0, x: -20 } }
           whileInView={ { opacity: 1, x: 0 } }
           viewport={ { once: true } }
           className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4">Core Products</h2>
-          <div className="h-1 w-20 bg-gold-500" />
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Core Products</h2>
+          <div className="h-1 w-20 bg-gold-500 shadow-[0_0_10px_rgba(242,193,0,0.5)]" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -72,44 +73,44 @@ export function ProductsGrid() {
             >
               {product.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <span className="bg-gold-500 text-navy-950 text-[10px] font-bold uppercase tracking-widest px-3 py-1 shadow-lg">
+                  <span className="bg-gold-500 text-navy-950 text-[10px] font-bold uppercase tracking-widest px-3 py-1 shadow-[0_4px_20px_rgba(242,193,0,0.3)]">
                     Most Popular
                   </span>
                 </div>
               )}
-              <Card className="bg-bone-50 border-none rounded-none shadow-none hover:bg-white hover:shadow-xl transition-all duration-300 group pt-4">
+              <Card className="bg-white/5 border border-white/10 rounded-none shadow-none hover:bg-white/10 hover:border-gold-500/50 transition-all duration-300 group pt-4 backdrop-blur-sm">
                 <CardHeader className="pb-4">
-                  <div className="w-12 h-12 bg-white flex items-center justify-center mb-6 group-hover:bg-navy-950 transition-colors">
-                    <product.icon className="h-6 w-6 text-navy-950 group-hover:text-gold-500 transition-colors" />
+                  <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors">
+                    <product.icon className="h-6 w-6 text-gold-500 group-hover:text-navy-950 transition-colors" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-navy-950">{product.title}</CardTitle>
+                  <CardTitle className="text-lg font-bold text-white">{product.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground text-xs leading-relaxed h-8">{product.description}</p>
+                  <p className="text-gray-400 text-xs leading-relaxed h-8">{product.description}</p>
                   
-                  <div className="pt-4 space-y-2 border-t border-gray-200">
+                  <div className="pt-4 space-y-2 border-t border-white/10">
                     <div className="flex justify-between text-[11px]">
                       <span className="text-gray-500 uppercase">Floor Rate</span>
-                      <span className="font-bold text-navy-950">{product.floorRate}</span>
+                      <span className="font-bold text-white">{product.floorRate}</span>
                     </div>
                     <div className="flex justify-between text-[11px]">
                       <span className="text-gray-500 uppercase">Max LTV/LTC</span>
-                      <span className="font-bold text-navy-950">{product.maxLTV}</span>
+                      <span className="font-bold text-white">{product.maxLTV}</span>
                     </div>
                     <div className="flex justify-between text-[11px]">
                       <span className="text-gray-500 uppercase">Timeline</span>
-                      <span className="font-bold text-navy-950">{product.timeline}</span>
+                      <span className="font-bold text-white">{product.timeline}</span>
                     </div>
                     {product.amortization && (
                       <div className="flex justify-between text-[11px]">
                         <span className="text-gray-500 uppercase">Terms</span>
-                        <span className="font-bold text-navy-950">{product.amortization}</span>
+                        <span className="font-bold text-white">{product.amortization}</span>
                       </div>
                     )}
                   </div>
                 </CardContent>
                 <div className="px-6 pb-6">
-                  <Button variant="outline" className="w-full border-navy-950/10 text-navy-950 hover:bg-navy-950 hover:text-white rounded-none text-[10px] font-bold uppercase tracking-widest transition-all">
+                  <Button className="w-full bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-[10px] font-bold uppercase tracking-widest transition-all">
                     Get Your Rate
                   </Button>
                 </div>
