@@ -5,12 +5,12 @@ export function ProductParams() {
   return (
     <section className="py-24 bg-navy-950 text-white relative overflow-hidden">
       {/* Abstract Background Element */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-white/5 skew-x-12 transform origin-top-right"></div>
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-cream-50/5 skew-x-12 transform origin-top-right"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="absolute top-0 right-0 mt-4 mr-4 lg:mr-8 hidden sm:flex items-center space-x-4 bg-[#F2C100]/5 p-5 border border-[#F2C100]/20 backdrop-blur-xl shadow-[0_0_30px_rgba(242,193,0,0.1)] group">
           <div className="text-right">
-            <div className="text-3xl lg:text-4xl font-bold text-white leading-none font-mono tracking-tighter group-hover:text-[#F2C100] transition-colors">48-HOUR</div>
+            <div className="text-3xl lg:text-4xl font-bold text-cream-50 leading-none font-mono tracking-tighter group-hover:text-[#F2C100] transition-colors">48-HOUR</div>
             <div className="text-[9px] font-black text-[#F2C100] uppercase tracking-[0.3em] mt-1">Draw Trust Badge</div>
           </div>
           <div className="relative">
@@ -22,14 +22,14 @@ export function ProductParams() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-12 lg:pt-0">
           
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 font-heading text-cream-50">
               Capital Structure <br/> & Parameters
             </h2>
             
             <div className="space-y-8">
               <div>
                 <h3 className="text-gold-500 text-sm font-bold uppercase tracking-widest mb-2">Loan Amounts</h3>
-                <p className="text-4xl md:text-5xl font-light font-mono text-white">
+                <p className="text-4xl md:text-5xl font-light font-mono text-cream-50">
                   $75K <span className="text-gray-600 mx-2">—</span> $20M
                 </p>
               </div>

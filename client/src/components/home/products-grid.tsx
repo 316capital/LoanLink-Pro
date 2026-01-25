@@ -78,7 +78,7 @@ export function ProductsGrid() {
                   </span>
                 </div>
               )}
-              <Card className="bg-white/5 border border-white/10 rounded-none shadow-none hover:bg-white/10 hover:border-gold-500/50 transition-all duration-300 group pt-4 backdrop-blur-sm">
+              <Card className="bg-cream-50/5 border border-white/10 rounded-none shadow-none hover:bg-cream-50/10 hover:border-gold-500/50 transition-all duration-300 group pt-4 backdrop-blur-sm">
                 <CardHeader className="pb-4">
                   <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors">
                     <product.icon className="h-6 w-6 text-gold-500 group-hover:text-navy-950 transition-colors" />
