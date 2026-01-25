@@ -77,7 +77,7 @@ export function Footer() {
               <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
                 <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
+              <a href="https://www.instagram.com/316capital/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
                 <Instagram className="h-4 w-4" />
               </a>
               <a href="#" className="p-2 bg-white/5 hover:bg-gold-500 hover:text-navy-950 transition-all rounded-none border border-white/10">
