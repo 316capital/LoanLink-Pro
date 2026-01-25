@@ -40,10 +40,19 @@ export function Navbar() {
             <a href="#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
             
             <div className="flex items-center space-x-2 ml-4">
-              <Button variant="ghost" className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 font-heading font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
+              <Button 
+                variant="ghost" 
+                className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 font-heading font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10"
+                onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
+                data-testid="button-auth"
+              >
                 {authText}
               </Button>
-              <Button className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs">
+              <Button 
+                className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
+                onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
+                data-testid="button-request-terms"
+              >
                 Request Terms
               </Button>
             </div>
@@ -72,10 +81,19 @@ export function Navbar() {
             <a href="#about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">About</a>
             <a href="#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Contact</a>
             <div className="mt-4 space-y-2 px-3">
-              <Button variant="ghost" className="w-full justify-center text-[#001A54] hover:text-[#F2C100] font-bold border border-[#001A54]/10 rounded-none mb-2">
+              <Button 
+                variant="ghost" 
+                className="w-full justify-center text-[#001A54] hover:text-[#F2C100] font-bold border border-[#001A54]/10 rounded-none mb-2"
+                onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
+                data-testid="mobile-button-auth"
+              >
                 {authText}
               </Button>
-              <Button className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none">
+              <Button 
+                className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none"
+                onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
+                data-testid="mobile-button-request-terms"
+              >
                 Request Terms
               </Button>
             </div>
