@@ -10,7 +10,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/">
               <a className="block mb-6">
-                <img src={logo} alt="316 Capital Logo" className="h-20 w-auto" />
+                <img src={logo} alt="316 Capital Logo" className="h-32 md:h-40 w-auto" />
               </a>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
