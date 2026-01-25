@@ -51,7 +51,7 @@ export function FundingBoard() {
   }, []);
 
   return (
-    <section id="portfolio" className="py-24 bg-white overflow-hidden">
+    <section id="portfolio" className="py-24 bg-cream-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -83,7 +83,7 @@ export function FundingBoard() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -100, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="absolute inset-0 flex flex-col md:flex-row bg-bone-50 border border-gray-100 shadow-2xl"
+              className="absolute inset-0 flex flex-col md:flex-row bg-white border border-gray-100 shadow-2xl"
             >
               <div className="w-full md:w-1/2 h-2/3 md:h-full overflow-hidden">
                 <motion.img 
