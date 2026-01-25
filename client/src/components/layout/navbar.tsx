@@ -41,6 +41,7 @@ export function Navbar() {
             <a href="#products" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Products</a>
             <a href="#portfolio" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Portfolio</a>
             <a href="#about" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">About</a>
+            <a href="#contact" className="text-sm font-medium text-white/80 hover:text-white transition-colors uppercase tracking-wider">Contact</a>
             
             <div className="flex items-center space-x-2 ml-4">
               <Button variant="ghost" className="text-white hover:text-[#F2C100] hover:bg-white/5 font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10">
@@ -73,6 +74,7 @@ export function Navbar() {
               <a href="#products" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Products</a>
               <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Portfolio</a>
               <a href="#about" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">About</a>
+              <a href="#contact" className="block px-3 py-2 text-base font-medium text-white hover:bg-white/5">Contact</a>
               <div className="mt-4 space-y-2 px-3">
                 <Button variant="ghost" className="w-full justify-center text-white hover:text-[#F2C100] font-bold border border-white/10 rounded-none mb-2">
                   {authText}

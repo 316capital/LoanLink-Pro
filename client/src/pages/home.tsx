@@ -12,6 +12,8 @@ import { FAQSection } from "@/components/home/faq-section";
 import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 import { Infrastructure } from "@/components/home/infrastructure";
 
+import { Contact } from "@/components/home/contact";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background font-sans">
@@ -26,7 +28,7 @@ export default function Home() {
         <FundingBoard />
         <ProductParams />
         <Testimonials />
-        <ContactSection />
+        <Contact />
       </main>
       <Footer />
     </div>
