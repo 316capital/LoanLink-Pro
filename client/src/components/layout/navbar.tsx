@@ -50,6 +50,7 @@ export function Navbar() {
               </Button>
               <Button 
                 className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
+                onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
                 data-testid="button-request-terms"
               >
                 Request Terms
@@ -87,6 +88,7 @@ export function Navbar() {
               </Button>
               <Button 
                 className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none"
+                onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
                 data-testid="mobile-button-request-terms"
               >
                 Request Terms

@@ -104,7 +104,11 @@ export function Hero() {
             transition={ { delay: 1.3 } }
             className="flex flex-col sm:flex-row gap-4 mb-16"
           >
-            <Button size="sm" className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]">
+            <Button 
+              size="sm" 
+              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]"
+              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
+            >
               Get Instant Pricing
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
