@@ -47,40 +47,6 @@ export function ExperienceSection() {
                 </div>
               ))}
             </div>
-            
-            <div className="mt-12 p-8 bg-navy-950 border border-gold-500/20 shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 p-4 opacity-10">
-                <Shield className="h-24 w-24 text-gold-500" />
-              </div>
-              <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                <div>
-                  <h4 className="text-gold-500 font-bold uppercase tracking-widest text-xs mb-2">Borrower Requirements</h4>
-                  <p className="text-white font-bold text-lg mb-1">Qualify in Seconds</p>
-                  <div className="grid grid-cols-2 gap-x-8 gap-y-2 mt-4">
-                    <div className="flex items-center space-x-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                      <span className="text-xs text-gray-300">Min. 620 FICO</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                      <span className="text-xs text-gray-300">LLC Borrowers Only</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                      <span className="text-xs text-gray-300">Non-Owner Occupied</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                      <span className="text-xs text-gray-300">US-Based Assets</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="shrink-0 flex flex-col items-center">
-                  <div className="text-3xl font-bold text-white mb-1 font-mono tracking-tighter">48-HOUR</div>
-                  <div className="text-[10px] font-bold text-gold-500 uppercase tracking-widest">Draw Trust Badge</div>
-                </div>
-              </div>
-            </div>
 
             <div className="mt-8 flex items-center justify-center space-x-12 py-6 border-y border-gray-100">
               <div className="text-center">
