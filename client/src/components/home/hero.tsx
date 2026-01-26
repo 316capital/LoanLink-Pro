@@ -53,7 +53,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/40 to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-16">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
