@@ -53,13 +53,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-[#001A54]/10" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center justify-center pt-32 pb-20 text-center">
-        <div className="max-w-4xl flex flex-col items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
+        <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
             animate={ { opacity: 1, x: 0 } }
             transition={ { delay: 0.5 } }
-            className="flex flex-col items-center space-y-3 mb-8"
+            className="flex flex-col space-y-3 mb-8"
           >
             <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
               <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
@@ -74,7 +74,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8 text-center"
+            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
             Institutional Capital. <br />
             <span className="text-[#F2C100]">AI-Enabled</span> Speed.
@@ -84,7 +84,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.9 } }
-            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed text-center"
+            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
           >
             We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
           </motion.p>
@@ -93,7 +93,7 @@ export function Hero() {
             initial={ { opacity: 0 } }
             animate={ { opacity: 1 } }
             transition={ { delay: 1.1 } }
-            className="text-[#F2C100] font-bold tracking-wider text-sm uppercase mb-10 italic text-center"
+            className="text-[#F2C100] font-bold tracking-wider text-sm uppercase mb-10 italic"
           >
             Your smartest source of funding
           </motion.p>
@@ -102,7 +102,7 @@ export function Hero() {
             initial={ { opacity: 0, scale: 0.95 } }
             animate={ { opacity: 1, scale: 1 } }
             transition={ { delay: 1.3 } }
-            className="flex flex-col sm:flex-row gap-4 mb-16 justify-center"
+            className="flex flex-col sm:flex-row gap-4 mb-16"
           >
             <Button 
               size="sm" 
