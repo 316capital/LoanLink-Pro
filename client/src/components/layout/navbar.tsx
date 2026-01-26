@@ -17,7 +17,7 @@ export function Navbar() {
     }
   }, []);
 
-  const authText = hasVisited ? "Login" : "Sign Up";
+  const authText = hasVisited ? "Client Portal" : "Client Portal";
 
   return (
     <nav className="fixed w-full z-50 bg-cream-50 border-b border-navy-950/5">
