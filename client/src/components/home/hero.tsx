@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
-import heroBg from "@/assets/hero-construction.png";
+import heroBg from "@assets/generated_images/cinematic_construction_site_aerial.png";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
