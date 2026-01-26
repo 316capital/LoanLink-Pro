@@ -27,7 +27,7 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center cursor-pointer">
             <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <a className="flex items-center">
-                <img src={logo} alt="316 Capital Logo" className="h-40 md:h-56 lg:h-72 w-auto brightness-100" style={{ filter: 'none' }} />
+                <img src={logo} alt="316 Capital Logo" className="h-32 md:h-44 lg:h-56 w-auto brightness-100" style={{ filter: 'none' }} />
               </a>
             </Link>
           </div>
@@ -42,7 +42,7 @@ export function Navbar() {
             <div className="flex items-center space-x-2 ml-4">
               <Button 
                 variant="ghost" 
-                className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 font-heading font-bold rounded-none px-4 uppercase tracking-widest text-xs h-10"
+                className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-10 border-none shadow-none"
                 onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                 data-testid="button-auth"
               >
