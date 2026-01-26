@@ -23,19 +23,19 @@ function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 
 export function Hero() {
   return (
-    <div className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <motion.div 
         initial={{ scale: 1, opacity: 0 }}
         animate={{ 
-          scale: [1, 1.15, 1],
+          scale: [1, 1.1, 1],
           opacity: 1 
         }}
         transition={{ 
           scale: {
-            duration: 10,
+            duration: 20,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "linear"
           },
           opacity: {
             duration: 1.5,
@@ -49,11 +49,11 @@ export function Hero() {
           alt="Active construction site" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/95 via-[#001A54]/60 to-[#001A54]/20 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/40 to-transparent" />
+        <div className="absolute inset-0 bg-navy-950/80 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-navy-950 via-navy-950/60 to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-48">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
@@ -145,7 +145,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="relative md:absolute bottom-0 left-0 right-0 bg-[#001A54]/95 backdrop-blur-md border-t border-white/10 py-6 md:py-10 z-20"
+        className="absolute bottom-0 left-0 right-0 bg-navy-950/90 backdrop-blur-xl border-t border-white/5 py-8 md:py-12 z-20"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-4 md:gap-8">
            {[
