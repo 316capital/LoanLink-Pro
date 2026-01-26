@@ -46,7 +46,7 @@ export function Navbar() {
                 onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                 data-testid="button-auth"
               >
-                {authText}
+                Client Portal
               </Button>
               <Button 
                 className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
@@ -80,11 +80,11 @@ export function Navbar() {
             <div className="mt-4 space-y-2 px-3">
               <Button 
                 variant="ghost" 
-                className="w-full justify-center text-[#001A54] hover:text-[#F2C100] font-bold border border-[#001A54]/10 rounded-none mb-2"
+                className="w-full justify-center text-[#001A54] hover:text-[#F2C100] font-heading font-bold border border-[#001A54]/10 rounded-none mb-2"
                 onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                 data-testid="mobile-button-auth"
               >
-                {authText}
+                Client Portal
               </Button>
               <Button 
                 className="w-full justify-center bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none"
