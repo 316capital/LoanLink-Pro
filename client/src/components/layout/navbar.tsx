@@ -53,7 +53,7 @@ export function Navbar() {
                 onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                 data-testid="button-request-terms"
               >
-                Request Terms
+                See your Rate
               </Button>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function Navbar() {
                 onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
                 data-testid="mobile-button-request-terms"
               >
-                Request Terms
+                See your Rate
               </Button>
             </div>
           </div>
