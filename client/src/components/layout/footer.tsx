@@ -91,7 +91,7 @@ export function Footer() {
             <Button 
               variant="outline" 
               className="w-full border-[#F2C100]/50 text-[#F2C100] hover:bg-[#F2C100] hover:text-[#001A54] rounded-none text-xs font-bold transition-all"
-              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
+              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
               Request Terms
             </Button>

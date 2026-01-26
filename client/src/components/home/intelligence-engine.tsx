@@ -164,7 +164,7 @@ export function IntelligenceEngine() {
           >
             <Button 
               className="bg-[#001A54] hover:bg-[#001A54]/90 text-[#F2C100] font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all"
-              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
+              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
               Get Instant Pricing
             </Button>

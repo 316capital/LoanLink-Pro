@@ -112,7 +112,7 @@ export function ProductsGrid() {
                 <div className="px-6 pb-6">
                   <Button 
                     className="w-full bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-[10px] font-bold uppercase tracking-widest transition-all"
-                    onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAnd1w1', '_blank')}
+                    onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
                   >
                     Get Your Rate
                   </Button>
