@@ -26,9 +26,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
             <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <a className="block mb-6 cursor-pointer">
+              <div className="block mb-6 cursor-pointer">
                 <img src={logoWhite} alt="316 Capital Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
-              </a>
+              </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
