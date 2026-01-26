@@ -74,19 +74,17 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8 uppercase italic"
+            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
           >
-            Institutional <br />
-            <span className="text-[#F2C100]">Capital.</span> <br />
-            <span className="text-white">AI-Enabled</span> <br />
-            <span className="text-[#F2C100]">Speed.</span>
+            Institutional Capital. <br />
+            <span className="text-[#F2C100]">AI-Enabled</span> Speed.
           </motion.h1>
 
           <motion.p 
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.9 } }
-            className="text-xl md:text-3xl text-white/90 mb-4 max-w-3xl font-light leading-tight tracking-tight border-l-4 border-[#F2C100] pl-6"
+            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
           >
             We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
           </motion.p>
