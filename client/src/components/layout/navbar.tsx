@@ -50,7 +50,7 @@ export function Navbar() {
               </Button>
               <Button 
                 className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
-                onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+                onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                 data-testid="button-request-terms"
               >
                 Request Terms
