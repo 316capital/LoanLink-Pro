@@ -8,7 +8,7 @@ const team = [
     name: "Joshua Gutierrez",
     role: "Managing Principal",
     bio: "Visionary leader at 316 Capital, dedicated to providing honest answers, fast capital, and an institutional-grade experience for real estate investors.",
-    image: "/src/assets/team/joshua-gutierrez.jpg",
+    image: "/src/assets/team/joshua-full-body.png",
     linkedin: "https://www.linkedin.com/in/joshua-gutierrez-798968105/"
   },
   {
@@ -96,7 +96,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {team.map((member, idx) => (
               <div key={idx} className="group">
-                <div className="relative aspect-square overflow-hidden mb-6 border border-navy-950/5 shadow-lg">
+                <div className="relative aspect-[3/4] overflow-hidden mb-6 border border-navy-950/5 shadow-lg">
                   <div className="absolute inset-0 bg-navy-950/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   <img 
                     src={member.image} 
