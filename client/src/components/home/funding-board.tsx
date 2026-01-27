@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import propertyDorchester from "@/assets/properties/dorchester-7unit.jpg";
+import propertyCambridge from "@/assets/properties/cambridge-fix-flip.jpg";
 
 const fundedDeals = [
   {
@@ -27,11 +28,11 @@ const fundedDeals = [
     property: "Luxury Conversion",
   },
   {
-    image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&q=80&w=1200",
-    type: "Ground Up",
-    amount: "$5.4M",
-    location: "Seaport, Boston",
-    property: "Mixed-Use Development",
+    image: propertyCambridge,
+    type: "Fix & Flip",
+    amount: "$2.6M",
+    location: "Cambridge, MA 02140",
+    property: "Multi-Family Rehab",
   },
   {
     image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1200",
