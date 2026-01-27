@@ -1,7 +1,20 @@
+import { Shield, Zap, Heart, Scale, Lightbulb, Users, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Shield, Zap, Heart, Scale, Lightbulb, Users } from "lucide-react";
+
+const team = [
+  {
+    name: "Caleb Johnson",
+    role: "Managing Director",
+    bio: "Leading 316 Capital with a vision for tech-enabled private lending and institutional excellence.",
+    image: "/src/assets/team/founder-1.png"
+  },
+  {
+    name: "Operations Lead",
+    role: "Head of Operations",
+    bio: "Ensuring the '11 out of 10' experience through streamlined underwriting and rapid capital deployment.",
+    image: "/src/assets/team/executive-2.png"
+  }
+];
 
 export default function About() {
   return (
@@ -64,6 +77,39 @@ export default function About() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-24 bg-white border-t border-gray-100">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-4 tracking-tighter uppercase">MEET THE TEAM</h2>
+            <p className="text-gold-600 font-bold uppercase tracking-[0.2em] text-sm">Founder-Led & Family-Driven</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {team.map((member, idx) => (
+              <div key={idx} className="group">
+                <div className="relative aspect-square overflow-hidden mb-6 border border-navy-950/5 shadow-lg">
+                  <div className="absolute inset-0 bg-navy-950/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                  />
+                  <div className="absolute bottom-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+                    <button className="bg-navy-950 p-3 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors">
+                      <Linkedin className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-navy-950 tracking-tight">{member.name}</h3>
+                <p className="text-gold-600 font-bold uppercase tracking-widest text-xs mb-3">{member.role}</p>
+                <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
