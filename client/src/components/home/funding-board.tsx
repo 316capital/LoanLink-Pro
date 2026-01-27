@@ -2,13 +2,15 @@ import { Badge } from "@/components/ui/badge";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
+import propertyDorchester from "@/assets/properties/dorchester-7unit.jpg";
+
 const fundedDeals = [
   {
-    image: "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&q=80&w=1200",
-    type: "Fix & Flip",
-    amount: "$4.2M",
-    location: "Back Bay, Boston",
-    property: "Historic Brownstone Rehab",
+    image: propertyDorchester,
+    type: "DSCR Cash Out",
+    amount: "$1.84M",
+    location: "Dorchester, MA 02121",
+    property: "7-Unit DSCR Portfolio",
   },
   {
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
