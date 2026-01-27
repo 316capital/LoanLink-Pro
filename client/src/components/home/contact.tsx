@@ -115,7 +115,10 @@ export function Contact() {
                 />
               </div>
 
-              <Button className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold py-6 rounded-none uppercase tracking-[0.2em] transition-all group">
+              <Button 
+                className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold py-6 rounded-none uppercase tracking-[0.2em] transition-all group"
+                onClick={() => window.location.href = 'mailto:info@316cap.com'}
+              >
                 Initialize Correspondence
                 <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Button>
