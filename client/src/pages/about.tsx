@@ -5,16 +5,18 @@ import { Shield, Zap, Heart, Scale, Lightbulb, Users, Linkedin } from "lucide-re
 
 const team = [
   {
-    name: "Caleb Johnson",
-    role: "Managing Director",
-    bio: "Leading 316 Capital with a vision for tech-enabled private lending and institutional excellence.",
-    image: "/src/assets/team/founder-1.png"
+    name: "Joshua Gutierrez",
+    role: "Managing Principal",
+    bio: "Visionary leader at 316 Capital, dedicated to providing honest answers, fast capital, and an institutional-grade experience for real estate investors.",
+    image: "/src/assets/team/joshua-gutierrez.jpg",
+    linkedin: "https://www.linkedin.com/in/joshua-gutierrez-798968105/"
   },
   {
     name: "Operations Lead",
     role: "Head of Operations",
     bio: "Ensuring the '11 out of 10' experience through streamlined underwriting and rapid capital deployment.",
-    image: "/src/assets/team/executive-2.png"
+    image: "/src/assets/team/executive-2.png",
+    linkedin: "#"
   }
 ];
 
@@ -102,9 +104,14 @@ export default function About() {
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                   />
                   <div className="absolute bottom-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
-                    <button className="bg-navy-950 p-3 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors">
+                    <a 
+                      href={member.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block bg-navy-950 p-3 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors"
+                    >
                       <Linkedin className="w-5 h-5" />
-                    </button>
+                    </a>
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold text-navy-950 tracking-tight">{member.name}</h3>
