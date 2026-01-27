@@ -7,18 +7,18 @@ export default function About() {
   return (
     <div className="min-h-screen bg-cream-50">
       {/* Hero Section - Navy */}
-      <section className="bg-navy-950 pt-40 pb-24 text-white relative overflow-hidden">
+      <section className="bg-navy-950 pt-32 pb-16 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(242,193,0,0.05),transparent)]"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
-            <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-xs uppercase tracking-[0.2em] mb-6">
+            <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
               THE 316 WAY
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter uppercase leading-[0.9]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tighter uppercase leading-[0.95]">
               A Simpler Way<br />
               <span className="text-gold-500">To Fund Your Deals.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl font-light">
+            <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl font-light">
               Every great project starts with a big dream. But in real estate, if the money moves slow, the deal dies. At 316 Capital, we're changing the game with funding that values your time as much as your vision.
             </p>
           </div>
