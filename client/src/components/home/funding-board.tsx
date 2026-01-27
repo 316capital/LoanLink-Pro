@@ -7,6 +7,7 @@ import propertyCambridge from "@/assets/properties/cambridge-fix-flip.jpg";
 import propertyBelmont from "@/assets/properties/belmont-fix-flip.jpg";
 import propertyTownhomes from "@/assets/properties/luxury-townhomes.jpg";
 import propertyRoslindale from "@/assets/properties/roslindale-bridge.jpg";
+import propertyStamford from "@/assets/properties/stamford-new-construction.png";
 
 const fundedDeals = [
   {
@@ -17,18 +18,18 @@ const fundedDeals = [
     property: "7-Unit Residential",
   },
   {
+    image: propertyStamford,
+    type: "New Construction Refinance",
+    amount: "$750K",
+    location: "Stamford, CT 06902",
+    property: "6-Unit Modern Build",
+  },
+  {
     image: propertyRoslindale,
     type: "Bridge Refinance",
     amount: "$1.2M",
     location: "Roslindale, MA 02131",
     property: "Refinance with Holdback",
-  },
-  {
-    image: propertyTownhomes,
-    type: "DSCR Portfolio",
-    amount: "$2.2M",
-    location: "Canton, GA 30114",
-    property: "5 Luxury Townhomes",
   },
   {
     image: propertyCambridge,
