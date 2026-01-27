@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Target, Shield, Zap } from "lucide-react";
+import { Shield, Zap, Heart, Scale, Lightbulb, Users } from "lucide-react";
 
 export default function About() {
   return (
@@ -12,52 +12,107 @@ export default function About() {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
             <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-xs uppercase tracking-[0.2em] mb-6">
-              Our Identity
+              THE 316 WAY
             </Badge>
             <h1 className="text-5xl md:text-8xl font-bold mb-8 tracking-tighter uppercase leading-[0.85]">
-              Institutional Capital.<br />
-              <span className="text-gold-500">AI-Enabled Speed.</span>
+              A Simpler Way<br />
+              <span className="text-gold-500">To Fund Your Deals.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-2xl font-light">
-              316 Capital is a technology-first private lending firm delivering institutional-grade capital allocation to the nation's most sophisticated real estate investors.
+            <p className="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl font-light">
+              Every great project starts with a big dream. But in real estate, if the money moves slow, the deal dies. At 316 Capital, we're changing the game with funding that values your time as much as your vision.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Values Grid - Cream */}
+      {/* Story Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative aspect-[4/5] overflow-hidden border border-navy-950/10 shadow-2xl">
+              <div className="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000" 
+                alt="316 Capital Story" 
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100"
+              />
+              <div className="absolute bottom-0 left-0 p-12 bg-gold-500 text-navy-950 font-bold text-2xl tracking-tighter uppercase">
+                A Light in<br />The Industry
+              </div>
+            </div>
+            <div className="lg:pl-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-8 tracking-tighter uppercase italic border-l-8 border-gold-500 pl-8">
+                The 316 Story
+              </h2>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  We didn't start 316 Capital just to be another lender. We started it to be a light in the industry—a place where investors can find honest answers and fast capital. We combine high-tech tools with high-touch service to get you a term sheet in under 24 hours.
+                </p>
+                <p>
+                  We are founder-led and family-driven. We treat your $17M pipeline with the same care we'd give our own projects. Today, we're known for simple pricing, fast wires, and a "Direct Match" promise: If you have a written offer, we'll do our best to beat it.
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
+                  <div className="p-6 bg-navy-50 border-l-4 border-navy-950">
+                    <h4 className="font-bold text-navy-950 uppercase tracking-widest text-xs mb-2 text-gold-600">Our Vision</h4>
+                    <p className="text-sm italic">"To be the most trusted private lender in the country, helping our clients improve their communities—one property at a time."</p>
+                  </div>
+                  <div className="p-6 bg-gold-50 border-l-4 border-gold-500">
+                    <h4 className="font-bold text-navy-950 uppercase tracking-widest text-xs mb-2 text-gold-600">Our Mission</h4>
+                    <p className="text-sm italic">"To provide simple, fair, and fast funding to real estate investors of all sizes. We are committed to an '11 out of 10' experience."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values Grid */}
       <section className="py-24 bg-cream-50">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl font-bold text-navy-950 mb-4 tracking-tighter uppercase">THE 316 WAY</h2>
+            <p className="text-gold-600 font-bold uppercase tracking-[0.2em] text-sm">Our Core Values</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
               {
+                icon: <Scale className="w-8 h-8 text-gold-500" />,
+                title: "Integrity in the Details",
+                ref: "(Colossians 3:23)",
+                description: "We do everything with excellence. Whether it's a small rental or a multi-million dollar construction deal, we work as if we're serving a higher purpose."
+              },
+              {
                 icon: <Zap className="w-8 h-8 text-gold-500" />,
-                title: "AI-DRIVEN SPEED",
-                description: "Leveraging proprietary algorithms for instant capital allocation and rapid certainty of execution."
+                title: "Move with Purpose & Speed",
+                description: "We know that 'hope deferred makes the heart sick.' We don't leave you hanging. We respond with urgency because your deposit and reputation are on the line."
               },
               {
-                icon: <Shield className="w-8 h-8 text-gold-500" />,
-                title: "INSTITUTIONAL RIGOR",
-                description: "Applying bank-level underwriting standards with the flexibility of a private capital partner."
+                icon: <Lightbulb className="w-8 h-8 text-gold-500" />,
+                title: "Radical Honesty",
+                description: "The truth is the best marketing. We offer clear floor rates—5.75% for rentals (DSCR) and 7.90% for bridge loans—no hidden fees, no surprises."
               },
               {
-                icon: <Target className="w-8 h-8 text-gold-500" />,
-                title: "TRUE ASSET-BASED",
-                description: "Focusing on the merit of the real estate asset rather than traditional personal credit metrics."
-              },
-              {
-                icon: <Users className="w-8 h-8 text-gold-500" />,
-                title: "NATIONWIDE REACH",
-                description: "Deploying capital across every major US market with deep local expertise and insight."
+                icon: <Heart className="w-8 h-8 text-gold-500" />,
+                title: "Stewards of Your Success",
+                description: "We aren't just a bank; we're partners. We grow when you grow. We take responsibility for the process from the first click to the final wire."
               }
             ].map((value, idx) => (
               <Card key={idx} className="bg-white border-none shadow-xl hover:shadow-2xl transition-all duration-300 rounded-none overflow-hidden group">
-                <CardContent className="p-8">
-                  <div className="mb-6 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
-                  <h3 className="text-lg font-bold text-navy-950 mb-3 tracking-wider">{value.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {value.description}
-                  </p>
+                <CardContent className="p-10">
+                  <div className="flex items-start gap-6">
+                    <div className="shrink-0 group-hover:scale-110 transition-transform duration-300">{value.icon}</div>
+                    <div>
+                      <h3 className="text-xl font-bold text-navy-950 mb-1 tracking-tight">
+                        {value.title}
+                        {value.ref && <span className="block text-xs text-gold-600 font-medium mt-1">{value.ref}</span>}
+                      </h3>
+                      <p className="text-base text-muted-foreground leading-relaxed mt-3">
+                        {value.description}
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -65,41 +120,21 @@ export default function About() {
         </div>
       </section>
 
-      {/* Story Section - Alternating */}
-      <section className="py-24 bg-white">
+      {/* CTA Section */}
+      <section className="py-20 bg-navy-950 text-white text-center">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative aspect-[4/5] overflow-hidden border border-navy-950/10 shadow-2xl">
-              <div className="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000" 
-                alt="Corporate architecture" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100"
-              />
-              <div className="absolute bottom-0 left-0 p-12 bg-gold-500 text-navy-950 font-bold text-2xl tracking-tighter uppercase">
-                Founded on<br />Efficiency
-              </div>
-            </div>
-            <div className="lg:pl-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-8 tracking-tighter uppercase italic border-l-8 border-gold-500 pl-8">
-                The 316 Standard
-              </h2>
-              <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  We recognized a fundamental disconnect in the private lending space: the speed required by investors was often hampered by antiquated underwriting processes.
-                </p>
-                <p>
-                  316 Capital was built to bridge that gap. By integrating advanced data analytics with decades of real estate expertise, we provide capital that moves as fast as the market does.
-                </p>
-                <div className="pt-10 border-t border-gray-100">
-                  <p className="text-gold-600 font-bold uppercase tracking-[0.2em] text-sm mb-4">Deployment Philosophy</p>
-                  <p className="text-3xl font-serif italic text-navy-900 leading-snug">
-                    "We don't just fund deals; we empower the transformation of the built environment through intelligent capital."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tighter uppercase italic">
+            A Partner Who <span className="text-gold-500">Has Your Back.</span>
+          </h2>
+          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+            Whether you’re flipping your first house or managing a massive portfolio, we provide the three things you need most: Honesty, Speed, and Fair Pricing.
+          </p>
+          <button 
+            onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
+            className="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-12 py-4 uppercase tracking-widest text-sm transition-all shadow-lg hover:shadow-gold-500/20"
+          >
+            Get Your Terms Now
+          </button>
         </div>
       </section>
     </div>
