@@ -10,7 +10,7 @@ const fundedDeals = [
     type: "DSCR Cash Out",
     amount: "$1.84M",
     location: "Dorchester, MA 02121",
-    property: "7-Unit DSCR Portfolio",
+    property: "7-Unit Residential",
   },
   {
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
