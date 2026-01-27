@@ -44,11 +44,11 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Products</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Bridge Loans</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Fix & Flip</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Ground-Up Construction</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">DSCR Rental Loans</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Multifamily Bridge</a></li>
+              <li><a href="#products" className="hover:text-gold-500 transition-colors">Bridge Loans</a></li>
+              <li><a href="#products" className="hover:text-gold-500 transition-colors">Fix & Flip</a></li>
+              <li><a href="#products" className="hover:text-gold-500 transition-colors">Ground-Up Construction</a></li>
+              <li><a href="#products" className="hover:text-gold-500 transition-colors">DSCR Rental Loans</a></li>
+              <li><a href="#products" className="hover:text-gold-500 transition-colors">Multifamily Bridge</a></li>
             </ul>
           </div>
           
