@@ -8,7 +8,7 @@ const team = [
     name: "Joshua Gutierrez",
     role: "Managing Principal",
     bio: "Visionary leader at 316 Capital, dedicated to providing honest answers, fast capital, and an institutional-grade experience for real estate investors.",
-    image: "/src/assets/team/joshua-full-body-refined.png",
+    image: "/src/assets/team/joshua-full-body-final.png",
     linkedin: "https://www.linkedin.com/in/joshua-gutierrez-798968105/"
   },
   {
