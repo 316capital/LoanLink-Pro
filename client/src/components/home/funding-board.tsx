@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import propertyDorchester from "@/assets/properties/dorchester-7unit.jpg";
 import propertyCambridge from "@/assets/properties/cambridge-fix-flip.jpg";
 import propertyBelmont from "@/assets/properties/belmont-fix-flip.jpg";
+import propertyTownhomes from "@/assets/properties/luxury-townhomes.jpg";
 
 const fundedDeals = [
   {
@@ -22,11 +23,11 @@ const fundedDeals = [
     property: "7-Unit Build",
   },
   {
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&q=80&w=1200",
-    type: "Condo Conversion",
-    amount: "$2.8M",
-    location: "South End, Boston",
-    property: "Luxury Conversion",
+    image: propertyTownhomes,
+    type: "DSCR Portfolio",
+    amount: "$2.2M",
+    location: "Metro Boston, MA",
+    property: "5 Luxury Townhomes",
   },
   {
     image: propertyCambridge,
