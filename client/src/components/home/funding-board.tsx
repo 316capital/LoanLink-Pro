@@ -104,30 +104,30 @@ export function FundingBoard() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: -100, opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="absolute inset-0 flex flex-col md:flex-row bg-white border border-gray-100 shadow-2xl"
+              className="absolute inset-0 flex flex-col md:flex-row bg-white border border-gray-100 shadow-2xl overflow-hidden"
             >
-              <div className="w-full md:w-1/2 h-2/3 md:h-full overflow-hidden">
+              <div className="w-full md:w-1/2 h-1/2 md:h-full overflow-hidden">
                 <motion.img 
                   src={fundedDeals[currentIndex].image} 
                   alt={fundedDeals[currentIndex].property} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="w-full md:w-1/2 p-10 flex flex-col justify-center">
-                <div className="mb-6">
-                  <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-3 py-1 font-bold text-xs uppercase tracking-widest mb-4">
+              <div className="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-center">
+                <div className="mb-4 md:mb-6">
+                  <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-3 py-1 font-bold text-[10px] md:text-xs uppercase tracking-widest mb-3 md:mb-4">
                     {fundedDeals[currentIndex].type}
                   </Badge>
-                  <h3 className="text-3xl md:text-4xl font-bold text-navy-950 mb-2 leading-tight uppercase tracking-tighter">
+                  <h3 className="text-2xl md:text-4xl font-bold text-navy-950 mb-1 md:mb-2 leading-tight uppercase tracking-tighter">
                     {fundedDeals[currentIndex].property}
                   </h3>
-                  <p className="text-sm text-muted-foreground uppercase tracking-widest font-medium">
+                  <p className="text-[10px] md:text-sm text-muted-foreground uppercase tracking-widest font-medium">
                     {fundedDeals[currentIndex].location}
                   </p>
                 </div>
-                <div className="pt-8 border-t border-gray-200">
-                  <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Total Deployment</span>
-                  <span className="text-5xl font-bold text-navy-950 tracking-tighter">
+                <div className="pt-4 md:pt-8 border-t border-gray-200">
+                  <span className="block text-[8px] md:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Total Deployment</span>
+                  <span className="text-3xl md:text-5xl font-bold text-navy-950 tracking-tighter">
                     {fundedDeals[currentIndex].amount}
                   </span>
                 </div>
