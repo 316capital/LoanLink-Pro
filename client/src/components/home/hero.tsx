@@ -49,8 +49,8 @@ export function Hero() {
           alt="Active construction site" 
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-navy-950/80 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-navy-950 via-navy-950/60 to-transparent" />
+        <div className="absolute inset-0 bg-[#001A54]/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/80 via-[#001A54]/40 to-transparent" />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-48">
