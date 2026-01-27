@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import propertyDorchester from "@/assets/properties/dorchester-7unit.jpg";
 import propertyCambridge from "@/assets/properties/cambridge-fix-flip.jpg";
+import propertyBelmont from "@/assets/properties/belmont-fix-flip.jpg";
 
 const fundedDeals = [
   {
@@ -35,11 +36,11 @@ const fundedDeals = [
     property: "Multi-Family Rehab",
   },
   {
-    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&q=80&w=1200",
-    type: "DSCR Rental",
-    amount: "$1.2M",
-    location: "Beacon Hill, Boston",
-    property: "Multi-Family Acquisition",
+    image: propertyBelmont,
+    type: "Fix & Flip",
+    amount: "$1.7M",
+    location: "Belmont, MA 02478",
+    property: "Residential Rehab",
   }
 ];
 
