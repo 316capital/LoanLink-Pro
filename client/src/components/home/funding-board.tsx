@@ -26,7 +26,7 @@ const fundedDeals = [
     image: propertyTownhomes,
     type: "DSCR Portfolio",
     amount: "$2.2M",
-    location: "Metro Boston, MA",
+    location: "Canton, GA 30114",
     property: "5 Luxury Townhomes",
   },
   {
