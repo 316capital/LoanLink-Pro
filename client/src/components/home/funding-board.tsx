@@ -25,11 +25,25 @@ const fundedDeals = [
     property: "6-Unit Modern Build",
   },
   {
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
+    type: "Ground Up",
+    amount: "$3.6M",
+    location: "East Boston, MA 02128",
+    property: "7-Unit Build",
+  },
+  {
     image: propertyRoslindale,
     type: "Bridge Refinance",
     amount: "$1.2M",
     location: "Roslindale, MA 02131",
     property: "Refinance with Holdback",
+  },
+  {
+    image: propertyTownhomes,
+    type: "DSCR Portfolio",
+    amount: "$2.2M",
+    location: "Canton, GA 30114",
+    property: "5 Luxury Townhomes",
   },
   {
     image: propertyCambridge,
