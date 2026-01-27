@@ -34,10 +34,10 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
-            <a href="#portfolio" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Portfolio</a>
-            <a href="#about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About</a>
-            <a href="#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
+            <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
+            <a href="/#portfolio" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Portfolio</a>
+            <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About</Link>
+            <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
             
             <div className="flex items-center space-x-2 ml-4">
               <Button 
@@ -73,10 +73,10 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-cream-50 border-b border-navy-950/5">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#products" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Products</a>
-            <a href="#portfolio" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Portfolio</a>
-            <a href="#about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">About</a>
-            <a href="#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Contact</a>
+            <a href="/#products" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Products</a>
+            <a href="/#portfolio" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Portfolio</a>
+            <Link href="/about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">About</Link>
+            <a href="/#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Contact</a>
             <div className="mt-4 space-y-2 px-3">
               <Button 
                 variant="ghost" 
