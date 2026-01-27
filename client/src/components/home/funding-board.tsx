@@ -19,7 +19,7 @@ const fundedDeals = [
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200",
     type: "Ground Up",
     amount: "$3.6M",
-    location: "East Boston, MA",
+    location: "East Boston, MA 02128",
     property: "7-Unit Build",
   },
   {
