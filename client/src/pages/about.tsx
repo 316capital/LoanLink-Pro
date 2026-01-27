@@ -14,7 +14,7 @@ export default function About() {
             <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-xs uppercase tracking-[0.2em] mb-6">
               THE 316 WAY
             </Badge>
-            <h1 className="text-5xl md:text-8xl font-bold mb-8 tracking-tighter uppercase leading-[0.85]">
+            <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tighter uppercase leading-[0.9]">
               A Simpler Way<br />
               <span className="text-gold-500">To Fund Your Deals.</span>
             </h1>
