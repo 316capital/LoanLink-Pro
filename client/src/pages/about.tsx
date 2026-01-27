@@ -123,12 +123,16 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-20 bg-navy-950 text-white text-center">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-5xl font-bold mb-8 tracking-tighter uppercase italic">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tighter uppercase italic">
             A Partner Who <span className="text-gold-500">Has Your Back.</span>
           </h2>
-          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 mb-6 max-w-2xl mx-auto">
             Whether you’re flipping your first house or managing a massive portfolio, we provide the three things you need most: Honesty, Speed, and Fair Pricing.
           </p>
+          <div className="mb-10 text-gold-500/80 font-serif italic text-lg max-w-3xl mx-auto border-t border-white/10 pt-8">
+            "By wisdom a house is built, and through understanding it is established; through knowledge its rooms are filled with rare and beautiful treasures."
+            <span className="block mt-2 text-xs uppercase tracking-[0.2em] opacity-60">Proverbs 24:3-4</span>
+          </div>
           <button 
             onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
             className="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-12 py-4 uppercase tracking-widest text-sm transition-all shadow-lg hover:shadow-gold-500/20"
