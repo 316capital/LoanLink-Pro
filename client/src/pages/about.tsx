@@ -89,7 +89,7 @@ export default function About() {
                   We didn't start 316 Capital just to be another lender. We started it to be a light in the industry—a place where investors can find honest answers and fast capital. We combine high-tech tools with high-touch service to get you a term sheet in under 24 hours.
                 </p>
                 <p>
-                  We are founder-led and family-driven. We treat your $17M pipeline with the same care we'd give our own projects. Today, we're known for simple pricing, fast wires, and a "Direct Match" promise: If you have a written offer, we'll do our best to beat it.
+                  We are founder-led and family-driven. We treat your pipeline with the same care we'd give our own projects. Today, we're known for simple pricing, fast wires, and a "Direct Match" promise: If you have a written offer, we'll do our best to beat it.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
@@ -171,7 +171,7 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-[90rem] mx-auto">
             {team.map((member, idx) => (
               <div key={idx} className="group flex flex-col h-full">
-                <div className="relative aspect-square overflow-hidden mb-4 border border-navy-950/5 shadow-md bg-gray-50">
+                <div className="relative aspect-square overflow-hidden mb-4 border border-navy-950/5 shadow-md bg-gray-50 shrink-0">
                   <div className="absolute inset-0 bg-navy-950/5 group-hover:bg-transparent transition-colors duration-500"></div>
                   <img 
                     src={member.image} 
