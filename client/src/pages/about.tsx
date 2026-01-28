@@ -48,13 +48,13 @@ export default function About() {
       <section className="bg-navy-950 pt-32 pb-16 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(242,193,0,0.05),transparent)]"></div>
         <div className="container mx-auto px-6 relative z-10">
+          <div className="absolute top-8 right-6 md:top-12 md:right-12 z-20">
+            <img src="/src/assets/logo-white.png" alt="316 Capital Logo" className="h-20 md:h-28 lg:h-32 w-auto opacity-90" />
+          </div>
           <div className="max-w-4xl">
             <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
               THE 316 WAY
             </Badge>
-            <div className="mb-8 opacity-90">
-              <img src="/src/assets/logo-white.png" alt="316 Capital Logo" className="h-12 w-auto" />
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tighter uppercase leading-[0.95]">
               A Simpler Way<br />
               <span className="text-gold-500">To Fund Your Deals.</span>
