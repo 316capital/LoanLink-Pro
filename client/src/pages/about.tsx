@@ -12,6 +12,13 @@ const team = [
     linkedin: "https://www.linkedin.com/in/joshua-gutierrez-798968105/"
   },
   {
+    name: "Peter Lagorio",
+    role: "Executive Director of Governance & Fund Strategy",
+    bio: "Institutional anchor with 30+ years in financial law and SEC fund structuring, ensuring rigorous professional standards.",
+    image: "/src/assets/team/peter-lagorio.png",
+    linkedin: "#"
+  },
+  {
     name: "Thomas Fernandes",
     role: "Director of Investor Relations",
     bio: "Cultivating institutional partnerships and ensuring capital deployment aligns with investor vision.",
@@ -47,30 +54,32 @@ export default function About() {
             <p className="text-gold-600 font-bold uppercase tracking-[0.2em] text-sm">Founder-Led & Family-Driven</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-[90rem] mx-auto">
             {team.map((member, idx) => (
-              <div key={idx} className="group">
-                <div className="relative aspect-square overflow-hidden mb-6 border border-navy-950/5 shadow-lg bg-gray-50">
+              <div key={idx} className="group flex flex-col h-full">
+                <div className="relative aspect-square overflow-hidden mb-4 border border-navy-950/5 shadow-md bg-gray-50">
                   <div className="absolute inset-0 bg-navy-950/5 group-hover:bg-transparent transition-colors duration-500"></div>
                   <img 
                     src={member.image} 
                     alt={member.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
                   />
-                  <div className="absolute bottom-4 right-4 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute bottom-3 right-3 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
                     <a 
                       href={member.linkedin} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-block bg-navy-950 p-2.5 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors"
+                      className="inline-block bg-navy-950 p-2 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors"
                     >
-                      <Linkedin className="w-4 h-4" />
+                      <Linkedin className="w-3.5 h-3.5" />
                     </a>
                   </div>
                 </div>
-                <h3 className="text-lg font-bold text-navy-950 tracking-tight leading-tight">{member.name}</h3>
-                <p className="text-gold-600 font-bold uppercase tracking-widest text-[10px] mb-2">{member.role}</p>
-                <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">{member.bio}</p>
+                <div className="flex-grow">
+                  <h3 className="text-base font-bold text-navy-950 tracking-tight leading-tight mb-1">{member.name}</h3>
+                  <p className="text-gold-600 font-bold uppercase tracking-widest text-[9px] mb-2 leading-tight">{member.role}</p>
+                  <p className="text-[11px] text-muted-foreground leading-relaxed line-clamp-4">{member.bio}</p>
+                </div>
               </div>
             ))}
           </div>
