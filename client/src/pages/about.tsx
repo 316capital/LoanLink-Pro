@@ -28,7 +28,7 @@ const team = [
   },
   {
     name: "Lee Gutierrez",
-    role: "Head of People",
+    role: "Head of People and Operations",
     bio: "Driving the cultural excellence and organizational growth that powers the '11 out of 10' experience.",
     image: "/src/assets/team/lee-gutierrez.jpg",
     linkedin: "#"
