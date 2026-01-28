@@ -117,7 +117,8 @@ export function ProductParams() {
                     "Gap Funding Allowed",
                     "Second Position Options",
                     "Seller Carry Back Allowed",
-                    "Portfolio Loan Programs"
+                    "Portfolio Loan Programs",
+                    "STR Loans - Qualify DSCR with AirDNA Data"
                   ].map((option, idx) => (
                     <div key={idx} className="flex items-center space-x-3">
                       <div className="h-1.5 w-1.5 rounded-full bg-gold-500/50" />
