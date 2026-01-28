@@ -34,9 +34,9 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
-            <a href="/#portfolio" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Portfolio</a>
             <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About</Link>
+            <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
+            <a href="/#funding" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Recent Funding</a>
             <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
             
             <div className="flex items-center space-x-2 ml-4">
