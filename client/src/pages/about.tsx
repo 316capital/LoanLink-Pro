@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Shield, Zap, Heart, Scale, Lightbulb, Users, Linkedin } from "lucide-react";
+import { Navbar } from "@/components/layout/navbar";
 
 const team = [
   {
@@ -44,13 +45,11 @@ const team = [
 export default function About() {
   return (
     <div className="min-h-screen bg-cream-50">
+      <Navbar />
       {/* Hero Section - Navy */}
       <section className="bg-navy-950 pt-32 pb-16 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(242,193,0,0.05),transparent)]"></div>
         <div className="container mx-auto px-6 relative z-10">
-          <div className="absolute top-8 left-6 md:top-12 md:left-12 z-20">
-            <img src="/src/assets/logo-white.png" alt="316 Capital Logo" className="h-20 md:h-28 lg:h-32 w-auto opacity-90" />
-          </div>
           <div className="max-w-4xl">
             <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
               THE 316 WAY
