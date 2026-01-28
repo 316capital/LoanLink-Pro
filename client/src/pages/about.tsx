@@ -44,10 +44,10 @@ const team = [
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-cream-50">
+    <div className="min-h-screen bg-cream-50 pt-20">
       <Navbar />
       {/* Hero Section - Navy */}
-      <section className="bg-navy-950 pt-32 pb-16 text-white relative overflow-hidden">
+      <section className="bg-navy-950 py-24 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(242,193,0,0.05),transparent)]"></div>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl">
