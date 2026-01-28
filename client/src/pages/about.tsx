@@ -52,6 +52,9 @@ export default function About() {
             <Badge variant="outline" className="border-gold-500/50 text-gold-500 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
               THE 316 WAY
             </Badge>
+            <div className="mb-8 opacity-90">
+              <img src="/src/assets/logo-white.png" alt="316 Capital Logo" className="h-12 w-auto" />
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tighter uppercase leading-[0.95]">
               A Simpler Way<br />
               <span className="text-gold-500">To Fund Your Deals.</span>
