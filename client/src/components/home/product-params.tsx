@@ -79,30 +79,19 @@ export function ProductParams() {
               <div className="pt-8 border-t border-white/10">
                 <h3 className="text-gold-500 text-sm font-bold uppercase tracking-widest mb-4">Borrower Requirements</h3>
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">Min. 620 FICO Score</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">LLC Borrowers Only</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">Non-Owner Occupied Only</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">Foreign Nationals Welcome</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">US-Based Assets Only</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gold-500" />
-                    <span className="text-xs font-bold text-white uppercase tracking-tight">No Experience Required</span>
-                  </div>
+                  {[
+                    "Min. 620 FICO Score",
+                    "LLC Borrowers Only",
+                    "Non-Owner Occupied Only",
+                    "Foreign Nationals Welcome",
+                    "US-Based Assets Only",
+                    "No Experience Required"
+                  ].map((req, idx) => (
+                    <div key={idx} className="flex items-center space-x-3">
+                      <div className="h-1.5 w-1.5 rounded-full bg-gold-500/50" />
+                      <span className="text-[10px] font-bold text-gray-300 uppercase tracking-tight">{req}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
 
