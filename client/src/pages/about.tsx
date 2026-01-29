@@ -9,35 +9,35 @@ const team = [
     name: "Joshua Gutierrez",
     role: "Managing Principal",
     bio: "Visionary leader at 316 Capital, dedicated to providing honest answers, fast capital, and an institutional-grade experience.",
-    image: "/src/assets/team/joshua-gutierrez-final.png",
+    image: "/assets/team/joshua-gutierrez-final.png",
     linkedin: "https://www.linkedin.com/in/joshua-gutierrez-798968105/"
   },
   {
     name: "Peter Lagorio",
     role: "Executive Director of Governance & Fund Strategy",
     bio: "Institutional anchor with 30+ years in financial law and SEC fund structuring, ensuring rigorous professional standards.",
-    image: "/src/assets/team/peter-lagorio.png",
+    image: "/assets/team/peter-lagorio.png",
     linkedin: "#"
   },
   {
     name: "Thomas Fernandes",
     role: "Director of Investor Relations",
     bio: "Cultivating institutional partnerships and ensuring capital deployment aligns with investor vision.",
-    image: "/src/assets/team/thomas-fernandes.jpg",
+    image: "/assets/team/thomas-fernandes.jpg",
     linkedin: "#"
   },
   {
     name: "Lee Gutierrez",
     role: "Head of People and Operations",
     bio: "Driving the cultural excellence and organizational growth that powers the '11 out of 10' experience.",
-    image: "/src/assets/team/lee-gutierrez.jpg",
+    image: "/assets/team/lee-gutierrez.jpg",
     linkedin: "#"
   },
   {
     name: "Kayla Ruano",
     role: "Executive Assistant",
     bio: "Optimizing operational efficiency and supporting the firm's rapid nationwide deployment.",
-    image: "/src/assets/team/kayla-ruano.png",
+    image: "/assets/team/kayla-ruano.png",
     linkedin: "#"
   }
 ];
