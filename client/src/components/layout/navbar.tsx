@@ -20,64 +20,67 @@ export function Navbar() {
   const authText = hasVisited ? "Client Portal" : "Client Portal";
 
   return (
-    <nav className="fixed w-full z-50 bg-cream-50 border-b border-navy-950/5">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
-          {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-8 lg:-ml-12">
-            <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <div className="flex items-center">
-                <img src={logo} alt="316 Capital Logo" className="h-32 md:h-44 lg:h-56 w-auto brightness-100" style={{ filter: 'none' }} />
-              </div>
-            </Link>
-          </div>
-
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
-            <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About Us</Link>
-            <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
-            <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact Us</a>
-            
-            <div className="flex items-center space-x-3 ml-4">
-              <a 
-                href="tel:+16175464817"
-                className="flex items-center space-x-2 bg-[#001A54]/5 hover:bg-[#001A54]/10 text-[#001A54] px-4 py-2 transition-all group border border-[#001A54]/10"
-                data-testid="link-phone-header"
-              >
-                <Phone className="w-3.5 h-3.5 text-[#F2C100] group-hover:scale-110 transition-transform" />
-                <span className="text-[11px] lg:text-xs font-bold uppercase tracking-widest">+1 (617) 546-4817</span>
-              </a>
-              <Button 
-                variant="ghost" 
-                className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-10 border-none shadow-none"
-                onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
-                data-testid="button-auth"
-              >
-                {authText}
-              </Button>
-              <Button 
-                className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
-                onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
-                data-testid="button-request-terms"
-              >
-                See your Rate
-              </Button>
-            </div>
-          </div>
-
-          <div className="md:hidden flex items-center space-x-4">
+    <nav className="fixed w-full z-50">
+      {/* Top Utility Bar */}
+      <div className="bg-[#001A54] py-2 border-b border-white/5">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center items-center">
             <a 
-              href="tel:+16175464817"
-              className="p-2 text-[#001A54] hover:text-[#F2C100] transition-colors"
+              href="tel:+16175464817" 
+              className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors group"
             >
-              <Phone size={20} />
+              <Phone className="w-3.5 h-3.5 text-[#F2C100] group-hover:scale-110 transition-transform" />
+              <span className="text-[10px] sm:text-xs font-medium tracking-[0.15em] uppercase">Phone: (617) 546-4817</span>
             </a>
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-[#001A54] hover:text-[#F2C100] focus:outline-none"
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-cream-50 border-b border-navy-950/5">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-20 items-center">
+            {/* Logo */}
+            <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-8 lg:-ml-12">
+              <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                <div className="flex items-center">
+                  <img src={logo} alt="316 Capital Logo" className="h-32 md:h-44 lg:h-56 w-auto brightness-100" style={{ filter: 'none' }} />
+                </div>
+              </Link>
+            </div>
+
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
+              <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About Us</Link>
+              <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Products</a>
+              <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact Us</a>
+              
+              <div className="flex items-center space-x-3 ml-4">
+                <Button 
+                  variant="ghost" 
+                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-10 border-none shadow-none"
+                  onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
+                  data-testid="button-auth"
+                >
+                  {authText}
+                </Button>
+                <Button 
+                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
+                  onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
+                  data-testid="button-request-terms"
+                >
+                  See your Rate
+                </Button>
+              </div>
+            </div>
+
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-[#001A54] hover:text-[#F2C100] focus:outline-none"
+              >
+                {isOpen ? <X size={24} /> : <Menu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
