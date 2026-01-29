@@ -22,15 +22,15 @@ export function Navbar() {
   return (
     <nav className="fixed w-full z-50">
       {/* Top Utility Bar */}
-      <div className="bg-[#001A54] py-1 border-b border-white/5">
+      <div className="bg-[#001A54] py-2 border-b border-white/5">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center">
             <a 
               href="tel:+16175464817" 
               className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors group"
             >
-              <Phone className="w-3 h-3 text-[#F2C100] group-hover:scale-110 transition-transform" />
-              <span className="text-[9px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Phone: (617) 546-4817</span>
+              <Phone className="w-3.5 h-3.5 text-[#F2C100] group-hover:scale-110 transition-transform" />
+              <span className="text-[10px] sm:text-xs font-medium tracking-[0.15em] uppercase">Phone: (617) 546-4817</span>
             </a>
           </div>
         </div>
@@ -38,12 +38,12 @@ export function Navbar() {
 
       <div className="bg-cream-50 border-b border-navy-950/5">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-14 items-center">
+          <div className="flex justify-between h-20 items-center">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-8 lg:-ml-12">
               <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <div className="flex items-center">
-                  <img src={logo} alt="316 Capital Logo" className="h-28 md:h-36 lg:h-44 w-auto brightness-100" style={{ filter: 'none' }} />
+                  <img src={logo} alt="316 Capital Logo" className="h-32 md:h-44 lg:h-56 w-auto brightness-100" style={{ filter: 'none' }} />
                 </div>
               </Link>
             </div>
@@ -57,14 +57,14 @@ export function Navbar() {
               <div className="flex items-center space-x-3 ml-4">
                 <Button 
                   variant="ghost" 
-                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-8 border-none shadow-none"
+                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-10 border-none shadow-none"
                   onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                   data-testid="button-auth"
                 >
                   {authText}
                 </Button>
                 <Button 
-                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-8 uppercase tracking-widest text-[10px]"
+                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
                   onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                   data-testid="button-request-terms"
                 >
