@@ -22,15 +22,15 @@ export function Navbar() {
   return (
     <nav className="fixed w-full z-50">
       {/* Top Utility Bar */}
-      <div className="bg-[#001A54] py-2 border-b border-white/5">
+      <div className="bg-[#001A54] py-1 border-b border-white/5">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center">
             <a 
               href="tel:+16175464817" 
               className="flex items-center space-x-2 text-white/90 hover:text-white transition-colors group"
             >
-              <Phone className="w-3.5 h-3.5 text-[#F2C100] group-hover:scale-110 transition-transform" />
-              <span className="text-[10px] sm:text-xs font-medium tracking-[0.15em] uppercase">Phone: (617) 546-4817</span>
+              <Phone className="w-2.5 h-2.5 text-[#F2C100] group-hover:scale-110 transition-transform" />
+              <span className="text-[9px] sm:text-[10px] font-medium tracking-[0.15em] uppercase">Phone: (617) 546-4817</span>
             </a>
           </div>
         </div>
