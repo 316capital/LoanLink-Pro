@@ -7,7 +7,7 @@ const products = [
   {
     title: "DSCR Rental",
     description: "Long-term rental loans based on asset cash flow.",
-    floorRate: "5.75%",
+    rateRange: "5.75% - 7.99%",
     maxLTV: "80%",
     timeline: "14 Days",
     amortization: "360 Months",
@@ -17,7 +17,7 @@ const products = [
   {
     title: "Fix & Flip",
     description: "Purchase + Rehab capital with 48-hour draw times.",
-    floorRate: "7.90%",
+    rateRange: "7.90% - 11.5%",
     maxLTV: "90%",
     timeline: "7 Days",
     amortization: "12-30 Months",
@@ -27,7 +27,7 @@ const products = [
   {
     title: "BRRRR",
     description: "Buy, Rehab, Rent, Refinance, Repeat capital for portfolio scaling.",
-    floorRate: "7.90%",
+    rateRange: "7.90% - 11.5%",
     maxLTV: "90%",
     timeline: "7 Days",
     amortization: "12-30 Months",
@@ -37,7 +37,7 @@ const products = [
   {
     title: "Ground-Up",
     description: "Vertical financing for single family and multi-unit builds.",
-    floorRate: "9.00%",
+    rateRange: "8.99% - 11.25%",
     maxLTV: "85%",
     timeline: "14 Days",
     amortization: "12-30 Months",
@@ -90,8 +90,8 @@ export function ProductsGrid() {
                   
                   <div className="pt-4 space-y-2 border-t border-white/10">
                     <div className="flex justify-between text-[11px]">
-                      <span className="text-white/70 uppercase">Floor Rate</span>
-                      <span className="font-bold text-white">{product.floorRate}</span>
+                      <span className="text-white/70 uppercase">Interest Rates</span>
+                      <span className="font-bold text-white">{product.rateRange}</span>
                     </div>
                     <div className="flex justify-between text-[11px]">
                       <span className="text-white/70 uppercase">Max LTV/LTC</span>
