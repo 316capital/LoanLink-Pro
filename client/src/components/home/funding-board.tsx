@@ -205,23 +205,23 @@ export function FundingBoard() {
           </div>
 
           {/* Featured Video Case Study - Full Width Below */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative aspect-video bg-navy-950 overflow-hidden group border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,26,84,0.3)] rounded-sm"
+              className="relative aspect-[4/5] md:aspect-video bg-navy-950 overflow-hidden group border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,26,84,0.3)] rounded-sm"
             >
               <video 
                 src="/assets/videos/testimonial.mp4" 
-                className="w-full h-full object-contain bg-black"
+                className="w-full h-full object-cover"
                 controls
                 poster="/assets/videos/thumbnail.png"
                 playsInline
               >
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute top-6 left-6 pointer-events-none">
+              <div className="absolute top-6 left-6 pointer-events-none z-10">
                 <Badge className="bg-[#F2C100] hover:bg-[#F2C100] text-[#001A54] border-none rounded-none px-4 py-1.5 font-black text-[10px] uppercase tracking-[0.25em] shadow-2xl">
                   FEATURED CASE STUDY
                 </Badge>
