@@ -30,11 +30,11 @@ export function Footer() {
                 <img src={logoWhite} alt="316 Capital Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
               </div>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+            <p className="text-white text-sm leading-relaxed mb-6">
               Institutional-grade private credit for professional real estate investors and developers. Headquartered in Boston, MA.
             </p>
             
-            <div className="text-xs text-gray-500 space-y-2">
+            <div className="text-xs text-white/80 space-y-2">
               <p>Massachusetts Private Money Lender</p>
               <p>Hard Money for Rehabs · DSCR Loans</p>
               <p>Real Estate Investment Financing Nationwide</p>
@@ -42,8 +42,8 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Products</h4>
-            <ul className="space-y-3 text-gray-400 text-sm">
+            <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Products</h4>
+            <ul className="space-y-3 text-white/70 text-sm">
               <li><a href="#products" className="hover:text-gold-500 transition-colors">Bridge Loans</a></li>
               <li><a href="#products" className="hover:text-gold-500 transition-colors">Fix & Flip</a></li>
               <li><a href="#products" className="hover:text-gold-500 transition-colors">Ground-Up Construction</a></li>
@@ -53,10 +53,10 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li><a href="#" className="hover:text-gold-500 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Our Team</a></li>
+            <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Company</h4>
+            <ul className="space-y-3 text-white/70 text-sm">
+              <li><a href="/about" className="hover:text-gold-500 transition-colors">About Us</a></li>
+              <li><a href="/about" className="hover:text-gold-500 transition-colors">Our Team</a></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Track Record</a></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Careers</a></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Press</a></li>
@@ -64,12 +64,12 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Contact</h4>
-            <ul className="space-y-3 text-gray-400 text-sm mb-6">
+            <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Contact</h4>
+            <ul className="space-y-3 text-white/70 text-sm mb-6">
               <li>867 Boylston Street, 5th Floor</li>
               <li>Boston, MA 02116</li>
-              <li className="pt-2">info@316cap.com</li>
-              <li>+1 (617) 546-4817</li>
+              <li className="pt-2 text-white">info@316cap.com</li>
+              <li className="text-white">+1 (617) 546-4817</li>
             </ul>
             
             {/* Social Media Links */}
@@ -99,15 +99,15 @@ export function Footer() {
         </div>
         
         <div className="mt-12 mb-8 text-center">
-          <a href="#" className="text-[10px] font-bold text-gray-500 hover:text-white uppercase tracking-[0.3em] transition-colors">
+          <a href="#" className="text-[10px] font-bold text-white/60 hover:text-white uppercase tracking-[0.3em] transition-colors">
             Download the 316 Mobile App — Monitor Allocations & Track Terms
           </a>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/60">
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
-            <img src={equalHousing} alt="Equal Housing Lender" className="h-8 w-auto brightness-0 invert opacity-50 hover:opacity-100 transition-opacity" />
+            <img src={equalHousing} alt="Equal Housing Lender" className="h-8 w-auto brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
           </div>
           <div className="flex space-x-6 mt-6 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
@@ -117,8 +117,8 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/5">
-          <p className="text-[9px] text-gray-600 leading-relaxed text-left max-w-full italic uppercase tracking-wider opacity-60">
-            <span className="font-bold text-gray-500 mr-2">Important Legal Disclosure:</span>
+          <p className="text-[10px] text-white leading-relaxed text-left max-w-full italic uppercase tracking-wider">
+            <span className="font-bold text-gold-500 mr-2">Important Legal Disclosure:</span>
             316 Capital is a provider of business-purpose loans intended for investment purposes only. We do not offer consumer loans, residential mortgages for owner-occupied properties, or any financing covered by the Truth in Lending Act (TILA). All loans are subject to credit approval, property valuation, and final underwriting guidelines. This is not a commitment to lend or a promise to fund your loan. Rates, terms, and conditions are subject to change without notice and may vary based on the specific attributes of the transaction.
           </p>
         </div>
