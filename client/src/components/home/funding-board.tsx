@@ -82,6 +82,11 @@ export function FundingBoard() {
   return (
     <section id="portfolio" className="py-24 bg-cream-50 overflow-hidden mb-24 md:mb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-8">
+          <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-6 py-2 font-black text-[12px] uppercase tracking-[0.4em] bg-white shadow-sm">
+            THE PROOF HUB
+          </Badge>
+        </div>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
