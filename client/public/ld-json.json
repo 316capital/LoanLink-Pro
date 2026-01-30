@@ -37,10 +37,12 @@
   ],
   "areaServed": "US",
   "serviceType": [
+    "Private Money Lending",
+    "Hard Money Lending",
+    "DSCR Lending",
     "Bridge Loans",
     "Fix & Flip Financing",
     "Ground-Up Construction Loans",
-    "DSCR Rental Loans",
     "Multifamily Bridge"
   ]
 }
