@@ -35,9 +35,9 @@ export function Footer() {
             </p>
             
             <div className="text-xs text-white/80 space-y-2">
-              <p>Nationwide Private Money Lender</p>
+              <p>Massachusetts & New England Private Money Lender</p>
               <p>Institutional Hard Money Lender</p>
-              <p>Specialist DSCR Lender</p>
+              <p>Specialist DSCR Lender Nationwide</p>
             </div>
           </div>
           

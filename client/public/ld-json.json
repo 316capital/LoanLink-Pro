@@ -35,7 +35,20 @@
     "https://www.linkedin.com/company/316-capital/",
     "https://www.instagram.com/316capital/"
   ],
-  "areaServed": "US",
+  "areaServed": [
+    {
+      "@type": "State",
+      "name": "Massachusetts"
+    },
+    {
+      "@type": "Place",
+      "name": "New England"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    }
+  ],
   "serviceType": [
     "Private Money Lending",
     "Hard Money Lending",
