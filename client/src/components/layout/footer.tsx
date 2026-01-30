@@ -104,13 +104,6 @@ export function Footer() {
           </a>
         </div>
         
-        <div className="mt-12 border-t border-white/10 pt-8 pb-4">
-          <p className="text-[10px] text-gray-500 leading-relaxed text-center max-w-5xl mx-auto italic">
-            <span className="font-bold text-gray-400 uppercase tracking-widest block mb-2">Important Legal Disclosure</span>
-            316 Capital is a provider of business-purpose loans intended for investment purposes only. We do not offer consumer loans, residential mortgages for owner-occupied properties, or any financing covered by the Truth in Lending Act (TILA). All loans are subject to credit approval, property valuation, and final underwriting guidelines. This is not a commitment to lend or a promise to fund your loan. Rates, terms, and conditions are subject to change without notice and may vary based on the specific attributes of the transaction.
-          </p>
-        </div>
-        
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
             <p>&copy; 2026 316 Capital LLC. All rights reserved.</p>
@@ -121,6 +114,13 @@ export function Footer() {
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Lending Licenses</a>
           </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/5">
+          <p className="text-[9px] text-gray-600 leading-relaxed text-left max-w-full italic uppercase tracking-wider opacity-60">
+            <span className="font-bold text-gray-500 mr-2">Important Legal Disclosure:</span>
+            316 Capital is a provider of business-purpose loans intended for investment purposes only. We do not offer consumer loans, residential mortgages for owner-occupied properties, or any financing covered by the Truth in Lending Act (TILA). All loans are subject to credit approval, property valuation, and final underwriting guidelines. This is not a commitment to lend or a promise to fund your loan. Rates, terms, and conditions are subject to change without notice and may vary based on the specific attributes of the transaction.
+          </p>
         </div>
       </div>
     </footer>
