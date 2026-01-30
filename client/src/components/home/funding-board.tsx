@@ -227,10 +227,15 @@ export function FundingBoard() {
                 </Badge>
               </div>
             </motion.div>
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center max-w-lg mx-auto">
               <h4 className="text-xl text-navy-950 font-bold uppercase tracking-tight leading-tight">Institutional Scaling via 316 Vault</h4>
-              <div className="h-0.5 w-8 bg-[#F2C100] mx-auto my-3" />
-              <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-[0.25em] opacity-80">Real Results. Fast Capital.</p>
+              <div className="h-0.5 w-8 bg-[#F2C100] mx-auto my-4" />
+              <div className="bg-navy-50/50 p-6 border-l-2 border-[#F2C100] text-left">
+                <p className="text-sm text-navy-950 leading-relaxed font-medium">
+                  "Brady, an experienced developer, reached an impasse mid-construction on his new SFH project in Medfield, MA. Within 14 days, the 316 Network deployed <span className="text-[#001A54] font-bold">$650,000</span> in bridge capital, ensuring a seamless path to completion."
+                </p>
+              </div>
+              <p className="text-[9px] font-bold uppercase tracking-[0.3em] text-gold-600 mt-6 opacity-80">Real Results. Fast Capital. Institutional Execution.</p>
             </div>
           </div>
         </div>
