@@ -74,7 +74,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8"
+            className="text-4xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
           >
             Institutional Capital. <br />
             <span className="text-[#F2C100]">AI-Enabled</span> Speed.
@@ -84,9 +84,9 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.9 } }
-            className="text-xl md:text-2xl text-gray-200 mb-4 max-w-2xl font-light leading-relaxed"
+            className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl font-medium leading-relaxed"
           >
-            We combine a massive network of institutional funds with proprietary technology to close complex real estate deals in record time.
+            We provide high-velocity private credit for professional real estate investors. Nationwide scale with deep roots in Massachusetts and New England.
           </motion.p>
           
           <motion.p 

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Cpu, Network, Zap, Share2, Binary, Activity, Layers, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export function IntelligenceEngine() {
   const steps = [
@@ -34,141 +35,67 @@ export function IntelligenceEngine() {
   ];
 
   return (
-    <section id="intelligence" className="py-24 bg-white relative overflow-hidden">
-      {/* Subtle tech background elements */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,#eab308_0%,transparent_50%)]" />
-        <div className="grid grid-cols-12 h-full w-full">
-          {Array.from({ length: 48 }).map((_, i) => (
-            <div key={i} className="border-[0.5px] border-navy-950/20" />
-          ))}
-        </div>
-      </div>
-
+    <section id="intelligence" className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/30 px-4 py-1.5 rounded-full mb-6"
           >
-            <Activity className="h-4 w-4 text-gold-600 animate-pulse" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gold-600">The 316 Intelligence™ Engine</span>
-          </motion.div>
-          
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold text-navy-950 mb-6 tracking-tight"
-          >
-            Precision <span className="text-gold-500">Capital Routing</span>
-          </motion.h2>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto font-light leading-relaxed"
-          >
-            We don’t just lend; we optimize. Our proprietary engine analyzes your deal against thousands of institutional data points to route your project to the most aggressive capital source in real-time.
-          </motion.p>
-        </div>
-
-        {/* Process Flow */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
-          {steps.map((step, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 * i }}
-              className="relative p-8 bg-white border border-gray-100 shadow-sm group hover:border-gold-500/30 transition-all duration-500"
-            >
-              <div className="absolute top-0 left-0 w-1 h-0 bg-gold-500 group-hover:h-full transition-all duration-500" />
-              <div className="mb-6 inline-flex items-center justify-center w-12 h-12 bg-gold-500/10 text-gold-600">
-                <step.icon className="h-6 w-6" />
-              </div>
-              <h3 className="text-navy-950 font-bold text-lg mb-4 uppercase tracking-wide group-hover:text-gold-600 transition-colors">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {step.desc}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Network Visual */}
-        <div className="text-center">
-          <motion.h3 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-12"
-          >
-            The 316 Network
-          </motion.h3>
-          
-          <div className="relative py-12">
-            {/* Pulsing lines background */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-               <motion.div 
-                 animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
-                 transition={{ duration: 4, repeat: Infinity }}
-                 className="w-[600px] h-[600px] rounded-full border border-gold-500/20"
-               />
-               <motion.div 
-                 animate={{ scale: [1, 1.5, 1], opacity: [0.02, 0.05, 0.02] }}
-                 transition={{ duration: 6, repeat: Infinity, delay: 1 }}
-                 className="w-[800px] h-[800px] rounded-full border border-gold-500/10"
-               />
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
-              {partners.map((partner, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 + (i * 0.1) }}
-                  className="flex flex-col items-center group"
-                >
-                  <div className="w-16 h-16 rounded-full bg-navy-50/50 border border-navy-100 flex items-center justify-center mb-4 group-hover:border-gold-500/50 group-hover:bg-gold-500/10 transition-all duration-500 relative">
-                    <motion.div 
-                      animate={{ scale: [1, 1.2, 1] }}
-                      transition={{ duration: 2, repeat: Infinity, delay: i * 0.5 }}
-                      className="absolute inset-0 rounded-full border border-gold-500/0 group-hover:border-gold-500/20"
-                    />
-                    <Cpu className="h-6 w-6 text-navy-400 group-hover:text-gold-600" />
-                  </div>
-                  <span className="text-xs font-bold text-gray-400 group-hover:text-navy-950 transition-colors uppercase tracking-widest text-center px-4">
-                    {partner}
-                  </span>
-                </motion.div>
+            <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-4 py-1 font-bold text-[10px] uppercase tracking-widest mb-6 bg-white">
+              Institutional Speed
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold text-navy-950 mb-6 uppercase tracking-tight leading-none">
+              The 316 <br/><span className="text-gold-600">Intelligence Engine</span>
+            </h2>
+            <p className="text-lg text-navy-900/80 mb-8 leading-relaxed font-medium">
+              We've replaced legacy bureaucracy with high-velocity capital allocation. Our proprietary underwriting engine processes complex deal structures in hours, not weeks.
+            </p>
+            
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { label: "AI Allocation", value: "Real-Time" },
+                { label: "Data-Driven", value: "Precision" }
+              ].map((stat, i) => (
+                <div key={i} className="bg-navy-50 p-4 border-l-2 border-gold-500">
+                  <div className="text-[10px] font-bold text-navy-900/50 uppercase tracking-widest mb-1">{stat.label}</div>
+                  <div className="text-xl font-bold text-navy-950">{stat.value}</div>
+                </div>
               ))}
             </div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.8 }}
-            className="mt-20"
-          >
-            <Button 
-              className="bg-[#001A54] hover:bg-[#001A54]/90 text-[#F2C100] font-bold rounded-none px-12 py-7 text-sm uppercase tracking-[0.2em] shadow-xl transition-all"
-              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-            >
-              Get Instant Pricing
-            </Button>
           </motion.div>
+
+          <div className="relative">
+            <div className="absolute inset-0 bg-gold-500/5 blur-3xl rounded-full" />
+            <div className="relative bg-navy-950 p-8 border border-navy-900 shadow-2xl">
+              <div className="space-y-6">
+                <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="h-2 w-2 rounded-full bg-gold-500 animate-pulse" />
+                    <span className="text-xs font-bold text-white uppercase tracking-widest">Scanning Markets</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-gold-500">v4.2.0</span>
+                </div>
+                <div className="space-y-4">
+                  {[1, 2, 3].map((_, i) => (
+                    <div key={i} className="h-2 bg-white/5 w-full rounded-full overflow-hidden">
+                      <motion.div 
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${40 + i * 20}%` }}
+                        transition={{ duration: 1.5, delay: i * 0.2 }}
+                        className="h-full bg-gold-500/30"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="pt-4">
+                  <div className="text-[10px] font-bold text-white/40 uppercase tracking-widest mb-2">Underwriting Status</div>
+                  <div className="text-2xl font-bold text-white tracking-tighter">OPTIMIZED ALLOCATION</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

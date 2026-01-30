@@ -1,50 +1,43 @@
 import { motion } from "framer-motion";
-import { Cpu, ShieldCheck, Network } from "lucide-react";
+import { Building2, Zap, Globe } from "lucide-react";
 
 export function Infrastructure() {
-  const items = [
-    {
-      icon: Cpu,
-      title: "Proprietary AI",
-      desc: "Real-time risk assessment for 24-hour term issuance."
-    },
-    {
-      icon: ShieldCheck,
-      title: "316 Vault",
-      desc: "Encrypted institutional-grade document security."
-    },
-    {
-      icon: Network,
-      title: "316 Network",
-      desc: "Exclusive access to private liquidity and off-market deal flow."
-    }
-  ];
-
   return (
-    <section className="py-20 bg-white border-t border-gray-100">
+    <section className="py-20 bg-cream-50 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-gray-400 mb-4">The 316 Infrastructure</h2>
-          <div className="h-1 w-12 bg-gold-500 mx-auto" />
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {items.map((item, i) => (
+          {[
+            {
+              title: "Institutional Capital",
+              desc: "Direct access to private credit facilities for unlimited scale.",
+              icon: Building2
+            },
+            {
+              title: "AI Underwriting",
+              desc: "Data-driven risk assessment for 48-hour term sheets.",
+              icon: Zap
+            },
+            {
+              title: "Nationwide Scope",
+              desc: "Strategic financing across Massachusetts and 45+ states.",
+              icon: Globe
+            }
+          ].map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center group"
+              className="flex items-start space-x-6"
             >
-              <div className="mb-6 inline-flex items-center justify-center w-16 h-16 bg-navy-50 text-navy-950 group-hover:bg-gold-500 group-hover:text-navy-950 transition-all duration-300">
-                <item.icon className="h-8 w-8" />
+              <div className="mt-1 p-3 bg-white border border-gray-200 text-gold-600 shadow-sm">
+                <item.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-navy-950 font-bold text-lg mb-3 uppercase tracking-wider">{item.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mx-auto italic">
-                {item.desc}
-              </p>
+              <div>
+                <h3 className="text-lg font-bold text-navy-950 uppercase tracking-tight mb-2">{item.title}</h3>
+                <p className="text-sm text-navy-900/70 leading-relaxed font-medium">{item.desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>
