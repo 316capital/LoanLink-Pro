@@ -27,7 +27,6 @@ export default function Home() {
         <ProductsGrid />
         <ProductParams />
         <DrawCallout />
-        <Testimonials />
         <Contact />
       </main>
       <Footer />
