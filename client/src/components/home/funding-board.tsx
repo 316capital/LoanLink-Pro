@@ -155,75 +155,86 @@ export function FundingBoard() {
           </div>
         </div>
 
-        {/* Video Case Study & Testimonials Integration */}
-        <div className="mt-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-           <div className="lg:col-span-12 mb-8">
-              <div className="h-px bg-gray-200 w-full mb-16" />
-              <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4 uppercase tracking-tight">Partner Success</h2>
-                <div className="h-1 w-20 bg-gold-500 mx-auto" />
-              </div>
-           </div>
-           
-           <div className="lg:col-span-7">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+        {/* Partner Success Grid */}
+        <div className="mt-32 border-t border-gray-200 pt-16">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4 uppercase tracking-tight">Partner Success</h2>
+            <div className="h-1 w-20 bg-gold-500 mx-auto" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                name: "Michael Chen",
+                role: "Managing Director, Urban Infill LLC",
+                content: "316 Capital's 48-hour draw times are game-changing. I've scaled from 3 to 15 active projects this year because their capital never lags.",
+                avatar: "https://i.pravatar.cc/150?u=michael"
+              },
+              {
+                name: "Sarah Jenkins",
+                role: "Principal, Southern Realty Group",
+                content: "Institutional scale with a tech-first approach. They underwrote a complex mixed-use deal in 3 days that our local bank wouldn't touch.",
+                avatar: "https://i.pravatar.cc/150?u=sarah"
+              },
+              {
+                name: "Robert Vance",
+                role: "Developer, Vance & Co.",
+                content: "The BRRRR product they offered allowed me to recycle capital twice as fast as traditional bridge lenders. Truly the smartest source of funding.",
+                avatar: "https://i.pravatar.cc/150?u=robert"
+              }
+            ].map((t, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="relative aspect-video bg-navy-900 overflow-hidden group cursor-pointer border border-navy-800 shadow-2xl"
+                transition={{ delay: i * 0.1 }}
+                className="bg-white p-8 border border-gray-100 relative group shadow-sm hover:shadow-md transition-all h-full"
               >
-                <img 
-                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Client Video Case Study" 
-                  className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                    <Play className="w-8 h-8 text-navy-950 fill-current ml-1" />
+                <Quote className="absolute top-4 right-4 h-8 w-8 text-gold-500/10" />
+                <p className="text-muted-foreground italic mb-6 leading-relaxed text-sm">"{t.content}"</p>
+                <div className="flex items-center space-x-4 mt-auto">
+                  <img src={t.avatar} alt={t.name} className="h-10 w-10 rounded-full grayscale group-hover:grayscale-0 transition-all" />
+                  <div>
+                    <h4 className="font-bold text-navy-950 text-sm">{t.name}</h4>
+                    <p className="text-[10px] text-gold-600 font-bold uppercase tracking-widest">{t.role}</p>
                   </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-950 to-transparent">
-                  <span className="text-gold-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2 block">Featured Case Study</span>
-                  <h4 className="text-xl md:text-2xl text-white font-bold uppercase tracking-tight">Institutional Scaling via 316 Vault</h4>
                 </div>
               </motion.div>
-           </div>
+            ))}
+          </div>
 
-           <div className="lg:col-span-5 space-y-6">
-              {[
-                {
-                  name: "Michael Chen",
-                  role: "Managing Director, Urban Infill LLC",
-                  content: "316 Capital's 48-hour draw times are game-changing. I've scaled from 3 to 15 active projects this year because their capital never lags.",
-                  avatar: "https://i.pravatar.cc/150?u=michael"
-                },
-                {
-                  name: "Sarah Jenkins",
-                  role: "Principal, Southern Realty Group",
-                  content: "Institutional scale with a tech-first approach. They underwrote a complex mixed-use deal in 3 days that our local bank wouldn't touch.",
-                  avatar: "https://i.pravatar.cc/150?u=sarah"
-                }
-              ].map((t, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="bg-white p-8 border border-gray-100 relative group shadow-sm hover:shadow-md transition-all"
-                >
-                  <Quote className="absolute top-4 right-4 h-8 w-8 text-gold-500/10" />
-                  <p className="text-muted-foreground italic mb-6 leading-relaxed">"{t.content}"</p>
-                  <div className="flex items-center space-x-4">
-                    <img src={t.avatar} alt={t.name} className="h-10 w-10 rounded-full grayscale group-hover:grayscale-0 transition-all" />
-                    <div>
-                      <h4 className="font-bold text-navy-950 text-sm">{t.name}</h4>
-                      <p className="text-[10px] text-gold-600 font-bold uppercase tracking-widest">{t.role}</p>
-                    </div>
+          {/* Featured Video Case Study - Full Width Below */}
+          <div className="max-w-4xl mx-auto">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.98 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative aspect-video bg-navy-900 overflow-hidden group cursor-pointer border border-navy-800 shadow-2xl"
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000" 
+                alt="Client Video Case Study" 
+                className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                  <Play className="w-8 h-8 text-navy-950 fill-current ml-1" />
+                </div>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-950 to-transparent">
+                <div className="flex justify-between items-end">
+                  <div>
+                    <span className="text-gold-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2 block">Featured Case Study</span>
+                    <h4 className="text-xl md:text-2xl text-white font-bold uppercase tracking-tight">Institutional Scaling via 316 Vault</h4>
                   </div>
-                </motion.div>
-              ))}
-           </div>
+                  <Badge variant="outline" className="border-gold-500/30 text-gold-500 rounded-none px-3 py-1 font-bold text-[10px] uppercase tracking-[0.2em] hidden md:block">
+                    WATCH NOW
+                  </Badge>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
