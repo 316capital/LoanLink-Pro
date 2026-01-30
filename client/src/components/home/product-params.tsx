@@ -10,7 +10,7 @@ export function ProductParams() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="absolute top-0 right-0 mt-4 mr-4 lg:mr-8 hidden sm:flex items-center space-x-4 bg-[#F2C100]/5 p-5 border border-[#F2C100]/20 backdrop-blur-xl shadow-[0_0_30px_rgba(242,193,0,0.1)] group">
           <div className="text-right">
-            <div className="text-3xl lg:text-4xl font-bold text-cream-50 leading-none font-mono tracking-tighter group-hover:text-[#F2C100] transition-colors">48-HOUR</div>
+            <div className="text-3xl lg:text-4xl font-bold text-cream-50 leading-none font-mono tracking-tighter group-hover:text-[#F2C100] transition-colors">24-HOUR</div>
             <div className="text-[9px] font-black text-[#F2C100] uppercase tracking-[0.3em] mt-1">Draw Trust Badge</div>
           </div>
           <div className="relative">

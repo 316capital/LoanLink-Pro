@@ -151,7 +151,7 @@ export function Hero() {
            {[
              { label: "Deployed", value: 100, prefix: "$", suffix: "M+" },
              { label: "Combined Experience", value: 30, suffix: " Years" },
-             { label: "Draw Turnaround", value: 48, suffix: "H" },
+             { label: "Draw Turnaround", value: 24, suffix: "H" },
              { label: "States Covered", value: 44 },
              { label: "Avg. Closing", value: 7, suffix: " Days" }
            ].map((stat, i) => (

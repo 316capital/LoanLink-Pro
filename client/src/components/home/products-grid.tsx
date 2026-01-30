@@ -16,7 +16,7 @@ const products = [
   },
   {
     title: "Fix & Flip",
-    description: "Purchase + Rehab capital with 48-hour draw times.",
+    description: "Purchase + Rehab capital with 24-hour draw times.",
     rateRange: "7.90% - 11.5%",
     maxLTV: "90%",
     timeline: "7 Days",

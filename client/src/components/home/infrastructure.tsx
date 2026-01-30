@@ -14,7 +14,7 @@ export function Infrastructure() {
             },
             {
               title: "AI Underwriting",
-              desc: "Data-driven risk assessment for 48-hour term sheets.",
+              desc: "Data-driven risk assessment for 24-hour term sheets.",
               icon: Zap
             },
             {
