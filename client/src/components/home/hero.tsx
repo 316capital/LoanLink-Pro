@@ -119,7 +119,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 1.5 } }
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl border-t border-white/10 pt-10"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl border-t border-white/10 pt-10 pb-20 md:pb-0"
           >
             {[
               { step: "1", title: "Quick App", desc: "Digital intake in 2m" },
