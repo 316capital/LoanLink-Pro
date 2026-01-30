@@ -22,11 +22,11 @@ export default function Home() {
         <Hero />
         <Infrastructure />
         <ExperienceSection />
+        <FundingBoard />
         <IntelligenceEngine />
         <ProductsGrid />
         <ProductParams />
         <DrawCallout />
-        <FundingBoard />
         <Testimonials />
         <Contact />
       </main>
