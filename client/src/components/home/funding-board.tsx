@@ -210,30 +210,26 @@ export function FundingBoard() {
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="relative aspect-video bg-navy-900 overflow-hidden group cursor-pointer border border-navy-800 shadow-2xl"
+              className="relative aspect-video bg-navy-900 overflow-hidden group border border-navy-800 shadow-2xl"
             >
-              <img 
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000" 
-                alt="Client Video Case Study" 
-                className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-gold-500 rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                  <Play className="w-8 h-8 text-navy-950 fill-current ml-1" />
-                </div>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-navy-950 to-transparent">
-                <div className="flex justify-between items-end">
-                  <div>
-                    <span className="text-gold-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-2 block">Featured Case Study</span>
-                    <h4 className="text-xl md:text-2xl text-white font-bold uppercase tracking-tight">Institutional Scaling via 316 Vault</h4>
-                  </div>
-                  <Badge variant="outline" className="border-gold-500/30 text-gold-500 rounded-none px-3 py-1 font-bold text-[10px] uppercase tracking-[0.2em] hidden md:block">
-                    WATCH NOW
-                  </Badge>
-                </div>
+              <video 
+                src="/assets/videos/testimonial.mp4" 
+                className="w-full h-full object-cover"
+                controls
+                poster="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000"
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute top-4 left-4 pointer-events-none">
+                <Badge variant="outline" className="bg-gold-500 border-none text-navy-950 rounded-none px-3 py-1 font-bold text-[10px] uppercase tracking-[0.2em] shadow-lg">
+                  FEATURED CASE STUDY
+                </Badge>
               </div>
             </motion.div>
+            <div className="mt-6 text-center">
+              <h4 className="text-xl md:text-2xl text-navy-950 font-bold uppercase tracking-tight">Institutional Scaling via 316 Vault</h4>
+              <p className="text-muted-foreground text-sm mt-2 font-medium uppercase tracking-widest">Real Results. Fast Capital. Institutional Experience.</p>
+            </div>
           </div>
         </div>
       </div>
