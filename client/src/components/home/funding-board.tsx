@@ -80,9 +80,9 @@ export function FundingBoard() {
   }, []);
 
   return (
-    <section id="portfolio" className="py-24 bg-cream-50 overflow-hidden mb-24 md:mb-0">
+    <section id="portfolio" className="py-20 bg-cream-50 overflow-hidden mb-24 md:mb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-6">
           <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-6 py-2 font-black text-[12px] uppercase tracking-[0.4em] bg-white shadow-sm">
             THE PROOF HUB
           </Badge>
@@ -91,7 +91,7 @@ export function FundingBoard() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row justify-between items-center mb-16"
+          className="flex flex-col md:flex-row justify-between items-center mb-10"
         >
           <div>
             <h2 className="text-4xl font-bold text-navy-950 tracking-tight uppercase">Recently Funded</h2>
@@ -149,7 +149,7 @@ export function FundingBoard() {
           </AnimatePresence>
 
           {/* Dots Indicator */}
-          <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 flex space-x-2">
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 flex space-x-2">
             {fundedDeals.map((_, i) => (
               <button
                 key={i}
@@ -161,13 +161,13 @@ export function FundingBoard() {
         </div>
 
         {/* Partner Success Grid */}
-        <div className="mt-32 border-t border-gray-200 pt-16">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-4 uppercase tracking-tight">Partner Success</h2>
-            <div className="h-1 w-20 bg-gold-500 mx-auto" />
+        <div className="mt-24 border-t border-gray-200 pt-12">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-3 uppercase tracking-tight">Partner Success</h2>
+            <div className="h-1 w-16 bg-gold-500 mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
               {
                 name: "Michael Chen",
@@ -194,14 +194,14 @@ export function FundingBoard() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-8 border border-gray-100 relative group shadow-sm hover:shadow-md transition-all h-full"
+                className="bg-white p-6 border border-gray-100 relative group shadow-sm hover:shadow-md transition-all h-full"
               >
-                <Quote className="absolute top-4 right-4 h-8 w-8 text-gold-500/10" />
-                <p className="text-muted-foreground italic mb-6 leading-relaxed text-sm">"{t.content}"</p>
+                <Quote className="absolute top-4 right-4 h-6 w-6 text-gold-500/10" />
+                <p className="text-muted-foreground italic mb-4 leading-relaxed text-sm">"{t.content}"</p>
                 <div className="flex items-center space-x-4 mt-auto">
-                  <img src={t.avatar} alt={t.name} className="h-10 w-10 rounded-full grayscale group-hover:grayscale-0 transition-all" />
+                  <img src={t.avatar} alt={t.name} className="h-8 w-8 rounded-full grayscale group-hover:grayscale-0 transition-all" />
                   <div>
-                    <h4 className="font-bold text-navy-950 text-sm">{t.name}</h4>
+                    <h4 className="font-bold text-navy-950 text-xs">{t.name}</h4>
                     <p className="text-[10px] text-gold-600 font-bold uppercase tracking-widest">{t.role}</p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ export function FundingBoard() {
             ))}
           </div>
 
-          {/* Featured Video Case Study - Vertical Alignment */}
+          {/* Featured Video Case Study - Full Width Below */}
           <div className="max-w-[320px] mx-auto group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
