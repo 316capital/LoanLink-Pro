@@ -72,6 +72,10 @@ export function ProductParams() {
                       <span className="w-1.5 h-1.5 bg-gold-500 mr-3"></span>
                       Urban & Suburban Core
                     </li>
+                    <li className="flex items-center">
+                      <span className="w-1.5 h-1.5 bg-gold-500 mr-3"></span>
+                      Rural Markets Welcome
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -107,7 +111,8 @@ export function ProductParams() {
                     "Second Position Options",
                     "Seller Carry Back Allowed",
                     "Portfolio Loan Programs",
-                    "STR Loans - Qualify DSCR with AirDNA Data"
+                    "STR Loans - AirDNA Data",
+                    "Rural Properties Accepted"
                   ].map((option, idx) => (
                     <div key={idx} className="flex items-center space-x-3">
                       <div className="h-1.5 w-1.5 rounded-full bg-gold-500/50" />
