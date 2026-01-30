@@ -11,7 +11,6 @@ import { Testimonials } from "@/components/home/testimonials";
 import { FAQSection } from "@/components/home/faq-section";
 import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 import { Infrastructure } from "@/components/home/infrastructure";
-import { LendingMap } from "@/components/home/lending-map";
 
 import { Contact } from "@/components/home/contact";
 
@@ -25,7 +24,6 @@ export default function Home() {
         <ExperienceSection />
         <FundingBoard />
         <IntelligenceEngine />
-        <LendingMap />
         <ProductsGrid />
         <ProductParams />
         <DrawCallout />
