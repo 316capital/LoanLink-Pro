@@ -233,7 +233,7 @@ export function FundingBoard() {
               </div>
             </motion.div>
             <div className="mt-8 text-center max-w-lg mx-auto">
-              <h4 className="text-xl text-navy-950 font-bold uppercase tracking-tight leading-tight">Institutional Scaling via 316 Vault</h4>
+              <h4 className="text-xl text-navy-950 font-bold uppercase tracking-tight leading-tight">Funding Without Limits via The 316 network</h4>
               <div className="h-0.5 w-8 bg-[#F2C100] mx-auto my-4" />
               <div className="bg-navy-50/50 p-6 border-l-2 border-[#F2C100] text-left">
                 <p className="text-sm text-navy-950 leading-relaxed font-medium">
