@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "316 Capital LLC",
+  "image": "https://316cap.com/assets/logo-white.png",
+  "@id": "https://316cap.com",
+  "url": "https://316cap.com",
+  "telephone": "+1-617-546-4817",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "867 Boylston Street, 5th Floor",
+    "addressLocality": "Boston",
+    "addressRegion": "MA",
+    "postalCode": "02116",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.3489,
+    "longitude": -71.0815
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/316-capital/",
+    "https://www.instagram.com/316capital/"
+  ],
+  "areaServed": "US",
+  "serviceType": [
+    "Bridge Loans",
+    "Fix & Flip Financing",
+    "Ground-Up Construction Loans",
+    "DSCR Rental Loans",
+    "Multifamily Bridge"
+  ]
+}
