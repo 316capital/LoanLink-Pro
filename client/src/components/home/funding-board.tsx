@@ -205,31 +205,32 @@ export function FundingBoard() {
           </div>
 
           {/* Featured Video Case Study - Vertical Alignment */}
-          <div className="max-w-md mx-auto">
+          <div className="max-w-[320px] mx-auto group">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative aspect-[9/16] bg-navy-950 overflow-hidden group border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,26,84,0.3)] rounded-sm"
+              className="relative aspect-[9/16] bg-navy-950 overflow-hidden border-[6px] border-[#001A54] shadow-[0_32px_64px_-16px_rgba(0,26,84,0.4)] rounded-xl ring-1 ring-gold-500/30"
             >
+              <div className="absolute inset-0 border border-white/10 rounded-lg pointer-events-none z-10" />
               <video 
                 src="/assets/videos/testimonial.mp4" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
                 controls
                 playsInline
               >
                 Your browser does not support the video tag.
               </video>
-              <div className="absolute top-6 left-6 pointer-events-none z-10">
-                <Badge className="bg-[#F2C100] hover:bg-[#F2C100] text-[#001A54] border-none rounded-none px-4 py-1.5 font-black text-[10px] uppercase tracking-[0.25em] shadow-2xl">
+              <div className="absolute top-4 left-4 pointer-events-none z-20">
+                <Badge className="bg-[#F2C100] hover:bg-[#F2C100] text-[#001A54] border-none rounded-none px-3 py-1 font-black text-[9px] uppercase tracking-[0.2em] shadow-xl">
                   FEATURED CASE STUDY
                 </Badge>
               </div>
             </motion.div>
-            <div className="mt-10 text-center max-w-2xl mx-auto">
-              <h4 className="text-2xl md:text-3xl text-navy-950 font-bold uppercase tracking-tight leading-tight">Institutional Scaling via 316 Vault</h4>
-              <div className="h-0.5 w-12 bg-[#F2C100] mx-auto my-4" />
-              <p className="text-muted-foreground text-xs md:text-sm font-bold uppercase tracking-[0.3em] opacity-80">Real Results. Fast Capital. Institutional Experience.</p>
+            <div className="mt-8 text-center">
+              <h4 className="text-xl text-navy-950 font-bold uppercase tracking-tight leading-tight">Institutional Scaling via 316 Vault</h4>
+              <div className="h-0.5 w-8 bg-[#F2C100] mx-auto my-3" />
+              <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-[0.25em] opacity-80">Real Results. Fast Capital.</p>
             </div>
           </div>
         </div>
