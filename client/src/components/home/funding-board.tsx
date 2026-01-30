@@ -11,6 +11,13 @@ import propertyStamford from "@/assets/properties/stamford-new-construction.png"
 
 const fundedDeals = [
   {
+    image: "/assets/properties/medfield-bridge.jpg",
+    type: "Mid-Construction Bridge Refi",
+    amount: "$650,000",
+    location: "Medfield, MA 02052",
+    property: "Residential Refinance",
+  },
+  {
     image: propertyDorchester,
     type: "DSCR Cash Out",
     amount: "$1.84M",
