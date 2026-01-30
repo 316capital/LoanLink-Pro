@@ -204,19 +204,18 @@ export function FundingBoard() {
             ))}
           </div>
 
-          {/* Featured Video Case Study - Full Width Below */}
-          <div className="max-w-3xl mx-auto">
+          {/* Featured Video Case Study - Vertical Alignment */}
+          <div className="max-w-md mx-auto">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative aspect-[4/5] md:aspect-video bg-navy-950 overflow-hidden group border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,26,84,0.3)] rounded-sm"
+              className="relative aspect-[9/16] bg-navy-950 overflow-hidden group border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,26,84,0.3)] rounded-sm"
             >
               <video 
                 src="/assets/videos/testimonial.mp4" 
                 className="w-full h-full object-cover"
                 controls
-                poster="/assets/videos/thumbnail.png"
                 playsInline
               >
                 Your browser does not support the video tag.
