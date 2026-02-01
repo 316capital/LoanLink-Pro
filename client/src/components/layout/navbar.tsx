@@ -1,12 +1,45 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { Menu, X, Phone } from "lucide-react";
+import { Link, useLocation } from "wouter";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import logo from "@/assets/logo.png";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+
+const solutions = [
+  {
+    title: "BRRR Strategy",
+    href: "/products/brrrr",
+    description: "Buy, Rehab, Rent, Refinance. The ultimate wealth-building engine.",
+  },
+  {
+    title: "Fix & Flip",
+    href: "/products/fix-flip",
+    description: "Short-term bridge financing for acquisition and renovation.",
+  },
+  {
+    title: "New Construction",
+    href: "/products/new-construction",
+    description: "Ground-up capital for developers and home builders.",
+  },
+  {
+    title: "Rental / DSCR",
+    href: "/products/rental",
+    description: "Long-term financing based on property cash flow.",
+  },
+];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasVisited, setHasVisited] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const visited = localStorage.getItem("hasVisited316");
@@ -16,6 +49,10 @@ export function Navbar() {
       localStorage.setItem("hasVisited316", "true");
     }
   }, []);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   const authText = hasVisited ? "Client Portal" : "Client Portal";
 
@@ -49,9 +86,42 @@ export function Navbar() {
             </div>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
+            <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
               <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About Us</Link>
-              <a href="/#products" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Loan Solutions</a>
+              
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider p-0 h-auto font-heading">
+                      Loan Solutions
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white border border-navy-950/10 shadow-xl">
+                        {solutions.map((solution) => (
+                          <li key={solution.title}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={solution.href}
+                                className={cn(
+                                  "block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-navy-50 hover:text-[#001A54] group"
+                                )}
+                              >
+                                <div className="text-sm font-bold leading-none uppercase tracking-tight text-[#001A54] group-hover:text-gold-600 transition-colors">
+                                  {solution.title}
+                                </div>
+                                <p className="line-clamp-2 text-xs leading-snug text-slate-500 font-medium mt-1">
+                                  {solution.description}
+                                </p>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
               <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact Us</a>
               
               <div className="flex items-center space-x-3 ml-4">
@@ -89,9 +159,19 @@ export function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-cream-50 border-b border-navy-950/5">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="/#products" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Loan Solutions</a>
-            <Link href="/about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">About Us</Link>
-            <a href="/#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50">Contact Us</a>
+            <div className="px-3 py-2 text-xs font-black uppercase tracking-[0.2em] text-[#001A54]/40 border-b border-navy-950/5 mb-2">Loan Solutions</div>
+            {solutions.map((item) => (
+              <Link 
+                key={item.href}
+                href={item.href}
+                className="block px-6 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 border-l-2 border-transparent hover:border-gold-500 transition-all uppercase tracking-tight"
+              >
+                {item.title}
+              </Link>
+            ))}
+            <div className="h-px bg-navy-950/5 my-2" />
+            <Link href="/about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50 uppercase tracking-wider">About Us</Link>
+            <a href="/#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact Us</a>
             
             <a 
               href="tel:+16175464817"
