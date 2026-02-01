@@ -78,7 +78,7 @@ export default function FlipProduct() {
         </section>
 
         {/* Conventus-Inspired Intro Section */}
-        <section className="relative bg-white py-24 overflow-hidden">
+        <section className="relative bg-white py-24 overflow-hidden border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
               <motion.div 
@@ -119,14 +119,35 @@ export default function FlipProduct() {
                 viewport={{ once: true }}
                 className="lg:col-span-5 relative"
               >
-                <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-4 translate-y-4" />
-                <div className="relative aspect-[4/5] max-w-sm mx-auto overflow-hidden shadow-2xl">
-                  <img 
-                    src={investorRelationship} 
-                    alt="Investor Relationship" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  />
-                </div>
+                <Card className="rounded-none border-none shadow-2xl bg-[#001A54] text-white p-10 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 p-8 opacity-10">
+                    <Hammer className="h-32 w-32" />
+                  </div>
+                  <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Loan Parameters</h3>
+                  <div className="space-y-6 relative z-10">
+                    {[
+                      { label: "Eligible Assets", value: "1-4 Res, Multi-Family (5-29), Mixed Use" },
+                      { label: "Loan Amounts", value: "$100K – $10MM+" },
+                      { label: "Max LTC", value: "90% Purchase / 100% Rehab" },
+                      { label: "Interest Rates", value: "Starting at 7.75%" },
+                      { label: "Loan Terms", value: "6 – 24 Months" },
+                      { label: "Interest Only", value: "Yes" },
+                      { label: "Min FICO", value: "620" },
+                      { label: "Closing Timeline", value: "5 – 10 Days" }
+                    ].map((row, i) => (
+                      <div key={i} className="flex justify-between border-b border-white/10 pb-4">
+                        <span className="text-gray-400 text-[10px] uppercase font-bold tracking-widest">{row.label}</span>
+                        <span className="text-[#F2C100] font-bold text-sm text-right max-w-[150px]">{row.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Button 
+                    className="w-full mt-10 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black rounded-none py-8 uppercase tracking-widest text-sm"
+                    onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+                  >
+                    Request Bridge Terms
+                  </Button>
+                </Card>
               </motion.div>
             </div>
           </div>
@@ -278,41 +299,6 @@ export default function FlipProduct() {
           </div>
         </section>
 
-        {/* Institutional Terms Table */}
-        <section className="py-24 bg-white border-b border-gray-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-navy-950 uppercase tracking-tight">Capital Parameters</h2>
-              <div className="h-1 w-20 bg-gold-500 mx-auto mt-6" />
-            </div>
-            
-            <div className="max-w-4xl mx-auto bg-cream-50/50 border border-gray-100 p-10">
-              <div className="space-y-6">
-                {[
-                  { label: "Eligible Assets", value: "1-4 Residential, Multi-Family (5-29), Mixed Use" },
-                  { label: "Loan Amounts", value: "$100K – $10MM+" },
-                  { label: "Max LTC", value: "90% Purchase / 100% Rehab" },
-                  { label: "Interest Rates", value: "Starting at 7.75%" },
-                  { label: "Loan Terms", value: "6 – 24 Months" },
-                  { label: "Interest Only", value: "Yes" },
-                  { label: "Min FICO", value: "620 (Experience Options Available)" },
-                  { label: "Closing Timeline", value: "5 – 10 Days" }
-                ].map((param, i) => (
-                  <div key={i} className="flex justify-between items-center border-b border-navy-950/10 pb-4 last:border-0 last:pb-0">
-                    <span className="text-gray-500 font-bold uppercase tracking-widest text-[10px]">{param.label}</span>
-                    <span className="text-navy-950 font-bold text-sm text-right">{param.value}</span>
-                  </div>
-                ))}
-              </div>
-              <Button 
-                className="w-full mt-12 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-8 uppercase tracking-widest text-sm"
-                onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-              >
-                Request Bridge Terms
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="py-24 bg-white">
