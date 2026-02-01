@@ -129,7 +129,7 @@ export default function RentalProduct() {
                     <img 
                       src={rentalConsultation} 
                       alt="Institutional Rental Consultation" 
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-cover transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />
                     <div className="absolute bottom-0 left-0 p-8 text-white">
