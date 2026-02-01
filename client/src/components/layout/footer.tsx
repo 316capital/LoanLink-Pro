@@ -110,8 +110,8 @@ export function Footer() {
             <img src={equalHousing} alt="Equal Housing Lender" className="h-8 w-auto brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" />
           </div>
           <div className="flex space-x-6 mt-6 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
             <a href="#" className="hover:text-white transition-colors">Lending Licenses</a>
           </div>
         </div>

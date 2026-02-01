@@ -7,6 +7,8 @@ import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import About from "@/pages/about";
+import PrivacyPolicy from "@/pages/legal/privacy";
+import TermsConditions from "@/pages/legal/terms";
 import RentalProduct from "@/pages/products/rental";
 import FlipProduct from "@/pages/products/fix-flip";
 import BrrrrProduct from "@/pages/products/brrrr";
@@ -19,6 +21,8 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/privacy" component={PrivacyPolicy} />
+        <Route path="/terms" component={TermsConditions} />
         <Route path="/products/rental" component={RentalProduct} />
         <Route path="/products/fix-flip" component={FlipProduct} />
         <Route path="/products/brrrr" component={BrrrrProduct} />
