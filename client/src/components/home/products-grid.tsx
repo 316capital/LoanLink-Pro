@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: "fix-flip",
-    title: "Fix & Flip",
+    title: "Bridge / Fix & Flip",
     description: "Purchase + Rehab capital with 24-hour draw times.",
     rateRange: "7.90% - 11.5%",
     maxLTV: "90%",

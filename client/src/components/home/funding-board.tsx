@@ -55,14 +55,14 @@ const fundedDeals = [
   },
   {
     image: propertyCambridge,
-    type: "Fix & Flip",
+    type: "Bridge / Fix & Flip",
     amount: "$2.6M",
     location: "Cambridge, MA 02140",
     property: "Multi-Family Rehab",
   },
   {
     image: propertyBelmont,
-    type: "Fix & Flip",
+    type: "Bridge / Fix & Flip",
     amount: "$1.7M",
     location: "Belmont, MA 02478",
     property: "Residential Rehab",

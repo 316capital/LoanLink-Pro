@@ -19,7 +19,7 @@ export default function FlipProduct() {
               <span className="text-[10px] font-bold uppercase tracking-widest text-gold-500">Institutional Bridge Capital</span>
             </motion.div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tight leading-tight">
-              Fix & Flip <br /> <span className="text-gold-500">Capital</span>
+              Bridge / Fix & Flip <br /> <span className="text-gold-500">Capital</span>
             </h1>
             <p className="text-xl text-gray-300 mb-10 leading-relaxed font-medium">
               High-velocity acquisition and rehab funding designed for the speed of the professional flip market. 24-hour draw times guaranteed.
