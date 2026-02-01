@@ -28,55 +28,59 @@ import {
 export default function RentalProduct() {
   return (
     <div className="pt-20">
-      {/* Asteris-Inspired Hero Section */}
-      <section className="relative min-h-[45vh] flex items-center bg-[#001A54] text-white overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(242,193,0,0.1),transparent)]" />
+      {/* Enhanced Hero Section */}
+      <section className="relative min-h-[85vh] flex items-center bg-[#001A54] text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img 
             src={rentalHero} 
             alt="Institutional backdrop" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
           />
+          <div className="absolute inset-0 bg-navy-950/30 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/40 to-transparent" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold uppercase tracking-tight"
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="max-w-3xl"
           >
-            Rental Property <span className="text-[#F2C100] italic">Financing</span>
-          </motion.h1>
+            <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md">
+              <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Institutional Private Credit</span>
+            </div>
+            <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tight leading-[1.1] mb-8">
+              Rental Property <br /> 
+              <span className="text-[#F2C100] italic font-medium">Financing</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
+              Strategic capital for professional investors scaling nationwide portfolios. 
+              No W-2s, no DTI checks, institutional speed.
+            </p>
+            <Button 
+              size="lg"
+              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
+              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+            >
+              Start Your Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </motion.div>
         </div>
       </section>
 
-      {/* Overlapping Content Section */}
-      <section className="relative bg-white pb-24 overflow-visible">
+      {/* Tighter Content Section */}
+      <section className="relative bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-start relative">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             
-            {/* The Overlapping Circle Image */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative z-20 -mt-24 lg:-mt-32 shrink-0 self-center lg:self-start"
-            >
-              <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden border-[12px] border-white shadow-2xl bg-cream-50">
-                <img 
-                  src={rentalLifestyle} 
-                  alt="Professional investor" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                />
-              </div>
-            </motion.div>
-
             {/* Content Area */}
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex-1 pt-12 lg:pt-20"
+              className="order-2 lg:order-1"
             >
               <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Rental Financing</h2>
               <h3 className="text-3xl md:text-5xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
@@ -90,19 +94,34 @@ export default function RentalProduct() {
                 <p>
                   Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
                 </p>
-                <p className="text-base text-navy-900/60 leading-relaxed">
-                  Whether you're adding a single turnkey home or <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">scaling a stabilized portfolio</span> of hundreds, we deliver flexible, competitively priced financing structured around your goals, not cookie-cutter terms.
-                </p>
               </div>
 
-              <div className="mt-12">
-                <Button 
-                  size="lg"
-                  className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-black px-10 py-7 rounded-none transition-all uppercase tracking-widest text-xs shadow-xl"
-                  onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-                >
-                  Get Started With Us
-                </Button>
+              <div className="mt-10 flex items-center space-x-6">
+                <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
+                  <Zap className="h-3 w-3 fill-current text-gold-500" />
+                  <span>24-Hour Term Issuance</span>
+                </div>
+                <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
+                  <Shield className="h-3 w-3 fill-current text-gold-500" />
+                  <span>Institutional Capital</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Side Image */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative order-1 lg:order-2"
+            >
+              <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-6 translate-y-6" />
+              <div className="relative aspect-square md:aspect-video lg:aspect-square overflow-hidden shadow-2xl">
+                <img 
+                  src={rentalLifestyle} 
+                  alt="Professional investor" 
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                />
               </div>
             </motion.div>
           </div>
