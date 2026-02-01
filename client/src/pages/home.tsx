@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/home/testimonials";
 import { FAQSection } from "@/components/home/faq-section";
 import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 import { Infrastructure } from "@/components/home/infrastructure";
+import { PartnershipSection } from "@/components/home/partnership-section";
 
 import { Contact } from "@/components/home/contact";
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <Infrastructure />
         <ExperienceSection />
+        <PartnershipSection />
         <FundingBoard />
         <IntelligenceEngine />
         <ProductsGrid />
