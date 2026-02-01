@@ -78,28 +78,45 @@ export default function RentalProduct() {
         {/* Side-by-Side Content Section */}
         <section className="relative bg-white py-24 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="flex flex-col lg:flex-row gap-20 items-start">
               
               {/* Content Area */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="order-2 lg:order-1"
+                className="flex-1"
               >
                 <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Rental Financing</h2>
                 <h3 className="text-3xl md:text-5xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
                   Long-Term Leverage. <br /> <span className="text-gold-600 italic font-medium">Built for Performance.</span>
                 </h3>
                 
-                <div className="space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
-                  <p>
-                    At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
-                  </p>
-                  <p>
-                    Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
-                  </p>
-                </div>
+              <div className="space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
+                <p>
+                  At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
+                </p>
+                
+                {/* Repositioned and significantly resized lifestyle image */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="py-4"
+                >
+                  <div className="relative w-full max-w-[280px] overflow-hidden shadow-lg rounded-sm border border-gold-500/10">
+                    <img 
+                      src={rentalLifestyle} 
+                      alt="Happy couple" 
+                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                    />
+                  </div>
+                </motion.div>
+
+                <p>
+                  Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
+                </p>
+              </div>
 
                 <div className="mt-10 flex items-center space-x-6">
                   <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
@@ -113,22 +130,7 @@ export default function RentalProduct() {
                 </div>
               </motion.div>
 
-              {/* Side Image */}
-              <motion.div 
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="relative order-1 lg:order-2"
-              >
-                <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-6 translate-y-6" />
-                <div className="relative aspect-square overflow-hidden shadow-2xl">
-                  <img 
-                    src={rentalLifestyle} 
-                    alt="Professional investor" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  />
-                </div>
-              </motion.div>
+              {/* Side Image Removed from here and moved inside content */}
             </div>
           </div>
         </section>
