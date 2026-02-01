@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
-import heroVideo from "@/assets/videos/hero-ultimate-montage.mp4";
+import heroVideo from "@/assets/videos/hero-boston-montage.mp4";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
