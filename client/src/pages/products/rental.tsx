@@ -93,6 +93,9 @@ export default function RentalProduct() {
                     DSCR (Debt Service Coverage Ratio) loans are the secret weapon of professional real estate investors. Instead of verifying your personal income or debt-to-income ratio, we look at the property's ability to cover its own expenses.
                   </p>
                   <p>
+                    We specialize in <strong>Blanket and Portfolio Loans</strong>, allowing you to cross-collateralize multiple assets under a single loan structure to maximize leverage and streamline your monthly debt service.
+                  </p>
+                  <p>
                     Whether you're acquiring a new rental or pulling equity from an existing portfolio, our <span className="text-gold-600 italic">316 Intel Engine</span> rapidly calculates your eligibility based on real-time market rents and property performance.
                   </p>
                 </div>
@@ -132,6 +135,7 @@ export default function RentalProduct() {
                       { label: "Max LTV (Refi)", value: "75-80%" },
                       { label: "Loan Terms", value: "30-Year Fixed" },
                       { label: "Min DSCR", value: "1.00 - 1.20" },
+                      { label: "Portfolio Strategy", value: "Blanket Loans" },
                       { label: "Property Types", value: "1-4 Units / MF" }
                     ].map((row, i) => (
                       <div key={i} className="flex justify-between border-b border-white/10 pb-4">
@@ -166,6 +170,7 @@ export default function RentalProduct() {
                   {[
                     "No Tax Returns Required",
                     "Qualify on Market Rents",
+                    "Blanket / Portfolio Loan Options",
                     "Close in an LLC",
                     "Nationwide Availability",
                     "No Limit on Number of Properties",
