@@ -88,8 +88,8 @@ export default function FlipProduct() {
                 className="lg:col-span-7"
               >
                 <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">About the Solution</h2>
-                <h3 className="text-3xl md:text-5xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
-                  Short-Term Capital. <br /> <span className="text-gold-600 italic font-medium">Long-Term Strategy.</span>
+                <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
+                  Short-Term Capital.
                 </h3>
                 
                 <div className="space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
