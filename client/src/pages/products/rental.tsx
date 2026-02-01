@@ -92,7 +92,7 @@ export default function RentalProduct() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Clock, title: "Close in 30 Days", desc: "Our streamlined underwriting gets you to the finish line faster." },
+              { icon: Clock, title: "Close in 21-30 Days", desc: "Our streamlined underwriting gets you to the finish line faster." },
               { icon: Wallet, title: "No W-2 Required", desc: "Approvals based on property cash flow, not your personal income." },
               { icon: BarChart4, title: "Maximize Cash Flow", desc: "Leverage low rates and interest-only options to boost your ROI." }
             ].map((item, i) => (
@@ -200,7 +200,7 @@ export default function RentalProduct() {
                   { label: "Loan Terms", value: "30-Year Fixed, 5/10 Year ARMs" },
                   { label: "Interest Rates", value: "Starting at 5.75%" },
                   { label: "Min FICO Score", value: "660" },
-                  { label: "Closing Timeline", value: "30–45 Days" },
+                  { label: "Closing Timeline", value: "21–30 Days" },
                   { label: "Property Count", value: "Unlimited" }
                 ].map((param, i) => (
                   <div key={i} className="flex justify-between items-center border-b border-white/10 pb-4 last:border-0 last:pb-0">
@@ -238,9 +238,8 @@ export default function RentalProduct() {
                 q: "Can I get a loan without tax returns?", 
                 a: "Yes. At 316 Capital, we focus exclusively on the property's cash flow. We do not require personal tax returns or income verification for our DSCR programs." 
               },
-              { 
-                q: "Which properties qualify for these loans?", 
-                a: "We finance single-family homes, duplexes, triplexes, fourplexes, and multi-family properties (5-20 units), as well as certain mixed-use properties." 
+              { q: "How quickly can I close with 316 Capital?", 
+                a: "Most DSCR loans close within 21–30 days, thanks to our investor-friendly underwriting process and AI-enabled allocation." 
               },
               { 
                 q: "Do I need prior experience to qualify?", 

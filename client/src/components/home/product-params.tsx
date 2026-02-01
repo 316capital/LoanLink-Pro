@@ -132,7 +132,7 @@ export function ProductParams() {
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-gray-400">Processing Speed</span>
-                    <span className="font-mono font-bold">7-14 Days</span>
+                    <span className="font-mono font-bold">21-30 Days</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-gray-400">LTV / LTC</span>
