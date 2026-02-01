@@ -38,6 +38,7 @@ const solutions = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [hasVisited, setHasVisited] = useState(false);
   const [location] = useLocation();
 
@@ -157,29 +158,46 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-cream-50 border-b border-navy-950/5">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <div className="px-3 py-2 text-xs font-black uppercase tracking-[0.2em] text-[#001A54]/40 border-b border-navy-950/5 mb-2">Loan Solutions</div>
-            {solutions.map((item) => (
-              <Link 
-                key={item.href}
-                href={item.href}
-                className="block px-6 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 border-l-2 border-transparent hover:border-gold-500 transition-all uppercase tracking-tight"
-              >
-                {item.title}
-              </Link>
-            ))}
+        <div className="md:hidden bg-cream-50 border-b border-navy-950/5 overflow-y-auto max-h-[calc(100vh-80px)]">
+          <div className="px-2 pt-2 pb-6 space-y-1 sm:px-3">
+            <button
+              onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
+              className="flex items-center justify-between w-full px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 transition-all uppercase tracking-wider"
+            >
+              <span>Loan Solutions</span>
+              <ChevronDown 
+                className={cn(
+                  "h-4 w-4 text-gold-500 transition-transform duration-300",
+                  isSolutionsOpen && "rotate-180"
+                )} 
+              />
+            </button>
+            
+            {isSolutionsOpen && (
+              <div className="bg-navy-950/5 py-2 space-y-1">
+                {solutions.map((item) => (
+                  <Link 
+                    key={item.href}
+                    href={item.href}
+                    className="block px-8 py-3 text-sm font-bold text-[#001A54] hover:bg-gold-500 hover:text-white transition-all uppercase tracking-tight"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
+
             <div className="h-px bg-navy-950/5 my-2" />
-            <Link href="/about" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50 uppercase tracking-wider">About Us</Link>
-            <a href="/#contact" className="block px-3 py-2 text-base font-medium text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact Us</a>
+            <Link href="/about" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">About Us</Link>
+            <a href="/#contact" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact Us</a>
             
             <a 
               href="tel:+16175464817"
-              className="flex items-center space-x-3 px-3 py-4 bg-navy-950 text-white mt-4"
+              className="flex items-center space-x-3 px-4 py-5 bg-navy-950 text-white mt-6 group transition-colors hover:bg-navy-900"
             >
-              <Phone className="w-5 h-5 text-gold-500" />
+              <Phone className="w-5 h-5 text-gold-500 group-hover:scale-110 transition-transform" />
               <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-widest text-gold-500/80 font-bold">Call Us Now</span>
+                <span className="text-[10px] uppercase tracking-widest text-gold-500/80 font-black">Call Our Capital Desk</span>
                 <span className="text-lg font-bold tracking-tight">+1 (617) 546-4817</span>
               </div>
             </a>
