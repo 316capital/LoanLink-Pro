@@ -121,19 +121,21 @@ export default function RentalProduct() {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="lg:col-span-5 relative"
+                className="lg:col-span-5 relative flex justify-center lg:justify-end"
               >
-                <div className="absolute -inset-4 border-2 border-gold-500/10 translate-x-4 translate-y-4" />
-                <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
-                  <img 
-                    src={rentalConsultation} 
-                    alt="Institutional Rental Consultation" 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />
-                  <div className="absolute bottom-0 left-0 p-8 text-white">
-                    <p className="text-[10px] font-black uppercase tracking-widest text-gold-500 mb-2">Portfolio Strategy</p>
-                    <p className="text-xl font-bold leading-tight">Expert Consultation for Complex Portfolios</p>
+                <div className="relative w-full max-w-[400px]">
+                  <div className="absolute -inset-4 border-2 border-gold-500/10 translate-x-4 translate-y-4" />
+                  <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                    <img 
+                      src={rentalConsultation} 
+                      alt="Institutional Rental Consultation" 
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />
+                    <div className="absolute bottom-0 left-0 p-8 text-white">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gold-500 mb-2">Portfolio Strategy</p>
+                      <p className="text-xl font-bold leading-tight">Expert Consultation for Complex Portfolios</p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
