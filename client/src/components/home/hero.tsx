@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
-import heroBg from "@/assets/generated_images/cinematic_construction_site_aerial_v2.png";
+import heroVideo from "@/assets/videos/hero-video.mp4";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -24,34 +24,26 @@ function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 export function Hero() {
   return (
     <div className="relative flex flex-col items-center justify-center overflow-hidden">
-      {/* Background Image Container */}
-      <div className="absolute inset-0 z-0">
+      {/* Background Video Container */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div 
-          initial={{ scale: 1, opacity: 0 }}
-          animate={{ 
-            scale: [1, 1.1, 1],
-            opacity: 1 
-          }}
-          transition={{ 
-            scale: {
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear"
-            },
-            opacity: {
-              duration: 1.5,
-              ease: "easeOut"
-            }
-          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
           className="h-full w-full"
         >
-          <img 
-            src={heroBg} 
-            alt="Active construction site" 
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[#001A54]/20 mix-blend-multiply" />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/60 via-[#001A54]/10 to-transparent" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover scale-[1.12]"
+            style={{ objectPosition: 'center 40%' }}
+          >
+            <source src={heroVideo} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-[#001A54]/30 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/70 via-[#001A54]/20 to-transparent" />
         </motion.div>
       </div>
 
