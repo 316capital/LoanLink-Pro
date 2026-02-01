@@ -76,24 +76,24 @@ export function Navbar() {
 
       <div className="bg-cream-50 border-b border-navy-950/5">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20 items-center">
+          <div className="flex justify-between h-16 items-center">
             {/* Logo */}
-            <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-8 lg:-ml-12">
+            <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-6 lg:-ml-8">
               <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <div className="flex items-center">
-                  <img src={logo} alt="316 Capital Logo" className="h-32 md:h-44 lg:h-56 w-auto brightness-100" style={{ filter: 'none' }} />
+                  <img src={logo} alt="316 Capital Logo" className="h-24 md:h-32 lg:h-40 w-auto brightness-100" style={{ filter: 'none' }} />
                 </div>
               </Link>
             </div>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
-              <Link href="/about" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">About</Link>
-              <a href="/#testimonials" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Testimonials</a>
+            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+              <Link href="/about" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">About</Link>
+              <a href="/#testimonials" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Testimonials</a>
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto">
+                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto">
                       Loan Solutions
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -123,19 +123,19 @@ export function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <a href="/#contact" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Contact</a>
+              <a href="/#contact" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Contact</a>
               
-              <div className="flex items-center space-x-3 ml-4">
+              <div className="flex items-center space-x-3 ml-2">
                 <Button 
                   variant="ghost" 
-                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-bold rounded-none px-4 uppercase tracking-widest h-10 border-none shadow-none"
+                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-xs font-bold rounded-none px-3 uppercase tracking-widest h-9 border-none shadow-none"
                   onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                   data-testid="button-auth"
                 >
                   {authText}
                 </Button>
                 <Button 
-                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
+                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-4 h-9 uppercase tracking-widest text-[10px]"
                   onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                   data-testid="button-request-terms"
                 >
