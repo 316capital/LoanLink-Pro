@@ -45,7 +45,7 @@
   --color-input: var(--input);
   
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Montserrat", sans-serif;
+  --font-heading: "Lexend", sans-serif;
 }
 
 :root {
@@ -78,10 +78,13 @@
     @apply border-border;
   }
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-sans antialiased bg-background text-foreground leading-[1.6];
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading tracking-tight;
+  }
+  button {
+    @apply font-heading;
   }
 }
 
