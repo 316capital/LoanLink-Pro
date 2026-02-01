@@ -35,7 +35,7 @@ const products = [
     popular: false,
   },
   {
-    title: "Ground-Up",
+    title: "New Construction",
     description: "Vertical financing for single family and multi-unit builds.",
     rateRange: "8.99% - 11.25%",
     maxLTV: "85%",
