@@ -130,6 +130,7 @@ export default function RentalProduct() {
                   <div className="space-y-6 relative z-10">
                     {[
                       { label: "Loan Amounts", value: "$100K – $5MM+" },
+                      { label: "Interest Rates", value: "Starting at 5.75%" },
                       { label: "Min Credit Score", value: "660+" },
                       { label: "Max LTV (Purchase)", value: "80%" },
                       { label: "Max LTV (Refi)", value: "75-80%" },
