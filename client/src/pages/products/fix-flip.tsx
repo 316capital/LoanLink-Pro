@@ -41,10 +41,10 @@ export default function FlipProduct() {
             <img 
               src={bridgeFixFlipHero} 
               alt="Bridge & Fix-and-Flip Capital" 
-              className="w-full h-full object-cover brightness-[0.8] contrast-[1.05]"
+              className="w-full h-full object-cover brightness-[0.9] contrast-[1.05] scale-100"
             />
-            <div className="absolute inset-0 bg-[#001A54]/30 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/90 via-[#001A54]/30 to-transparent" />
+            <div className="absolute inset-0 bg-[#001A54]/10 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/80 via-[#001A54]/20 to-transparent" />
           </div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
