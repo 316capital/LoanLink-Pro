@@ -25,8 +25,10 @@ import {
 
 import bridgeFixFlipHero from "@/assets/images/bridge-fix-flip-hero.jpg";
 
+import investorRelationship from "@/assets/images/investor-relationship.jpg";
+
 // Using high-quality unsplash images for institutional feel
-const flipContent = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200";
+// const flipContent = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200";
 
 export default function FlipProduct() {
   return (
@@ -119,8 +121,8 @@ export default function FlipProduct() {
                 <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-6 translate-y-6" />
                 <div className="relative aspect-square overflow-hidden shadow-2xl">
                   <img 
-                    src={flipContent} 
-                    alt="Property Renovation" 
+                    src={investorRelationship} 
+                    alt="Investor Relationship" 
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   />
                 </div>
