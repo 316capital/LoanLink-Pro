@@ -84,7 +84,7 @@ export function ProductsGrid() {
                     <product.icon className="h-6 w-6 text-gold-500 group-hover:text-navy-950 transition-colors" />
                   </div>
                   <CardTitle className="text-lg font-bold text-white mb-1">{product.title}</CardTitle>
-                  <p className="text-[#F2C100] text-[10px] font-bold uppercase tracking-widest opacity-80">For 1-4 Residential and Multiunits</p>
+                  <p className="text-[#F2C100] text-[10px] font-bold uppercase tracking-widest opacity-80">For 1-4 Residential and Multi-Units</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-400 text-xs leading-relaxed h-8">{product.description}</p>
