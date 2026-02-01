@@ -295,7 +295,7 @@ export default function FlipProduct() {
                   { label: "Interest Rates", value: "Starting at 7.75%" },
                   { label: "Loan Terms", value: "6 – 24 Months" },
                   { label: "Interest Only", value: "Yes" },
-                  { label: "Min FICO", value: "660 (Experience Options Available)" },
+                  { label: "Min FICO", value: "620 (Experience Options Available)" },
                   { label: "Closing Timeline", value: "5 – 10 Days" }
                 ].map((param, i) => (
                   <div key={i} className="flex justify-between items-center border-b border-navy-950/10 pb-4 last:border-0 last:pb-0">

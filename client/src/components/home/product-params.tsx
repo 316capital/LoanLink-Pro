@@ -84,7 +84,7 @@ export function ProductParams() {
                 <h3 className="text-gold-500 text-sm font-bold uppercase tracking-widest mb-4">Borrower Requirements</h3>
                 <div className="grid grid-cols-2 gap-x-8 gap-y-3">
                   {[
-                    "Min. 660 FICO Score",
+                    "Min. 620 FICO Score",
                     "LLC Borrowers Only",
                     "Non-Owner Occupied Only",
                     "Foreign Nationals Welcome",
