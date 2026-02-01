@@ -5,13 +5,23 @@ import { Button } from "@/components/ui/button";
 
 const products = [
   {
-    title: "DSCR Rental",
-    description: "Long-term rental loans based on asset cash flow.",
+    title: "1-4 Unit Residential",
+    description: "Institutional-grade financing for single family and small multifamily portfolios.",
     rateRange: "5.75% - 7.99%",
     maxLTV: "80%",
     timeline: "14 Days",
     amortization: "360 Months",
     icon: Home,
+    popular: false,
+  },
+  {
+    title: "Multifamily 5+ Units",
+    description: "Scalable capital for larger commercial multifamily assets and complexes.",
+    rateRange: "6.25% - 8.50%",
+    maxLTV: "80%",
+    timeline: "21 Days",
+    amortization: "360 Months",
+    icon: Building2,
     popular: false,
   },
   {
@@ -23,16 +33,6 @@ const products = [
     amortization: "12-30 Months",
     icon: Hammer,
     popular: true,
-  },
-  {
-    title: "BRRRR",
-    description: "Buy, Rehab, Rent, Refinance, Repeat capital for portfolio scaling.",
-    rateRange: "7.90% - 11.5%",
-    maxLTV: "90%",
-    timeline: "7 Days",
-    amortization: "12-30 Months",
-    icon: TrendingUp,
-    popular: false,
   },
   {
     title: "Ground-Up",
