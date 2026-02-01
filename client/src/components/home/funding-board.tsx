@@ -82,6 +82,15 @@ export function FundingBoard() {
   return (
     <section id="testimonials" className="py-20 bg-cream-50 overflow-hidden mb-24 md:mb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-16 max-w-3xl mx-auto">
+          <div className="p-8 bg-white border-l-4 border-[#F2C100] shadow-sm">
+            <h4 className="font-bold text-[#001A54] uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
+            <p className="text-[#001A54] font-bold text-xl mb-2">Our "Can’t-Be-Beat" Policy</p>
+            <p className="text-sm text-slate-600 leading-relaxed font-medium">
+              We are committed to providing the most competitive terms in the market. If you have a legitimate term sheet from another lender, bring it to us—we will beat the rate or the leverage, period.
+            </p>
+          </div>
+        </div>
         <div className="flex justify-center mb-6">
           <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-6 py-2 font-black text-[12px] uppercase tracking-[0.4em] bg-white shadow-sm">
             THE PROOF HUB

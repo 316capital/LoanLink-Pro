@@ -7,15 +7,6 @@ export function PartnershipSection() {
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-12 max-w-3xl">
-          <div className="p-8 bg-cream-50 border-l-4 border-[#F2C100] shadow-sm">
-            <h4 className="font-bold text-[#001A54] uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
-            <p className="text-[#001A54] font-bold text-xl mb-2">Our "Can’t-Be-Beat" Policy</p>
-            <p className="text-sm text-slate-600 leading-relaxed font-medium">
-              We are committed to providing the most competitive terms in the market. If you have a legitimate term sheet from another lender, bring it to us—we will beat the rate or the leverage, period.
-            </p>
-          </div>
-        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
