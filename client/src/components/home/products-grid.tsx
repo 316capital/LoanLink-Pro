@@ -54,7 +54,7 @@ const products = [
 
 export function ProductsGrid() {
   return (
-    <section id="products" className="py-24 bg-[#001A54] border-y border-white/5 relative overflow-hidden">
+    <section id="products" className="py-16 bg-[#001A54] border-y border-white/5 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_-20%,rgba(242,193,0,0.05),transparent)] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div 

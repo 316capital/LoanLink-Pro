@@ -3,7 +3,7 @@ import { Shield } from "lucide-react";
 
 export function ProductParams() {
   return (
-    <section className="py-24 bg-navy-950 text-white relative overflow-hidden">
+    <section className="py-16 bg-navy-950 text-white relative overflow-hidden">
       {/* Abstract Background Element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-cream-50/5 skew-x-12 transform origin-top-right"></div>
       

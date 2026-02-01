@@ -80,9 +80,9 @@ export function FundingBoard() {
   }, []);
 
   return (
-    <section id="testimonials" className="py-20 bg-cream-50 overflow-hidden mb-24 md:mb-0">
+    <section id="testimonials" className="py-16 bg-cream-50 overflow-hidden mb-12 md:mb-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16 max-w-3xl mx-auto">
+        <div className="mb-10 max-w-3xl mx-auto">
           <div className="p-8 bg-white border-l-4 border-[#F2C100] shadow-sm">
             <h4 className="font-bold text-[#001A54] uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
             <p className="text-[#001A54] font-bold text-xl mb-2">Our "Can’t-Be-Beat" Policy</p>
@@ -170,7 +170,7 @@ export function FundingBoard() {
         </div>
 
         {/* Partner Success Grid */}
-        <div className="mt-24 border-t border-gray-200 pt-12">
+        <div className="mt-12 border-t border-gray-200 pt-12">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-950 mb-3 uppercase tracking-tight">Partner Success</h2>
             <div className="h-1 w-16 bg-gold-500 mx-auto" />

@@ -55,7 +55,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 pb-20">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
@@ -147,7 +147,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="w-full bg-navy-950/90 backdrop-blur-xl border-t border-white/5 py-8 md:py-12 z-20 relative"
+        className="w-full bg-navy-950/90 backdrop-blur-xl border-t border-white/5 py-6 md:py-8 z-20 relative"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-4 md:gap-8">
            {[

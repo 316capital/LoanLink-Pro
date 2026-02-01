@@ -2,7 +2,7 @@ import { Clock } from "lucide-react";
 
 export function DrawCallout() {
   return (
-    <section className="bg-bone-50 py-10 border-y border-gray-100">
+    <section className="bg-bone-50 py-6 border-y border-gray-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white border border-gray-200 p-6 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
           <div className="flex items-center gap-5">

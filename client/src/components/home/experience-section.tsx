@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function ExperienceSection() {
   return (
-    <section id="about" className="py-24 bg-cream-50 relative overflow-hidden">
+    <section id="about" className="py-16 bg-cream-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div
