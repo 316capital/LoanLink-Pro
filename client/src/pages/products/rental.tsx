@@ -15,6 +15,7 @@ import {
   Coins
 } from "lucide-react";
 import rentalHero from "@/assets/images/dscr-hero.jpg";
+import rentalConsultation from "@/assets/images/rental-consultation.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -122,12 +123,39 @@ export default function RentalProduct() {
                 viewport={{ once: true }}
                 className="lg:col-span-5 relative"
               >
+                <div className="absolute -inset-4 border-2 border-gold-500/10 translate-x-4 translate-y-4" />
+                <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                  <img 
+                    src={rentalConsultation} 
+                    alt="Institutional Rental Consultation" 
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />
+                  <div className="absolute bottom-0 left-0 p-8 text-white">
+                    <p className="text-[10px] font-black uppercase tracking-widest text-gold-500 mb-2">Portfolio Strategy</p>
+                    <p className="text-xl font-bold leading-tight">Expert Consultation for Complex Portfolios</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Rental Terms Card Section */}
+        <section className="py-24 bg-cream-50/30">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
                 <Card className="rounded-none border-none shadow-2xl bg-[#001A54] text-white p-10 relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-8 opacity-10">
                     <Building2 className="h-32 w-32" />
                   </div>
                   <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Rental Terms</h3>
-                  <div className="space-y-6 relative z-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 relative z-10">
                     {[
                       { label: "Loan Amounts", value: "$100K – $5MM+" },
                       { label: "Interest Rates", value: "Starting at 5.75%" },
@@ -145,12 +173,14 @@ export default function RentalProduct() {
                       </div>
                     ))}
                   </div>
-                  <Button 
-                    className="w-full mt-10 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black rounded-none py-8 uppercase tracking-widest text-sm"
-                    onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-                  >
-                    Check DSCR Ratio
-                  </Button>
+                  <div className="mt-10 flex justify-center">
+                    <Button 
+                      className="w-full md:w-auto px-12 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none py-8 uppercase tracking-widest text-xs shadow-lg"
+                      onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+                    >
+                      Check DSCR Ratio
+                    </Button>
+                  </div>
                 </Card>
               </motion.div>
             </div>
