@@ -87,6 +87,7 @@ export default function ConstructionProduct() {
                 <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
                   Blueprints to Reality. <br /> <span className="text-gold-600 italic font-medium">Execution to ROI.</span>
                 </h3>
+                <p className="text-gold-600 font-bold uppercase tracking-widest text-xs mb-6">We Welcome First Time Builders</p>
                 
                 <div className="space-y-6 text-slate-600 leading-relaxed font-medium text-lg">
                   <p>
@@ -159,13 +160,13 @@ export default function ConstructionProduct() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Homebuilders",
-                  desc: "Financing for individual spec homes or custom builds in high-demand markets.",
+                  title: "First-Time Builders",
+                  desc: "We provide the capital and professional guidance for investors breaking ground on their first vertical project.",
                   icon: HardHat
                 },
                 {
-                  title: "Developers",
-                  desc: "Capital for residential neighborhoods, duplexes, or townhome clusters.",
+                  title: "Experienced Developers",
+                  desc: "High-leverage capital for residential neighborhoods, duplexes, or townhome clusters.",
                   icon: Layout
                 },
                 {
