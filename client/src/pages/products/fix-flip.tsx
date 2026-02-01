@@ -55,11 +55,11 @@ export default function FlipProduct() {
                 <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">High-Velocity Private Credit</span>
               </div>
-              <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
+              <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
                 Bridge / Fix & Flip <br /> 
                 <span className="text-[#F2C100] italic font-medium">Financing</span>
               </h1>
-              <h2 className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
+              <h2 className="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
                 Buy, Renovate, Profit—We Provide the Funds, You Reap the Rewards. 
                 Tailored solutions for acquisition and repositioning.
               </h2>
