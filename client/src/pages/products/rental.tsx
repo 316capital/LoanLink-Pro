@@ -50,7 +50,7 @@ export default function RentalProduct() {
               <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Institutional Private Credit</span>
             </div>
-            <h1 className="text-5xl md:text-8xl font-bold uppercase tracking-tight leading-[1.1] mb-8">
+            <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tight leading-[1.1] mb-8">
               Rental Property <br /> 
               <span className="text-[#F2C100] italic font-medium">Financing</span>
             </h1>
