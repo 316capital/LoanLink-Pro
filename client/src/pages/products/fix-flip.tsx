@@ -80,11 +80,12 @@ export default function FlipProduct() {
         {/* Conventus-Inspired Intro Section */}
         <section className="relative bg-white py-24 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                className="lg:col-span-7"
               >
                 <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">About the Solution</h2>
                 <h3 className="text-3xl md:text-5xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
@@ -116,10 +117,10 @@ export default function FlipProduct() {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="lg:col-span-5 relative"
               >
-                <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-6 translate-y-6" />
-                <div className="relative aspect-square overflow-hidden shadow-2xl">
+                <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-4 translate-y-4" />
+                <div className="relative aspect-[4/5] max-w-sm mx-auto overflow-hidden shadow-2xl">
                   <img 
                     src={investorRelationship} 
                     alt="Investor Relationship" 
