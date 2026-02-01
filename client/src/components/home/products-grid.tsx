@@ -3,8 +3,11 @@ import { Building2, Hammer, Home, Landmark, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+import { Link, useLocation } from "wouter";
+
 const products = [
   {
+    id: "rental",
     title: "DSCR Rental",
     description: "Long-term rental loans based on asset cash flow.",
     rateRange: "5.75% - 7.99%",
@@ -15,6 +18,7 @@ const products = [
     popular: false,
   },
   {
+    id: "fix-flip",
     title: "Fix & Flip",
     description: "Purchase + Rehab capital with 24-hour draw times.",
     rateRange: "7.90% - 11.5%",
@@ -25,6 +29,7 @@ const products = [
     popular: true,
   },
   {
+    id: "brrrr",
     title: "BRRRR",
     description: "Buy, Rehab, Rent, Refinance, Repeat capital for portfolio scaling.",
     rateRange: "7.90% - 11.5%",
@@ -35,6 +40,7 @@ const products = [
     popular: false,
   },
   {
+    id: "new-construction",
     title: "New Construction",
     description: "Vertical financing for single family and multi-unit builds.",
     rateRange: "8.99% - 11.25%",
@@ -117,16 +123,18 @@ export function ProductsGrid() {
                   >
                     Get Your Rate
                   </Button>
-                  <Button 
-                    variant="link"
-                    className="w-full text-gold-500/80 hover:text-gold-500 text-[9px] uppercase tracking-[0.2em] font-bold h-auto p-0 transition-colors"
-                    onClick={() => {
-                      const element = document.getElementById('contact');
-                      if (element) element.scrollIntoView({ behavior: 'smooth' });
-                    }}
+                  <Link 
+                    href={`/products/${product.id}`}
+                    className="w-full"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
-                    Explore More
-                  </Button>
+                    <Button 
+                      variant="link"
+                      className="w-full text-gold-500/80 hover:text-gold-500 text-[9px] uppercase tracking-[0.2em] font-bold h-auto p-0 transition-colors"
+                    >
+                      Explore More
+                    </Button>
+                  </Link>
                 </div>
               </Card>
             </motion.div>
