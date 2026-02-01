@@ -74,7 +74,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-4xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
+            className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
           >
             Institutional Capital. <br />
             <span className="text-[#F2C100]">AI-Enabled</span> Speed.
