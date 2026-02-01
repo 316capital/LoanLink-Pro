@@ -14,7 +14,7 @@ import {
   Percent,
   Coins
 } from "lucide-react";
-import rentalHero from "@/assets/images/rental-lifestyle.jpg";
+import rentalHero from "@/assets/images/dscr-hero.jpg";
 import {
   Accordion,
   AccordionContent,
