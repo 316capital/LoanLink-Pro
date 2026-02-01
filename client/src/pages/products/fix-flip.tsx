@@ -23,8 +23,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import bridgeFixFlipHero from "@/assets/images/bridge-fix-flip-hero.jpg";
+
 // Using high-quality unsplash images for institutional feel
-const flipHero = "https://images.unsplash.com/photo-1503387762-592cd5804547?auto=format&fit=crop&q=80&w=2000";
 const flipContent = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200";
 
 export default function FlipProduct() {
@@ -36,12 +37,12 @@ export default function FlipProduct() {
         <section className="relative min-h-[85vh] flex items-center bg-[#001A54] text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={flipHero} 
+              src={bridgeFixFlipHero} 
               alt="Bridge & Fix-and-Flip Capital" 
-              className="w-full h-full object-cover brightness-[0.6] contrast-[1.1]"
+              className="w-full h-full object-cover brightness-[0.8] contrast-[1.05]"
             />
-            <div className="absolute inset-0 bg-[#001A54]/40 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/95 via-[#001A54]/40 to-transparent" />
+            <div className="absolute inset-0 bg-[#001A54]/30 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/90 via-[#001A54]/30 to-transparent" />
           </div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
