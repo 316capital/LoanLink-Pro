@@ -76,9 +76,9 @@ export default function RentalProduct() {
         </section>
 
         {/* Side-by-Side Content Section */}
-        <section className="relative bg-white py-24 overflow-hidden">
+        <section className="relative bg-white py-20 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row gap-20 items-start">
+            <div className="flex flex-col lg:flex-row gap-20 items-center">
               
               {/* Content Area */}
               <motion.div 
@@ -92,32 +92,32 @@ export default function RentalProduct() {
                   Long-Term Leverage. <br /> <span className="text-gold-600 italic font-medium">Built for Performance.</span>
                 </h3>
                 
-              <div className="flex flex-col md:flex-row gap-12 items-start">
-                <div className="flex-1 space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
-                  <p>
-                    At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
-                  </p>
-                  <p>
-                    Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
-                  </p>
-                </div>
-
-                {/* Repositioned and resized lifestyle image to the right */}
-                <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className="shrink-0"
-                >
-                  <div className="relative w-64 md:w-80 lg:w-96 overflow-hidden shadow-2xl rounded-sm border border-gold-500/10">
-                    <img 
-                      src={rentalLifestyle} 
-                      alt="Happy couple" 
-                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover"
-                    />
+                <div className="flex flex-col md:flex-row gap-12 items-center">
+                  <div className="flex-1 space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
+                    <p>
+                      At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
+                    </p>
+                    <p>
+                      Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
+                    </p>
                   </div>
-                </motion.div>
-              </div>
+
+                  {/* Repositioned and resized lifestyle image to the right */}
+                  <motion.div 
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className="shrink-0"
+                  >
+                    <div className="relative w-72 md:w-96 overflow-hidden shadow-2xl rounded-sm border border-gold-500/10">
+                      <img 
+                        src={rentalLifestyle} 
+                        alt="Happy couple" 
+                        className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover"
+                      />
+                    </div>
+                  </motion.div>
+                </div>
 
                 <div className="mt-10 flex items-center space-x-6">
                   <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
@@ -130,8 +130,25 @@ export default function RentalProduct() {
                   </div>
                 </div>
               </motion.div>
+            </div>
+          </div>
+        </section>
 
-              {/* Side Image Removed from here and moved inside content */}
+        {/* Dynamic Parameter Grid to fill space */}
+        <section className="bg-navy-950 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {[
+                { label: "Minimum FICO", value: "660" },
+                { label: "Max LTV", value: "80%" },
+                { label: "Closing", value: "21-30 Days" },
+                { label: "Loan Amount", value: "$150K+" }
+              ].map((stat, i) => (
+                <div key={i} className="text-center border-l border-white/10 first:border-0">
+                  <p className="text-gold-500 font-mono text-3xl font-bold mb-1">{stat.value}</p>
+                  <p className="text-white/40 text-[10px] font-black uppercase tracking-[0.2em]">{stat.label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
