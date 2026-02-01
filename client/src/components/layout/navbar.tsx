@@ -88,12 +88,12 @@ export function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-              <Link href="/about" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">About</Link>
-              <a href="/#testimonials" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Testimonials</a>
-              <NavigationMenu>
-                <NavigationMenuList>
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto">
+              <Link href="/about" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest flex items-center h-full">About</Link>
+              <a href="/#testimonials" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest flex items-center h-full">Testimonials</a>
+              <NavigationMenu className="flex items-center">
+                <NavigationMenuList className="flex items-center">
+                  <NavigationMenuItem className="flex items-center">
+                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto flex items-center shadow-none border-none">
                       Loan Solutions
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -123,19 +123,19 @@ export function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <a href="/#contact" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Contact</a>
+              <a href="/#contact" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest flex items-center h-full">Contact</a>
               
-              <div className="flex items-center space-x-3 ml-2">
+              <div className="flex items-center space-x-3 ml-2 h-full">
                 <Button 
                   variant="ghost" 
-                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-xs font-bold rounded-none px-3 uppercase tracking-widest h-9 border-none shadow-none"
+                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-xs font-bold rounded-none px-3 uppercase tracking-widest h-9 border-none shadow-none flex items-center justify-center"
                   onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                   data-testid="button-auth"
                 >
                   {authText}
                 </Button>
                 <Button 
-                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-4 h-9 uppercase tracking-widest text-[10px]"
+                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-4 h-9 uppercase tracking-widest text-[10px] flex items-center justify-center"
                   onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                   data-testid="button-request-terms"
                 >
