@@ -92,30 +92,31 @@ export default function RentalProduct() {
                   Long-Term Leverage. <br /> <span className="text-gold-600 italic font-medium">Built for Performance.</span>
                 </h3>
                 
-              <div className="space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
-                <p>
-                  At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
-                </p>
-                
-                {/* Repositioned and significantly resized lifestyle image */}
+              <div className="flex flex-col md:flex-row gap-12 items-start">
+                <div className="flex-1 space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
+                  <p>
+                    At 316 Capital, we know that great rental investments require more than just good timing—they demand reliable capital that <span className="text-gold-600 italic">adapts as your strategy evolves.</span>
+                  </p>
+                  <p>
+                    Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
+                  </p>
+                </div>
+
+                {/* Repositioned and resized lifestyle image to the right */}
                 <motion.div 
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  className="py-4"
+                  className="shrink-0"
                 >
-                  <div className="relative w-full max-w-[280px] overflow-hidden shadow-lg rounded-sm border border-gold-500/10">
+                  <div className="relative w-64 md:w-80 lg:w-96 overflow-hidden shadow-2xl rounded-sm border border-gold-500/10">
                     <img 
                       src={rentalLifestyle} 
                       alt="Happy couple" 
-                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700 object-cover"
                     />
                   </div>
                 </motion.div>
-
-                <p>
-                  Our Rental Financing solutions are purpose-built to help you acquire, refinance, or consolidate income-producing properties with our <span className="text-gold-600 underline underline-offset-8 decoration-2 cursor-pointer hover:text-gold-700 transition-colors">investment property loans</span>, so you can focus on growing your cash flow and building long-term equity.
-                </p>
               </div>
 
                 <div className="mt-10 flex items-center space-x-6">
