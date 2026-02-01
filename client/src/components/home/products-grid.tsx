@@ -83,7 +83,8 @@ export function ProductsGrid() {
                   <div className="w-12 h-12 bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors">
                     <product.icon className="h-6 w-6 text-gold-500 group-hover:text-navy-950 transition-colors" />
                   </div>
-                  <CardTitle className="text-lg font-bold text-white">{product.title}</CardTitle>
+                  <CardTitle className="text-lg font-bold text-white mb-1">{product.title}</CardTitle>
+                  <p className="text-[#F2C100] text-[10px] font-bold uppercase tracking-widest opacity-80">1-4 Unit Residential & 5+ Units</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-gray-400 text-xs leading-relaxed h-8">{product.description}</p>
