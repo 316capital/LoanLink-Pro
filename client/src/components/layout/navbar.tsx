@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -81,7 +81,7 @@ export function Navbar() {
             <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-8 lg:-ml-12">
               <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <div className="flex items-center">
-                  <img src={logo} alt="316 Capital Logo" className="h-28 md:h-36 lg:h-44 w-auto brightness-100" style={{ filter: 'none' }} />
+                  <img src={logo} alt="316 Capital Logo" className="h-10 md:h-12 lg:h-14 w-auto brightness-100" style={{ filter: 'none' }} />
                 </div>
               </Link>
             </div>
