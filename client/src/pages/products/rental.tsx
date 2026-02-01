@@ -16,6 +16,7 @@ import {
   Clock
 } from "lucide-react";
 import rentalHero from "@/assets/images/dscr-hero.jpg";
+import rentalLifestyle from "@/assets/images/rental-lifestyle.jpg";
 import rentalContent from "@/assets/images/rental-content.jpg";
 import {
   Accordion,
@@ -119,6 +120,67 @@ export default function RentalProduct() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+            >
+              <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-gold-600 mb-4">The Impact</h2>
+              <h3 className="text-4xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
+                Empowering <br /> New Homeowners.
+              </h3>
+              <div className="space-y-6 text-navy-900/70 leading-relaxed font-medium">
+                <p>
+                  At 316 Capital, we don't just fund properties; we facilitate the creation of homes and the building of communities. Our DSCR programs enable investors to provide high-quality housing options while securing their own financial future.
+                </p>
+                <div className="flex items-center space-x-4 pt-4">
+                  <div className="h-12 w-12 bg-gold-500/10 flex items-center justify-center border border-gold-500/20">
+                    <Users className="h-6 w-6 text-gold-500" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-bold text-navy-950 uppercase tracking-tight">Community Focused</h4>
+                    <p className="text-xs text-muted-foreground">Strategic capital for sustainable growth.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-8 translate-y-8" />
+              <img 
+                src={rentalLifestyle} 
+                alt="Happy tenants in new home" 
+                className="relative z-10 w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Section 2 (Original) */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative order-2 lg:order-1"
+            >
+              <div className="absolute -inset-4 border-2 border-navy-950/10 -translate-x-8 translate-y-8" />
+              <img 
+                src={rentalContent} 
+                alt="Modern rental interior" 
+                className="relative z-10 w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="order-1 lg:order-2"
             >
               <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-gold-600 mb-4">The Solution</h2>
               <h3 className="text-4xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
