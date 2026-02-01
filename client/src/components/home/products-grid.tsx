@@ -44,7 +44,7 @@ const products = [
     title: "New Construction",
     description: "Vertical financing for single family and multi-unit builds.",
     rateRange: "8.99% - 11.25%",
-    maxLTV: "85%",
+    maxLTV: "90%",
     timeline: "14 Days",
     amortization: "12-30 Months",
     icon: Building2,

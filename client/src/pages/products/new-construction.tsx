@@ -104,7 +104,7 @@ export default function ConstructionProduct() {
                   </div>
                   <div className="flex items-center space-x-2 text-[#001A54]/60 font-bold uppercase tracking-[0.2em] text-[10px]">
                     <Shield className="h-3 w-3 fill-current text-gold-500" />
-                    <span>Up to 85% LTC</span>
+                    <span>Up to 90% LTC</span>
                   </div>
                 </div>
               </motion.div>
@@ -123,7 +123,7 @@ export default function ConstructionProduct() {
                   <div className="space-y-6 relative z-10">
                     {[
                       { label: "Loan Amounts", value: "$100K – $10MM+" },
-                      { label: "Loan-to-Cost (LTC)", value: "Up to 85%" },
+                      { label: "Loan-to-Cost (LTC)", value: "Up to 90%" },
                       { label: "LTARV Limit", value: "Up to 70%" },
                       { label: "Interest Rates", value: "Starting at 8.99%" },
                       { label: "Loan Terms", value: "12 – 24 Months" },
@@ -199,7 +199,7 @@ export default function ConstructionProduct() {
                 <div className="space-y-6">
                   {[
                     "Fast approvals in 24-48 hours",
-                    "Up to 85% LTC financing",
+                    "Up to 90% LTC financing",
                     "No prepayment penalties",
                     "Swift 24-hour draw disbursements",
                     "Non-Dutch interest options",
@@ -260,7 +260,7 @@ export default function ConstructionProduct() {
                 },
                 { 
                   q: "Can I finance both land and construction costs?", 
-                  a: "Absolutely. Our loans cover up to 85% of total project costs, including land acquisition (up to 50% of value) and 100% of vertical construction costs." 
+                  a: "Absolutely. Our loans cover up to 90% of total project costs, including land acquisition (up to 50% of value) and 100% of vertical construction costs." 
                 }
               ].map((item, i) => (
                 <AccordionItem key={i} value={`item-${i}`} className="border border-gray-100 px-6 py-2 bg-cream-50/30">
