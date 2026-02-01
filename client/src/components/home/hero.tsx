@@ -55,7 +55,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-20">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
