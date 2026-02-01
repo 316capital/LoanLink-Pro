@@ -28,7 +28,7 @@ export function ExperienceSection() {
             </div>
 
             <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-              316 Capital streamlines the lending process by connecting elite developers with a vetted network of high-liquidity institutional funds. We eliminate the friction of traditional financing through smart underwriting and direct-to-desk execution.
+              316 Capital connects elite developers with high-liquidity funds, removing traditional financing friction through smart underwriting and direct-to-desk execution.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
