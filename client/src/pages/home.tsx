@@ -25,8 +25,8 @@ export default function Home() {
         <ExperienceSection />
         <ProductsGrid />
         <ProductParams />
-        <PartnershipSection />
         <FundingBoard />
+        <PartnershipSection />
         <IntelligenceEngine />
         <DrawCallout />
         <Contact />
