@@ -88,12 +88,12 @@ export function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
-              <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About</Link>
-              <a href="/#testimonials" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Testimonials</a>
+              <Link href="/about" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">About</Link>
+              <a href="/#testimonials" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Testimonials</a>
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider p-0 h-auto font-heading">
+                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto">
                       Loan Solutions
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -123,19 +123,19 @@ export function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
-              <a href="/#contact" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Contact</a>
+              <a href="/#contact" className="text-sm font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest">Contact</a>
               
               <div className="flex items-center space-x-3 ml-4">
                 <Button 
                   variant="ghost" 
-                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-semibold rounded-none px-4 uppercase tracking-wider h-10 border-none shadow-none"
+                  className="text-[#001A54] hover:text-[#F2C100] hover:bg-[#001A54]/5 text-sm font-bold rounded-none px-4 uppercase tracking-widest h-10 border-none shadow-none"
                   onClick={() => window.open('https://316cap.app.clientclub.net/', '_blank')}
                   data-testid="button-auth"
                 >
                   {authText}
                 </Button>
                 <Button 
-                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-heading font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
+                  className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold border-none rounded-none px-6 h-10 uppercase tracking-widest text-xs"
                   onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
                   data-testid="button-request-terms"
                 >
