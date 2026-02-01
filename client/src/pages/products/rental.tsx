@@ -7,15 +7,14 @@ import {
   Shield, 
   Zap, 
   TrendingUp, 
-  Wallet, 
-  BarChart4, 
   Building2,
-  CheckCircle,
   Clock,
-  ZapOff
+  ZapOff,
+  Calculator,
+  Percent,
+  Coins
 } from "lucide-react";
-import brrrHero from "@/assets/images/brrr-hero.jpg";
-import rentalLifestyle from "@/assets/images/rental-lifestyle.jpg";
+import rentalHero from "@/assets/images/rental-lifestyle.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -31,16 +30,16 @@ export default function RentalProduct() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <main className="pt-20">
-        {/* Institutional Hero Section - Asteris & CV Inspired */}
+        {/* Institutional Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-[#001A54] text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src={brrrHero} 
-              alt="BRRR Strategy Financing" 
-              className="w-full h-full object-cover brightness-[0.85] contrast-[1.15] scale-105"
+              src={rentalHero} 
+              alt="DSCR Rental Financing" 
+              className="w-full h-full object-cover brightness-[0.7] contrast-[1.1] scale-105"
             />
-            <div className="absolute inset-0 bg-[#001A54]/30 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/95 via-[#001A54]/50 to-transparent" />
+            <div className="absolute inset-0 bg-[#001A54]/40 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#001A54]/95 via-[#001A54]/40 to-transparent" />
           </div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -49,16 +48,16 @@ export default function RentalProduct() {
               animate={{ opacity: 1, x: 0 }}
               className="max-w-3xl"
             >
-              <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md">
-                <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Institutional BRRR Capital</span>
+              <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md">
+                <Calculator className="h-3 w-3 text-[#F2C100]" />
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">DSCR Rental Capital</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
-                Buy. Rehab. <br /> 
-                Rent. <span className="text-[#F2C100] italic font-medium">Refinance.</span>
+                Long-Term <br /> 
+                <span className="text-[#F2C100] italic font-medium">Rental / DSCR</span> Loans
               </h1>
               <h2 className="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
-                High-velocity capital for the professional BRRR investor. We fund the purchase, the rehab, and the long-term stabilization.
+                Financing based on the property's income, not yours. Scale your portfolio without the restrictions of conventional bank lending.
               </h2>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -66,7 +65,7 @@ export default function RentalProduct() {
                   className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
                   onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
                 >
-                  Start Your BRRR Quote
+                  Get Rental Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -74,7 +73,7 @@ export default function RentalProduct() {
           </div>
         </section>
 
-        {/* Conventus-Inspired Intro Section */}
+        {/* DSCR Explanation Section */}
         <section className="relative bg-white py-24 overflow-hidden border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
@@ -84,28 +83,32 @@ export default function RentalProduct() {
                 viewport={{ once: true }}
                 className="lg:col-span-7"
               >
-                <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">The BRRR Solution</h2>
+                <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">How it Works</h2>
                 <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
-                  Velocity of Capital. <br /> <span className="text-gold-600 italic font-medium">Recycle Your Equity.</span>
+                  No DTI. <br /> <span className="text-gold-600 italic font-medium">No Income Checks.</span>
                 </h3>
                 
                 <div className="space-y-6 text-slate-600 leading-relaxed font-medium text-lg">
                   <p>
-                    The BRRR strategy is the ultimate wealth-building engine. At 316 Capital, we provide the seamless bridge between your acquisition and your long-term hold, ensuring you never lose momentum.
+                    DSCR (Debt Service Coverage Ratio) loans are the secret weapon of professional real estate investors. Instead of verifying your personal income or debt-to-income ratio, we look at the property's ability to cover its own expenses.
                   </p>
                   <p>
-                    We provide <span className="text-gold-600 italic">investor-focused DSCR and Bridge loans</span> tailored to investors who need to move fast, rehab with precision, and refinance into stable cash flow.
+                    Whether you're acquiring a new rental or pulling equity from an existing portfolio, our <span className="text-gold-600 italic">316 Intel Engine</span> rapidly calculates your eligibility based on real-time market rents and property performance.
                   </p>
                 </div>
 
-                <div className="mt-10 grid grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-2 text-[#001A54]/60 font-bold uppercase tracking-[0.2em] text-[10px]">
-                    <Clock className="h-3 w-3 fill-current text-gold-500" />
-                    <span>24-Hour Term Sheets</span>
+                <div className="mt-10 grid grid-cols-3 gap-6 text-center">
+                  <div className="p-4 bg-navy-50 border border-navy-100">
+                    <Percent className="h-6 w-6 text-gold-600 mx-auto mb-2" />
+                    <span className="block text-[10px] font-black uppercase text-[#001A54]">Interest Only</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-[#001A54]/60 font-bold uppercase tracking-[0.2em] text-[10px]">
-                    <Shield className="h-3 w-3 fill-current text-gold-500" />
-                    <span>Up to 80% Cash-Out</span>
+                  <div className="p-4 bg-navy-50 border border-navy-100">
+                    <Coins className="h-6 w-6 text-gold-600 mx-auto mb-2" />
+                    <span className="block text-[10px] font-black uppercase text-[#001A54]">No Limit</span>
+                  </div>
+                  <div className="p-4 bg-navy-50 border border-navy-100">
+                    <TrendingUp className="h-6 w-6 text-gold-600 mx-auto mb-2" />
+                    <span className="block text-[10px] font-black uppercase text-[#001A54]">Max Leverage</span>
                   </div>
                 </div>
               </motion.div>
@@ -120,16 +123,16 @@ export default function RentalProduct() {
                   <div className="absolute top-0 right-0 p-8 opacity-10">
                     <Building2 className="h-32 w-32" />
                   </div>
-                  <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Loan Parameters</h3>
+                  <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Rental Terms</h3>
                   <div className="space-y-6 relative z-10">
                     {[
-                      { label: "Loan Amounts", value: "$75K – $10MM+" },
-                      { label: "Refi LTV", value: "Up to 80%" },
-                      { label: "Purchase LTC", value: "Up to 90%" },
-                      { label: "Interest Rates", value: "Starting at 6.25%" },
-                      { label: "Loan Terms", value: "30-Year Fixed / ARMs" },
-                      { label: "No DTI Check", value: "DSCR Based" },
-                      { label: "Prepayment", value: "Flexible Options" }
+                      { label: "Loan Amounts", value: "$100K – $5MM+" },
+                      { label: "Min Credit Score", value: "660+" },
+                      { label: "Max LTV (Purchase)", value: "80%" },
+                      { label: "Max LTV (Refi)", value: "75-80%" },
+                      { label: "Loan Terms", value: "30-Year Fixed" },
+                      { label: "Min DSCR", value: "1.00 - 1.20" },
+                      { label: "Property Types", value: "1-4 Units / MF" }
                     ].map((row, i) => (
                       <div key={i} className="flex justify-between border-b border-white/10 pb-4">
                         <span className="text-gray-400 text-[10px] uppercase font-bold tracking-widest">{row.label}</span>
@@ -141,7 +144,7 @@ export default function RentalProduct() {
                     className="w-full mt-10 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black rounded-none py-8 uppercase tracking-widest text-sm"
                     onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
                   >
-                    Request Pre-Approval
+                    Check DSCR Ratio
                   </Button>
                 </Card>
               </motion.div>
@@ -149,26 +152,24 @@ export default function RentalProduct() {
           </div>
         </section>
 
-        {/* The Advantage Comparison Table (CV Lending Inspired) */}
-        <section className="py-24 bg-white border-b border-gray-100">
+        {/* Advantage Comparison */}
+        <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight">The 316 Advantage</h2>
-              <p className="text-slate-600 mt-4 max-w-2xl mx-auto font-medium">Institutional speed for independent investors.</p>
+              <h2 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight">Institutional Rental Capital</h2>
             </div>
 
-            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 border border-gray-100 overflow-hidden shadow-2xl">
-              {/* 316 Capital Column */}
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 border border-gray-100 shadow-2xl overflow-hidden">
               <div className="bg-[#001A54] p-12 text-white border-r border-white/5">
-                <h4 className="text-[#F2C100] font-black uppercase tracking-widest text-sm mb-10">316 Capital BRRR Loans</h4>
+                <h4 className="text-[#F2C100] font-black uppercase tracking-widest text-sm mb-10">316 DSCR Loans</h4>
                 <div className="space-y-6">
                   {[
-                    "No personal income verification",
-                    "Qualify on property cash flow",
-                    "Swift 21-30 day stabilization refi",
-                    "Interest-only options available",
-                    "Unlimited portfolio size",
-                    "Short-term rentals (AirBnB) welcome"
+                    "No Tax Returns Required",
+                    "Qualify on Market Rents",
+                    "Close in an LLC",
+                    "Nationwide Availability",
+                    "No Limit on Number of Properties",
+                    "Interest-Only Options"
                   ].map((benefit, i) => (
                     <div key={i} className="flex items-center space-x-3">
                       <CheckCircle2 className="h-5 w-5 text-[#F2C100]" />
@@ -178,17 +179,16 @@ export default function RentalProduct() {
                 </div>
               </div>
 
-              {/* Traditional Bank Column */}
               <div className="bg-slate-50 p-12 text-slate-400">
-                <h4 className="text-slate-500 font-black uppercase tracking-widest text-sm mb-10">Traditional Bank Refi</h4>
+                <h4 className="text-slate-500 font-black uppercase tracking-widest text-sm mb-10">Conventional Bank</h4>
                 <div className="space-y-6">
                   {[
-                    "Extensive DTI & W-2 reviews",
-                    "Long 45-60 day closing times",
-                    "Strict seasoning requirements",
-                    "Limited number of properties",
-                    "Rigid escrow & reserve terms",
-                    "Onerous personal guarantees"
+                    "Full Tax Return Verification",
+                    "Debt-to-Income (DTI) Checks",
+                    "Personal Debt Limitations",
+                    "Strict Property Caps (usually 10)",
+                    "Owner-Occupancy Bias",
+                    "Long Underwriting Cycles"
                   ].map((detriment, i) => (
                     <div key={i} className="flex items-center space-x-3">
                       <ZapOff className="h-5 w-5 text-slate-300" />
@@ -201,34 +201,34 @@ export default function RentalProduct() {
           </div>
         </section>
 
-        {/* FAQ Section (CV Lending Inspired) */}
-        <section className="py-24 bg-white">
+        {/* FAQ Section */}
+        <section className="py-24 bg-cream-50/30">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-[#001A54] uppercase tracking-tight">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-bold text-[#001A54] uppercase tracking-tight">Rental Loan FAQ</h2>
               <div className="h-1 w-12 bg-gold-500 mx-auto mt-4" />
             </div>
 
             <Accordion type="single" collapsible className="w-full space-y-4">
               {[
                 { 
-                  q: "What is the minimum seasoning required for a cash-out refinance?", 
-                  a: "We offer programs with as little as 3-6 months seasoning on title, allowing you to recycle your capital much faster than traditional lenders." 
+                  q: "What is the minimum DSCR ratio required?", 
+                  a: "Typically we look for a DSCR of 1.10 or higher (meaning property income exceeds debt service by 10%). However, we have programs for 'No-Ratio' properties (below 1.0) with lower LTV." 
                 },
                 { 
-                  q: "Do you fund short-term rentals (AirBnB)?", 
-                  a: "Yes. We use AirDNA data to qualify properties based on their potential as short-term rentals, often achieving much higher leverage than standard long-term rental underwriting." 
+                  q: "Can I use AirBnB income to qualify?", 
+                  a: "Yes. We use short-term rental projections from data providers like AirDNA to underwrite vacation rentals and short-term stay assets." 
                 },
                 { 
-                  q: "Can I close in an LLC?", 
-                  a: "Absolutely. In fact, we encourage it. We are institutional-grade lenders who understand and prefer professional corporate structures." 
+                  q: "Are there prepayment penalties?", 
+                  a: "DSCR loans typically come with a 3-2-1 or 5-4-3-2-1 prepayment structure. However, we can often customize these terms or offer buy-downs for shorter horizons." 
                 },
                 { 
-                  q: "How does the DSCR calculation work?", 
-                  a: "Debt Service Coverage Ratio (DSCR) is simply the gross rental income divided by the PITIA (Principal, Interest, Taxes, Insurance, Association fees). A ratio over 1.0 means the property pays for itself." 
+                  q: "Do you lend to foreign nationals?", 
+                  a: "Yes, we have specialized DSCR programs for foreign investors looking to build US-based rental portfolios." 
                 }
               ].map((item, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border border-gray-100 px-6 py-2 bg-cream-50/30">
+                <AccordionItem key={i} value={`item-${i}`} className="border border-gray-100 px-6 py-2 bg-white shadow-sm">
                   <AccordionTrigger className="text-[#001A54] font-bold uppercase tracking-tight text-left hover:no-underline">
                     {item.q}
                   </AccordionTrigger>
@@ -242,21 +242,20 @@ export default function RentalProduct() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 bg-[#001A54] text-white text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[#F2C100] opacity-[0.03] pointer-events-none" />
-          <div className="max-w-4xl mx-auto px-4 relative z-10">
+        <section className="py-24 bg-[#001A54] text-white text-center">
+          <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 leading-tight">
-              Scale Your <br /> Portfolio <span className="text-[#F2C100] italic font-medium">Now.</span>
+              Build Your <br /> Rental <span className="text-[#F2C100] italic font-medium">Legacy.</span>
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium">
-              Join the elite circle of professional BRRR investors. Secure your capital today.
+              Join the institutional-grade investors using 316 Capital to scale their passive income.
             </p>
             <Button 
               size="lg"
-              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
+              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm"
               onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
-              Start The Process
+              Get Your Term Sheet
             </Button>
           </div>
         </section>
