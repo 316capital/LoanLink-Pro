@@ -24,6 +24,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import newConstructionHero from "@/assets/images/new-construction-hero.jpg";
+import constructionWorker from "@/assets/images/construction-worker.jpg";
+import constructionInterior from "@/assets/images/construction-interior.jpg";
 
 export default function ConstructionProduct() {
   return (
@@ -149,8 +151,51 @@ export default function ConstructionProduct() {
           </div>
         </section>
 
+        {/* New Visual Section - Worker Focus */}
+        <section className="py-24 bg-cream-50 overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-4 translate-y-4" />
+                <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                  <img 
+                    src={constructionWorker} 
+                    alt="Precision Construction Work" 
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  />
+                </div>
+              </motion.div>
+              <div>
+                <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Meticulous Execution</h2>
+                <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
+                  Details Drive <br /> <span className="text-gold-600 italic font-medium">Development.</span>
+                </h3>
+                <p className="text-slate-600 leading-relaxed font-medium text-lg mb-8">
+                  From site prep to the final coat, we fund every layer of your project. Our draw process is designed for precision, ensuring your sub-contractors are paid and your materials are on-site exactly when needed.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {[
+                    { title: "Ground Prep", desc: "Horizontal infrastructure funding" },
+                    { title: "Vertical Build", desc: "100% of construction costs" }
+                  ].map((item, i) => (
+                    <div key={i} className="p-6 bg-white shadow-sm border border-gray-100">
+                      <h4 className="text-[#001A54] font-bold uppercase tracking-tight mb-2">{item.title}</h4>
+                      <p className="text-slate-500 text-sm">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Asteris-Inspired Who It's For Grid */}
-        <section className="py-24 bg-cream-50">
+        <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Strategic Partners</h2>
@@ -181,6 +226,51 @@ export default function ConstructionProduct() {
                   <p className="text-slate-500 leading-relaxed font-medium">{item.desc}</p>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* New Visual Section - Interior/Stairs */}
+        <section className="py-24 bg-[#001A54] text-white overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-gold-500 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Structural Certainty</h2>
+                <h3 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-8 leading-tight">
+                  The Path to <br /> <span className="text-gold-500 italic font-medium">Stabilization.</span>
+                </h3>
+                <p className="text-gray-300 leading-relaxed font-medium text-lg mb-8">
+                  Whether your exit is a retail sale or a long-term rental hold, our financing bridges the gap from the first stud to the certificate of occupancy.
+                </p>
+                <div className="space-y-4">
+                  {[
+                    "Spec Home Construction",
+                    "Multi-Family Development",
+                    "Build-to-Rent (BTR) Portfolios",
+                    "Modular & Prefab Projects"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center space-x-3">
+                      <CheckCircle2 className="h-5 w-5 text-gold-500" />
+                      <span className="font-bold text-sm uppercase tracking-tight">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <div className="absolute -inset-4 border-2 border-gold-500/10 -translate-x-4 -translate-y-4" />
+                <div className="relative aspect-video overflow-hidden shadow-2xl">
+                  <img 
+                    src={constructionInterior} 
+                    alt="Construction Interior Progress" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
