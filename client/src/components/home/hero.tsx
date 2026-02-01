@@ -23,7 +23,7 @@ function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 
 export function Hero() {
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <motion.div 
         initial={{ scale: 1, opacity: 0 }}
@@ -53,7 +53,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/80 via-[#001A54]/40 to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-48">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-32">
         <div className="max-w-4xl">
           <motion.div 
             initial={ { opacity: 0, x: -20 } }
@@ -74,7 +74,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
+            className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
           >
             Institutional Capital. <br />
             <span className="text-[#F2C100]">AI-Enabled</span> Speed.

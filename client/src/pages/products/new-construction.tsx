@@ -31,7 +31,7 @@ export default function ConstructionProduct() {
       <Navbar />
       <main className="pt-20">
         {/* Institutional Hero Section - Asteris & CV Inspired */}
-        <section className="relative min-h-[90vh] flex items-center bg-[#001A54] text-white overflow-hidden">
+        <section className="relative min-h-[70vh] flex items-center bg-[#001A54] text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src={newConstructionHero} 
@@ -52,11 +52,11 @@ export default function ConstructionProduct() {
                 <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Institutional Build Capital</span>
               </div>
-              <h1 className="text-4xl md:text-7xl font-bold uppercase tracking-tight leading-[1.05] mb-8 text-white">
+              <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
                 Build Smarter. <br /> 
                 Scale <span className="text-[#F2C100] italic font-medium">Faster.</span>
               </h1>
-              <h2 className="text-lg md:text-2xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
+              <h2 className="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl">
                 High-velocity capital for ground-up construction. From single-family specs to multi-unit developments, we fund the vision.
               </h2>
               <div className="flex flex-col sm:flex-row gap-4">

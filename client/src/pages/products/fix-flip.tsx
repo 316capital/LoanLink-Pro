@@ -36,7 +36,7 @@ export default function FlipProduct() {
       <Navbar />
       <main className="pt-20">
         {/* Asteris-Inspired Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center bg-[#001A54] text-white overflow-hidden">
+        <section className="relative min-h-[70vh] flex items-center bg-[#001A54] text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
               src={bridgeFixFlipHero} 
@@ -57,7 +57,7 @@ export default function FlipProduct() {
                 <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">High-Velocity Private Credit</span>
               </div>
-              <h1 className="text-3xl md:text-6xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
+              <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
                 Bridge / Fix & Flip <br /> 
                 <span className="text-[#F2C100] italic font-medium">Financing</span>
               </h1>
