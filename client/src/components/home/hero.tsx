@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
-import heroVideo from "@/assets/videos/hero-video.mp4";
+import heroVideo from "@/assets/videos/hero-video-custom.mp4";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -37,8 +37,7 @@ export function Hero() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover scale-[1.12]"
-            style={{ objectPosition: 'center 40%' }}
+            className="w-full h-full object-cover"
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
