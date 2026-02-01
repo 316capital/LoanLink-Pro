@@ -28,14 +28,15 @@ export default function RentalProduct() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center bg-navy-950 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-40">
+      <section className="relative min-h-[70vh] flex items-center bg-navy-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img 
             src={rentalHero} 
             alt="Luxury rental property" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent" />
+          <div className="absolute inset-0 bg-navy-950/20 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/40 to-transparent" />
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24">
