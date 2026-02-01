@@ -154,15 +154,15 @@ export default function ConstructionProduct() {
         {/* New Visual Section - Worker Focus */}
         <section className="py-24 bg-cream-50 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="lg:col-span-4 relative"
               >
                 <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-4 translate-y-4" />
-                <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                <div className="relative aspect-[4/5] overflow-hidden shadow-2xl max-w-[320px] mx-auto lg:ml-0">
                   <img 
                     src={constructionWorker} 
                     alt="Precision Construction Work" 
@@ -170,7 +170,7 @@ export default function ConstructionProduct() {
                   />
                 </div>
               </motion.div>
-              <div>
+              <div className="lg:col-span-8">
                 <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Meticulous Execution</h2>
                 <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
                   Details Drive <br /> <span className="text-gold-600 italic font-medium">Development.</span>
