@@ -23,10 +23,10 @@ export default function Home() {
         <Hero />
         <Infrastructure />
         <ExperienceSection />
+        <ProductsGrid />
         <PartnershipSection />
         <FundingBoard />
         <IntelligenceEngine />
-        <ProductsGrid />
         <ProductParams />
         <DrawCallout />
         <Contact />
