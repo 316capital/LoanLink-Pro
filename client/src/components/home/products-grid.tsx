@@ -109,12 +109,22 @@ export function ProductsGrid() {
                     )}
                   </div>
                 </CardContent>
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-6 space-y-3">
                   <Button 
                     className="w-full bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-navy-950 rounded-none text-[10px] font-bold uppercase tracking-widest transition-all"
                     onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
                   >
                     Get Your Rate
+                  </Button>
+                  <Button 
+                    variant="link"
+                    className="w-full text-gold-500/80 hover:text-gold-500 text-[9px] uppercase tracking-[0.2em] font-bold h-auto p-0 transition-colors"
+                    onClick={() => {
+                      const element = document.getElementById('contact');
+                      if (element) element.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                  >
+                    Explore More
                   </Button>
                 </div>
               </Card>
