@@ -67,11 +67,11 @@ export default function FlipProduct() {
               </h2>
               <Button 
                 size="lg"
-                className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
+                className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold px-8 py-6 rounded-none transition-all uppercase tracking-widest text-xs shadow-lg"
                 onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
               >
                 Get Funding Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </motion.div>
           </div>
@@ -351,7 +351,7 @@ export default function FlipProduct() {
             </p>
             <Button 
               size="lg"
-              className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
+              className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-8 py-6 rounded-none transition-all uppercase tracking-widest text-xs shadow-lg"
               onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
               Get Started With Us
