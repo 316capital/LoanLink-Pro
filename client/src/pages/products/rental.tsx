@@ -44,7 +44,7 @@ export default function RentalProduct() {
             {[
               { label: "Interest Rates", value: "5.75%+" },
               { label: "Max LTV", value: "80%" },
-              { label: "Min FICO", value: "620" },
+              { label: "Min FICO", value: "660" },
               { label: "Term Length", value: "30 Years" }
             ].map((stat, i) => (
               <div key={i} className="text-center md:text-left">
