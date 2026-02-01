@@ -89,7 +89,7 @@ export function Navbar() {
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
               <Link href="/about" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">About Us</Link>
-              
+              <a href="/#testimonials" className="text-sm font-semibold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-wider">Testimonials</a>
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
@@ -189,6 +189,7 @@ export function Navbar() {
 
             <div className="h-px bg-navy-950/5 my-2" />
             <Link href="/about" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">About Us</Link>
+            <a href="/#testimonials" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Testimonials</a>
             <a href="/#contact" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact Us</a>
             
             <a 
