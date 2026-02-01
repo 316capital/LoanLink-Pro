@@ -15,7 +15,7 @@ import {
   HelpCircle,
   Clock
 } from "lucide-react";
-import rentalHero from "@/assets/images/rental-hero.jpg";
+import rentalHero from "@/assets/images/dscr-hero.jpg";
 import rentalContent from "@/assets/images/rental-content.jpg";
 import {
   Accordion,
