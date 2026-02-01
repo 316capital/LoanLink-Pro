@@ -92,7 +92,7 @@ export default function FlipProduct() {
                   Short-Term Capital.
                 </h3>
                 
-                <div className="space-y-6 text-navy-900/80 leading-relaxed font-medium text-lg">
+                <div className="space-y-6 text-slate-600 leading-relaxed font-medium text-lg">
                   <p>
                     Flipping properties is about speed and execution. Whether you’re doing a quick cosmetic rehab or looking at larger projects, the right financing partner makes all the difference. 
                   </p>
@@ -102,11 +102,11 @@ export default function FlipProduct() {
                 </div>
 
                 <div className="mt-10 grid grid-cols-2 gap-6">
-                  <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
+                  <div className="flex items-center space-x-2 text-[#001A54]/60 font-bold uppercase tracking-[0.2em] text-[10px]">
                     <Clock className="h-3 w-3 fill-current text-gold-500" />
                     <span>5–10 Day Closing</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-navy-950/40 font-bold uppercase tracking-[0.2em] text-[10px]">
+                  <div className="flex items-center space-x-2 text-[#001A54]/60 font-bold uppercase tracking-[0.2em] text-[10px]">
                     <Shield className="h-3 w-3 fill-current text-gold-500" />
                     <span>Up to 90% Purchase</span>
                   </div>
@@ -146,7 +146,7 @@ export default function FlipProduct() {
                   <Hammer className="h-24 w-24" />
                 </div>
                 <h4 className="text-[#001A54] font-black uppercase tracking-widest text-sm mb-6">Fix-and-Flip Loans</h4>
-                <p className="text-gray-600 mb-8 leading-relaxed font-medium">
+                <p className="text-slate-600 mb-8 leading-relaxed font-medium">
                   Primarily used by flippers to buy, renovate, and sell a property quickly. Terms are short, interest-only payments are common, and approval focuses on the property’s potential resale value (ARV).
                 </p>
                 <div className="flex items-center space-x-2 text-gold-600 font-bold uppercase tracking-tight text-xs">
@@ -159,7 +159,7 @@ export default function FlipProduct() {
                   <TrendingUp className="h-24 w-24" />
                 </div>
                 <h4 className="text-gold-500 font-black uppercase tracking-widest text-sm mb-6">Bridge Loans</h4>
-                <p className="text-gray-400 mb-8 leading-relaxed font-medium">
+                <p className="text-slate-300 mb-8 leading-relaxed font-medium">
                   Designed to help investors bridge into long-term financing, such as securing permanent loans on stabilized properties or unlocking equity. Flexible terms for acquisitions and cash-out refinances.
                 </p>
                 <div className="flex items-center space-x-2 text-gold-500 font-bold uppercase tracking-tight text-xs">
@@ -195,10 +195,10 @@ export default function FlipProduct() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
               <div className="lg:col-span-1">
                 <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-gold-600 mb-4">The Advantage</h2>
-                <h3 className="text-4xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
+                <h3 className="text-4xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
                   Move Fast. <br /> Stay Nimble. <br /> Build.
                 </h3>
-                <p className="text-navy-900/70 leading-relaxed font-medium mb-10">
+                <p className="text-slate-600 leading-relaxed font-medium mb-10">
                   In the fix and flip business, speed is the only metric that matters. Lock in opportunities before competitors with 316 Capital.
                 </p>
                 <Button 
@@ -218,8 +218,8 @@ export default function FlipProduct() {
                 ].map((item, i) => (
                   <div key={i} className="p-8 border border-gray-100 bg-cream-50/30 hover:border-gold-500/30 transition-colors">
                     <item.icon className="h-8 w-8 text-gold-500 mb-6" />
-                    <h4 className="text-navy-950 font-bold uppercase tracking-tight mb-3">{item.title}</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                    <h4 className="text-[#001A54] font-bold uppercase tracking-tight mb-3">{item.title}</h4>
+                    <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
