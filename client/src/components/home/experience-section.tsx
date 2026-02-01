@@ -19,14 +19,6 @@ export function ExperienceSection() {
               Infinite Capital.
             </h3>
             
-            <div className="mb-10 p-6 bg-white border-l-4 border-gold-500 shadow-sm">
-              <h4 className="font-bold text-navy-950 uppercase tracking-widest text-xs mb-3">The 316 Edge</h4>
-              <p className="text-navy-950 font-bold text-lg mb-2">Our "Can’t-Be-Beat" Policy</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                We are committed to providing the most competitive terms in the market. If you have a legitimate term sheet from another lender, bring it to us—we will beat the rate or the leverage, period.
-              </p>
-            </div>
-
             <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
               316 Capital connects elite developers with high-liquidity funds, removing traditional financing friction through smart underwriting and direct-to-desk execution.
             </p>
