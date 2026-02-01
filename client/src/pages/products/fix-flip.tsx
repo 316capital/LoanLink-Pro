@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/accordion";
 
 import bridgeFixFlipHero from "@/assets/images/bridge-fix-flip-hero.jpg";
+import bridgeConsultation from "@/assets/images/bridge-consultation.jpg";
 
 import investorRelationship from "@/assets/images/investor-relationship.jpg";
 
@@ -117,14 +118,43 @@ export default function FlipProduct() {
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="lg:col-span-5 relative"
+                className="lg:col-span-5 relative flex justify-center lg:justify-end"
+              >
+                <div className="relative w-full max-w-[400px]">
+                  <div className="absolute -inset-4 border-2 border-gold-500/10 translate-x-4 translate-y-4" />
+                  <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
+                    <img 
+                      src={bridgeConsultation} 
+                      alt="Institutional Bridge Consultation" 
+                      className="w-full h-full object-cover transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />
+                    <div className="absolute bottom-0 left-0 p-8 text-white">
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gold-500 mb-2">Deal Velocity</p>
+                      <p className="text-xl font-bold leading-tight">Rapid Funding for Active Flips</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Loan Parameters Card Section */}
+        <section className="py-24 bg-cream-50/30">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
               >
                 <Card className="rounded-none border-none shadow-2xl bg-[#001A54] text-white p-10 relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-8 opacity-10">
                     <Hammer className="h-32 w-32" />
                   </div>
                   <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Loan Parameters</h3>
-                  <div className="space-y-6 relative z-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 relative z-10">
                     {[
                       { label: "Eligible Assets", value: "1-4 Res, Multi-Family (5-29), Mixed Use" },
                       { label: "Loan Amounts", value: "$100K – $10MM+" },
@@ -137,16 +167,18 @@ export default function FlipProduct() {
                     ].map((row, i) => (
                       <div key={i} className="flex justify-between border-b border-white/10 pb-4">
                         <span className="text-gray-400 text-[10px] uppercase font-bold tracking-widest">{row.label}</span>
-                        <span className="text-[#F2C100] font-bold text-sm text-right max-w-[150px]">{row.value}</span>
+                        <span className="text-[#F2C100] font-bold text-sm text-right">{row.value}</span>
                       </div>
                     ))}
                   </div>
-                  <Button 
-                    className="w-full mt-10 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black rounded-none py-8 uppercase tracking-widest text-sm"
-                    onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-                  >
-                    Request Bridge Terms
-                  </Button>
+                  <div className="mt-10 flex justify-center">
+                    <Button 
+                      className="w-full md:w-auto px-12 bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold rounded-none py-8 uppercase tracking-widest text-xs shadow-lg"
+                      onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+                    >
+                      Request Bridge Terms
+                    </Button>
+                  </div>
                 </Card>
               </motion.div>
             </div>
