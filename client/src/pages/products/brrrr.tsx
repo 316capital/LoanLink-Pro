@@ -9,9 +9,11 @@ import {
   TrendingUp, 
   Building2,
   Clock,
-  ZapOff
+  ZapOff,
+  Plus
 } from "lucide-react";
 import brrrHero from "@/assets/images/brrr-hero.jpg";
+import brrrPortfolio from "@/assets/images/brrr-portfolio.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -193,6 +195,69 @@ export default function BrrrrProduct() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section (CV Lending Inspired) */}
+        <section className="py-24 bg-white border-b border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+              <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="lg:col-span-5 relative"
+              >
+                <div className="absolute -inset-4 border-2 border-[#001A54]/5 -translate-x-4 translate-y-4" />
+                <div className="relative overflow-hidden group">
+                  <img 
+                    src={brrrPortfolio} 
+                    alt="Property Portfolio Scaling" 
+                    className="w-full h-[500px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                    <p className="text-white font-bold uppercase tracking-widest text-xs">Strategic Portfolio Diversification</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div 
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="lg:col-span-7"
+              >
+                <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">Portfolio Strategy</h2>
+                <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
+                  Repeatable Success. <br /> <span className="text-gold-600 italic font-medium">Infinite Growth.</span>
+                </h3>
+                
+                <div className="space-y-6 text-slate-600 leading-relaxed font-medium text-lg">
+                  <p>
+                    The "Repeat" in BRRR is where true wealth is created. Our AI-enabled capital allocation identifies your equity positions across your entire portfolio, allowing you to unlock liquidity for your next acquisition without the friction of traditional underwriting.
+                  </p>
+                  <p>
+                    We specialize in <span className="text-[#001A54] font-bold italic">Blanket Loans and Portfolio Lines of Credit</span> designed specifically for investors who treat real estate as a scalable business, not just a series of transactions.
+                  </p>
+                </div>
+
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {[
+                    "Cross-Collateralization Options",
+                    "Single-Closing Portfolio Refi",
+                    "Equity-Based Liquidity Access",
+                    "Nationwide Scaling Capability"
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-center space-x-3">
+                      <div className="h-6 w-6 rounded-full bg-gold-500/10 flex items-center justify-center">
+                        <Plus className="h-3 w-3 text-gold-600" />
+                      </div>
+                      <span className="text-[#001A54] font-bold text-xs uppercase tracking-tight">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
