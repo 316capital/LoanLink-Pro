@@ -142,7 +142,7 @@ export default function RentalProduct() {
                 { label: "Minimum FICO", value: "660" },
                 { label: "Max LTV", value: "80%" },
                 { label: "Closing", value: "21-30 Days" },
-                { label: "Loan Amount", value: "$150K+" }
+                { label: "Loan Amount", value: "$75K+" }
               ].map((stat, i) => (
                 <div key={i} className="text-center border-l border-white/10 first:border-0">
                   <p className="text-gold-500 font-mono text-3xl font-bold mb-1">{stat.value}</p>
@@ -256,7 +256,7 @@ export default function RentalProduct() {
               <div className="lg:col-span-2 bg-white/5 border border-white/10 p-10">
                 <div className="space-y-6">
                   {[
-                    { label: "Loan Amounts", value: "$150K – $20MM+" },
+                    { label: "Loan Amounts", value: "$75K – $20MM+" },
                     { label: "LTV (Loan-to-Value)", value: "Up to 80%" },
                     { label: "Loan Terms", value: "30-Year Fixed, 5/10 Year ARMs" },
                     { label: "Interest Rates", value: "Starting at 5.75%" },
