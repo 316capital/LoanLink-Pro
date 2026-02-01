@@ -1,0 +1,59 @@
+PRIVACY POLICY
+Effective Date: February 1, 2026
+
+316 Capital LLC (“the Company,” “we,” “us,” or “our”) is committed to protecting the privacy and security of the personal and financial information of our clients and website visitors. This Privacy Policy describes how we collect, use, and safeguard your information.
+
+1. Information We Collect
+As a private lender, we collect non-public personal information (NPI) to provide specialized financing services. This includes:
+
+Identification Data: Name, address, Social Security Number, and government-issued ID.
+
+Financial Data: Credit scores, bank statements, tax returns, debt schedules, and asset information.
+
+Project Data: Property addresses, rent rolls, and construction budgets.
+
+Technical Data: IP address, browser type, and usage data via cookies to improve the 316 Intel user experience.
+
+2. How We Use Your Information
+We use your data strictly for business purposes, including:
+
+Processing loan applications and performing underwriting.
+
+Verifying identity and preventing fraud.
+
+Communicating loan terms and project updates.
+
+Maintaining your account in the 316 Strategic Vault.
+
+Complying with legal and regulatory obligations.
+
+3. Information Sharing and Disclosure
+We do not sell your personal information. We only share your data with:
+
+Service Providers: Third-party partners (appraisers, title companies, and background check services) necessary to close your loan.
+
+Institutional Partners: Vetted high-liquidity funds within our network for direct-to-desk execution.
+
+Legal Requirements: When required by law, court order, or to protect the rights and safety of 316 Capital LLC.
+
+4. Data Security and Encryption
+In accordance with Massachusetts 201 CMR 17.00, we maintain a comprehensive Written Information Security Program (WISP).
+
+Encryption: All sensitive data "at rest" and "in transit" is encrypted using industry-standard protocols.
+
+Access Control: Only authorized personnel (such as our Director of Underwriting) have access to your NPI.
+
+5. Your Rights and Choices
+Depending on your residency (e.g., California CCPA/CPRA), you may have the right to:
+
+Request access to the personal data we hold about you.
+
+Request the deletion of your personal data (subject to legal retention requirements).
+
+Opt-out of certain data-sharing practices.
+
+6. Children’s Privacy
+Our services are directed to professional real estate developers and investors. We do not knowingly collect information from individuals under the age of 18.
+
+7. Contact Information
+For questions regarding this policy or to exercise your privacy rights, please contact:
