@@ -1,115 +1,286 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle2, ArrowRight, Shield, Zap, TrendingUp } from "lucide-react";
+import { 
+  CheckCircle2, 
+  ArrowRight, 
+  Shield, 
+  Zap, 
+  TrendingUp, 
+  Wallet, 
+  Users, 
+  BarChart4, 
+  Building2,
+  CheckCircle,
+  HelpCircle,
+  Clock
+} from "lucide-react";
+import rentalHero from "@/assets/images/rental-hero.jpg";
+import rentalContent from "@/assets/images/rental-content.jpg";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function RentalProduct() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-navy-950 py-24 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_-20%,rgba(242,193,0,0.1),transparent)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="relative min-h-[60vh] flex items-center bg-navy-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-40">
+          <img 
+            src={rentalHero} 
+            alt="Luxury rental property" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-transparent" />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24">
           <div className="max-w-3xl">
             <motion.div 
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md"
+            >
+              <Zap className="h-3 w-3 text-gold-500 fill-current" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Institutional Private Credit</span>
+            </motion.div>
+            
+            <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-flex items-center space-x-2 bg-gold-500/10 border border-gold-500/20 px-4 py-1.5 rounded-full mb-6"
+              transition={{ delay: 0.2 }}
+              className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tight leading-[1.1]"
             >
-              <Zap className="h-3 w-3 text-gold-500" />
-              <span className="text-[10px] font-bold uppercase tracking-widest text-gold-500">Institutional Rental Financing</span>
+              DSCR Rental <br /> 
+              <span className="text-gold-500 italic">Financing</span>
+            </motion.h1>
+            
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-xl text-gray-200 mb-10 leading-relaxed font-medium max-w-2xl"
+            >
+              Turn rental properties into passive income and long-term wealth. Our DSCR loans qualify you based on property cash flow—no W-2s or tax returns required.
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              <Button 
+                size="lg"
+                className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-10 py-7 rounded-none transition-all hover:shadow-[0_0_30px_rgba(242,193,0,0.3)]"
+                onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+              >
+                Start Your Quote
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
             </motion.div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tight leading-tight">
-              DSCR Rental <br /> <span className="text-gold-500">Financing</span>
-            </h1>
-            <p className="text-xl text-gray-300 mb-10 leading-relaxed font-medium">
-              Maximize your portfolio's cash flow with long-term rental loans based on asset performance, not personal income.
-            </p>
-            <Button 
-              size="lg"
-              className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold px-10 py-7 rounded-none transition-all hover:scale-105"
-              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-            >
-              Get Instant Pricing
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
           </div>
         </div>
       </section>
 
-      {/* Stats/Parameters */}
-      <section className="py-12 bg-cream-50 border-b border-gray-200">
+      {/* Key Benefits Grid */}
+      <section className="py-12 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { label: "Interest Rates", value: "5.75%+" },
-              { label: "Max LTV", value: "80%" },
-              { label: "Min FICO", value: "660" },
-              { label: "Term Length", value: "30 Years" }
-            ].map((stat, i) => (
-              <div key={i} className="text-center md:text-left">
-                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-1">{stat.label}</p>
-                <p className="text-2xl font-bold text-navy-950">{stat.value}</p>
+              { icon: Clock, title: "Close in 30 Days", desc: "Our streamlined underwriting gets you to the finish line faster." },
+              { icon: Wallet, title: "No W-2 Required", desc: "Approvals based on property cash flow, not your personal income." },
+              { icon: BarChart4, title: "Maximize Cash Flow", desc: "Leverage low rates and interest-only options to boost your ROI." }
+            ].map((item, i) => (
+              <div key={i} className="flex items-center space-x-4">
+                <div className="h-12 w-12 shrink-0 bg-navy-50 flex items-center justify-center rounded-none border border-navy-100">
+                  <item.icon className="h-6 w-6 text-navy-950" />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-navy-950 uppercase tracking-tight">{item.title}</h3>
+                  <p className="text-xs text-muted-foreground">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
-      <section className="py-24 bg-white">
+      {/* Content Section with Image */}
+      <section className="py-24 bg-cream-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-            <div>
-              <h2 className="text-3xl font-bold text-navy-950 uppercase mb-8 tracking-tight">The Smart Choice for Portfolio Scaling</h2>
-              <div className="space-y-6 text-gray-600 leading-relaxed font-medium">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-gold-600 mb-4">The Solution</h2>
+              <h3 className="text-4xl font-bold text-navy-950 uppercase tracking-tight mb-8 leading-tight">
+                Passive Income. <br /> Institutional Support.
+              </h3>
+              <div className="space-y-6 text-navy-900/70 leading-relaxed font-medium">
                 <p>
-                  Our DSCR (Debt Service Coverage Ratio) loans are specifically engineered for professional real estate investors. By focusing on the property's ability to cover its debt rather than your personal DTI, we unlock significantly more leverage for your portfolio.
+                  Owning long-term rental properties is about creating financial stability and lasting equity. At 316 Capital, we know that every investment decision counts. 
                 </p>
-                <div className="space-y-4 pt-4">
+                <p>
+                  That’s why we provide fast, flexible, and investor-focused financing designed for buy-and-hold investors who want to scale without the traditional lending headaches of a bank.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                   {[
-                    "No personal income verification required",
-                    "Close in an LLC for maximum protection",
-                    "Interest-only payment options available",
-                    "Unlimited property count in portfolio",
-                    "Streamlined appraisal process"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center space-x-3">
-                      <CheckCircle2 className="h-5 w-5 text-gold-500" />
-                      <span className="text-navy-950 font-bold text-sm uppercase tracking-tight">{item}</span>
+                    "Single Family & Multi-Family",
+                    "Short-Term Rentals (STR)",
+                    "No DTI Verification",
+                    "Interest-Only Options",
+                    "Portfolio Refinancing",
+                    "LLC Closings Encouraged"
+                  ].map((benefit, i) => (
+                    <div key={i} className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4 text-gold-500" />
+                      <span className="text-sm font-bold text-navy-950 uppercase tracking-tight">{benefit}</span>
                     </div>
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 border-2 border-gold-500/20 translate-x-8 translate-y-8" />
+              <img 
+                src={rentalContent} 
+                alt="Modern rental interior" 
+                className="relative z-10 w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-            <Card className="rounded-none border-navy-950/10 shadow-2xl bg-navy-950 text-white p-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-8 opacity-10">
-                <Shield className="h-32 w-32" />
+      {/* Loan Terms & Parameters Table */}
+      <section className="py-24 bg-navy-950 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">Loan Terms & Features</h2>
+            <div className="h-1 w-20 bg-gold-500 mx-auto mt-6" />
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <Card className="bg-white/5 border-white/10 rounded-none p-8 flex flex-col justify-between">
+              <div>
+                <h4 className="text-gold-500 font-bold uppercase tracking-widest text-xs mb-6">Who Benefits?</h4>
+                <div className="space-y-8">
+                  {[
+                    { title: "Buy & Hold Investors", desc: "Secure steady cash flow with low overhead costs." },
+                    { title: "Scaling Investors", desc: "Use DSCR loans to expand rental portfolios faster." },
+                    { title: "Portfolio Owners", desc: "Refinance multiple properties under one streamlined loan." }
+                  ].map((user, i) => (
+                    <div key={i}>
+                      <h5 className="text-white font-bold uppercase tracking-tight mb-2">{user.title}</h5>
+                      <p className="text-gray-400 text-sm leading-relaxed">{user.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-2xl font-bold uppercase mb-8 relative z-10">Program Guidelines</h3>
-              <div className="space-y-6 relative z-10">
+            </Card>
+
+            <div className="lg:col-span-2 bg-white/5 border border-white/10 p-10">
+              <div className="space-y-6">
                 {[
-                  { label: "Property Types", value: "1-4 Unit & 5-20 Unit Multi-Family" },
-                  { label: "Loan Amounts", value: "$150k - $20M+" },
-                  { label: "Geographies", value: "Nationwide (44 States)" },
-                  { label: "DSCR Ratio", value: "As low as 1.0 (No ratio options available)" },
-                  { label: "Prepayment", value: "Flexible (3, 2, 1 or Step-down options)" }
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between border-b border-white/10 pb-4">
-                    <span className="text-gray-400 text-sm uppercase font-bold tracking-wider">{row.label}</span>
-                    <span className="text-gold-500 font-bold text-sm">{row.value}</span>
+                  { label: "Loan Amounts", value: "$150K – $20MM+" },
+                  { label: "LTV (Loan-to-Value)", value: "Up to 80%" },
+                  { label: "Loan Terms", value: "30-Year Fixed, 5/10 Year ARMs" },
+                  { label: "Interest Rates", value: "Starting at 5.75%" },
+                  { label: "Min FICO Score", value: "660" },
+                  { label: "Closing Timeline", value: "30–45 Days" },
+                  { label: "Property Count", value: "Unlimited" }
+                ].map((param, i) => (
+                  <div key={i} className="flex justify-between items-center border-b border-white/10 pb-4 last:border-0 last:pb-0">
+                    <span className="text-gray-400 font-bold uppercase tracking-widest text-xs">{param.label}</span>
+                    <span className="text-gold-500 font-bold text-lg font-mono">{param.value}</span>
                   </div>
                 ))}
               </div>
               <Button 
-                className="w-full mt-10 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-6 uppercase tracking-widest text-xs"
+                className="w-full mt-12 bg-gold-500 hover:bg-gold-600 text-navy-950 font-bold rounded-none py-8 uppercase tracking-widest text-sm"
                 onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
               >
                 Apply for Pre-Approval
               </Button>
-            </Card>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-navy-950 uppercase tracking-tight">Frequently Asked Questions</h2>
+            <div className="h-1 w-12 bg-gold-500 mx-auto mt-4" />
+          </div>
+
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {[
+              { 
+                q: "How does a DSCR Loan work?", 
+                a: "A DSCR (Debt Service Coverage Ratio) Loan qualifies you based on the rental income of the property instead of your personal W-2s or tax returns. If the property's income covers the debt, you qualify." 
+              },
+              { 
+                q: "Can I get a loan without tax returns?", 
+                a: "Yes. At 316 Capital, we focus exclusively on the property's cash flow. We do not require personal tax returns or income verification for our DSCR programs." 
+              },
+              { 
+                q: "Which properties qualify for these loans?", 
+                a: "We finance single-family homes, duplexes, triplexes, fourplexes, and multi-family properties (5-20 units), as well as certain mixed-use properties." 
+              },
+              { 
+                q: "Do I need prior experience to qualify?", 
+                a: "No. While experience is always helpful, we have dedicated programs for both first-time investors and seasoned portfolio owners." 
+              },
+              { 
+                q: "Are there prepayment penalties?", 
+                a: "We offer a variety of options including standard step-down penalties (3-2-1) and options with no prepayment penalty at all, depending on your exit strategy." 
+              }
+            ].map((item, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border border-gray-100 px-6 py-2 bg-cream-50/30">
+                <AccordionTrigger className="text-navy-950 font-bold uppercase tracking-tight text-left hover:no-underline">
+                  {item.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-navy-900/70 leading-relaxed font-medium pt-2">
+                  {item.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-24 bg-navy-950 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gold-500 opacity-[0.03] pointer-events-none" />
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8 leading-tight">
+            Build Long-Term Wealth <br /> with the <span className="text-gold-500 italic">Right Capital</span>
+          </h2>
+          <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+            Whether you’re securing your first rental or expanding a nationwide portfolio, 316 Capital provides the institutional speed you need.
+          </p>
+          <Button 
+            size="lg"
+            className="bg-gold-500 hover:bg-gold-600 text-navy-950 font-black px-12 py-8 rounded-none transition-all uppercase tracking-widest text-sm shadow-[0_20px_50px_rgba(242,193,0,0.2)]"
+            onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+          >
+            Start Your Application
+          </Button>
         </div>
       </section>
     </div>
