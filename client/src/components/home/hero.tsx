@@ -23,35 +23,37 @@ function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 
 export function Hero() {
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <motion.div 
-        initial={{ scale: 1, opacity: 0 }}
-        animate={{ 
-          scale: [1, 1.1, 1],
-          opacity: 1 
-        }}
-        transition={{ 
-          scale: {
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear"
-          },
-          opacity: {
-            duration: 1.5,
-            ease: "easeOut"
-          }
-        }}
-        className="absolute inset-0 z-0"
-      >
-        <img 
-          src={heroBg} 
-          alt="Active construction site" 
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-[#001A54]/60 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/80 via-[#001A54]/40 to-transparent" />
-      </motion.div>
+    <div className="relative flex flex-col items-center justify-center overflow-hidden">
+      {/* Background Image Container */}
+      <div className="absolute inset-0 z-0">
+        <motion.div 
+          initial={{ scale: 1, opacity: 0 }}
+          animate={{ 
+            scale: [1, 1.1, 1],
+            opacity: 1 
+          }}
+          transition={{ 
+            scale: {
+              duration: 20,
+              repeat: Infinity,
+              ease: "linear"
+            },
+            opacity: {
+              duration: 1.5,
+              ease: "easeOut"
+            }
+          }}
+          className="h-full w-full"
+        >
+          <img 
+            src={heroBg} 
+            alt="Active construction site" 
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#001A54]/60 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/80 via-[#001A54]/40 to-transparent" />
+        </motion.div>
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-32">
         <div className="max-w-4xl">
@@ -119,7 +121,7 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 1.5 } }
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl border-t border-white/10 pt-10 pb-20 md:pb-0"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl border-t border-white/10 pt-10"
           >
             {[
               { step: "1", title: "Quick App", desc: "Digital intake in 2m" },
@@ -140,12 +142,12 @@ export function Hero() {
         </div>
       </div>
       
-      {/* Stats overlay */}
+      {/* Stats Section - Relative to the parent flex-col, not absolute bottom-0 of hero */}
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-0 left-0 right-0 bg-navy-950/90 backdrop-blur-xl border-t border-white/5 py-8 md:py-12 z-20"
+        className="w-full bg-navy-950/90 backdrop-blur-xl border-t border-white/5 py-8 md:py-12 z-20 relative"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-y-4 gap-x-4 md:gap-8">
            {[
