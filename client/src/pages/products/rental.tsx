@@ -37,6 +37,8 @@ export default function RentalProduct() {
             <img 
               src={rentalHero} 
               alt="DSCR Rental Financing" 
+              loading="eager"
+              decoding="sync"
               className="w-full h-full object-cover brightness-[0.9] contrast-[1.05] scale-100"
             />
             <div className="absolute inset-0 bg-[#001A54]/10 mix-blend-multiply" />
@@ -129,6 +131,7 @@ export default function RentalProduct() {
                     <img 
                       src={rentalConsultation} 
                       alt="Institutional Rental Consultation" 
+                      loading="lazy"
                       className="w-full h-full object-cover transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-60" />

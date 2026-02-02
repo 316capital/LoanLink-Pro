@@ -35,6 +35,8 @@ export default function BrrrrProduct() {
             <img 
               src={brrrHero} 
               alt="BRRR Strategy Financing" 
+              loading="eager"
+              decoding="sync"
               className="w-full h-full object-cover brightness-[0.9] contrast-[1.05] scale-100"
             />
             <div className="absolute inset-0 bg-[#001A54]/10 mix-blend-multiply" />
@@ -214,6 +216,7 @@ export default function BrrrrProduct() {
                   <img 
                     src={brrrPortfolio} 
                     alt="Property Portfolio Scaling" 
+                    loading="lazy"
                     className="w-full h-[500px] object-cover transition-all duration-1000"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001A54]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
