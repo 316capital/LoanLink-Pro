@@ -8,6 +8,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import PrivacyPolicy from "@/pages/legal/privacy";
+import SMSConsent from "@/pages/legal/sms-consent";
 import TermsConditions from "@/pages/legal/terms";
 import RentalProduct from "@/pages/products/rental";
 import FlipProduct from "@/pages/products/fix-flip";
@@ -22,6 +23,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/privacy" component={PrivacyPolicy} />
+        <Route path="/sms-consent" component={SMSConsent} />
         <Route path="/terms" component={TermsConditions} />
         <Route path="/products/rental" component={RentalProduct} />
         <Route path="/products/fix-flip" component={FlipProduct} />
