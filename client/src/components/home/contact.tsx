@@ -115,6 +115,28 @@ export function Contact() {
                 />
               </div>
 
+              <div className="space-y-4 pt-4 border-t border-white/10">
+                <div className="flex items-start space-x-3">
+                  <div className="flex items-center h-5">
+                    <input
+                      id="consent"
+                      name="consent"
+                      type="checkbox"
+                      required
+                      className="h-4 w-4 rounded-none border-white/20 bg-white/5 text-[#F2C100] focus:ring-[#F2C100]"
+                    />
+                  </div>
+                  <div className="text-[10px] leading-relaxed text-gray-400">
+                    <label htmlFor="consent" className="font-medium text-gray-300">
+                      Compliance Consent & Disclosure
+                    </label>
+                    <p>
+                      By checking this box, I provide my express written consent to receive recurring automated marketing and informational text (SMS) messages from 316 Capital LLC at the phone number provided. Message and data rates may apply. I understand that consent is not a condition of any loan or purchase. I can opt-out at any time by replying STOP. I also agree to the <a href="/terms" className="text-[#F2C100] underline">Terms of Service</a> and <a href="/privacy" className="text-[#F2C100] underline">Privacy Policy</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <Button 
                 className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold py-6 rounded-none uppercase tracking-[0.2em] transition-all group"
                 onClick={() => window.location.href = 'mailto:info@316cap.com'}

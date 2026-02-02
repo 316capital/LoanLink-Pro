@@ -91,7 +91,20 @@ export default function PrivacyPolicy() {
               </section>
 
               <section className="space-y-4">
-                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">7. Contact Information</h2>
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">7. SMS and A2P Compliance Disclosure</h2>
+                <p>
+                  In compliance with A2P 10DLC and TCPA regulations, we disclose the following regarding our SMS communications:
+                </p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Purpose:</strong> We send SMS messages for loan application updates, draw request status, and institutional capital announcements.</li>
+                  <li><strong>Opt-In:</strong> By providing your mobile number and checking the consent box on our contact forms, you agree to receive these messages.</li>
+                  <li><strong>Opt-Out:</strong> You may opt-out at any time by replying "STOP" to any message received. You will receive a final confirmation of your opt-out.</li>
+                  <li><strong>Data Sharing:</strong> We do not share or sell SMS opt-in data or phone numbers to third parties for marketing purposes. All messaging data is kept strictly within our institutional secure environment.</li>
+                </ul>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">8. Contact Information</h2>
                 <p>
                   For questions regarding this policy or to exercise your privacy rights, please contact our Compliance Desk at info@316cap.com.
                 </p>
