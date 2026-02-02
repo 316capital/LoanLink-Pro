@@ -28,19 +28,34 @@ export default function SMSConsent() {
               </section>
 
               <section className="space-y-4">
-                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">2. How We Use Your Data</h2>
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">2. Use Cases for SMS</h2>
                 <p>
-                  Your phone number is used exclusively for the following purposes:
+                  Your phone number is used for specific professional interactions, including:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Marketing Purposes:</strong> Sending you updates on institutional capital availability, new loan products, and regional real estate market insights.</li>
-                  <li><strong>Customer Service:</strong> Providing real-time updates on your loan application status, draw request processing, and general project-related inquiries.</li>
-                  <li><strong>Institutional Announcements:</strong> Urgent notifications regarding lending guidelines or corporate updates.</li>
+                  <li><strong>Marketing Purposes:</strong> Sending you updates on institutional capital availability, new loan products, regional real estate market insights, and promotional announcements.</li>
+                  <li><strong>Customer Service:</strong> Providing real-time updates on your loan application status, draw request processing, underwriting inquiries, and general project-related support.</li>
+                  <li><strong>Institutional Announcements:</strong> Notifications regarding lending guideline changes, corporate updates, or time-sensitive capital allocation opportunities.</li>
+                  <li><strong>Appointment Reminders:</strong> Text confirmations for scheduled consultations with our capital allocators.</li>
                 </ul>
               </section>
 
               <section className="space-y-4">
-                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">3. Terms of Service for SMS</h2>
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">3. Age Restriction</h2>
+                <p>
+                  You must be at least 18 years of age to opt-in to 316 Capital LLC’s SMS services. By providing your consent, you represent and warrant that you are 18 years of age or older.
+                </p>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">4. Carrier Liability Disclaimer</h2>
+                <p>
+                  Please note that mobile carriers are not liable for delayed or undelivered messages. 316 Capital LLC is not responsible for any delays in the receipt of any SMS messages as delivery is subject to effective transmission from your network provider.
+                </p>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">5. Terms of Service for SMS</h2>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Express Consent:</strong> By providing your number, you provide express written consent to receive recurring automated messages.</li>
                   <li><strong>Message Frequency:</strong> Message frequency varies based on your project activity and capital allocation needs.</li>
