@@ -23,7 +23,7 @@ function Counter({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 
 export function Hero() {
   return (
-    <div className="relative flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center overflow-hidden min-h-[600px] sm:min-h-0">
       {/* Background Video Container */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <motion.div 
@@ -37,7 +37,7 @@ export function Hero() {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
