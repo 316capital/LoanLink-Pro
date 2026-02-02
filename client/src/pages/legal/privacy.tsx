@@ -96,15 +96,38 @@ export default function PrivacyPolicy() {
                   In compliance with A2P 10DLC and TCPA regulations, we disclose the following regarding our SMS communications:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Purpose:</strong> We send SMS messages for loan application updates, draw request status, and institutional capital announcements.</li>
-                  <li><strong>Opt-In:</strong> By providing your mobile number and checking the consent box on our contact forms, you agree to receive these messages.</li>
-                  <li><strong>Opt-Out:</strong> You may opt-out at any time by replying "STOP" to any message received. You will receive a final confirmation of your opt-out.</li>
-                  <li><strong>Data Sharing:</strong> We do not share or sell SMS opt-in data or phone numbers to third parties for marketing purposes. All messaging data is kept strictly within our institutional secure environment.</li>
+                  <li><strong>Purpose:</strong> We send SMS messages for loan application updates, draw request status, and institutional capital announcements. These messages are for marketing purposes and customer service.</li>
+                  <li><strong>Opt-In:</strong> By providing your mobile number and voluntarily checking the consent box on our contact forms, you agree to receive these messages. Consent is not required to use our services.</li>
+                  <li><strong>Opt-Out:</strong> You may opt-out at any time by replying "STOP" to any message received. You will receive a final confirmation of your opt-out. For help, reply "HELP".</li>
+                  <li><strong>Message Frequency:</strong> Message frequency varies based on your project activity and capital allocation needs.</li>
+                  <li><strong>Rates:</strong> Standard message and data rates may apply depending on your mobile carrier.</li>
+                  <li><strong>Mobile Info Sharing:</strong> We do not share, sell, or rent SMS opt-in data or phone numbers to third parties, affiliates, or any other entities for marketing or promotional purposes. All messaging data is kept strictly within our institutional secure environment.</li>
                 </ul>
               </section>
 
               <section className="space-y-4">
-                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">8. Contact Information</h2>
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">8. Cookies and Tracking Practices</h2>
+                <p>
+                  We use cookies and similar tracking technologies (like web beacons) to analyze traffic, personalize your experience, and improve our services. You can control cookie preferences through your browser settings, though disabling them may impact your experience with the 316 Intel engine.
+                </p>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">9. Data Security and Handling</h2>
+                <p>
+                  We implement industry-standard security measures, including 256-bit encryption and strict access controls (WISP compliance), to protect your data from unauthorized access, disclosure, or destruction.
+                </p>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">10. User Rights</h2>
+                <p>
+                  You have the right to access, correct, or request deletion of your personal data. You may also object to processing or request data portability. To exercise these rights, please contact our Compliance Desk.
+                </p>
+              </section>
+
+              <section className="space-y-4">
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">11. Contact Information</h2>
                 <p>
                   For questions regarding this policy or to exercise your privacy rights, please contact our Compliance Desk at info@316cap.com.
                 </p>

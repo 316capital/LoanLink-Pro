@@ -57,10 +57,14 @@ export default function SMSConsent() {
               <section className="space-y-4">
                 <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">5. Terms of Service for SMS</h2>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li><strong>Express Consent:</strong> By providing your number, you provide express written consent to receive recurring automated messages.</li>
-                  <li><strong>Message Frequency:</strong> Message frequency varies based on your project activity and capital allocation needs.</li>
-                  <li><strong>Rates:</strong> Message and data rates may apply depending on your mobile carrier.</li>
-                  <li><strong>Condition of Service:</strong> Consent to receive SMS is not a condition of receiving a loan or any purchase from 316 Capital LLC.</li>
+                  <li><strong>Express Consent:</strong> By providing your number and checking the box, you provide express written consent to receive recurring automated marketing and informational messages. Consent is not a condition of any loan.</li>
+                  <li><strong>Message Frequency:</strong> Message frequency varies based on project activity.</li>
+                  <li><strong>Rates:</strong> Standard message and data rates may apply.</li>
+                  <li><strong>Opt-Out:</strong> Reply STOP to cancel, HELP for help.</li>
+                  <li><strong>Support:</strong> Email info@316cap.com or call +1 (617) 546-4817.</li>
+                  <li><strong>Carrier Liability:</strong> Carriers are not liable for delayed or undelivered messages.</li>
+                  <li><strong>Age:</strong> You must be 18+ years of age.</li>
+                  <li><strong>Privacy:</strong> Data handled per our <a href="/privacy" className="text-gold-600 underline">Privacy Policy</a>.</li>
                 </ul>
               </section>
 

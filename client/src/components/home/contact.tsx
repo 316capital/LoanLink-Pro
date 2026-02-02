@@ -79,6 +79,9 @@ export function Contact() {
             <div className="absolute top-0 left-0 w-12 h-1 bg-[#F2C100]" />
             
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <div className="text-white text-xs font-bold mb-4 uppercase tracking-widest border-b border-white/10 pb-2">
+                316 Capital LLC | Institutional Inquiry
+              </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Full Name</label>
@@ -122,7 +125,6 @@ export function Contact() {
                       id="consent"
                       name="consent"
                       type="checkbox"
-                      required
                       className="h-4 w-4 rounded-none border-white/20 bg-white/5 text-[#F2C100] focus:ring-[#F2C100]"
                     />
                   </div>
@@ -131,7 +133,7 @@ export function Contact() {
                       Compliance Consent & Disclosure
                     </label>
                     <p>
-                      By checking this box, I provide my express written consent to receive recurring automated marketing and informational text (SMS) messages from 316 Capital LLC at the phone number provided. Message and data rates may apply. I understand that consent is not a condition of any loan or purchase. I can opt-out at any time by replying STOP. I also agree to the <a href="/terms" className="text-[#F2C100] underline">Terms of Service</a> and <a href="/privacy" className="text-[#F2C100] underline">Privacy Policy</a>.
+                      By checking this box, I provide my express written consent to receive recurring automated marketing and informational text (SMS) messages from 316 Capital LLC at the phone number provided. Message frequency varies. Message and data rates may apply. I understand that consent is not a condition of any loan or purchase. I can opt-out at any time by replying STOP. I also agree to the <a href="/terms" className="text-[#F2C100] underline">Terms of Service</a> and <a href="/privacy" className="text-[#F2C100] underline">Privacy Policy</a>.
                     </p>
                   </div>
                 </div>

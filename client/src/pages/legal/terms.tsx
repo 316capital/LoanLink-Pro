@@ -46,18 +46,20 @@ export default function TermsConditions() {
               </section>
 
               <section className="space-y-4">
-                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">4. TCPA & SMS CONSENT (GHL COMPLIANCE)</h2>
+                <h2 className="text-xl font-bold text-[#001A54] uppercase tracking-wider">4. SMS & TEXT MESSAGING TERMS</h2>
                 <p>
-                  By providing your phone number on our intake forms, you provide "Prior Express Written Consent" to be contacted by 316 Capital LLC and its agents (including our Director of Underwriting) via:
+                  By providing your phone number and opting in to SMS communications from 316 Capital LLC, you agree to the following terms:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Automated SMS/text messages.</li>
-                  <li>Artificial or prerecorded voice calls.</li>
-                  <li>Email and direct mail.</li>
+                  <li><strong>Use Cases:</strong> SMS messages are used for marketing purposes (new capital products, market updates, promotional announcements) and customer service (loan status, draw notifications, underwriting support).</li>
+                  <li><strong>Opt-In/Out:</strong> Consent is provided by checking the opt-in box on our forms. To stop receiving messages, reply STOP. For help, reply HELP.</li>
+                  <li><strong>Customer Support:</strong> Contact us at info@316cap.com or +1 (617) 546-4817 for assistance.</li>
+                  <li><strong>Rates:</strong> Standard message and data rates may apply.</li>
+                  <li><strong>Frequency:</strong> Message frequency varies based on project activity.</li>
+                  <li><strong>Liability:</strong> Mobile carriers are not liable for delayed or undelivered messages.</li>
+                  <li><strong>Age Requirement:</strong> You must be 18 years or older to consent to SMS.</li>
+                  <li><strong>Privacy:</strong> All SMS data is handled according to our <a href="/privacy" className="text-gold-600 underline">Privacy Policy</a>.</li>
                 </ul>
-                <p className="font-bold mt-4">
-                  Opt-Out: You may reply "STOP" to any text message at any time to be removed from our communication list. Message and data rates may apply.
-                </p>
               </section>
 
               <section className="space-y-4">
