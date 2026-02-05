@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap } from "lucide-react";
 import heroVideo from "@/assets/videos/hero-boston-montage.mp4";
-import bostonLandmark from "@/assets/images/boston-landmark.jpg";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -39,16 +38,11 @@ export function Hero() {
             muted
             playsInline
             preload="auto"
-            className="absolute inset-0 w-full h-full object-cover opacity-60"
+            className="absolute inset-0 w-full h-full object-cover"
           >
             <source src={heroVideo} type="video/mp4" />
           </video>
-          <img 
-            src={bostonLandmark} 
-            alt="Boston Landmark" 
-            className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40"
-          />
-          <div className="absolute inset-0 bg-[#001A54]/40 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-[#001A54]/30 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-tr from-[#001A54]/70 via-[#001A54]/20 to-transparent" />
         </motion.div>
       </div>
