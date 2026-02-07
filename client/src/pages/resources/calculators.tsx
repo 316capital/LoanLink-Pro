@@ -93,7 +93,7 @@ export default function CalculatorsPage() {
                 Unlock Fast & <span className="text-[#F2C100] italic font-medium">Easy Financing</span>
               </h2>
               <p className="text-lg text-gray-300 mb-10 font-light leading-relaxed">
-                Kiavi-inspired speed with 316 Capital expertise. Get pre-qualified in minutes and close your next deal in as fast as 7 days.
+                Experience institutional-grade speed and expertise. Get pre-qualified in minutes and close your next deal in as fast as 7 days.
               </p>
               <Button 
                 size="lg"
