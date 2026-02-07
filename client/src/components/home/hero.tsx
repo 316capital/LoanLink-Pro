@@ -63,8 +63,8 @@ export function Hero() {
             transition={ { delay: 0.7 } }
             className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6 uppercase"
           >
-            Institutional Capital. <br />
-            <span className="text-[#F2C100]">AI-Enabled</span> Speed.
+            Fast, flexible capital <br />
+            powered by <span className="text-[#F2C100]">technology.</span>
           </motion.h1>
 
           <motion.div
@@ -82,7 +82,7 @@ export function Hero() {
             transition={ { delay: 0.9 } }
             className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl font-medium leading-relaxed"
           >
-            We provide high-velocity private credit for professional real estate investors. Nationwide scale with deep roots in Massachusetts and New England.
+            We provide professional investors with the financing they need to flip, rent, or build—without the bank delays. Nationwide reach, New England expertise.
           </motion.p>
           
           <motion.p 
