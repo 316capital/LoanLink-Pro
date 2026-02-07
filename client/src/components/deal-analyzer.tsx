@@ -59,41 +59,41 @@ export function DealAnalyzer() {
     // Tier 1: 730+, 5+
     if (creditNum >= 730 && expNum >= 5) {
       if (desiredLtcPct <= 90) {
-        return { maxLtc: 90, maxArvLtv: 70, rate: 7.99, points: 1, tier: "Tier 1", requiresVault: false };
+        return { maxLtc: 90, maxArvLtv: 70, rate: 9.99, points: 1, tier: "Tier 1", requiresVault: false };
       }
       if (desiredLtcPct <= 95) {
-        return { maxLtc: 95, maxArvLtv: 70, rate: 9.50, points: 1.5, tier: "Tier 1+", requiresVault: false };
+        return { maxLtc: 95, maxArvLtv: 70, rate: 10.49, points: 1.5, tier: "Tier 1+", requiresVault: false };
       }
     }
 
     // Tier 2: 700+, 3-5
     if (creditNum >= 700 && expNum >= 3) {
       if (desiredLtcPct <= 90) {
-        return { maxLtc: 90, maxArvLtv: 68, rate: 8.75, points: 1.5, tier: "Tier 2", requiresVault: false };
+        return { maxLtc: 90, maxArvLtv: 68, rate: 10.49, points: 1.5, tier: "Tier 2", requiresVault: false };
       }
       if (desiredLtcPct <= 95) {
-        return { maxLtc: 95, maxArvLtv: 68, rate: 9.75, points: 1.75, tier: "Tier 2+", requiresVault: false };
+        return { maxLtc: 95, maxArvLtv: 68, rate: 10.99, points: 1.75, tier: "Tier 2+", requiresVault: false };
       }
     }
 
     // Tier 3: 680+, 1-2
     if (creditNum >= 680 && expNum >= 1) {
       if (desiredLtcPct <= 85) {
-        return { maxLtc: 85, maxArvLtv: 70, rate: 9.75, points: 2, tier: "Tier 3", requiresVault: false };
+        return { maxLtc: 85, maxArvLtv: 70, rate: 10.99, points: 2, tier: "Tier 3", requiresVault: false };
       }
     }
 
     // Tier 4: 660+, 0+
     if (creditNum >= 660) {
       if (desiredLtcPct <= 80) {
-        return { maxLtc: 80, maxArvLtv: 70, rate: 10.50, points: 2, tier: "Tier 4", requiresVault: false };
+        return { maxLtc: 80, maxArvLtv: 70, rate: 11.49, points: 2, tier: "Tier 4", requiresVault: false };
       }
     }
 
     // Tier 5: 620+
     if (creditNum >= 620) {
       if (desiredLtcPct <= 75) {
-        return { maxLtc: 75, maxArvLtv: 65, rate: 11.50, points: 2, tier: "Tier 5", requiresVault: false };
+        return { maxLtc: 75, maxArvLtv: 65, rate: 11.99, points: 2, tier: "Tier 5", requiresVault: false };
       }
     }
 
