@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
 import { ExitIntentPopup } from "@/components/exit-intent-popup";
+import { MobileTimedPopup } from "@/components/mobile-timed-popup";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import About from "@/pages/about";
@@ -43,6 +44,7 @@ function App() {
         <Toaster />
         <Router />
         <ExitIntentPopup />
+        <MobileTimedPopup />
       </TooltipProvider>
     </QueryClientProvider>
   );
