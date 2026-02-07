@@ -60,9 +60,6 @@ export function Hero() {
                 <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
               </div>
-              <div className="inline-flex items-center space-x-2 bg-white/10 border border-[#F2C100]/50 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(242,193,0,0.2)] w-fit backdrop-blur-md animate-pulse">
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#F2C100]">Now offering 100% financing for qualified Investors</span>
-              </div>
             </div>
             <div className="inline-flex items-center space-x-2 bg-[#001A54]/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
@@ -73,11 +70,20 @@ export function Hero() {
             initial={ { opacity: 0, y: 20 } }
             animate={ { opacity: 1, y: 0 } }
             transition={ { delay: 0.7 } }
-            className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-8 uppercase"
+            className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6 uppercase"
           >
             Institutional Capital. <br />
             <span className="text-[#F2C100]">AI-Enabled</span> Speed.
           </motion.h1>
+
+          <motion.div
+            initial={ { opacity: 0, y: 10 } }
+            animate={ { opacity: 1, y: 0 } }
+            transition={ { delay: 0.8 } }
+            className="inline-flex items-center space-x-2 bg-white/10 border border-[#F2C100]/50 px-4 py-2 mb-8 shadow-[0_0_20px_rgba(242,193,0,0.2)] backdrop-blur-md animate-pulse"
+          >
+            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#F2C100]">Now offering 100% financing for qualified Investors</span>
+          </motion.div>
 
           <motion.p 
             initial={ { opacity: 0, y: 20 } }

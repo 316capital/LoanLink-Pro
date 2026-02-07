@@ -91,16 +91,17 @@ export default function FlipProduct() {
                 className="lg:col-span-7"
               >
                 <h2 className="text-gold-600 font-black uppercase tracking-[0.3em] text-[10px] mb-4">About the Solution</h2>
-                <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-8 leading-tight">
+                <h3 className="text-3xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-4 leading-tight">
                   Short-Term Capital.
                 </h3>
+                
+                <div className="inline-flex items-center space-x-2 bg-[#001A54] border-l-4 border-[#F2C100] px-6 py-3 mb-8 shadow-xl">
+                  <span className="text-xs font-black uppercase tracking-[0.2em] text-[#F2C100]">100% Financing Available for Qualified Investors</span>
+                </div>
                 
                 <div className="space-y-6 text-slate-600 leading-relaxed font-medium text-lg">
                   <p>
                     Flipping properties is about speed and execution. Whether you’re doing a quick cosmetic rehab or looking at larger projects, the right financing partner makes all the difference. 
-                  </p>
-                  <p className="text-[#001A54] font-bold border-l-4 border-[#F2C100] pl-4 py-2 bg-cream-50/50">
-                    <span className="text-gold-600">100% Financing Available:</span> Qualified investors can now leverage up to 100% of purchase and rehab costs, minimizing out-of-pocket capital.
                   </p>
                   <p>
                     316 Capital provides <span className="text-gold-600 italic">high-leverage bridge loans</span> that cover up to 100% of rehab costs and offer swift closings, so you can secure deals faster and optimize your capital.
