@@ -128,6 +128,44 @@ export function Navbar() {
                 </NavigationMenuList>
               </NavigationMenu>
 
+              <NavigationMenu className="flex items-center">
+                <NavigationMenuList className="flex items-center">
+                  <NavigationMenuItem className="flex items-center">
+                    <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest p-0 h-auto flex items-center shadow-none border-none">
+                      Resources
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white border border-navy-950/10 shadow-xl">
+                        {[
+                          { title: "Calculators", href: "#", description: "Refinance, DSCR, and Flip profit calculators." },
+                          { title: "Case Studies", href: "#", description: "Explore our recently funded projects across the nation." },
+                          { title: "Market Updates", href: "#", description: "Institutional insights on real estate and lending rates." },
+                          { title: "Partnerships", href: "#", description: "How we work with brokers and real estate agents." }
+                        ].map((resource) => (
+                          <li key={resource.title}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                href={resource.href}
+                                className={cn(
+                                  "block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-navy-50 hover:text-[#001A54] group"
+                                )}
+                              >
+                                <div className="text-sm font-bold leading-none uppercase tracking-tight text-[#001A54] group-hover:text-gold-600 transition-colors">
+                                  {resource.title}
+                                </div>
+                                <p className="line-clamp-2 text-xs leading-snug text-slate-500 font-medium mt-1">
+                                  {resource.description}
+                                </p>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
               <a href="/#contact" className="text-xs font-bold text-[#001A54] hover:text-[#F2C100] transition-colors uppercase tracking-widest flex items-center h-full">Contact</a>
               
               <div className="flex items-center space-x-3 ml-2 h-full">
@@ -195,6 +233,12 @@ export function Navbar() {
             <div className="h-px bg-navy-950/5 my-2" />
             <Link href="/about" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">About</Link>
             <a href="/#testimonials" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Testimonials</a>
+            <div className="px-3 py-3 text-base font-bold text-[#001A54] uppercase tracking-wider border-b border-navy-950/5">Resources</div>
+            <div className="bg-navy-950/5 py-2 space-y-1">
+              {["Calculators", "Case Studies", "Market Updates", "Partnerships"].map((res) => (
+                <a key={res} href="#" className="block px-8 py-3 text-sm font-bold text-[#001A54] hover:bg-gold-500 hover:text-white transition-all uppercase tracking-tight">{res}</a>
+              ))}
+            </div>
             <a href="/#contact" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact</a>
             
             <a 
