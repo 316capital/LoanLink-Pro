@@ -53,7 +53,7 @@ export default function RentalProduct() {
             >
               <div className="inline-flex items-center space-x-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md">
                 <Calculator className="h-3 w-3 text-[#F2C100]" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">DSCR Rental Capital</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">316 Rent</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
                 Long-Term <br /> 

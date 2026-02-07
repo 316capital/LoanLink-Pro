@@ -8,7 +8,7 @@ import { Link, useLocation } from "wouter";
 const products = [
   {
     id: "rental",
-    title: "DSCR Rental",
+    title: "316 Rent",
     description: "Long-term rental loans based on asset cash flow.",
     rateRange: "5.75% - 7.99%",
     maxLTV: "80%",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: "fix-flip",
-    title: "Bridge / Fix & Flip",
+    title: "316 Fix",
     description: "Purchase + Rehab capital with 24-hour draw times.",
     rateRange: "7.90% - 11.5%",
     maxLTV: "90%",
@@ -30,7 +30,7 @@ const products = [
   },
   {
     id: "brrrr",
-    title: "BRRRR",
+    title: "316 BRRR",
     description: "Buy, Rehab, Rent, Refinance, Repeat capital for portfolio scaling.",
     rateRange: "7.90% - 11.5%",
     maxLTV: "90%",
@@ -41,7 +41,7 @@ const products = [
   },
   {
     id: "new-construction",
-    title: "New Construction",
+    title: "316 Build",
     description: "Vertical financing for single family and multi-unit builds.",
     rateRange: "8.99% - 11.25%",
     maxLTV: "90%",

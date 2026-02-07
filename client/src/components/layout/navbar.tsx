@@ -15,22 +15,22 @@ import { cn } from "@/lib/utils";
 
 const solutions = [
   {
-    title: "BRRR Strategy",
+    title: "316 BRRR",
     href: "/products/brrrr",
     description: "Buy, Rehab, Rent, Refinance. The ultimate wealth-building engine.",
   },
   {
-    title: "Fix & Flip",
+    title: "316 Fix",
     href: "/products/fix-flip",
     description: "Short-term bridge financing for acquisition and renovation.",
   },
   {
-    title: "New Construction",
+    title: "316 Build",
     href: "/products/new-construction",
     description: "Ground-up capital for developers and home builders.",
   },
   {
-    title: "Rental / DSCR",
+    title: "316 Rent",
     href: "/products/rental",
     description: "Long-term financing based on property cash flow.",
   },

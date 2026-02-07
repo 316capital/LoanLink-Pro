@@ -58,7 +58,7 @@ export default function FlipProduct() {
             >
               <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full mb-8 backdrop-blur-md">
                 <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">High-Velocity Private Credit</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">316 Fix</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight leading-[1.1] mb-8 text-white">
                 Bridge / Fix & Flip <br /> 
