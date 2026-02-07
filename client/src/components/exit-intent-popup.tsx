@@ -40,7 +40,7 @@ export function ExitIntentPopup() {
   };
 
   const handleApply = () => {
-    window.open('https://www.316cap.com/widget/survey/y0pr8ThGeKbm5MRY5GtM?notrack=true', '_blank');
+    window.open('https://www.316cap.com/widget/form/omD7osW3NRNr6rZ5lYxt?notrack=true', '_blank');
     setIsVisible(false);
   };
 
