@@ -16,6 +16,7 @@ import RentalProduct from "@/pages/products/rental";
 import FlipProduct from "@/pages/products/fix-flip";
 import BrrrrProduct from "@/pages/products/brrrr";
 import ConstructionProduct from "@/pages/products/new-construction";
+import CalculatorsPage from "@/pages/resources/calculators";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function Router() {
         <Route path="/products/fix-flip" component={FlipProduct} />
         <Route path="/products/brrrr" component={BrrrrProduct} />
         <Route path="/products/new-construction" component={ConstructionProduct} />
+        <Route path="/resources/calculators" component={CalculatorsPage} />
         <Route component={NotFound} />
       </Switch>
     </>

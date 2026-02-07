@@ -137,7 +137,7 @@ export function Navbar() {
                     <NavigationMenuContent>
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white border border-navy-950/10 shadow-xl">
                         {[
-                          { title: "Calculators", href: "#", description: "Refinance, DSCR, and Flip profit calculators." },
+                          { title: "Calculators", href: "/resources/calculators", description: "Refinance, DSCR, and Flip profit calculators." },
                           { title: "Case Studies", href: "#", description: "Explore our recently funded projects across the nation." },
                           { title: "Market Updates", href: "#", description: "Institutional insights on real estate and lending rates." },
                           { title: "Partnerships", href: "#", description: "How we work with brokers and real estate agents." }
@@ -235,8 +235,13 @@ export function Navbar() {
             <a href="/#testimonials" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Testimonials</a>
             <div className="px-3 py-3 text-base font-bold text-[#001A54] uppercase tracking-wider border-b border-navy-950/5">Resources</div>
             <div className="bg-navy-950/5 py-2 space-y-1">
-              {["Calculators", "Case Studies", "Market Updates", "Partnerships"].map((res) => (
-                <a key={res} href="#" className="block px-8 py-3 text-sm font-bold text-[#001A54] hover:bg-gold-500 hover:text-white transition-all uppercase tracking-tight">{res}</a>
+              {[
+                { title: "Calculators", href: "/resources/calculators" },
+                { title: "Case Studies", href: "#" },
+                { title: "Market Updates", href: "#" },
+                { title: "Partnerships", href: "#" }
+              ].map((res) => (
+                <Link key={res.title} href={res.href} className="block px-8 py-3 text-sm font-bold text-[#001A54] hover:bg-gold-500 hover:text-white transition-all uppercase tracking-tight">{res.title}</Link>
               ))}
             </div>
             <a href="/#contact" className="block px-3 py-3 text-base font-bold text-[#001A54] hover:bg-white/50 uppercase tracking-wider">Contact</a>

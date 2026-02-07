@@ -13,7 +13,6 @@ import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 import { Infrastructure } from "@/components/home/infrastructure";
 import { PartnershipSection } from "@/components/home/partnership-section";
 import { FullFinancingSection } from "@/components/home/full-financing-section";
-import { DealAnalyzer } from "@/components/deal-analyzer";
 
 import { Contact } from "@/components/home/contact";
 
@@ -27,7 +26,6 @@ export default function Home() {
         <ExperienceSection />
         <ProductsGrid />
         <FullFinancingSection />
-        <DealAnalyzer />
         <ProductParams />
         <FundingBoard />
         <PartnershipSection />
