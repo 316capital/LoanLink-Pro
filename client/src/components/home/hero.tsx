@@ -82,7 +82,7 @@ export function Hero() {
             transition={ { delay: 0.9 } }
             className="text-lg md:text-xl text-gray-200 mb-4 max-w-2xl font-medium leading-relaxed"
           >
-            We provide high-velocity private credit for professional real estate investors. Nationwide scale with deep roots in Massachusetts and New England.
+            Fast, flexible capital powered by technology. Providing investors with the financing they need to flip, rent, or build. Nationwide reach, New England expertise.
           </motion.p>
           
           <motion.p 
