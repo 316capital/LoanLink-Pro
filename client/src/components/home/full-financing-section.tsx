@@ -28,7 +28,7 @@ export function FullFinancingSection() {
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#F2C100]">Exclusive Program</span>
             </div>
             
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white uppercase tracking-tighter leading-[0.9] mb-10">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white uppercase tracking-tighter leading-[1.1] mb-10">
               100% <br />
               <span className="text-[#F2C100] italic font-medium">Financing</span>
             </h2>
