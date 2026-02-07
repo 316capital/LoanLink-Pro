@@ -82,41 +82,49 @@ export function ExitIntentPopup() {
 
               {/* Content */}
               <div className="text-center">
-                <div className="inline-flex items-center justify-center space-x-2 bg-[#F2C100] px-4 py-2 mb-6">
-                  <Zap className="h-4 w-4 text-[#001A54]" />
-                  <span className="text-xs font-black uppercase tracking-[0.15em] text-[#001A54]">Before You Go</span>
+                <div className="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-[#F2C100] to-[#D4A900] px-6 py-2 mb-8 shadow-[0_0_20px_rgba(242,193,0,0.3)]">
+                  <Zap className="h-4 w-4 text-[#001A54] fill-[#001A54]" />
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-[#001A54]">Vault Invitation</span>
                 </div>
 
-                <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight leading-tight mb-4">
-                  See If You Qualify For<br />
-                  <span className="text-[#F2C100] italic">100% Financing</span>
+                <h3 className="text-3xl md:text-5xl font-bold text-white uppercase tracking-tighter leading-[0.9] mb-6">
+                  Join the <br />
+                  <span className="text-[#F2C100] italic font-medium">316 Vault</span>
                 </h3>
 
-                <p className="text-gray-300 mb-8 text-sm md:text-base leading-relaxed max-w-sm mx-auto">
-                  Experienced flippers can access <span className="text-white font-semibold">zero money down</span> on acquisition and rehab. Takes 2 minutes to check.
+                <p className="text-gray-300 mb-10 text-sm md:text-lg leading-relaxed max-w-sm mx-auto font-light border-l border-[#F2C100]/30 pl-6">
+                  Get instant access to <span className="text-white font-bold">Exclusive Pricing</span>, 100% Financing, real-time Market Updates, and private Investor Events.
                 </p>
 
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <Button 
                     size="lg"
                     onClick={handleApply}
-                    className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold py-6 rounded-none transition-all uppercase tracking-widest text-xs shadow-[0_0_30px_rgba(242,193,0,0.3)]"
+                    className="w-full bg-[#F2C100] hover:bg-white text-[#001A54] font-black py-8 rounded-none transition-all uppercase tracking-[0.2em] text-xs shadow-[0_20px_40px_rgba(242,193,0,0.2)] hover:-translate-y-1"
                   >
-                    Check My Eligibility
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    Get Vault Access
+                    <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>
                   
                   <button
                     onClick={handleClose}
-                    className="text-gray-500 hover:text-gray-300 text-xs uppercase tracking-widest transition-colors"
+                    className="text-gray-500 hover:text-[#F2C100] text-[10px] uppercase tracking-[0.3em] transition-colors font-bold"
                   >
-                    No thanks, I'll pass on 100% financing
+                    I'll pass on exclusive pricing
                   </button>
                 </div>
 
-                <p className="text-[10px] text-gray-500 mt-6 uppercase tracking-widest">
-                  No credit check required to see if you qualify
-                </p>
+                <div className="flex items-center justify-center space-x-4 mt-10 pt-8 border-t border-white/5">
+                  <div className="text-left">
+                    <p className="text-[8px] text-gray-500 uppercase tracking-widest font-black">Member Status</p>
+                    <p className="text-[10px] text-[#F2C100] uppercase font-bold">Pending Approval</p>
+                  </div>
+                  <div className="h-8 w-px bg-white/10" />
+                  <div className="text-left">
+                    <p className="text-[8px] text-gray-500 uppercase tracking-widest font-black">Eligibility</p>
+                    <p className="text-[10px] text-white uppercase font-bold">Fix & Flip / DSCR</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
