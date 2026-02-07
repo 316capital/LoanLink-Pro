@@ -93,6 +93,12 @@ export default function BrrrrProduct() {
                   <p>
                     The BRRR strategy is the ultimate wealth-building engine. At 316 Capital, we provide the seamless bridge between your acquisition and your long-term hold, ensuring you never lose momentum.
                   </p>
+                  <div className="bg-[#001A54] border-l-4 border-[#F2C100] p-6 text-white shadow-xl">
+                    <h4 className="text-[#F2C100] font-black uppercase tracking-widest text-xs mb-3">The 316 Refi-Incentive</h4>
+                    <p className="text-sm leading-relaxed">
+                      Save on your long-term debt. Investors who close their acquisition bridge with 316 Capital receive <span className="text-[#F2C100] font-bold italic">exclusive rate reductions and waived processing fees</span> when refinancing into our 316 Rent (DSCR) program.
+                    </p>
+                  </div>
                   <p>
                     We provide <span className="text-gold-600 italic">investor-focused DSCR and Bridge loans</span> tailored to investors who need to move fast, rehab with precision, and refinance into stable cash flow.
                   </p>
@@ -120,15 +126,15 @@ export default function BrrrrProduct() {
                   <div className="absolute top-0 right-0 p-8 opacity-10">
                     <Building2 className="h-32 w-32" />
                   </div>
-                  <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">Loan Parameters</h3>
+                  <h3 className="text-2xl font-bold uppercase mb-8 relative z-10 text-[#F2C100]">DSCR / Refi Terms</h3>
                   <div className="space-y-6 relative z-10">
                     {[
-                      { label: "Loan Amounts", value: "$75K – $10MM+" },
-                      { label: "Refi LTV", value: "Up to 80%" },
-                      { label: "Purchase LTC", value: "Up to 90%" },
-                      { label: "Interest Rates", value: "Starting at 6.25%" },
-                      { label: "Loan Terms", value: "30-Year Fixed / ARMs" },
-                      { label: "No DTI Check", value: "DSCR Based" },
+                      { label: "Loan Amounts", value: "$100K – $5MM+" },
+                      { label: "Interest Rates", value: "Starting at 5.75%" },
+                      { label: "Min Credit Score", value: "660+" },
+                      { label: "Max LTV (Refi)", value: "75-80%" },
+                      { label: "Loan Terms", value: "30-Year Fixed" },
+                      { label: "Min DSCR", value: "1.00 - 1.20" },
                       { label: "Prepayment", value: "Flexible Options" }
                     ].map((row, i) => (
                       <div key={i} className="flex justify-between border-b border-white/10 pb-4">

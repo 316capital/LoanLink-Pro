@@ -95,6 +95,12 @@ export default function RentalProduct() {
                   <p>
                     DSCR (Debt Service Coverage Ratio) loans are the secret weapon of professional real estate investors. Instead of verifying your personal income or debt-to-income ratio, we look at the property's ability to cover its own expenses.
                   </p>
+                  <div className="bg-cream-50 border-l-4 border-[#001A54] p-6 shadow-sm">
+                    <h4 className="text-[#001A54] font-black uppercase tracking-widest text-xs mb-3">Seamless BRRR Transition</h4>
+                    <p className="text-sm leading-relaxed text-slate-700">
+                      Already have a bridge loan with us? Transitioning to a DSCR rental loan is faster and cheaper. We offer <span className="text-[#001A54] font-bold italic">loyalty pricing</span> for current 316 Bridge clients, including reduced origination and priority underwriting.
+                    </p>
+                  </div>
                   <p>
                     We specialize in <strong>Blanket and Portfolio Loans</strong>, allowing you to cross-collateralize multiple assets under a single loan structure to maximize leverage and streamline your monthly debt service.
                   </p>
