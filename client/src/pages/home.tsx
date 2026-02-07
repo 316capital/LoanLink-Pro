@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/home/faq-section";
 import { IntelligenceEngine } from "@/components/home/intelligence-engine";
 import { Infrastructure } from "@/components/home/infrastructure";
 import { PartnershipSection } from "@/components/home/partnership-section";
+import { FullFinancingSection } from "@/components/home/full-financing-section";
 
 import { Contact } from "@/components/home/contact";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Infrastructure />
         <ExperienceSection />
         <ProductsGrid />
+        <FullFinancingSection />
         <ProductParams />
         <FundingBoard />
         <PartnershipSection />
