@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import About from "@/pages/about";
@@ -41,6 +42,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <ExitIntentPopup />
       </TooltipProvider>
     </QueryClientProvider>
   );
