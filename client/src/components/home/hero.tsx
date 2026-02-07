@@ -61,9 +61,6 @@ export function Hero() {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
               </div>
             </div>
-            <div className="inline-flex items-center space-x-2 bg-[#001A54]/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
-              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
-            </div>
           </motion.div>
           
           <motion.h1 
