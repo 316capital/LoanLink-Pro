@@ -53,14 +53,8 @@ export function Hero() {
             initial={ { opacity: 0, x: -20 } }
             animate={ { opacity: 1, x: 0 } }
             transition={ { delay: 0.5 } }
-            className="flex flex-col space-y-3 mb-8"
+            className="mb-8"
           >
-            <div className="flex flex-wrap gap-3">
-              <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
-                <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
-              </div>
-            </div>
           </motion.div>
           
           <motion.h1 
