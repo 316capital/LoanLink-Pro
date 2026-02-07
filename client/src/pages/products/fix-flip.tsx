@@ -99,6 +99,9 @@ export default function FlipProduct() {
                   <p>
                     Flipping properties is about speed and execution. Whether you’re doing a quick cosmetic rehab or looking at larger projects, the right financing partner makes all the difference. 
                   </p>
+                  <p className="text-[#001A54] font-bold border-l-4 border-[#F2C100] pl-4 py-2 bg-cream-50/50">
+                    <span className="text-gold-600">100% Financing Available:</span> Qualified investors can now leverage up to 100% of purchase and rehab costs, minimizing out-of-pocket capital.
+                  </p>
                   <p>
                     316 Capital provides <span className="text-gold-600 italic">high-leverage bridge loans</span> that cover up to 100% of rehab costs and offer swift closings, so you can secure deals faster and optimize your capital.
                   </p>
@@ -161,7 +164,7 @@ export default function FlipProduct() {
                     {[
                       { label: "Eligible Assets", value: "1-4 Res, Multi-Family (5-29), Mixed Use" },
                       { label: "Loan Amounts", value: "$100K – $10MM+" },
-                      { label: "Max LTC", value: "90% Purchase / 100% Rehab" },
+                      { label: "Max LTC", value: "100% (Purchase + Rehab)" },
                       { label: "Interest Rates", value: "Starting at 7.75%" },
                       { label: "Loan Terms", value: "6 – 24 Months" },
                       { label: "Interest Only", value: "Yes" },
@@ -232,7 +235,7 @@ export default function FlipProduct() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 { label: "Minimum Loan", value: "$100K" },
-                { label: "Max LTC", value: "90/100" },
+                { label: "Max LTC", value: "100%" },
                 { label: "Terms", value: "6-24 Mo" },
                 { label: "Rate Starting", value: "7.75%" }
               ].map((stat, i) => (

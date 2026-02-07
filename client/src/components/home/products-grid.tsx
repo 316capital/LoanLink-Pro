@@ -20,9 +20,9 @@ const products = [
   {
     id: "fix-flip",
     title: "316 Fix",
-    description: "Purchase + Rehab capital with 24-hour draw times.",
+    description: "Purchase + Rehab capital with 24-hour draw times. 100% Financing Available.",
     rateRange: "7.90% - 11.5%",
-    maxLTV: "90%",
+    maxLTV: "100%",
     timeline: "7 Days",
     amortization: "12-30 Months",
     icon: Hammer,

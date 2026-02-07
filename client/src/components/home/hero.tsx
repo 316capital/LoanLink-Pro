@@ -55,9 +55,14 @@ export function Hero() {
             transition={ { delay: 0.5 } }
             className="flex flex-col space-y-3 mb-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
-              <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
+            <div className="flex flex-wrap gap-3">
+              <div className="inline-flex items-center space-x-2 bg-[#F2C100]/20 border border-[#F2C100]/40 px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(242,193,0,0.1)] w-fit">
+                <Zap className="h-3 w-3 text-[#F2C100] fill-current" />
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white brightness-125">Nationwide Private Lender</span>
+              </div>
+              <div className="inline-flex items-center space-x-2 bg-white/10 border border-[#F2C100]/50 px-4 py-1.5 rounded-full shadow-[0_0_20px_rgba(242,193,0,0.2)] w-fit backdrop-blur-md animate-pulse">
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#F2C100]">Now offering 100% financing for qualified Investors</span>
+              </div>
             </div>
             <div className="inline-flex items-center space-x-2 bg-[#001A54]/40 border border-white/10 px-4 py-1.5 rounded-full w-fit">
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-gray-300">True Asset-Based Lending</span>
