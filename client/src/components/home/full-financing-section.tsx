@@ -4,7 +4,7 @@ import { ArrowRight, Shield, Zap, TrendingUp, Lock, CheckCircle2 } from "lucide-
 
 export function FullFinancingSection() {
   return (
-    <section className="py-32 bg-[#001A54] relative overflow-hidden">
+    <section id="financing-section" className="py-32 bg-[#001A54] relative overflow-hidden">
       {/* Dynamic Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(242,193,0,0.08),transparent_60%)]" />

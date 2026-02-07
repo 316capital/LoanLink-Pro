@@ -15,6 +15,11 @@ import { cn } from "@/lib/utils";
 
 const solutions = [
   {
+    title: "100% Financing",
+    href: "/#financing-section",
+    description: "Exclusive Fix & Flip program. No money down on acquisition and rehab.",
+  },
+  {
     title: "316 BRRR",
     href: "/products/brrrr",
     description: "Buy, Rehab, Rent, Refinance. The ultimate wealth-building engine.",
