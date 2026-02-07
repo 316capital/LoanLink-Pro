@@ -215,22 +215,10 @@ export function DealAnalyzer() {
   };
 
   return (
-    <section className="py-24 bg-cream-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <Badge variant="outline" className="border-gold-500/50 text-gold-600 rounded-none px-6 py-2 font-black text-[10px] uppercase tracking-[0.3em] bg-white shadow-sm mb-6">
-            Free Tool
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#001A54] uppercase tracking-tight mb-4">
-            316 Deal Analyzer
-          </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto font-medium">
-            See if your fix & flip deal qualifies. Get instant estimates on loan amount, rate, and cash to close.
-          </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white border border-gray-100 shadow-2xl overflow-hidden">
+    <section className="py-12 bg-transparent">
+      <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white border border-gray-100 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] overflow-hidden">
             <AnimatePresence mode="wait">
               {!showResult ? (
                 <motion.div
