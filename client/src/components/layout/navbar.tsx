@@ -106,7 +106,7 @@ export function Navbar() {
                         {solutions.map((solution) => (
                           <li key={solution.title}>
                             <NavigationMenuLink asChild>
-                              <Link
+                              <a
                                 href={solution.href}
                                 className={cn(
                                   "block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-navy-50 hover:text-[#001A54] group"
@@ -118,7 +118,7 @@ export function Navbar() {
                                 <p className="line-clamp-2 text-xs leading-snug text-slate-500 font-medium mt-1">
                                   {solution.description}
                                 </p>
-                              </Link>
+                              </a>
                             </NavigationMenuLink>
                           </li>
                         ))}
