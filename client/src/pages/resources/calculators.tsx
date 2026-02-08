@@ -19,7 +19,7 @@ export default function CalculatorsPage() {
       <section className="pt-32 pb-20 bg-[#001A54] relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/images/calculator-hero.jpg" 
+            src="/assets/images/calculator-hero.jpg" 
             alt="Investment analysis" 
             className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
