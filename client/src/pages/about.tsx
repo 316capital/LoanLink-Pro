@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield, Zap, Heart, Scale, Lightbulb, Users, Linkedin, FileText, Search, CheckCircle, Banknote, ArrowRight } from "lucide-react";
+import { Shield, Zap, Heart, Scale, Lightbulb, Users, Linkedin, FileText, Search, CheckCircle, Banknote, ArrowRight, X, Check } from "lucide-react";
 import { Navbar } from "@/components/layout/navbar";
 
 const team = [
@@ -72,6 +72,114 @@ const processSteps = [
     time: "Days 7-10"
   }
 ];
+
+const comparisonData = [
+  {
+    feature: "Time to Close",
+    bank: "45-60 days",
+    hardMoney: "14-21 days",
+    capital316: "7-10 days",
+    highlight: true
+  },
+  {
+    feature: "Max LTC (Fix & Flip)",
+    bank: "75-80%",
+    hardMoney: "85-90%",
+    capital316: "Up to 100%",
+    highlight: true
+  },
+  {
+    feature: "Rehab Financing",
+    bank: "Rarely",
+    hardMoney: "75-90%",
+    capital316: "100%",
+    highlight: false
+  },
+  {
+    feature: "Min Credit Score",
+    bank: "700+",
+    hardMoney: "650+",
+    capital316: "620+",
+    highlight: false
+  },
+  {
+    feature: "Experience Required",
+    bank: "2+ years",
+    hardMoney: "Varies",
+    capital316: "None",
+    highlight: true
+  },
+  {
+    feature: "Interest Rates",
+    bank: "7-8%",
+    hardMoney: "12-15%",
+    capital316: "7.99%+",
+    highlight: false
+  },
+  {
+    feature: "Origination Points",
+    bank: "0-1%",
+    hardMoney: "2-4%",
+    capital316: "1-2%",
+    highlight: false
+  },
+  {
+    feature: "Prepayment Penalty",
+    bank: { value: true, bad: true },
+    hardMoney: { value: "Often", bad: true },
+    capital316: { value: false, bad: false },
+    highlight: false
+  },
+  {
+    feature: "Personal Guarantee",
+    bank: { value: true, bad: true },
+    hardMoney: { value: true, bad: true },
+    capital316: { value: "Case by Case", bad: false },
+    highlight: false
+  },
+  {
+    feature: "Draw Process",
+    bank: "Complex",
+    hardMoney: "Slow",
+    capital316: "24-48 hrs",
+    highlight: true
+  },
+  {
+    feature: "Term Sheet Speed",
+    bank: "1-2 weeks",
+    hardMoney: "2-5 days",
+    capital316: "< 24 hours",
+    highlight: true
+  },
+  {
+    feature: "Dedicated Support",
+    bank: { value: false, bad: true },
+    hardMoney: { value: "Varies", bad: true },
+    capital316: { value: true, bad: false },
+    highlight: false
+  }
+];
+
+const renderCellValue = (value: any, isCapital316: boolean = false) => {
+  if (typeof value === 'object' && value !== null) {
+    if (value.value === true) {
+      return value.bad ? (
+        <X className="w-5 h-5 text-red-500 mx-auto" />
+      ) : (
+        <Check className="w-5 h-5 text-green-500 mx-auto" />
+      );
+    }
+    if (value.value === false) {
+      return value.bad ? (
+        <X className="w-5 h-5 text-red-500 mx-auto" />
+      ) : (
+        <Check className="w-5 h-5 text-green-500 mx-auto" />
+      );
+    }
+    return <span className={value.bad ? "text-slate-500" : "text-green-600 font-semibold"}>{value.value}</span>;
+  }
+  return <span className={isCapital316 ? "font-bold text-gold-500" : ""}>{value}</span>;
+};
 
 export default function About() {
   return (
@@ -277,31 +385,83 @@ export default function About() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Speed Comparison */}
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white/5 border border-white/10 p-8 text-center">
-                <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">Traditional Banks</p>
-                <p className="text-4xl font-black text-slate-500">45-60</p>
-                <p className="text-slate-500 text-sm">Days to Close</p>
-              </div>
-              <div className="bg-gold-500 p-8 text-center transform md:-translate-y-4 shadow-2xl shadow-gold-500/20">
-                <p className="text-navy-950/70 text-xs uppercase tracking-widest mb-2">316 Capital</p>
-                <p className="text-5xl font-black text-navy-950">7-10</p>
-                <p className="text-navy-950/70 text-sm font-medium">Days to Close</p>
-              </div>
-              <div className="bg-white/5 border border-white/10 p-8 text-center">
-                <p className="text-slate-400 text-xs uppercase tracking-widest mb-2">Other Hard Money</p>
-                <p className="text-4xl font-black text-slate-500">14-21</p>
-                <p className="text-slate-500 text-sm">Days to Close</p>
-              </div>
-            </div>
+      {/* Detailed Comparison Table */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <Badge variant="outline" className="border-navy-950/30 text-navy-950 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+              The Difference
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-4 tracking-tighter uppercase">
+              How We <span className="text-gold-600 italic">Compare</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              See why experienced investors choose 316 Capital over traditional banks and other hard money lenders.
+            </p>
+          </div>
+
+          {/* Comparison Table */}
+          <div className="max-w-5xl mx-auto overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr>
+                  <th className="text-left p-4 bg-slate-50 border-b-2 border-slate-200 font-bold text-navy-950 uppercase tracking-wider text-xs">
+                    Feature
+                  </th>
+                  <th className="p-4 bg-slate-50 border-b-2 border-slate-200 font-bold text-slate-500 uppercase tracking-wider text-xs text-center">
+                    Traditional Banks
+                  </th>
+                  <th className="p-4 bg-slate-50 border-b-2 border-slate-200 font-bold text-slate-500 uppercase tracking-wider text-xs text-center">
+                    Other Hard Money
+                  </th>
+                  <th className="p-4 bg-gold-500 border-b-2 border-gold-600 font-black text-navy-950 uppercase tracking-wider text-xs text-center">
+                    316 Capital
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonData.map((row, idx) => (
+                  <tr 
+                    key={idx} 
+                    className={`${row.highlight ? 'bg-navy-50/50' : ''} hover:bg-slate-50 transition-colors`}
+                  >
+                    <td className="p-4 border-b border-slate-100 font-semibold text-navy-950 text-sm">
+                      {row.feature}
+                    </td>
+                    <td className="p-4 border-b border-slate-100 text-center text-sm text-slate-600">
+                      {renderCellValue(row.bank)}
+                    </td>
+                    <td className="p-4 border-b border-slate-100 text-center text-sm text-slate-600">
+                      {renderCellValue(row.hardMoney)}
+                    </td>
+                    <td className="p-4 border-b border-slate-100 text-center text-sm bg-gold-50/50 font-semibold text-navy-950">
+                      {renderCellValue(row.capital316, true)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center mt-12">
+            <button 
+              onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
+              className="bg-navy-950 hover:bg-navy-900 text-white font-bold px-10 py-4 uppercase tracking-widest text-xs transition-all shadow-lg inline-flex items-center gap-3"
+            >
+              See Your Custom Terms
+              <ArrowRight className="w-4 h-4" />
+            </button>
           </div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-white border-t border-gray-100">
+      <section className="py-24 bg-cream-50 border-t border-gray-100">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-4 tracking-tighter uppercase">MEET THE TEAM</h2>
