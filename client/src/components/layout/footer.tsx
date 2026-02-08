@@ -56,6 +56,7 @@ export function Footer() {
             <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Resources</h4>
             <ul className="space-y-3 text-white/70 text-sm">
               <li><Link href="/resources/calculators" className="hover:text-gold-500 transition-colors">Rate Estimators</Link></li>
+              <li><Link href="/resources/playbook" className="hover:text-gold-500 transition-colors">Partner Playbook</Link></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Case Studies</a></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Market Updates</a></li>
               <li><a href="#" className="hover:text-gold-500 transition-colors">Partnerships</a></li>
