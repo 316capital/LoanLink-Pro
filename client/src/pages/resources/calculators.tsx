@@ -18,6 +18,12 @@ export default function CalculatorsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#001A54] relative overflow-hidden">
         <div className="absolute inset-0 z-0">
+          <img 
+            src="/src/assets/images/calculator-hero.jpg" 
+            alt="Investment analysis" 
+            className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#001A54]/80 via-[#001A54]/90 to-[#001A54]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(242,193,0,0.05),transparent_60%)]" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F2C100]/20 to-transparent" />
         </div>
