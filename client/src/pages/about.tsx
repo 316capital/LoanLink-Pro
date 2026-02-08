@@ -244,9 +244,53 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          {/* Institutional Tiers Table */}
+          <div className="mt-24 max-w-5xl mx-auto">
+            <h3 className="text-2xl font-bold text-[#001A54] uppercase tracking-widest text-center mb-12">Institutional Tier Comparison</h3>
+            <div className="overflow-x-auto border border-navy-950/10 shadow-2xl">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-navy-950 text-white">
+                    <th className="p-6 text-left uppercase tracking-widest text-[10px] font-black border border-white/5">Requirement</th>
+                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5">Tier 3 (Standard)</th>
+                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5 bg-[#F2C100] text-[#001A54]">Tier 1 (Institutional)</th>
+                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5">316 Vault (Elite)</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="border-b border-navy-950/5">
+                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Experience (36 Mo)</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">1-2 Projects</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">5-9 Projects</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">10+ Projects</td>
+                  </tr>
+                  <tr className="border-b border-navy-950/5">
+                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Min Credit Score</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">680+</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">730+</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">700+</td>
+                  </tr>
+                  <tr className="border-b border-navy-950/5">
+                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Max Leverage (LTC)</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">Up to 85%</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">95%</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm">100% Financing</td>
+                  </tr>
+                  <tr>
+                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Interest Rates</td>
+                    <td className="p-6 text-center text-slate-500 text-sm">From 10.99%</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">From 7.99%</td>
+                    <td className="p-6 text-center text-[#001A54] font-black text-sm">Vault Pricing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-6 text-center text-[10px] text-slate-400 uppercase tracking-[0.2em]">All tiers subject to property evaluation and final underwriting</p>
+          </div>
         </div>
       </section>
-
+      
       {/* Core Values Grid */}
       <section className="py-24 bg-cream-50">
         <div className="container mx-auto px-6">
