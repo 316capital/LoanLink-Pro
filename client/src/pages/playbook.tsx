@@ -1,11 +1,11 @@
 import { PlaybookLanding } from "@/components/playbook-landing";
-import { Header } from "@/components/layout/header";
+import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 
 export default function PlaybookPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Navbar />
       <main>
         <PlaybookLanding />
       </main>
