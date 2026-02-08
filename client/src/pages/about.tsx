@@ -299,6 +299,55 @@ export default function About() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-24 bg-cream-50 border-t border-gray-100">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <Badge variant="outline" className="border-navy-950/30 text-navy-950 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+              Direct Access
+            </Badge>
+            <h2 className="text-4xl md:text-6xl font-bold text-navy-950 mb-6 tracking-tighter uppercase leading-tight">
+              Meet The <span className="text-gold-600">Advisors</span>
+            </h2>
+            <p className="text-xl text-muted-foreground font-light leading-relaxed">
+              We aren't just financiers; we're real estate strategists. Our leadership team brings institutional rigor and local market expertise to every deal.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+            {team.map((member, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="group flex flex-col items-center text-center"
+              >
+                <div className="relative mb-8 w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-navy-950/10">
+                  <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                  />
+                  <div className="absolute top-4 right-4 translate-x-12 group-hover:translate-x-0 transition-transform duration-500">
+                    <a href={member.linkedin} className="bg-white/90 p-3 hover:bg-white text-navy-950 flex items-center justify-center">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold text-navy-950 uppercase tracking-tighter italic">{member.name}</h3>
+                  <p className="text-gold-600 font-black uppercase tracking-widest text-[10px]">{member.role}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed font-medium px-4">{member.bio}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us - Loan Process Timeline */}
       <section className="py-24 bg-navy-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(242,193,0,0.08),transparent_60%)]"></div>
@@ -456,55 +505,6 @@ export default function About() {
               See Your Custom Terms
               <ArrowRight className="w-4 h-4" />
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-24 bg-cream-50 border-t border-gray-100">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <Badge variant="outline" className="border-navy-950/30 text-navy-950 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
-              Direct Access
-            </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-navy-950 mb-6 tracking-tighter uppercase leading-tight">
-              Meet The <span className="text-gold-600">Advisors</span>
-            </h2>
-            <p className="text-xl text-muted-foreground font-light leading-relaxed">
-              We aren't just financiers; we're real estate strategists. Our leadership team brings institutional rigor and local market expertise to every deal.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-            {team.map((member, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="group flex flex-col items-center text-center"
-              >
-                <div className="relative mb-8 w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-navy-950/10">
-                  <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
-                  />
-                  <div className="absolute top-4 right-4 translate-x-12 group-hover:translate-x-0 transition-transform duration-500">
-                    <a href={member.linkedin} className="bg-white/90 p-3 hover:bg-white text-navy-950 flex items-center justify-center">
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-2xl font-bold text-navy-950 uppercase tracking-tighter italic">{member.name}</h3>
-                  <p className="text-gold-600 font-black uppercase tracking-widest text-[10px]">{member.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed font-medium px-4">{member.bio}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
