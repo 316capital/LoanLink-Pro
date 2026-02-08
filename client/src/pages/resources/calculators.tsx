@@ -18,11 +18,11 @@ export default function CalculatorsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#001A54] relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/assets/images/calculator-hero.jpg" 
-            alt="Investment analysis" 
-            className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
-          />
+            <img 
+              src="/assets/images/rate-estimator-hero.jpg" 
+              alt="Rate Estimation" 
+              className="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay"
+            />
           <div className="absolute inset-0 bg-gradient-to-b from-[#001A54]/80 via-[#001A54]/90 to-[#001A54]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(242,193,0,0.05),transparent_60%)]" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F2C100]/20 to-transparent" />
@@ -40,7 +40,7 @@ export default function CalculatorsPage() {
               <div className="h-px w-8 bg-[#F2C100]" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white uppercase tracking-tighter leading-tight mb-6">
-              Analyze Your <span className="text-[#F2C100] italic font-medium">Next Deal</span>
+              Institutional <span className="text-[#F2C100] italic font-medium">Rate Estimators</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed">
               Stop guessing and start investing with confidence. Use our institutional-grade calculators to analyze fix & flip deals or model your complete BRRRR strategy.
