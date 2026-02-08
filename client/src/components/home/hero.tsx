@@ -102,20 +102,61 @@ export function Hero() {
           >
             <Button 
               size="sm" 
-              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]"
+              className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black text-[10px] uppercase tracking-[0.2em] px-8 py-7 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)] group"
               onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
-              Get Your Term Sheet
-              <ArrowRight className="ml-2 h-4 w-4" />
+              Get Term Sheet
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               size="sm" 
               variant="outline"
-              className="border-white/30 text-white hover:bg-white hover:text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all backdrop-blur-md"
+              className="border-white/30 text-white hover:bg-white hover:text-[#001A54] font-black text-[10px] uppercase tracking-[0.2em] px-8 py-7 rounded-none transition-all backdrop-blur-md"
               onClick={() => window.location.href = '/resources/calculators'}
             >
               Rate Estimators
             </Button>
+          </motion.div>
+
+          {/* Live Deal Ledger */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.4 }}
+            className="hidden sm:block mt-8 p-6 bg-white/5 border border-white/10 backdrop-blur-md max-w-2xl relative overflow-hidden group"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+            <div className="flex items-center justify-between mb-4 border-b border-white/10 pb-3">
+              <div className="flex items-center gap-3">
+                <div className="h-5 w-5 bg-[#F2C100] flex items-center justify-center">
+                  <Zap className="h-3 w-3 text-[#001A54]" />
+                </div>
+                <span className="text-[10px] font-black text-[#F2C100] uppercase tracking-[0.3em]">Live Funding Ledger</span>
+              </div>
+              <span className="flex items-center gap-2">
+                <span className="h-2 w-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
+                <span className="text-[10px] font-bold text-white/50 uppercase tracking-widest">Live Updates</span>
+              </span>
+            </div>
+            <div className="space-y-3">
+              {[
+                { type: "Fix & Flip", amount: "$542,000", location: "Worcester, MA", speed: "7 Days" },
+                { type: "BRRRR", amount: "$385,000", location: "Providence, RI", speed: "9 Days" },
+                { type: "DSCR Rental", amount: "$1.2M", location: "Boston, MA", speed: "12 Days" }
+              ].map((deal, i) => (
+                <div key={i} className="flex items-center justify-between text-[11px] hover:bg-white/5 p-2 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <span className="text-white/80 font-bold uppercase tracking-tighter">{deal.type}</span>
+                    <span className="text-white/20">|</span>
+                    <span className="text-[#F2C100] font-black">{deal.amount}</span>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <span className="text-white/40 font-medium uppercase tracking-widest text-[9px]">{deal.location}</span>
+                    <span className="bg-[#F2C100]/10 border border-[#F2C100]/20 px-2 py-0.5 text-[9px] font-black text-[#F2C100] uppercase">Funded: {deal.speed}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
           {/* Three-Step Success Path */}
