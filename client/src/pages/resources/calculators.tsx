@@ -89,19 +89,22 @@ export default function CalculatorsPage() {
                 icon: TrendingUp,
                 title: "Fix & Flip Analyzer",
                 desc: "Instantly calculate your max loan amount, estimated rate, and cash to close. Our tiered pricing rewards experience with better terms.",
-                value: "Up to 95% LTC"
+                value: "Up to 95% LTC",
+                btnText: "Learn about Fix & Flip"
               },
               {
                 icon: Repeat,
                 title: "BRRRR Calculator",
                 desc: "Model your complete Buy-Rehab-Rent-Refinance-Repeat cycle. See your cash-on-cash return, equity captured, and path to infinite returns.",
-                value: "Full Cycle Analysis"
+                value: "Full Cycle Analysis",
+                btnText: "Explore BRRRR"
               },
               {
                 icon: DollarSign,
                 title: "Instant Results",
                 desc: "No waiting for quotes. Get immediate estimates based on institutional lending parameters so you can move fast on deals.",
-                value: "Real-Time Estimates"
+                value: "Real-Time Estimates",
+                btnText: "Get Started"
               }
             ].map((item, i) => (
               <motion.div 
@@ -110,16 +113,24 @@ export default function CalculatorsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="flex flex-col"
+                className="flex flex-col h-full"
               >
                 <div className="h-12 w-12 bg-[#001A54] flex items-center justify-center mb-6">
                   <item.icon className="h-6 w-6 text-[#F2C100]" />
                 </div>
                 <h3 className="text-xl font-bold text-[#001A54] uppercase tracking-tight mb-4">{item.title}</h3>
-                <p className="text-slate-600 font-medium mb-6 leading-relaxed">{item.desc}</p>
-                <div className="mt-auto pt-6 border-t border-slate-100">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block mb-1">Capability</span>
-                  <span className="text-2xl font-bold text-[#001A54]">{item.value}</span>
+                <p className="text-slate-600 font-medium mb-6 leading-relaxed flex-grow">{item.desc}</p>
+                <div className="mt-auto">
+                  <div className="pt-6 border-t border-slate-100 mb-6">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-400 block mb-1">Capability</span>
+                    <span className="text-2xl font-bold text-[#001A54]">{item.value}</span>
+                  </div>
+                  <Button 
+                    className="w-full bg-[#F2C100] hover:bg-white text-[#001A54] font-black rounded-none transition-all uppercase tracking-[0.2em] text-[10px] py-6 shadow-[0_10px_20px_rgba(242,193,0,0.1)] hover:shadow-[0_15px_30px_rgba(242,193,0,0.2)] hover:-translate-y-1"
+                    onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
+                  >
+                    {item.btnText}
+                  </Button>
                 </div>
               </motion.div>
             ))}
