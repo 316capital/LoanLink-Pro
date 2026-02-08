@@ -138,7 +138,7 @@ export function Navbar() {
                       <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white border border-navy-950/10 shadow-xl">
                         {[
                           { title: "Rate Estimators", href: "/resources/calculators", description: "Refinance, DSCR, and Flip profit calculators." },
-                          { title: "Partner Playbook", href: "/resources/playbook", description: "Our institutional blueprint for high-velocity lending." },
+                          { title: "Partner Playbook", href: "/assets/documents/316-Partner-Playbook.pdf", description: "Download our institutional blueprint for high-velocity lending.", download: "316-Partner-Playbook.pdf" },
                           { title: "Case Studies", href: "#", description: "Explore our recently funded projects across the nation." },
                           { title: "Market Updates", href: "#", description: "Institutional insights on real estate and lending rates." },
                           { title: "Partnerships", href: "#", description: "How we work with brokers and real estate agents." }
