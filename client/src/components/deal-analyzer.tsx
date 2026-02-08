@@ -186,6 +186,8 @@ export function DealAnalyzer() {
       return;
     }
 
+    const actualArvLtv = (maxLoan / arvValue) * 100;
+    const actualLtc = (maxLoan / totalCost) * 100;
     const monthlyRate = tierResult.rate / 100 / 12;
     const cashToClose = totalCost - maxLoan + (maxLoan * (tierResult.points / 100));
     const monthlyPayment = maxLoan * monthlyRate;
