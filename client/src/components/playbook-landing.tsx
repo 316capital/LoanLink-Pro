@@ -57,7 +57,7 @@ export function PlaybookLanding() {
     
     // Trigger PDF download after short delay
     setTimeout(() => {
-      // window.open('/downloads/316-playbook.pdf', '_blank');
+      window.open('/downloads/316-playbook.pdf', '_blank');
       console.log('Download triggered for:', formData.email);
     }, 1000);
   };
