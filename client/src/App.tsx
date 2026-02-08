@@ -17,8 +17,26 @@ import FlipProduct from "@/pages/products/fix-flip";
 import BrrrrProduct from "@/pages/products/brrrr";
 import ConstructionProduct from "@/pages/products/new-construction";
 import CalculatorsPage from "@/pages/resources/calculators";
+import { useEffect } from "react";
+
+// Fix for bfcache (back-forward cache) issues when returning from external sites
+function useBfcacheFix() {
+  useEffect(() => {
+    const handlePageShow = (event: PageTransitionEvent) => {
+      // If the page was restored from bfcache, reload to ensure fresh state
+      if (event.persisted) {
+        window.location.reload();
+      }
+    };
+
+    window.addEventListener("pageshow", handlePageShow);
+    return () => window.removeEventListener("pageshow", handlePageShow);
+  }, []);
+}
 
 function Router() {
+  useBfcacheFix();
+  
   return (
     <>
       <ScrollToTop />
