@@ -53,13 +53,12 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Company</h4>
+            <h4 className="font-bold text-lg mb-6 text-white uppercase tracking-tight">Resources</h4>
             <ul className="space-y-3 text-white/70 text-sm">
-              <li><Link href="/about" className="hover:text-gold-500 transition-colors">About</Link></li>
-              <li><Link href="/about" className="hover:text-gold-500 transition-colors">Our Team</Link></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Track Record</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-gold-500 transition-colors">Press</a></li>
+              <li><Link href="/resources/calculators" className="hover:text-gold-500 transition-colors">Rate Estimators</Link></li>
+              <li><a href="#" className="hover:text-gold-500 transition-colors">Case Studies</a></li>
+              <li><a href="#" className="hover:text-gold-500 transition-colors">Market Updates</a></li>
+              <li><a href="#" className="hover:text-gold-500 transition-colors">Partnerships</a></li>
             </ul>
           </div>
           
