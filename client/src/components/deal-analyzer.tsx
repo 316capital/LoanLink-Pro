@@ -358,9 +358,9 @@ export function DealAnalyzer() {
                     <Button
                       onClick={analyzeDeal}
                       disabled={!purchasePrice || !rehabBudget || !arv || !creditScore || !experience}
-                      className="w-full bg-[#001A54] hover:bg-[#001A54]/90 text-white font-bold py-8 rounded-none uppercase tracking-widest text-sm disabled:opacity-50"
+                      className="w-full bg-[#F2C100] hover:bg-white text-[#001A54] font-black py-8 rounded-none transition-all uppercase tracking-[0.2em] text-xs shadow-[0_20px_40px_rgba(242,193,0,0.15)] hover:shadow-[0_25px_50px_rgba(242,193,0,0.25)] hover:-translate-y-1 disabled:opacity-50"
                     >
-                      <Calculator className="mr-2 h-5 w-5" />
+                      <Calculator className="mr-3 h-5 w-5" />
                       Analyze My Deal
                     </Button>
                   </div>
@@ -452,10 +452,10 @@ export function DealAnalyzer() {
                         <div className="space-y-4">
                           <Button
                             onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
-                            className="w-full bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-black py-8 rounded-none uppercase tracking-widest text-sm"
+                            className="w-full bg-[#F2C100] hover:bg-white text-[#001A54] font-black py-8 rounded-none transition-all uppercase tracking-[0.2em] text-xs shadow-[0_20px_40px_rgba(242,193,0,0.15)] hover:shadow-[0_25px_50px_rgba(242,193,0,0.25)] hover:-translate-y-1"
                           >
                             Get Your Official Term Sheet
-                            <ArrowRight className="ml-2 h-5 w-5" />
+                            <ArrowRight className="ml-3 h-5 w-5" />
                           </Button>
                           
                           <Button
