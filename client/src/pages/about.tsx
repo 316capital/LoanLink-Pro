@@ -244,50 +244,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          {/* Institutional Tiers Table */}
-          <div className="mt-24 max-w-5xl mx-auto">
-            <h3 className="text-2xl font-bold text-[#001A54] uppercase tracking-widest text-center mb-12">Institutional Tier Comparison</h3>
-            <div className="overflow-x-auto border border-navy-950/10 shadow-2xl">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="bg-navy-950 text-white">
-                    <th className="p-6 text-left uppercase tracking-widest text-[10px] font-black border border-white/5">Requirement</th>
-                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5">Tier 3 (Standard)</th>
-                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5 bg-[#F2C100] text-[#001A54]">Tier 1 (Institutional)</th>
-                    <th className="p-6 text-center uppercase tracking-widest text-[10px] font-black border border-white/5">316 Vault (Elite)</th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white">
-                  <tr className="border-b border-navy-950/5">
-                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Experience (36 Mo)</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">1-2 Projects</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">5-9 Projects</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">10+ Projects</td>
-                  </tr>
-                  <tr className="border-b border-navy-950/5">
-                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Min Credit Score</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">680+</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">730+</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">700+</td>
-                  </tr>
-                  <tr className="border-b border-navy-950/5">
-                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Max Leverage (LTC)</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">Up to 85%</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">95%</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm">100% Financing</td>
-                  </tr>
-                  <tr>
-                    <td className="p-6 font-bold text-[#001A54] text-xs uppercase tracking-tight">Interest Rates</td>
-                    <td className="p-6 text-center text-slate-500 text-sm">From 10.99%</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm bg-gold-50/30">From 7.99%</td>
-                    <td className="p-6 text-center text-[#001A54] font-black text-sm">Vault Pricing</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p className="mt-6 text-center text-[10px] text-slate-400 uppercase tracking-[0.2em]">All tiers subject to property evaluation and final underwriting</p>
-          </div>
         </div>
       </section>
       
@@ -507,62 +463,66 @@ export default function About() {
       {/* Team Section */}
       <section className="py-24 bg-cream-50 border-t border-gray-100">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-navy-950 mb-4 tracking-tighter uppercase">MEET THE TEAM</h2>
-            <p className="text-gold-600 font-bold uppercase tracking-[0.2em] text-sm">Founder-Led & Family-Driven</p>
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <Badge variant="outline" className="border-navy-950/30 text-navy-950 rounded-none px-4 py-1.5 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+              Direct Access
+            </Badge>
+            <h2 className="text-4xl md:text-6xl font-bold text-navy-950 mb-6 tracking-tighter uppercase leading-tight">
+              Meet The <span className="text-gold-600">Advisors</span>
+            </h2>
+            <p className="text-xl text-muted-foreground font-light leading-relaxed">
+              We aren't just financiers; we're real estate strategists. Our leadership team brings institutional rigor and local market expertise to every deal.
+            </p>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-[90rem] mx-auto">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {team.map((member, idx) => (
-              <div key={idx} className="group flex flex-col h-full">
-                <div className="relative aspect-square overflow-hidden mb-4 border border-navy-950/5 shadow-md bg-gray-50 shrink-0">
-                  <div className="absolute inset-0 bg-navy-950/5 group-hover:bg-transparent transition-colors duration-500"></div>
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="group flex flex-col items-center text-center"
+              >
+                <div className="relative mb-8 w-full aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-navy-950/10">
+                  <div className="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
                   <img 
                     src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                    alt={member.name} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                   />
-                  <div className="absolute bottom-3 right-3 translate-y-12 group-hover:translate-y-0 transition-transform duration-500">
-                    <a 
-                      href={member.linkedin} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-block bg-navy-950 p-2 text-white hover:bg-gold-500 hover:text-navy-950 transition-colors"
-                    >
-                      <Linkedin className="w-3.5 h-3.5" />
+                  <div className="absolute top-4 right-4 translate-x-12 group-hover:translate-x-0 transition-transform duration-500">
+                    <a href={member.linkedin} className="bg-white/90 p-3 hover:bg-white text-navy-950 flex items-center justify-center">
+                      <Linkedin className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
-                <div className="flex-grow">
-                  <h3 className="text-base font-bold text-navy-950 tracking-tight leading-tight mb-1">{member.name}</h3>
-                  <p className="text-gold-600 font-bold uppercase tracking-widest text-[9px] mb-2 leading-tight">{member.role}</p>
-                  <p className="text-[11px] text-muted-foreground leading-relaxed line-clamp-4">{member.bio}</p>
+                <div className="space-y-3">
+                  <h3 className="text-2xl font-bold text-navy-950 uppercase tracking-tighter italic">{member.name}</h3>
+                  <p className="text-gold-600 font-black uppercase tracking-widest text-[10px]">{member.role}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed font-medium px-4">{member.bio}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-navy-950 text-white text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tighter uppercase italic">
-            A Partner Who <span className="text-gold-500">Has Your Back.</span>
-          </h2>
-          <p className="text-xl text-slate-300 mb-6 max-w-2xl mx-auto">
-            Whether you're flipping your first house or managing a massive portfolio, we provide the three things you need most: Honesty, Speed, and Fair Pricing.
-          </p>
-          <div className="mb-10 text-gold-500/80 font-serif italic text-lg max-w-3xl mx-auto border-t border-white/10 pt-8">
-            "By wisdom a house is built, and through understanding it is established; through knowledge its rooms are filled with rare and beautiful treasures."
-            <span className="block mt-2 text-xs uppercase tracking-[0.2em] opacity-60">Proverbs 24:3-4</span>
+      {/* Trust Quote */}
+      <section className="py-24 bg-white overflow-hidden relative">
+        <div className="absolute -left-20 top-0 text-[20rem] font-black text-slate-50/50 pointer-events-none select-none">"</div>
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-light italic text-navy-950 leading-snug">
+              "We provide institutional-grade capital with the speed of a local partner. At 316, your deal is our priority, and your success is our mission."
+            </h2>
+            <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="h-px w-12 bg-gold-500"></div>
+              <p className="font-bold text-navy-950 uppercase tracking-[0.2em] text-sm">Joshua Gutierrez, Managing Principal</p>
+              <div className="h-px w-12 bg-gold-500"></div>
+            </div>
           </div>
-          <button 
-            onClick={() => window.open('https://www.316cap.com/widget/form/pdxTMenIM6Ei6b9ff1F6?notrack=true', '_blank')}
-            className="bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold px-12 py-4 uppercase tracking-widest text-sm transition-all shadow-lg hover:shadow-gold-500/20"
-          >
-            Get Your Terms Now
-          </button>
         </div>
       </section>
     </div>
