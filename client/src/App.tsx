@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useLocation } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -19,11 +19,20 @@ import ConstructionProduct from "@/pages/products/new-construction";
 import CalculatorsPage from "@/pages/resources/calculators";
 import { useEffect } from "react";
 
-// Fix for bfcache (back-forward cache) issues when returning from external sites
-function useBfcacheFix() {
+// Handle SPA redirect from 404.html and bfcache issues
+function useNavigationFixes() {
+  const [, setLocation] = useLocation();
+  
   useEffect(() => {
+    // Handle redirect from 404.html
+    const redirectPath = sessionStorage.getItem('spa-redirect');
+    if (redirectPath) {
+      sessionStorage.removeItem('spa-redirect');
+      setLocation(redirectPath);
+    }
+    
+    // Fix for bfcache (back-forward cache) issues when returning from external sites
     const handlePageShow = (event: PageTransitionEvent) => {
-      // If the page was restored from bfcache, reload to ensure fresh state
       if (event.persisted) {
         window.location.reload();
       }
@@ -31,11 +40,11 @@ function useBfcacheFix() {
 
     window.addEventListener("pageshow", handlePageShow);
     return () => window.removeEventListener("pageshow", handlePageShow);
-  }, []);
+  }, [setLocation]);
 }
 
 function Router() {
-  useBfcacheFix();
+  useNavigationFixes();
   
   return (
     <>
