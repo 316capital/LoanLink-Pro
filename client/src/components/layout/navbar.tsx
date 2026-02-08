@@ -86,7 +86,7 @@ export function Navbar() {
             <div className="flex-shrink-0 flex items-center cursor-pointer -ml-4 md:-ml-6 lg:-ml-8">
               <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <div className="flex items-center">
-                  <img src={logo} alt="316 Capital Logo" className="h-24 md:h-32 lg:h-40 w-auto brightness-100" style={{ filter: 'none' }} />
+                  <img src={logo} alt="316 Capital Logo" className="h-48 md:h-64 lg:h-80 w-auto brightness-100" style={{ filter: 'none' }} />
                 </div>
               </Link>
             </div>

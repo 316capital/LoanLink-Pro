@@ -27,7 +27,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-1">
             <Link href="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <div className="block mb-6 cursor-pointer">
-                <img src={logoWhite} alt="316 Capital Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
+                <img src={logoWhite} alt="316 Capital Logo" className="h-48 md:h-64 lg:h-80 w-auto object-contain" />
               </div>
             </Link>
             <p className="text-white text-sm leading-relaxed mb-6">
