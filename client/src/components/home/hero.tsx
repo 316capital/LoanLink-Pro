@@ -105,8 +105,16 @@ export function Hero() {
               className="bg-[#F2C100] hover:bg-[#F2C100]/90 text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(242,193,0,0.4)]"
               onClick={() => window.open('https://www.316cap.com/widget/survey/wdfHkbrE4TWjYAndh1w1', '_blank')}
             >
-              Get Instant Pricing
+              Get Your Term Sheet
               <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+            <Button 
+              size="sm" 
+              variant="outline"
+              className="border-white/30 text-white hover:bg-white hover:text-[#001A54] font-bold text-sm px-8 py-5 rounded-none transition-all backdrop-blur-md"
+              onClick={() => window.location.href = '/resources/calculators'}
+            >
+              Rate Estimators
             </Button>
           </motion.div>
 
