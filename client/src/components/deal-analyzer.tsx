@@ -57,7 +57,7 @@ export function DealAnalyzer() {
     // Check for 100% - Vault only (requires 700+ credit, 3+ experience)
     if (desiredLtcPct === 100) {
       if (creditNum >= 700 && expNum >= 3) {
-        const vaultRate = expNum >= 10 ? 7.99 : expNum >= 5 ? 8.99 : 9.99;
+        const vaultRate = expNum >= 10 ? 9.99 : expNum >= 5 ? 10.49 : 10.99;
         return { maxLtc: 100, maxArvLtv: 70, rate: vaultRate, points: 2, tier: "Vault Elite", requiresVault: true };
       }
       return null;
