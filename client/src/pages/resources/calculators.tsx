@@ -21,9 +21,9 @@ export default function CalculatorsPage() {
             <img 
               src="/assets/images/rate-estimator-hero.jpg" 
               alt="Rate Estimation" 
-              className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity"
+              className="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity"
             />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#001A54]/60 via-[#001A54]/40 to-[#001A54]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#001A54]/40 via-[#001A54]/20 to-[#001A54]/90" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(242,193,0,0.05),transparent_60%)]" />
           <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F2C100]/20 to-transparent" />
         </div>
