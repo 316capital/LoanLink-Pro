@@ -233,7 +233,7 @@ export function DealAnalyzer() {
                       <Calculator className="h-6 w-6 text-[#F2C100]" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-[#001A54] uppercase tracking-tight">Enter Deal Details</h3>
+                      <h3 className="font-bold text-[#001A54] uppercase tracking-tight">316 Fix & Flip Estimator</h3>
                       <p className="text-xs text-slate-500">All fields required</p>
                     </div>
                   </div>

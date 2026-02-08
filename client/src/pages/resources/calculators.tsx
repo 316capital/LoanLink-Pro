@@ -61,7 +61,7 @@ export default function CalculatorsPage() {
                   className="data-[state=active]:bg-[#001A54] data-[state=active]:text-white data-[state=active]:shadow-[0_20px_40px_rgba(0,26,84,0.2)] bg-white border border-gray-200 text-[#001A54] rounded-none py-6 font-black uppercase tracking-[0.3em] text-[10px] transition-all hover:border-[#001A54]/30"
                 >
                   <Zap className="h-4 w-4 mr-3" />
-                  Fix & Flip Analyzer
+                  Fix & Flip Estimator
                 </TabsTrigger>
                 <TabsTrigger 
                   value="brrrr" 
@@ -87,7 +87,7 @@ export default function CalculatorsPage() {
             {[
               {
                 icon: TrendingUp,
-                title: "Fix & Flip Analyzer",
+                title: "Fix & Flip Estimator",
                 desc: "Instantly calculate your max loan amount, estimated rate, and cash to close. Our tiered pricing rewards experience with better terms.",
                 value: "Up to 95% LTC",
                 btnText: "Learn about Fix & Flip"
