@@ -17,6 +17,7 @@ import FlipProduct from "@/pages/products/fix-flip";
 import BrrrrProduct from "@/pages/products/brrrr";
 import ConstructionProduct from "@/pages/products/new-construction";
 import CalculatorsPage from "@/pages/resources/calculators";
+import PlaybookPage from "@/pages/playbook";
 import { useEffect } from "react";
 
 // Handle SPA redirect from 404.html and bfcache issues
@@ -60,6 +61,8 @@ function Router() {
         <Route path="/products/brrrr" component={BrrrrProduct} />
         <Route path="/products/new-construction" component={ConstructionProduct} />
         <Route path="/resources/calculators" component={CalculatorsPage} />
+        <Route path="/playbook" component={PlaybookPage} />
+        <Route path="/resources/playbook" component={PlaybookPage} />
         <Route component={NotFound} />
       </Switch>
     </>
