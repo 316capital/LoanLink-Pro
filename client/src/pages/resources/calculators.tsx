@@ -55,28 +55,28 @@ export default function CalculatorsPage() {
           {/* Calculator Tabs */}
           <div className="max-w-4xl mx-auto mb-16">
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid w-full grid-cols-2 bg-white border border-gray-200 p-1 rounded-none shadow-lg mb-8">
+              <TabsList className="grid w-full grid-cols-2 gap-4 bg-transparent p-0 rounded-none mb-12 h-auto">
                 <TabsTrigger 
                   value="fix-flip" 
-                  className="data-[state=active]:bg-[#001A54] data-[state=active]:text-white rounded-none py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                  className="data-[state=active]:bg-[#001A54] data-[state=active]:text-white data-[state=active]:shadow-[0_20px_40px_rgba(0,26,84,0.2)] bg-white border border-gray-200 text-[#001A54] rounded-none py-6 font-black uppercase tracking-[0.3em] text-[10px] transition-all hover:border-[#001A54]/30"
                 >
-                  <Zap className="h-4 w-4 mr-2" />
-                  Fix & Flip
+                  <Zap className="h-4 w-4 mr-3" />
+                  Fix & Flip Analyzer
                 </TabsTrigger>
                 <TabsTrigger 
                   value="brrrr" 
-                  className="data-[state=active]:bg-[#001A54] data-[state=active]:text-white rounded-none py-4 font-bold uppercase tracking-widest text-xs transition-all"
+                  className="data-[state=active]:bg-[#001A54] data-[state=active]:text-white data-[state=active]:shadow-[0_20px_40px_rgba(0,26,84,0.2)] bg-white border border-gray-200 text-[#001A54] rounded-none py-6 font-black uppercase tracking-[0.3em] text-[10px] transition-all hover:border-[#001A54]/30"
                 >
-                  <Repeat className="h-4 w-4 mr-2" />
-                  BRRRR
+                  <Repeat className="h-4 w-4 mr-3" />
+                  BRRRR Calculator
                 </TabsTrigger>
               </TabsList>
               
-              <TabsContent value="fix-flip" className="mt-0">
+              <TabsContent value="fix-flip" className="mt-0 ring-0 focus-visible:ring-0 outline-none">
                 <DealAnalyzer />
               </TabsContent>
               
-              <TabsContent value="brrrr" className="mt-0">
+              <TabsContent value="brrrr" className="mt-0 ring-0 focus-visible:ring-0 outline-none">
                 <BRRRRCalculator />
               </TabsContent>
             </Tabs>
