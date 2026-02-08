@@ -509,22 +509,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Trust Quote */}
-      <section className="py-24 bg-white overflow-hidden relative">
-        <div className="absolute -left-20 top-0 text-[20rem] font-black text-slate-50/50 pointer-events-none select-none">"</div>
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-light italic text-navy-950 leading-snug">
-              "We provide institutional-grade capital with the speed of a local partner. At 316, your deal is our priority, and your success is our mission."
-            </h2>
-            <div className="mt-8 flex items-center justify-center gap-4">
-              <div className="h-px w-12 bg-gold-500"></div>
-              <p className="font-bold text-navy-950 uppercase tracking-[0.2em] text-sm">Joshua Gutierrez, Managing Principal</p>
-              <div className="h-px w-12 bg-gold-500"></div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
