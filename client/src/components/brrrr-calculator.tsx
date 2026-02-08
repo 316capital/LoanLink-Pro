@@ -100,10 +100,20 @@ export function BRRRRCalculator() {
     const cashOutAmount = refinanceLoanAmount - initialLoanAmount - (initialLoanAmount * 0.02); // minus payoff and refi costs
     const cashLeftInDeal = Math.max(0, cashToClose - cashOutAmount);
     
-    // New DSCR loan payment (30-year amortization)
     const monthlyRate = refiRatePct / 12;
     const numPayments = 360;
-    const newMonthlyPayment = refinanceLoanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / (Math.pow(1 + monthlyRate, numPayments) - 1);
+    let newMonthlyPayment = 0;
+    
+    if (monthlyRate > 0) {
+      newMonthlyPayment = refinanceLoanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / (Math.pow(1 + monthlyRate, numPayments) - 1);
+    } else {
+      newMonthlyPayment = refinanceLoanAmount / numPayments;
+    }
+    
+    // Ensure calculation sanity - payment shouldn't exceed loan amount
+    if (newMonthlyPayment > refinanceLoanAmount) {
+       newMonthlyPayment = 0;
+    }
     
     const cashFlowAfterRefi = rent - monthlyExpenses - newMonthlyPayment;
 
