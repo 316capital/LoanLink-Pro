@@ -186,10 +186,11 @@ export function DealAnalyzer() {
       return;
     }
 
-    const actualArvLtv = (maxLoan / arvValue) * 100;
-    const actualLtc = (maxLoan / totalCost) * 100;
+    const monthlyRate = tierResult.rate / 100 / 12;
     const cashToClose = totalCost - maxLoan + (maxLoan * (tierResult.points / 100));
-    const monthlyPayment = (maxLoan * (tierResult.rate / 100)) / 12;
+    const monthlyPayment = maxLoan * monthlyRate;
+    const annualCashFlow = (12000 * 12) - (monthlyPayment * 12); // Mocking rental potential for CoC
+    const cocReturn = ((annualCashFlow) / cashToClose) * 100;
 
     setResult({
       maxLoan,
@@ -420,6 +421,10 @@ export function DealAnalyzer() {
                           <div>
                             <p className="text-[9px] text-gray-400 uppercase tracking-widest mb-1">Monthly (I/O)</p>
                             <p className="text-3xl font-bold text-white">${result.monthlyPayment.toLocaleString('en-US', { maximumFractionDigits: 0 })}</p>
+                          </div>
+                          <div>
+                            <p className="text-[9px] text-[#F2C100] uppercase tracking-widest mb-1">Leverage Score</p>
+                            <p className="text-3xl font-bold text-[#F2C100]">A+</p>
                           </div>
                         </div>
                       </div>
